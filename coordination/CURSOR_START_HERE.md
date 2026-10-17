@@ -1,5 +1,7 @@
 # 给真实5090设备本地Cursor的当前指令
 
+**最新接续：R0-5090-004阶段B用户回传通过。** 实际5090上的torch2.7.1+cu128、BF16、bitsandbytes0.46.1/NF4合成检查已通过；见 `coordination/returns/20261017T122535Z-user-wsl-gpu-smoke-004/REPORT.md`。沿用已有longpibench-r0，直接接续任务004阶段C完整依赖及最小导入，不重建环境、不重跑历史盘点。若尚无Linux仓库，任务004含同版本的无仓库安装命令。完整模型加载和正式实验尚未验收。以下较早步骤保留为历史，以本段和任务004最新状态为准。
+
 **当前执行任务：R0-5090-004。** 用户已在真实5090的Ubuntu中确认Conda及下载入口。请读 `coordination/tasks/R0-5090-004.md`，仅创建新longpibench-r0/Python3.11环境，按固定版本安装并执行CUDA/NF4合成检查；通过后再装requirements中的完整候选。现有base/gmtp-compat/llmguard-paper1保持原状。主要代码与依赖修复仍由协调端负责，不启动正式实验。
 
 **最新入口：**WSL内部已能看到真实5090，系统python3=3.12.3。交互Ubuntu出现(base)，当前按 `coordination/WSL_SHELL_AND_CONDA.md` 查询Linux侧Conda、当前Python/pip及公开下载入口。Ubuntu中直接运行Linux命令，不加Windows的wsl前缀，不安装apt提示的同名wsl包。先保留检查输出，由协调端给环境安装命令。
