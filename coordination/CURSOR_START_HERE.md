@@ -1,5 +1,7 @@
 # 给真实5090设备本地Cursor的当前指令
 
+**最新接续：任务004的CLI修复已获用户回传通过。** Python3.11.17、pip check、全部核心依赖导入及blank sentencizer正常。按 `coordination/WSL_REPO_IMPORT.md` 接通WSL本地协作仓库，在machine-5090快进到origin/main，恢复固定上游、执行最小OPI导入并保存环境清单。不重复安装依赖，不创建模型实例。下面缺click和安装步骤保留为历史，以本段与任务004顶部最新状态优先。
+
 **当前待修复：任务004阶段C的spaCy缺少click。** 安装和pip check已通过，实际导入失败；先执行任务004顶部的固定typer0.15.2、typer-slim0.15.2、click8.1.8修复与导入/空白分句检查。此修复由协调端确定，实际验证仍待回传；GPU合成检查历史通过，不重建环境或重新下载torch。
 
 **最新接续：R0-5090-004阶段B用户回传通过。** 实际5090上的torch2.7.1+cu128、BF16、bitsandbytes0.46.1/NF4合成检查已通过；见 `coordination/returns/20261017T122535Z-user-wsl-gpu-smoke-004/REPORT.md`。沿用已有longpibench-r0，直接接续任务004阶段C完整依赖及最小导入，不重建环境、不重跑历史盘点。若尚无Linux仓库，任务004含同版本的无仓库安装命令。完整模型加载和正式实验尚未验收。以下较早步骤保留为历史，以本段和任务004最新状态为准。

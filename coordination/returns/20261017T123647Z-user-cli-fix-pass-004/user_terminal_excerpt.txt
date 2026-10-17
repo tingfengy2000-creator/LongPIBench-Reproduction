@@ -1,0 +1,22 @@
+Installing collected packages: click, typer-slim, typer
+  Attempting uninstall: typer-slim
+    Found existing installation: typer-slim 0.24.0
+    Uninstalling typer-slim-0.24.0:
+      Successfully uninstalled typer-slim-0.24.0
+  Attempting uninstall: typer
+    Found existing installation: typer 0.27.3
+    Uninstalling typer-0.27.3:
+      Successfully uninstalled typer-0.27.3
+Successfully installed click-8.1.8 typer-0.15.2 typer-slim-0.15.2
+No broken requirements found.
+Python: 3.11.17 (main, Oct 13 2026, 16:45:47) [GCC 15.3.0]
+Core dependency imports and blank sentencizer: PASS
+torch 2.7.1+cu128
+transformers 4.51.3
+peft 0.15.2
+numpy 2.2.6
+spacy 3.8.7
+typer 0.15.2
+typer-slim 0.15.2
+click 8.1.8
+(base) tingfeng@DESKTOP-B5PNBNC:~$
