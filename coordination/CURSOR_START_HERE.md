@@ -1,5 +1,9 @@
 # 给真实5090设备本地Cursor的当前指令
 
+**当前任务：R0-5090-003。** 用户已从DESKTOP-B5PNBNC回传RTX5090/32607MiB/610.88。请在该电脑桌面的本地Cursor打开本地仓库，在machine-5090保护修改、fetch并合并origin/main，然后阅读 `coordination/tasks/R0-5090-003.md`，运行 `powershell -NoProfile -File .\scripts\windows_host_inventory.ps1`。只盘点现有环境并回传JSON，不安装依赖或下载模型，主要代码和方案仍由协调端负责。
+
+以下为此前执行位置核验的历史说明，任务003优先：
+
 **2026-10-17最新入口：**任务002再次落到无GPU Cloud VM。用户已确认能进入5090电脑的Windows PowerShell，请先阅读 [Windows本机连接说明](WINDOWS_5090_CONNECT.md)，直接在真实电脑取得GPU输出；暂不把下列提示再次发给Cloud Agent。两次原始回执均已保留，硬件检查正确拦截，未做GPU实验。
 
 **当前任务已更新为R0-5090-002。** 上次执行进入了无GPU的Cloud VM，状态BLOCKED。请在5090电脑桌面的本地Cursor终端执行下面这段：

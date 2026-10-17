@@ -7,7 +7,8 @@ LongPIBench / PromptLocate 基线复现与逐案例失败归因。本仓库用�
 - [完整 R0 审计入口](audit/README.md)
 - [给5090设备Cursor的第一条命令](coordination/CURSOR_START_HERE.md)
 - [当前入口：5090电脑Windows PowerShell身份检查](coordination/WINDOWS_5090_CONNECT.md)
-- [当前GPU任务：真实5090检查](coordination/tasks/R0-5090-002.md)
+- [当前任务：真实5090电脑现有环境盘点](coordination/tasks/R0-5090-003.md)
+- [后续GPU任务：CUDA/NF4与最小导入](coordination/tasks/R0-5090-002.md)
 - [协调端代码进展与回执审查](audit/07_coordinator_update_20261017.md)
 - [协作协议](coordination/PROTOCOL.md)
 - [阶段化研究执行 Prompt](audit/05_codex_execution_prompt.md)
@@ -31,6 +32,8 @@ python scripts/remote_preflight.py --label actual-5090 --task-id R0-5090-002 --r
 上次回执186e6df来自无GPU Cloud VM，状态BLOCKED，已集成；必须改用真实5090电脑桌面的本地Cursor。执行端只负责GPU命令与证据，主要代码和方法由协调端修改。
 
 第二次回执66a50d6同样来自无GPU Cloud VM，已接收；硬件检查正确返回2并停止。用户已确认可进入真实5090电脑的Windows PowerShell，当前先在那里执行两条身份检查，不继续重复Cloud任务。尚无5090硬件验收、CUDA/NF4或真实模型结果。
+
+后续用户已实际回传DESKTOP-B5PNBNC的RTX5090/32607MiB/驱动610.88，已单列为人工终端证据；当前进入该电脑现有环境盘点R0-5090-003。尚未验证其Python、WSL、CUDA/NF4和模型，先盘点再确定安装方案。
 
 `repro/` 新增硬件检查、OPI最小加载入口、debug接线、官方评分与审计分离、不可覆盖的attempt存档。它仍不是正式实验runner，尚缺真实模型验证及完整定位坐标/内部轨迹。离线测试：`python -m pytest tests -q --basetemp .pytest-local-UNIQUE -p no:cacheprovider`，UNIQUE应替换为新的目录名，避免覆盖上次测试目录。
 

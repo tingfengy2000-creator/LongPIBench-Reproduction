@@ -1,5 +1,7 @@
 # 在真实5090电脑的Windows PowerShell确认执行位置
 
+更新：用户已完成下面的身份检查并回传DESKTOP-B5PNBNC、RTX5090、32607MiB、驱动610.88。当前不需重复人工检查，进入任务R0-5090-003的Python/Conda/WSL盘点；保留以下步骤供首次在该电脑建立本地项目时参考。
+
 用户已确认可以进入5090电脑桌面并打开Windows PowerShell。前两次回执来自无GPU的Cursor Cloud VM，GPU步骤均未执行。当前先做以下两步，不需要Python、Hugging Face登录或模型下载。
 
 ## 先由用户在5090电脑自己的PowerShell执行

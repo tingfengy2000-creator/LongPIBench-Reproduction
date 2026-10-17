@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "received_date": "2026-10-17",
+  "evidence_kind": "USER_PASTED_WINDOWS_TERMINAL_OUTPUT",
+  "direct_execution_by_coordinator": false,
+  "source": "Human user message in the current chat",
+  "hostname": "DESKTOP-B5PNBNC",
+  "gpu_name": "NVIDIA GeForce RTX 5090",
+  "memory_total_mib": 32607,
+  "driver_version": "610.88",
+  "reported_hardware_matches_requested_target": true,
+  "cuda_verified": false,
+  "nf4_verified": false,
+  "python_environment_verified": false,
+  "model_load_verified": false,
+  "formal_inference_executed": false,
+  "notes": "Transcribed from user-provided text. Does not replace future on-host script evidence or rewrite prior Cloud VM receipts."
+}

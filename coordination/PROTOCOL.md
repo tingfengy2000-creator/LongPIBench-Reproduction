@@ -12,6 +12,8 @@ R0-5090-001实际运行在无GPU的Cursor Cloud VM，回执commit为186e6df，�
 
 R0-5090-002再次在同一类Cloud环境失败（commit66a50d6），说明硬件检查正确阻止了后续GPU步骤，执行位置仍未切换。用户已确认能打开真实5090电脑的Windows PowerShell；当前先由用户在该终端确认GPU，参见WINDOWS_5090_CONNECT.md。确认之前不继续派发相同Cloud任务，不把安装显卡驱动到Cloud VM当作解决方案。
 
+后续用户已回传DESKTOP-B5PNBNC上的RTX5090、32607MiB、驱动610.88。该证据标为USER_PASTED_WINDOWS_TERMINAL_OUTPUT，不能改写为协调端远程执行。下一步为R0-5090-003本机环境盘点；不能由显卡型号与驱动直接推定Python/CUDA/NF4或模型可运行。
+
 ## 远端常规步骤
 
 首次克隆后创建 `machine-5090`。之后先检查工作区，确认无未提交变更，再fetch main并合并；不使用hard reset、不强推：
