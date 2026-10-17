@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "task_id": "R0-5090-001",
+  "run_id": "20261017T101922Z-machine-5090-1bbf8a93",
+  "label": "machine-5090",
+  "timestamp_utc": "2026-10-17T10:19:22.095266+00:00",
+  "phase": "R0_PREFLIGHT_ONLY",
+  "formal_inference_executed": false,
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "python_executable": "/usr/bin/python3",
+  "platform": "Linux-6.12.94+-x86_64-with-glibc2.39",
+  "disk_free_bytes": 263955042304,
+  "packages": {
+    "torch": null,
+    "transformers": null,
+    "peft": null,
+    "bitsandbytes": null,
+    "accelerate": null,
+    "huggingface-hub": null,
+    "spacy": null,
+    "datasets": null,
+    "openai": null,
+    "fschat": null,
+    "google-generativeai": null
+  },
+  "gpu": {
+    "command": [
+      "nvidia-smi",
+      "--query-gpu=name,memory.total,memory.free,driver_version",
+      "--format=csv"
+    ],
+    "error": "FileNotFoundError: [Errno 2] No such file or directory: 'nvidia-smi'"
+  },
+  "torch_probe": {
+    "status": "NOT_INSTALLED"
+  },
+  "git_head": {
+    "command": [
+      "git",
+      "-C",
+      "/workspace",
+      "rev-parse",
+      "HEAD"
+    ],
+    "returncode": 0,
+    "stdout": "baa26d62fc28220478daa4f34b8a9f362b54cec1\n",
+    "stderr": ""
+  },
+  "git_branch": {
+    "command": [
+      "git",
+      "-C",
+      "/workspace",
+      "branch",
+      "--show-current"
+    ],
+    "returncode": 0,
+    "stdout": "machine-5090\n",
+    "stderr": ""
+  },
+  "git_status_before_return": {
+    "command": [
+      "git",
+      "-C",
+      "/workspace",
+      "status",
+      "--short"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "upstream_heads": {
+    "LongPIBench": {
+      "command": [
+        "git",
+        "-C",
+        "/workspace/upstream/LongPIBench",
+        "rev-parse",
+        "HEAD"
+      ],
+      "returncode": 128,
+      "stdout": "",
+      "stderr": "fatal: cannot change to '/workspace/upstream/LongPIBench': No such file or directory\n"
+    },
+    "Open-Prompt-Injection": {
+      "command": [
+        "git",
+        "-C",
+        "/workspace/upstream/Open-Prompt-Injection",
+        "rev-parse",
+        "HEAD"
+      ],
+      "returncode": 128,
+      "stdout": "",
+      "stderr": "fatal: cannot change to '/workspace/upstream/Open-Prompt-Injection': No such file or directory\n"
+    }
+  },
+  "followups": [
+    "Verify actual GPU is RTX 5090 with ~32GB",
+    "If torch is installed, inspect CUDA BF16 smoke result",
+    "NF4/model loading and authorized HF access remain separate checks",
+    "Do not infer formal readiness from this report alone"
+  ]
+}
