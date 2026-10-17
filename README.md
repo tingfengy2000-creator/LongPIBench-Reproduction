@@ -4,6 +4,10 @@ LongPIBench / PromptLocate 基线复现与逐案例失败归因。本仓库用�
 
 **当前阶段：R0 审计与5090环境准备。尚未运行正式模型实验，没有本地 ASR。**
 
+当前下载分工：[HF三模型离线交接清单](coordination/OFFLINE_MODEL_HANDOFF.md)供具有合法访问及转交权限的协作者准备；[任务007](coordination/tasks/R0-5090-007.md)由5090本机Cursor获取非HF适配器/spaCy文件。已有006文件复用。原Llama目标保持不变，Qwen仅为未选择的候选。
+
+最新账户状态：用户明确确认Llama申请Rejected，原目标条件维持BLOCKED；006公开资源准备继续。可审查的[独立目标候选方案](audit/09_llama_access_rejected_and_target_options.md)已准备，尚未切换目标或启动新实验。以下“审核中”是历史状态。
+
 当前可执行：[R0-5090-006](coordination/tasks/R0-5090-006.md)在5090准备固定公开Mistral/GPT-2权重并验证文件，文件计划已锁定。用户的Llama申请审核中，任务005暂停重复请求；工程准备继续，不更换目标或生成正式结果。
 
 最新进展：环境004已按用户回执验收，环境清单保存及固定200条数据通过。Mistral/GPT-2配置访问通过；[R0-5090-005](coordination/tasks/R0-5090-005.md)当前因Llama未认证401受阻，待5090本机用户交互登录HF后由本地Cursor重试。真实模型加载及正式运行仍待验收；下文较早环境状态保留作历史。

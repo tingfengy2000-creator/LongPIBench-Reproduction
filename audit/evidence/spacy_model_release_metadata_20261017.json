@@ -1,0 +1,10 @@
+{
+  "source_url": "https://api.github.com/repos/explosion/spacy-models/releases/tags/en_core_web_sm-3.8.0",
+  "release_id": 177486822,
+  "tag": "en_core_web_sm-3.8.0",
+  "asset_id": 195734380,
+  "filename": "en_core_web_sm-3.8.0-py3-none-any.whl",
+  "size_bytes": 12806118,
+  "digest": null,
+  "url": "https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl"
+}

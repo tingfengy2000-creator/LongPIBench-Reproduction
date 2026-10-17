@@ -1,0 +1,9 @@
+# 用户确认：Llama访问申请明确被拒绝
+
+日期：2026-10-17。证据类型USER_REPORTED_ACCOUNT_STATUS，不是协调端登录该账号检查所得。
+
+用户明确回答HF页面显示“Rejected/申请被拒绝”，不是Pending。该更新不改变已保存的401及四次403原始结果；其历史字段和时间保持不变。任务005更新为BLOCKED_LLAMA_ACCESS_REJECTED，不再等待一个被假定会自动批准的审核或重复重试登录。
+
+原Llama目标及revision仍保留在upstream_lock.json，不改写成其他目标。不宣称已获授权、已下载目标模型或已复现论文结果。
+
+任务006公开GPT-2/Mistral准备不受该账号Llama申请状态影响，可按已派发范围继续。可进一步准备独立目标候选，但目标变更需明确新的实验条件与结论范围，不能与原Llama条件拼接。候选分析见audit/09_llama_access_rejected_and_target_options.md，目前未切换执行目标。

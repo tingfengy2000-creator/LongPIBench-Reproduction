@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "retrieved_at_utc": "2026-10-17T14:38:07.4311730Z",
+  "source_api": "https://huggingface.co/api/models/Qwen/Qwen2.5-7B-Instruct?blobs=true",
+  "repo_id": "Qwen/Qwen2.5-7B-Instruct",
+  "revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+  "private": false,
+  "gated": false,
+  "config_url": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct/resolve/a09a35458c702b33eeacc393d103063234e8bc28/config.json",
+  "unauthenticated_config_head_status": 200,
+  "license_tags": [
+    "license:apache-2.0"
+  ],
+  "config": {
+    "model_type": "qwen2",
+    "architectures": [
+      "Qwen2ForCausalLM"
+    ],
+    "torch_dtype": "bfloat16",
+    "max_position_embeddings": 32768
+  },
+  "selected_files": [
+    {
+      "filename": "config.json",
+      "size_bytes": 663,
+      "git_blob_sha1": "0178295f88afc3c7f279ed284f961f8c1be00654",
+      "lfs_sha256": null
+    },
+    {
+      "filename": "generation_config.json",
+      "size_bytes": 243,
+      "git_blob_sha1": "0eb3c536657dcd12626e09eca4b6198c0cbcde1e",
+      "lfs_sha256": null
+    },
+    {
+      "filename": "merges.txt",
+      "size_bytes": 1671839,
+      "git_blob_sha1": "20024bfe7c83998e9aeaf98a0cd6a2ce6306c2f0",
+      "lfs_sha256": null
+    },
+    {
+      "filename": "model-00001-of-00004.safetensors",
+      "size_bytes": 3945441440,
+      "git_blob_sha1": "5e68dcea92e3696ddd4e1d44d9b420a31fe5622c",
+      "lfs_sha256": "a1333e6293854747c481288ea83b348226af178dd565c49b6f9495ba1966aba7"
+    },
+    {
+      "filename": "model-00002-of-00004.safetensors",
+      "size_bytes": 3864726352,
+      "git_blob_sha1": "e07e23d4595678a717aaad11eef9bc22056c284a",
+      "lfs_sha256": "f5d25a2772cb825164a2a2c0fb6d51a87e282abf21e4dd75bc5cfb3cd0ea6185"
+    },
+    {
+      "filename": "model-00003-of-00004.safetensors",
+      "size_bytes": 3864726424,
+      "git_blob_sha1": "114c07bb791bac8d2b32109b7729ef2f9a489dfe",
+      "lfs_sha256": "8efdec4c1bc12317ae1a38dc42b595ce777738a64deea3fcb8a0a91381bcdfd5"
+    },
+    {
+      "filename": "model-00004-of-00004.safetensors",
+      "size_bytes": 3556377672,
+      "git_blob_sha1": "f4841c787f178938010ce784a3ec99e5568524b5",
+      "lfs_sha256": "1a72d403cdf0c1ec3cb7f289f17b394a01e64394c2e9b3c0f94dbce3faf879bd"
+    },
+    {
+      "filename": "model.safetensors.index.json",
+      "size_bytes": 27752,
+      "git_blob_sha1": "14d037fdda5a1311dcc0275003a7a370d84114e6",
+      "lfs_sha256": null
+    },
+    {
+      "filename": "tokenizer.json",
+      "size_bytes": 7031645,
+      "git_blob_sha1": "443909a61d429dff23010e5bddd28ff530edda00",
+      "lfs_sha256": null
+    },
+    {
+      "filename": "tokenizer_config.json",
+      "size_bytes": 7305,
+      "git_blob_sha1": "07bfe0640cb5a0037f9322287fbfc682806cf672",
+      "lfs_sha256": null
+    },
+    {
+      "filename": "vocab.json",
+      "size_bytes": 2776833,
+      "git_blob_sha1": "4783fe10ac3adce15ac8f358ef5462739852c569",
+      "lfs_sha256": null
+    }
+  ],
+  "selected_file_bytes": 15242788168.0,
+  "weights_downloaded": false,
+  "gpu_load_verified": false,
+  "formal_inference_executed": false,
+  "scope": "Candidate only; not a replacement for the original Llama reproduction condition"
+}

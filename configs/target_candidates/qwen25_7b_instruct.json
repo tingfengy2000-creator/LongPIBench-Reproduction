@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "selection_status": "PROPOSED_AWAITING_TARGET_CHOICE",
+  "candidate_id": "qwen25_7b_instruct_independent_condition",
+  "scope": "Independent target condition; not strict reproduction of the paper Llama condition",
+  "target": {
+    "repo_id": "Qwen/Qwen2.5-7B-Instruct",
+    "revision": "a09a35458c702b33eeacc393d103063234e8bc28"
+  },
+  "access_evidence": "audit/evidence/qwen25_candidate_access_20261017.json",
+  "original_condition_lock": "configs/upstream_lock.json",
+  "original_target_changed": false,
+  "data_and_attack_plan": {
+    "suites": ["email", "resume"],
+    "ids": {"start": 0, "end_exclusive": 100},
+    "attack": "authority_spoof",
+    "target_max_new_tokens_proposed": 20000,
+    "decoding_proposed": "greedy"
+  },
+  "must_freeze_before_formal_run": [
+    "actual tokenizer and chat template hash",
+    "full generation config, EOS and stop rules",
+    "input token lengths and context budget",
+    "dtype, loading, memory and stage scheduling",
+    "DataSentinel checkpoint independent of formal ASR",
+    "full trace recording and original span mappings"
+  ],
+  "weights_downloaded": false,
+  "model_load_verified": false,
+  "formal_inference_executed": false
+}

@@ -1,0 +1,390 @@
+{
+  "schema_version": 1,
+  "scope": "Original Llama target retained; offline files do not imply HF account approval",
+  "hf_models": [
+    {
+      "role": "target",
+      "repo_id": "meta-llama/Llama-3.1-8B-Instruct",
+      "revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+      "source_url": "https://huggingface.co/api/models/meta-llama/Llama-3.1-8B-Instruct/revision/0e9e39f249a16976918f6564b8830bc894c89659?blobs=true",
+      "files": [
+        {
+          "filename": "LICENSE",
+          "size_bytes": 7627,
+          "git_blob_sha1": "a7c3ca16cee30425ed6ad841a809590f2bcbf290",
+          "lfs_sha256": null
+        },
+        {
+          "filename": "README.md",
+          "size_bytes": 44044,
+          "git_blob_sha1": "bbd5630a05b65c1a8b25141bd11ec44844107d58",
+          "lfs_sha256": null
+        },
+        {
+          "filename": "USE_POLICY.md",
+          "size_bytes": 4691,
+          "git_blob_sha1": "81ebb55902285e8dd5804ccf423d17ffb2a622ee",
+          "lfs_sha256": null
+        },
+        {
+          "filename": "config.json",
+          "size_bytes": 855,
+          "git_blob_sha1": "0bb6fd75b3ad2fe988565929f329945262c2814e",
+          "lfs_sha256": null
+        },
+        {
+          "filename": "generation_config.json",
+          "size_bytes": 184,
+          "git_blob_sha1": "cc7276afd599de091142c6ed3005faf8a74aa257",
+          "lfs_sha256": null
+        },
+        {
+          "filename": "model-00001-of-00004.safetensors",
+          "size_bytes": 4976698672,
+          "git_blob_sha1": "a59dca28867995c0d05384251ac5f4d62461a226",
+          "lfs_sha256": "2b1879f356aed350030bb40eb45ad362c89d9891096f79a3ab323d3ba5607668"
+        },
+        {
+          "filename": "model-00002-of-00004.safetensors",
+          "size_bytes": 4999802720,
+          "git_blob_sha1": "4ab0726caf5e75dd1e5700c7e7899ac8c0798428",
+          "lfs_sha256": "09d433f650646834a83c580877bd60c6d1f88f7755305c12576b5c7058f9af15"
+        },
+        {
+          "filename": "model-00003-of-00004.safetensors",
+          "size_bytes": 4915916176,
+          "git_blob_sha1": "5864b15557563e7700a3f95236afdee36f5fdb74",
+          "lfs_sha256": "fc1cdddd6bfa91128d6e94ee73d0ce62bfcdb7af29e978ddcab30c66ae9ea7fa"
+        },
+        {
+          "filename": "model-00004-of-00004.safetensors",
+          "size_bytes": 1168138808,
+          "git_blob_sha1": "b8babcaa5a888d6efd5c05206361b4685492ad13",
+          "lfs_sha256": "92ecfe1a2414458b4821ac8c13cf8cb70aed66b5eea8dc5ad9eeb4ff309d6d7b"
+        },
+        {
+          "filename": "model.safetensors.index.json",
+          "size_bytes": 23950,
+          "git_blob_sha1": "0fd8120f1c6acddc268ebc2583058efaf699a771",
+          "lfs_sha256": null
+        },
+        {
+          "filename": "special_tokens_map.json",
+          "size_bytes": 296,
+          "git_blob_sha1": "02ee80b6196926a5ad790a004d9efd6ab1ba6542",
+          "lfs_sha256": null
+        },
+        {
+          "filename": "tokenizer.json",
+          "size_bytes": 9085657,
+          "git_blob_sha1": "5cc5f00a5b203e90a27a3bd60d1ec393b07971e8",
+          "lfs_sha256": null
+        },
+        {
+          "filename": "tokenizer_config.json",
+          "size_bytes": 55351,
+          "git_blob_sha1": "db88166e2bc4c799fd5d1ae643b75e84d03ee70e",
+          "lfs_sha256": null
+        }
+      ],
+      "bundle_subdir": "hf/target"
+    },
+    {
+      "role": "detector_base",
+      "repo_id": "mistralai/Mistral-7B-v0.1",
+      "revision": "27d67f1b5f57dc0953326b2601d68371d40ea8da",
+      "source_url": "https://huggingface.co/api/models/mistralai/Mistral-7B-v0.1/revision/27d67f1b5f57dc0953326b2601d68371d40ea8da?blobs=true",
+      "files": [
+        {
+          "filename": "README.md",
+          "size_bytes": 1546,
+          "git_blob_sha1": "ebaf1eab75b4d557387c7cef45160108074c26af",
+          "lfs_sha256": null
+        },
+        {
+          "filename": "config.json",
+          "size_bytes": 571,
+          "git_blob_sha1": "f4989f072a7f517d01d479eb1685c6e50e014f88",
+          "lfs_sha256": null
+        },
+        {
+          "filename": "generation_config.json",
+          "size_bytes": 116,
+          "git_blob_sha1": "2c5f418036a121b3fd432d1bf2b3c5c9daf59fab",
+          "lfs_sha256": null
+        },
+        {
+          "filename": "model-00001-of-00002.safetensors",
+          "size_bytes": 9942981696,
+          "git_blob_sha1": "f26753f1a0c0df6772d86b6a7a8cfd7d384396ad",
+          "lfs_sha256": "9742cb4764964155b7a5f35eefad651f590006091ddeb536863d6c5865cca1b9"
+        },
+        {
+          "filename": "model-00002-of-00002.safetensors",
+          "size_bytes": 4540516344,
+          "git_blob_sha1": "2ccbf9911f2e7f478cf353232b40fbc92ba59d17",
+          "lfs_sha256": "9bcf56354ec0c68b5f8e97b4f3b02d16af899a65b0868d6dba5a51c1b30f01cb"
+        },
+        {
+          "filename": "model.safetensors.index.json",
+          "size_bytes": 25125,
+          "git_blob_sha1": "1d76bd3b4dd491998e6f67d1a7b181623ebbf7f9",
+          "lfs_sha256": null
+        },
+        {
+          "filename": "special_tokens_map.json",
+          "size_bytes": 414,
+          "git_blob_sha1": "451134b2ddc2e78555d1e857518c54b4bdc2e87d",
+          "lfs_sha256": null
+        },
+        {
+          "filename": "tokenizer.json",
+          "size_bytes": 1795188,
+          "git_blob_sha1": "1e9f59c515a01088e1f7f72b68ab99f92d15fb96",
+          "lfs_sha256": null
+        },
+        {
+          "filename": "tokenizer.model",
+          "size_bytes": 493443,
+          "git_blob_sha1": "8b443ef19c2a19acc3ac64fb9c3db4a72921dff6",
+          "lfs_sha256": "dadfd56d766715c61d2ef780a525ab43b8e6da4de6865bda3d95fdef5e134055"
+        },
+        {
+          "filename": "tokenizer_config.json",
+          "size_bytes": 996,
+          "git_blob_sha1": "c482ae9f11e5008531fa78cf5d85fee7f5056bb6",
+          "lfs_sha256": null
+        }
+      ],
+      "bundle_subdir": "hf/detector_base"
+    },
+    {
+      "role": "helper",
+      "repo_id": "openai-community/gpt2",
+      "revision": "607a30d783dfa663caf39e06633721c8d4cfcd7e",
+      "source_url": "https://huggingface.co/api/models/openai-community/gpt2/revision/607a30d783dfa663caf39e06633721c8d4cfcd7e?blobs=true",
+      "files": [
+        {
+          "filename": "README.md",
+          "size_bytes": 8092,
+          "git_blob_sha1": "a16a55fda99d2f2e7b69cce5cf93ff4ad3049930",
+          "lfs_sha256": null
+        },
+        {
+          "filename": "config.json",
+          "size_bytes": 665,
+          "git_blob_sha1": "10c66461e4c109db5a2196bff4bb59be30396ed8",
+          "lfs_sha256": null
+        },
+        {
+          "filename": "generation_config.json",
+          "size_bytes": 124,
+          "git_blob_sha1": "3dc481ecc3b2c47a06ab4e20dba9d7f4b447bdf3",
+          "lfs_sha256": null
+        },
+        {
+          "filename": "merges.txt",
+          "size_bytes": 456318,
+          "git_blob_sha1": "226b0752cac7789c48f0cb3ec53eda48b7be36cc",
+          "lfs_sha256": null
+        },
+        {
+          "filename": "model.safetensors",
+          "size_bytes": 548105171,
+          "git_blob_sha1": "44b36d6e32d13c8fb28b0feab0ac8bfefa7efeda",
+          "lfs_sha256": "248dfc3911869ec493c76e65bf2fcf7f615828b0254c12b473182f0f81d3a707"
+        },
+        {
+          "filename": "tokenizer.json",
+          "size_bytes": 1355256,
+          "git_blob_sha1": "4b988bccc9dc5adacd403c00b4704976196548f8",
+          "lfs_sha256": null
+        },
+        {
+          "filename": "tokenizer_config.json",
+          "size_bytes": 26,
+          "git_blob_sha1": "be4d21d94f3b4687e5a54d84bf6ab46ed0f8defd",
+          "lfs_sha256": null
+        },
+        {
+          "filename": "vocab.json",
+          "size_bytes": 1042301,
+          "git_blob_sha1": "1f1d9aaca301414e7f6c9396df506798ff4eb9a6",
+          "lfs_sha256": null
+        }
+      ],
+      "bundle_subdir": "hf/helper"
+    }
+  ],
+  "hf_selected_bytes": 31106562423,
+  "aux_archives": [
+    {
+      "name": "datasentinel",
+      "filename": "DataSentinel_Models.zip",
+      "url": "https://drive.usercontent.google.com/download?id=1B0w5r5udH3I_aiZL0_-2a8WzBAqjuLsn&export=download&confirm=t",
+      "observed_size_bytes": 1401845934,
+      "author_published_sha256": null,
+      "adapter_configs": {
+        "detector_large/checkpoint-5000/adapter_config.json": {
+          "alpha_pattern": {},
+          "auto_mapping": null,
+          "base_model_name_or_path": "mistralai/Mistral-7B-v0.1",
+          "bias": "none",
+          "fan_in_fan_out": false,
+          "inference_mode": true,
+          "init_lora_weights": true,
+          "layer_replication": null,
+          "layers_pattern": null,
+          "layers_to_transform": null,
+          "loftq_config": {},
+          "lora_alpha": 64,
+          "lora_dropout": 0.05,
+          "megatron_config": null,
+          "megatron_core": "megatron.core",
+          "modules_to_save": null,
+          "peft_type": "LORA",
+          "r": 32,
+          "rank_pattern": {},
+          "revision": null,
+          "target_modules": [
+            "lm_head",
+            "down_proj",
+            "up_proj",
+            "q_proj",
+            "k_proj",
+            "o_proj",
+            "gate_proj",
+            "v_proj"
+          ],
+          "task_type": "CAUSAL_LM",
+          "use_dora": false,
+          "use_rslora": false
+        },
+        "detector_small/checkpoint-500/adapter_config.json": {
+          "alpha_pattern": {},
+          "auto_mapping": null,
+          "base_model_name_or_path": "mistralai/Mistral-7B-v0.1",
+          "bias": "none",
+          "fan_in_fan_out": false,
+          "inference_mode": true,
+          "init_lora_weights": true,
+          "layer_replication": null,
+          "layers_pattern": null,
+          "layers_to_transform": null,
+          "loftq_config": {},
+          "lora_alpha": 64,
+          "lora_dropout": 0.05,
+          "megatron_config": null,
+          "megatron_core": "megatron.core",
+          "modules_to_save": null,
+          "peft_type": "LORA",
+          "r": 32,
+          "rank_pattern": {},
+          "revision": null,
+          "target_modules": [
+            "down_proj",
+            "k_proj",
+            "gate_proj",
+            "q_proj",
+            "v_proj",
+            "lm_head",
+            "o_proj",
+            "up_proj"
+          ],
+          "task_type": "CAUSAL_LM",
+          "use_dora": false,
+          "use_rslora": false
+        }
+      },
+      "inference_files": [
+        {
+          "name": "detector_large/checkpoint-5000/adapter_model.safetensors",
+          "bytes": 864513616
+        },
+        {
+          "name": "detector_large/checkpoint-5000/adapter_config.json",
+          "bytes": 743
+        },
+        {
+          "name": "detector_small/checkpoint-500/adapter_model.safetensors",
+          "bytes": 864513616
+        },
+        {
+          "name": "detector_small/checkpoint-500/adapter_config.json",
+          "bytes": 743
+        }
+      ]
+    },
+    {
+      "name": "promptlocate_oracle",
+      "filename": "promptlocate_oracle.zip",
+      "url": "https://drive.usercontent.google.com/download?id=1CEaW4M6Y2_w8ca3-76SnoaNgio8x2eQB&export=download&confirm=t",
+      "observed_size_bytes": 701657336,
+      "author_published_sha256": null,
+      "adapter_configs": {
+        "7_1000_naive_minimax_mistral_3_1_backend_llama3_revise_beta_1_balance_finetune/checkpoint-500/adapter_config.json": {
+          "alpha_pattern": {},
+          "auto_mapping": null,
+          "base_model_name_or_path": "mistralai/Mistral-7B-v0.1",
+          "bias": "none",
+          "fan_in_fan_out": false,
+          "inference_mode": true,
+          "init_lora_weights": true,
+          "layer_replication": null,
+          "layers_pattern": null,
+          "layers_to_transform": null,
+          "loftq_config": {},
+          "lora_alpha": 64,
+          "lora_dropout": 0.05,
+          "megatron_config": null,
+          "megatron_core": "megatron.core",
+          "modules_to_save": null,
+          "peft_type": "LORA",
+          "r": 32,
+          "rank_pattern": {},
+          "revision": null,
+          "target_modules": [
+            "k_proj",
+            "v_proj",
+            "o_proj",
+            "lm_head",
+            "q_proj",
+            "up_proj",
+            "down_proj",
+            "gate_proj"
+          ],
+          "task_type": "CAUSAL_LM",
+          "use_dora": false,
+          "use_rslora": false
+        }
+      },
+      "inference_files": [
+        {
+          "name": "7_1000_naive_minimax_mistral_3_1_backend_llama3_revise_beta_1_balance_finetune/checkpoint-500/adapter_model.safetensors",
+          "bytes": 864513616
+        },
+        {
+          "name": "7_1000_naive_minimax_mistral_3_1_backend_llama3_revise_beta_1_balance_finetune/checkpoint-500/adapter_config.json",
+          "bytes": 743
+        }
+      ]
+    }
+  ],
+  "spacy_model": {
+    "source_url": "https://api.github.com/repos/explosion/spacy-models/releases/tags/en_core_web_sm-3.8.0",
+    "release_id": 177486822,
+    "tag": "en_core_web_sm-3.8.0",
+    "asset_id": 195734380,
+    "filename": "en_core_web_sm-3.8.0-py3-none-any.whl",
+    "size_bytes": 12806118,
+    "digest": null,
+    "url": "https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl"
+  },
+  "source_evidence": [
+    "audit/evidence/llama_offline_file_metadata_20261017.json",
+    "configs/public_model_files.json",
+    "audit/evidence/adapter_metadata.json",
+    "audit/evidence/weight_byte_probes.json",
+    "audit/evidence/spacy_model_release_metadata_20261017.json"
+  ]
+}
