@@ -27,6 +27,14 @@ git merge origin/main
 
 完成任务后只add本次明确文件，commit并push machine-5090。协调端fetch后检查回执和变更，再合并或cherry-pick。原始输出、异常attempt和旧回执不重写。
 
+### 回执分叉与快进接续
+
+后续任务采用merge --ff-only时，协调端集成回执必须保留执行端实际提交的祖先关系（正常merge或可行的fast-forward），不能只cherry-pick或squash后就声称执行端可以快进。派发前检查执行端已发布提交是否为main祖先；未上传到GitHub的本地提交需要先取回。
+
+若执行端本地machine-5090与GitHub同名分支已有不同历史，先保留工作区和两边历史，将已检查的本地回执HEAD推送到唯一的新receipts-5090-<commit>分支；不得强推或reset。协调端审查并合入此分支后，执行端才fetch并快进origin/main。GitHub已发布的文字摘要和执行端实际原始JSON可能不是同一组提交，不能互相冒充。
+
+只有执行端报告的实际HEAD及GitHub可取回的回执提交都已成为main祖先，才报告分叉阻碍已解除。未知或尚未上传的HEAD明确写待补齐。原始回执使用不变的Git blob核验；此流程不授权代码或方法修改。
+
 若另一设备已经建立machine-5090远程分支，使用 `git switch --track origin/machine-5090`；不要创建同名无关历史。命令必须根据现有状态选择，不盲目照抄建分支步骤。
 
 ## 数据与凭据
