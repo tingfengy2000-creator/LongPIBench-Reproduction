@@ -1,5 +1,7 @@
 # 给真实5090设备本地Cursor的当前指令
 
+**2026-10-17最新入口：**任务002再次落到无GPU Cloud VM。用户已确认能进入5090电脑的Windows PowerShell，请先阅读 [Windows本机连接说明](WINDOWS_5090_CONNECT.md)，直接在真实电脑取得GPU输出；暂不把下列提示再次发给Cloud Agent。两次原始回执均已保留，硬件检查正确拦截，未做GPU实验。
+
 **当前任务已更新为R0-5090-002。** 上次执行进入了无GPU的Cloud VM，状态BLOCKED。请在5090电脑桌面的本地Cursor终端执行下面这段：
 
 ```text

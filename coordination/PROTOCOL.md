@@ -10,6 +10,8 @@
 
 R0-5090-001实际运行在无GPU的Cursor Cloud VM，回执commit为186e6df，已保留BLOCKED结论。分支名machine-5090、安装CUDA版torch或云端任务成功启动都不能证明使用了5090。后续GPU任务必须从5090电脑桌面的本地Cursor终端启动，并先通过型号与显存检查；失败后停止安装和模型下载。
 
+R0-5090-002再次在同一类Cloud环境失败（commit66a50d6），说明硬件检查正确阻止了后续GPU步骤，执行位置仍未切换。用户已确认能打开真实5090电脑的Windows PowerShell；当前先由用户在该终端确认GPU，参见WINDOWS_5090_CONNECT.md。确认之前不继续派发相同Cloud任务，不把安装显卡驱动到Cloud VM当作解决方案。
+
 ## 远端常规步骤
 
 首次克隆后创建 `machine-5090`。之后先检查工作区，确认无未提交变更，再fetch main并合并；不使用hard reset、不强推：
