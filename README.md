@@ -7,7 +7,8 @@ LongPIBench / PromptLocate 基线复现与逐案例失败归因。本仓库用�
 - [完整 R0 审计入口](audit/README.md)
 - [给5090设备Cursor的第一条命令](coordination/CURSOR_START_HERE.md)
 - [当前入口：5090电脑Windows PowerShell身份检查](coordination/WINDOWS_5090_CONNECT.md)
-- [当前任务：真实5090电脑现有环境盘点](coordination/tasks/R0-5090-003.md)
+- [当前任务：独立Conda环境与CUDA/NF4实测](coordination/tasks/R0-5090-004.md)
+- [已接收的环境盘点](coordination/tasks/R0-5090-003.md)
 - [当前下一步：WSL2内部GPU与Python检查](coordination/WSL_5090_NEXT.md)
 - [最新入口：Ubuntu内Conda与网络检查](coordination/WSL_SHELL_AND_CONDA.md)
 - [后续GPU任务：CUDA/NF4与最小导入](coordination/tasks/R0-5090-002.md)
@@ -40,6 +41,8 @@ python scripts/remote_preflight.py --label actual-5090 --task-id R0-5090-002 --r
 Windows盘点现已回传：Git、Python3.14和Ubuntu-24.04 WSL2可见；Conda未在PATH找到。接下来复用现有WSL2并核验Linux侧GPU/Python，Windows Python保持不动；未安装推理环境，未启动正式实验。
 
 WSL内部GPU查询现已回传，显示真实5090/32607MiB/610.88，系统Python3.12.3；交互Ubuntu提示符出现(base)，Linux侧Conda及网络仍待确认。两种终端命令已分开写明，未开始安装或研究推理。
+
+Conda与网络盘点已完成：Miniforge/Conda26.3.2，base交互Python3.13.13，已有gmtp-compat和llmguard-paper1；PyPI及cu128索引HEAD200。当前创建独立longpibench-r0/Python3.11候选环境，先测torch2.7.1/cu128+BNB0.46.1。固定直接依赖见requirements/r0-compat-candidate.txt；尚无实机CUDA/NF4通过或完整模型结果。
 
 `repro/` 新增硬件检查、OPI最小加载入口、debug接线、官方评分与审计分离、不可覆盖的attempt存档。它仍不是正式实验runner，尚缺真实模型验证及完整定位坐标/内部轨迹。离线测试：`python -m pytest tests -q --basetemp .pytest-local-UNIQUE -p no:cacheprovider`，UNIQUE应替换为新的目录名，避免覆盖上次测试目录。
 

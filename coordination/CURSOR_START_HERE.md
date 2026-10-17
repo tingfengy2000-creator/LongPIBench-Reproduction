@@ -1,5 +1,7 @@
 # 给真实5090设备本地Cursor的当前指令
 
+**当前执行任务：R0-5090-004。** 用户已在真实5090的Ubuntu中确认Conda及下载入口。请读 `coordination/tasks/R0-5090-004.md`，仅创建新longpibench-r0/Python3.11环境，按固定版本安装并执行CUDA/NF4合成检查；通过后再装requirements中的完整候选。现有base/gmtp-compat/llmguard-paper1保持原状。主要代码与依赖修复仍由协调端负责，不启动正式实验。
+
 **最新入口：**WSL内部已能看到真实5090，系统python3=3.12.3。交互Ubuntu出现(base)，当前按 `coordination/WSL_SHELL_AND_CONDA.md` 查询Linux侧Conda、当前Python/pip及公开下载入口。Ubuntu中直接运行Linux命令，不加Windows的wsl前缀，不安装apt提示的同名wsl包。先保留检查输出，由协调端给环境安装命令。
 
 **最新进展：**Windows工具盘点已由用户手动回传。真实电脑已有Ubuntu-24.04 WSL2；当前按 `coordination/WSL_5090_NEXT.md` 在该电脑PowerShell启动现有发行版，确认WSL内部GPU、Python与Git，再由协调端给环境安装命令。下面的Windows盘点提示保留为历史，不需重复执行。

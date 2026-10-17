@@ -1,0 +1,14 @@
+# Candidate compatibility stack, NOT the original paper environment or a full lock.
+# Install torch==2.7.1 from the official cu128 index BEFORE this file.
+torch==2.7.1+cu128
+bitsandbytes==0.46.1
+transformers==4.51.3
+peft==0.15.2
+accelerate==1.6.0
+huggingface-hub==0.30.2
+tokenizers==0.21.1
+numpy==2.2.6
+safetensors==0.5.3
+sentencepiece==0.2.0
+spacy==3.8.7
+pytest==8.3.5

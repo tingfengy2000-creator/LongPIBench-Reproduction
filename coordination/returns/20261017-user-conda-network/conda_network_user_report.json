@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "received_date": "2026-10-17",
+  "evidence_kind": "USER_PASTED_WSL_TERMINAL_OUTPUT",
+  "direct_execution_by_coordinator": false,
+  "hostname_from_prompt": "DESKTOP-B5PNBNC",
+  "linux_user": "tingfeng",
+  "conda_version": "26.3.2",
+  "conda_base": "/home/tingfeng/miniforge3",
+  "existing_environments": ["base", "gmtp-compat", "llmguard-paper1"],
+  "active_environment": "base",
+  "interactive_python_path": "/home/tingfeng/miniforge3/bin/python",
+  "interactive_python_version": "3.13.13",
+  "interactive_pip_version": "26.1.2",
+  "connectivity": {
+    "https://pypi.org/simple/": {"reported_status": 200, "protocol": "HTTP/2", "method": "HEAD"},
+    "https://download.pytorch.org/whl/cu128/": {"reported_status": 200, "protocol": "HTTP/2", "method": "HEAD"}
+  },
+  "new_environment_name": "longpibench-r0",
+  "new_environment_created": false,
+  "cuda_tensor_verified": false,
+  "nf4_verified": false,
+  "model_load_verified": false,
+  "formal_inference_executed": false,
+  "notes": "HTTP HEAD successes do not prove all package/model download hosts or Conda channels work. No proxy changes required by the evidence so far."
+}
