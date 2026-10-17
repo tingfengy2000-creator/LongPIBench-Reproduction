@@ -1,0 +1,22 @@
+# R0-5090-005：数据通过，Llama未认证访问受阻
+
+证据类型：USER_PASTED_WSL_TERMINAL_OUTPUT，来自用户附件完整转录，协调端未在5090执行。原文保存为terminal_transcription.txt；SHA256为262532173f6d457abbc57bcffd9818f602b85cf316d7db850e391be5e80629c0。model_access_from_terminal.json是从终端打印中提取的JSON（含return_path字段），不是直接取回的远端文件。原始运行ID为20261017T125418Z-model-access-bdec4d14，远端文件仍在其独立return目录。
+
+## 已完成
+
+- 真实主机DESKTOP-B5PNBNC，machine-5090从9512832快进到316a0a89ed11cae63805f183f3f7fa4f7987515e。
+- 环境清单已在远端runs/r0-env-20261017T125349Z-rHMVEx保存，符合任务004的本地保存要求。文件本体尚未传回，协调端未审阅完整传递依赖。
+- conda-explicit.txt SHA256：26b18347c2b9781e57b40880e4c4af7a2e6d4e323becbabe1cbcf03c7fd1e8e0。
+- pip-freeze.txt SHA256：699c2e9c58057def158ae6fe87f5d9b94f987f23d81e56238a92a92a8cf557a7。
+- coordinator-code-commit.txt SHA256：807a3e7218f7c96835dae68274bb0a62861dce648f826775a1282dac7d4054ca。协调端核对其与该commit字符串加LF的预期字节哈希一致，不等于直接读取远端文件。
+- 两上游固定commit恢复通过；Email+Resume原始200/200 SHA256验证通过。
+- Mistral和GPT-2固定config元数据访问通过，resolved revision与锁定值一致。
+- 仓库分区磁盘可用932559474688字节，约868.51GiB；尚非完整下载容量规划。
+
+## 阻碍与边界
+
+Llama固定config返回GatedRepoError/HTTP401，local_hf_credential_present=false。此证据说明当前进程未使用HF凭据；账号是否已申请或获准访问unknown，不据此推断没有授权。整体BLOCKED_CONFIG_ACCESS及脚本退出2符合设计，不是CUDA或数据故障。
+
+任务004依据累积用户回执接受为COMPLETED_USER_REPORTED：环境/GPU合成/最小OPI导入及清单本地保存要求已满足。不是R0整体完成。任务005仍BLOCKED，需用已获该模型访问权限的账号在5090本地交互登录并重跑同一预检；每次产生新运行ID，旧回执不覆盖。
+
+目前没有完整模型权重下载、实际模型加载、正式样本推理或ASR。DataSentinel checkpoint及正式追踪接线仍未解决。

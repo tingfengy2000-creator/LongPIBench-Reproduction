@@ -1,0 +1,49 @@
+{
+  "return_path": "coordination/returns/20261017T125418Z-model-access-bdec4d14/model_access.json",
+  "schema_version": 1,
+  "task_id": "R0-5090-005",
+  "run_id": "20261017T125418Z-model-access-bdec4d14",
+  "hostname": "DESKTOP-B5PNBNC",
+  "expected_host": "DESKTOP-B5PNBNC",
+  "timestamp_utc": "2026-10-17T12:54:18.207398+00:00",
+  "phase": "R0_CONFIG_ACCESS_ONLY",
+  "weight_download_executed": false,
+  "model_load_verified": false,
+  "formal_inference_executed": false,
+  "disk_free_bytes_at_repo": 932559474688,
+  "scope": "Config HEAD access only; not weight access, download speed or full R0 acceptance",
+  "git_head": "316a0a89ed11cae63805f183f3f7fa4f7987515e",
+  "local_hf_credential_present": false,
+  "results": [
+    {
+      "role": "target",
+      "repo_id": "meta-llama/Llama-3.1-8B-Instruct",
+      "revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+      "filename": "config.json",
+      "status": "ACCESS_OR_NETWORK_ERROR",
+      "error_type": "GatedRepoError",
+      "http_status": 401
+    },
+    {
+      "role": "detector_base",
+      "repo_id": "mistralai/Mistral-7B-v0.1",
+      "revision": "27d67f1b5f57dc0953326b2601d68371d40ea8da",
+      "filename": "config.json",
+      "resolved_revision": "27d67f1b5f57dc0953326b2601d68371d40ea8da",
+      "size_bytes": 571,
+      "etag": "f4989f072a7f517d01d479eb1685c6e50e014f88",
+      "status": "PASS"
+    },
+    {
+      "role": "helper",
+      "repo_id": "openai-community/gpt2",
+      "revision": "607a30d783dfa663caf39e06633721c8d4cfcd7e",
+      "filename": "config.json",
+      "resolved_revision": "607a30d783dfa663caf39e06633721c8d4cfcd7e",
+      "size_bytes": 665,
+      "etag": "10c66461e4c109db5a2196bff4bb59be30396ed8",
+      "status": "PASS"
+    }
+  ],
+  "status": "BLOCKED_CONFIG_ACCESS"
+}
