@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "received_date": "2026-10-17",
+  "evidence_kind": "USER_PASTED_WINDOWS_TERMINAL_OUTPUT",
+  "direct_execution_by_coordinator": false,
+  "associated_host_from_prior_user_report": "DESKTOP-B5PNBNC",
+  "git_path": "C:\\Program Files\\Git\\cmd\\git.exe",
+  "windows_python_path": "C:\\Python314\\python.exe",
+  "py_launcher_path": "C:\\windows\\py.exe",
+  "py_launcher_reported_versions": ["3.14"],
+  "conda_found_on_reported_path": false,
+  "wsl_path": "C:\\windows\\system32\\wsl.exe",
+  "wsl_distributions_reported": [{"name": "Ubuntu-24.04", "state": "Stopped", "version": 2, "default": true}],
+  "selected_next_route": "Inspect existing Ubuntu-24.04 WSL2, then isolate Python dependencies there",
+  "wsl_gpu_verified": false,
+  "wsl_python_verified": false,
+  "cuda_nf4_verified": false,
+  "formal_inference_executed": false,
+  "notes": "No claim that Conda or other Python environments are absent from the entire computer. Windows Python remains unchanged."
+}

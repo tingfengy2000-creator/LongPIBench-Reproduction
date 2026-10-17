@@ -1,5 +1,7 @@
 # 给真实5090设备本地Cursor的当前指令
 
+**最新进展：**Windows工具盘点已由用户手动回传。真实电脑已有Ubuntu-24.04 WSL2；当前按 `coordination/WSL_5090_NEXT.md` 在该电脑PowerShell启动现有发行版，确认WSL内部GPU、Python与Git，再由协调端给环境安装命令。下面的Windows盘点提示保留为历史，不需重复执行。
+
 **当前任务：R0-5090-003。** 用户已从DESKTOP-B5PNBNC回传RTX5090/32607MiB/610.88。请在该电脑桌面的本地Cursor打开本地仓库，在machine-5090保护修改、fetch并合并origin/main，然后阅读 `coordination/tasks/R0-5090-003.md`，运行 `powershell -NoProfile -File .\scripts\windows_host_inventory.ps1`。只盘点现有环境并回传JSON，不安装依赖或下载模型，主要代码和方案仍由协调端负责。
 
 以下为此前执行位置核验的历史说明，任务003优先：
