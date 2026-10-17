@@ -7,7 +7,8 @@ import pytest
 from scripts import offline_hf_bundle, verify_aux_downloads
 
 
-def test_hf_offline_verification_needs_no_hub_or_credentials(tmp_path, monkeypatch):
+@pytest.mark.parametrize('coordination_report', [False, True])
+def test_hf_offline_verification_needs_no_hub_or_credentials(tmp_path, monkeypatch, coordination_report):
     config = tmp_path / 'configs'
     config.mkdir()
     data = b'{}\n'
@@ -29,9 +30,18 @@ def test_hf_offline_verification_needs_no_hub_or_credentials(tmp_path, monkeypat
         return original_import(name, *args, **kwargs)
     monkeypatch.setattr(builtins, '__import__', guard)
     monkeypatch.setattr(offline_hf_bundle, 'ROOT', tmp_path)
-    monkeypatch.setattr(sys, 'argv', ['offline_hf_bundle.py', '--roles', 'helper', '--bundle-dir', str(bundle)])
+    argv = ['offline_hf_bundle.py', '--roles', 'helper', '--bundle-dir', str(bundle)]
+    if coordination_report:
+        argv += ['--task-id', 'R0-5090-008', '--report-root', str(tmp_path / 'coordination/returns')]
+    monkeypatch.setattr(sys, 'argv', argv)
     assert offline_hf_bundle.main() == 0
-    result = json.loads(next(bundle.glob('*offline-hf-*.json')).read_text(encoding='utf-8'))
+    report_path = (next((tmp_path / 'coordination/returns').rglob('hf_files.json'))
+                   if coordination_report else next(bundle.glob('*offline-hf-*.json')))
+    result = json.loads(report_path.read_text(encoding='utf-8'))
+    if coordination_report:
+        assert result['task_id'] == 'R0-5090-008'
+        assert 'git_head' in result
+        assert report_path.parent.name == result['run_id']
     assert result['mode'] == 'offline_verify_only'
     assert result['status'] == 'FILES_VERIFIED_NOT_MODEL_LOADED'
     assert result['formal_inference_executed'] is False

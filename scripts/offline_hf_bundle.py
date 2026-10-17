@@ -1,13 +1,15 @@
 """Download or offline-verify the three original HF models for file transfer.
 
-Download must run under a collaborator's own legitimate access and applicable
-redistribution terms. Does not change any experiment configuration or load models.
+Download uses the operator's own legitimate access. File transfer additionally
+requires applicable redistribution terms. No experiment changes or model loading.
 """
 import argparse
 from datetime import datetime, timezone
 import hashlib
 import json
 from pathlib import Path, PurePosixPath
+import re
+import subprocess
 import sys
 import uuid
 
@@ -22,7 +24,11 @@ def main():
     parser.add_argument('--roles', nargs='+', choices=['target', 'detector_base', 'helper'],
                         default=['target', 'detector_base', 'helper'])
     parser.add_argument('--download', action='store_true', help='Otherwise verify offline only')
+    parser.add_argument('--task-id', help='Optional coordination task ID')
+    parser.add_argument('--report-root', type=Path, help='Save a unique run folder here instead of the bundle root')
     args = parser.parse_args()
+    if args.task_id and not re.fullmatch(r'[A-Za-z0-9_-]{1,60}', args.task_id):
+        parser.error('Invalid task ID')
     manifest_path = ROOT / 'configs/offline_transfer_manifest.json'
     manifest = json.loads(manifest_path.read_text(encoding='utf-8'))
     lock = json.loads((ROOT / 'configs/upstream_lock.json').read_text(encoding='utf-8'))
@@ -48,6 +54,11 @@ def main():
               'mode': 'download_and_verify' if args.download else 'offline_verify_only',
               'transfer_manifest_sha256': hashlib.sha256(manifest_path.read_bytes()).hexdigest(),
               'model_load_verified': False, 'formal_inference_executed': False, 'results': []}
+    if args.task_id:
+        report['task_id'] = args.task_id
+        head = subprocess.run(['git', '-C', str(ROOT), 'rev-parse', 'HEAD'],
+                              capture_output=True, text=True, timeout=15)
+        report['git_head'] = head.stdout.strip() if head.returncode == 0 else None
     for role in roles:
         model = models[role]
         folder = root / model['bundle_subdir']
@@ -80,7 +91,12 @@ def main():
     report['status'] = ('FILES_VERIFIED_NOT_MODEL_LOADED'
                         if all(row['status'] == 'FILES_VERIFIED_NOT_MODEL_LOADED' for row in report['results'])
                         else 'PARTIAL_OR_FAILED')
-    output = root / (report['run_id'] + '.json')
+    if args.report_root:
+        report_folder = args.report_root.resolve() / report['run_id']
+        report_folder.mkdir(parents=True, exist_ok=False)
+        output = report_folder / 'hf_files.json'
+    else:
+        output = root / (report['run_id'] + '.json')
     with output.open('x', encoding='utf-8') as stream:
         json.dump(report, stream, ensure_ascii=False, indent=2, allow_nan=False)
         stream.write('\n')

@@ -4,6 +4,8 @@ LongPIBench / PromptLocate 基线复现与逐案例失败归因。本仓库用�
 
 **当前阶段：R0 审计与5090环境准备。尚未运行正式模型实验，没有本地 ASR。**
 
+当前进展（2026-10-18，Asia/Tokyo）：新账号固定config访问全部通过，005在该范围完成；006的Mistral下载保持运行。[008](coordination/tasks/R0-5090-008.md)排队直接下载固定Llama，取消后续网盘交接；007非HF资源仍有效。权重文件完整性和实际GPU模型加载尚待验收，以下拒绝/离线分工为历史。
+
 当前下载分工：[HF三模型离线交接清单](coordination/OFFLINE_MODEL_HANDOFF.md)供具有合法访问及转交权限的协作者准备；[任务007](coordination/tasks/R0-5090-007.md)由5090本机Cursor获取非HF适配器/spaCy文件。已有006文件复用。原Llama目标保持不变，Qwen仅为未选择的候选。
 
 最新账户状态：用户明确确认Llama申请Rejected，原目标条件维持BLOCKED；006公开资源准备继续。可审查的[独立目标候选方案](audit/09_llama_access_rejected_and_target_options.md)已准备，尚未切换目标或启动新实验。以下“审核中”是历史状态。

@@ -1,5 +1,7 @@
 # Llama访问被拒绝后的研究路线选项
 
+最新状态（2026-10-18，Asia/Tokyo）：用户在5090本地更换账号，新运行20261017T152132Z-model-access-98dd33a5已通过三个固定config访问。当前路线恢复原模型直接HF下载，006持续、008排队准备Llama，不再安排网盘或切换Qwen。旧账号拒绝与此前方案作为历史保留；新账号的config PASS仍不等于权重下载/GPU加载通过。
+
 日期：2026-10-17。用户明确确认页面Rejected；原始账户状态更新在coordination/returns/20261017-user-llama-access-rejected/REPORT.md。没有新模型推理或研究结果。
 
 最新用户选择：先找具有合法访问和转交权限的协作者准备HF原模型，非HF资源由我们自行下载。当前优先保留原Llama目标，未选择Qwen；精确离线交接清单为coordination/OFFLINE_MODEL_HANDOFF.md，文件校验不等于HF账户获批或许可资格认定。

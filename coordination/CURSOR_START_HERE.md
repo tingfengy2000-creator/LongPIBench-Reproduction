@@ -1,5 +1,7 @@
 # 给真实5090设备本地Cursor的当前指令
 
+**当前队列：006保持运行，008排队直接下载Llama。** 新账号的三个固定config访问已通过并集成7cf3b28；不再安排网盘，不更换目标。不要停止Mistral或删除GPT-2缓存。006自然结束后按coordination/tasks/R0-5090-008.md下载/校验target的13个文件，不重下其他role；无需再次等协调端批准。007非HF资源任务保持有效，不自动重复已运行任务。此阶段不加载模型或启动正式实验。
+
 **当前分工更新：HF三模型走合法离线交接，执行端做007非HF资源准备。** 见coordination/OFFLINE_MODEL_HANDOFF.md。保留原Llama目标和Rejected记录，不执行Qwen候选；006已有HF文件复用。按coordination/tasks/R0-5090-007.md下载两个官方Drive包和spaCy wheel，只验证文件，不安装/加载模型或运行正式实验。
 
 **Llama账户状态已变为Rejected。** 任务005停止同一请求重试，历史登录/403回执保留；任务006公开GPT-2/Mistral准备继续。不要自行换目标或扩大运行范围。协调端已整理独立目标候选方案audit/09_llama_access_rejected_and_target_options.md，尚未建立新目标执行任务。
