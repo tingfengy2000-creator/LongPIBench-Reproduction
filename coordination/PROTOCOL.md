@@ -36,6 +36,8 @@ git merge origin/main
 - 不提交token、API key、.env、HF/GitHub凭据。认证在各设备本地完成，不在聊天或回执中发送令牌。
 - 本仓库为private；远端需使用有权限的GitHub账号登录，才能clone与push。
 
+2026-10-17后续用户自述为下载项目已临时公开仓库，真实WSL已成功clone并导入固定OPI。上述private是建立仓库时的历史状态；当前可见性以GitHub实际设置为准。公开只解决读取，不证明执行端已有push权限，也不影响HF模型授权。协调端不擅自更改可见性。
+
 ## 运行状态
 
 `NOT_STARTED`、`RUNNING`、`COMPLETED`、`BLOCKED`、`FAILED`需绑定具体任务；研究运行另区分debug/formal/invalid。CUDA检查成功不等于R0全部验收成功，更不等于R1/R2完成。

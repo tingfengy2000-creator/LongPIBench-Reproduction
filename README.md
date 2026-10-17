@@ -4,6 +4,8 @@ LongPIBench / PromptLocate 基线复现与逐案例失败归因。本仓库用�
 
 **当前阶段：R0 审计与5090环境准备。尚未运行正式模型实验，没有本地 ASR。**
 
+最新进展：用户已回传真实5090上CUDA/BF16/NF4、完整核心依赖及固定OPI最小导入通过。当前执行 [R0-5090-005](coordination/tasks/R0-5090-005.md)：保存环境清单、恢复200条固定数据、检查三个固定模型config访问。真实模型加载及正式运行仍待验收；下文较早环境状态保留作历史。
+
 - [完整 R0 审计入口](audit/README.md)
 - [给5090设备Cursor的第一条命令](coordination/CURSOR_START_HERE.md)
 - [当前入口：5090电脑Windows PowerShell身份检查](coordination/WINDOWS_5090_CONNECT.md)
