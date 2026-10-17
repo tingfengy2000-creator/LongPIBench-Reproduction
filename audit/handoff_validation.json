@@ -1,0 +1,36 @@
+{
+  "source_hashes_verified": 205,
+  "source_manifest_original_download_errors_preserved": [
+    {
+      "source": [
+        "longpibench.html",
+        "https://arxiv.org/html/2608.28411v1"
+      ],
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)>"
+    },
+    {
+      "source": [
+        "promptlocate.pdf",
+        "https://arxiv.org/pdf/2510.12252"
+      ],
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)>"
+    },
+    {
+      "source": [
+        "promptlocate.html",
+        "https://arxiv.org/html/2510.12252"
+      ],
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)>"
+    },
+    {
+      "source": [
+        "longpibench.pdf",
+        "https://arxiv.org/pdf/2608.28411v1"
+      ],
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)>"
+    }
+  ],
+  "prepared_input_rows": 400,
+  "link_and_hash_errors": [],
+  "scope": "Offline integrity and handoff links, not model inference"
+}

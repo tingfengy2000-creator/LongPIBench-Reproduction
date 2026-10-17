@@ -1,0 +1,11 @@
+* text=auto
+*.md text eol=lf
+*.py text eol=lf
+*.json text eol=lf
+*.jsonl text eol=lf
+*.ps1 text eol=lf
+*.txt -text
+*.pdf binary
+*.png binary
+audit/evidence/** -text -whitespace
+audit/prepared_inputs.jsonl -text -whitespace

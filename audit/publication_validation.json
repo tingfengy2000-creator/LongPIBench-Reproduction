@@ -1,0 +1,6 @@
+{
+  "staged_files_checked": 50,
+  "raw_evidence_bytes_preserved": true,
+  "errors": [],
+  "scope": "Staged bytes, simple credential-pattern screening and file sizes; not a comprehensive secret audit"
+}

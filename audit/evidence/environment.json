@@ -1,0 +1,35 @@
+{
+  "python": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:09:58) [MSC v.1929 64 bit (AMD64)]",
+  "executable": "D:\\anocanda\\python.exe",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": {
+    "torch": null,
+    "transformers": null,
+    "peft": null,
+    "bitsandbytes": null,
+    "huggingface-hub": null,
+    "spacy": null,
+    "pytest": "8.4.2",
+    "numpy": "2.3.5"
+  },
+  "gpu": {
+    "args": [
+      "nvidia-smi",
+      "--query-gpu=name,memory.total,memory.used,driver_version",
+      "--format=csv"
+    ],
+    "returncode": 0,
+    "stdout": "name, memory.total [MiB], memory.used [MiB], driver_version\r\nNVIDIA GeForce RTX 5060, 8151 MiB, 2431 MiB, 616.92\r\n",
+    "stderr": ""
+  },
+  "wsl": {
+    "args": [
+      "wsl",
+      "--list",
+      "--verbose"
+    ],
+    "returncode": 4294967295,
+    "stdout": "�b�~���\u00020 \u0000\r\u0000\n\u0000\u0019���N\u0001x:\u0000 \u0000W\u0000s\u0000l\u0000/\u0000E\u0000_\u0000A\u0000C\u0000C\u0000E\u0000S\u0000S\u0000D\u0000E\u0000N\u0000I\u0000E\u0000D\u0000\r\u0000\n\u0000",
+    "stderr": ""
+  }
+}

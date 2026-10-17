@@ -1,0 +1,104 @@
+{
+  "LongPIBench": {
+    "head": {
+      "args": [
+        "git",
+        "-C",
+        "E:\\LongPIBench\\upstream\\LongPIBench",
+        "rev-parse",
+        "HEAD"
+      ],
+      "returncode": 0,
+      "stdout": "c7b80114ae56f65fb8019ec82afdb3df91e4ed65\n",
+      "stderr": ""
+    },
+    "status": {
+      "args": [
+        "git",
+        "-C",
+        "E:\\LongPIBench\\upstream\\LongPIBench",
+        "status",
+        "--porcelain"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "remote": {
+      "args": [
+        "git",
+        "-C",
+        "E:\\LongPIBench\\upstream\\LongPIBench",
+        "remote",
+        "-v"
+      ],
+      "returncode": 0,
+      "stdout": "origin\thttps://github.com/liu00222/LongPIBench.git (fetch)\norigin\thttps://github.com/liu00222/LongPIBench.git (push)\n",
+      "stderr": ""
+    },
+    "history": {
+      "args": [
+        "git",
+        "-C",
+        "E:\\LongPIBench\\upstream\\LongPIBench",
+        "log",
+        "-5",
+        "--format=%H %aI %s"
+      ],
+      "returncode": 0,
+      "stdout": "c7b80114ae56f65fb8019ec82afdb3df91e4ed65 2026-09-22T13:46:17-04:00 Update DATA_CARD.md\n76c2232db04e3c9b850e3295e17ad9bb68ee77ea 2026-09-20T12:55:50-04:00 Fix LongPIBench citation title\n9ebadb7d6efc95dd3c63b3bc057fae766239a909 2026-09-20T12:54:46-04:00 Add LongPIBench citation\ndd61dad6f03638eda7b32c131d0547ca75df9da6 2026-09-20T12:51:48-04:00 Initial public release\n",
+      "stderr": ""
+    }
+  },
+  "Open-Prompt-Injection": {
+    "head": {
+      "args": [
+        "git",
+        "-C",
+        "E:\\LongPIBench\\upstream\\Open-Prompt-Injection",
+        "rev-parse",
+        "HEAD"
+      ],
+      "returncode": 0,
+      "stdout": "fbed5cca347488f88363790ae3ae97c56116da6a\n",
+      "stderr": ""
+    },
+    "status": {
+      "args": [
+        "git",
+        "-C",
+        "E:\\LongPIBench\\upstream\\Open-Prompt-Injection",
+        "status",
+        "--porcelain"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "remote": {
+      "args": [
+        "git",
+        "-C",
+        "E:\\LongPIBench\\upstream\\Open-Prompt-Injection",
+        "remote",
+        "-v"
+      ],
+      "returncode": 0,
+      "stdout": "origin\thttps://github.com/liu00222/Open-Prompt-Injection.git (fetch)\norigin\thttps://github.com/liu00222/Open-Prompt-Injection.git (push)\n",
+      "stderr": ""
+    },
+    "history": {
+      "args": [
+        "git",
+        "-C",
+        "E:\\LongPIBench\\upstream\\Open-Prompt-Injection",
+        "log",
+        "-5",
+        "--format=%H %aI %s"
+      ],
+      "returncode": 0,
+      "stdout": "fbed5cca347488f88363790ae3ae97c56116da6a 2026-09-27T10:35:14-04:00 Merge pull request #29 from liu00222/codebase-enhancements\n801877cf61b551b101001c5bf040c830d5bf502b 2026-09-26T11:35:57-04:00 Remove model-specific README sections\n65fc31e426093b16473ef1ce4adfcac7eaab5a70 2026-09-26T11:32:48-04:00 Add Gemma 4 model support\nbc4b90e00a7e7d22de53347e08b7a4d809c0eaaa 2026-09-26T11:27:03-04:00 Add resumable experiments and Qwen support\n7c3809bd578541f2bb6fb13e06538d75fef1e6dd 2026-09-25T11:23:04-04:00 Merge pull request #28 from liu00222/codebase-enhancements\n",
+      "stderr": ""
+    }
+  }
+}

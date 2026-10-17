@@ -1,0 +1,58 @@
+"""Cross-platform, no-install preflight with append-only Git return artifacts.
+
+Does not read credentials, download weights or execute benchmark inference.
+"""
+import argparse
+from datetime import datetime, timezone
+import importlib.metadata
+import json
+from pathlib import Path
+import platform
+import re
+import shutil
+import subprocess
+import sys
+import uuid
+
+ROOT = Path(__file__).resolve().parents[1]
+
+def run(args, timeout=30):
+    try:
+        p = subprocess.run(args,capture_output=True,timeout=timeout)
+        return {'command':args,'returncode':p.returncode,'stdout':p.stdout.decode('utf-8',errors='replace'),'stderr':p.stderr.decode('utf-8',errors='replace')}
+    except Exception as e:
+        return {'command':args,'error':type(e).__name__+': '+str(e)}
+
+def main():
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--label',default='machine-5090')
+    args=parser.parse_args()
+    if not re.fullmatch(r'[a-zA-Z0-9_-]{1,40}',args.label):
+        parser.error('label must be 1..40 ASCII letters, digits, hyphen or underscore')
+    run_id=datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')+'-'+args.label+'-'+uuid.uuid4().hex[:8]
+    folder=ROOT/'coordination/returns'/run_id
+    folder.mkdir(parents=True,exist_ok=False)
+    names=['torch','transformers','peft','bitsandbytes','accelerate','huggingface-hub','spacy','datasets','openai','fschat','google-generativeai']
+    versions={}
+    for name in names:
+        try: versions[name]=importlib.metadata.version(name)
+        except importlib.metadata.PackageNotFoundError: versions[name]=None
+    gpu=run(['nvidia-smi','--query-gpu=name,memory.total,memory.free,driver_version','--format=csv'])
+    torch_code='''import json,torch
+r={'version':torch.__version__,'cuda_build':torch.version.cuda,'cuda_available':torch.cuda.is_available(),'architectures':torch.cuda.get_arch_list()}
+if torch.cuda.is_available():
+ r['gpu']=torch.cuda.get_device_name(0)
+ r['capability']=list(torch.cuda.get_device_capability(0))
+ x=torch.ones((64,64),device='cuda',dtype=torch.bfloat16)
+ y=x@x
+ torch.cuda.synchronize()
+ r['bf16_matmul_ok']=bool(y[0,0].item()==64)
+print(json.dumps(r))
+'''
+    torch_probe=run([sys.executable,'-c',torch_code],timeout=60) if versions['torch'] else {'status':'NOT_INSTALLED'}
+    report={'schema_version':1,'task_id':'R0-5090-001','run_id':run_id,'label':args.label,'timestamp_utc':datetime.now(timezone.utc).isoformat(),'phase':'R0_PREFLIGHT_ONLY','formal_inference_executed':False,'python':sys.version,'python_executable':sys.executable,'platform':platform.platform(),'disk_free_bytes':shutil.disk_usage(ROOT).free,'packages':versions,'gpu':gpu,'torch_probe':torch_probe,'git_head':run(['git','-C',str(ROOT),'rev-parse','HEAD']),'git_branch':run(['git','-C',str(ROOT),'branch','--show-current']),'git_status_before_return':run(['git','-C',str(ROOT),'status','--short']),'upstream_heads':{name:run(['git','-C',str(ROOT/'upstream'/name),'rev-parse','HEAD']) for name in ['LongPIBench','Open-Prompt-Injection']},'followups':['Verify actual GPU is RTX 5090 with ~32GB','If torch is installed, inspect CUDA BF16 smoke result','NF4/model loading and authorized HF access remain separate checks','Do not infer formal readiness from this report alone']}
+    path=folder/'preflight.json'
+    path.write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
+    print(json.dumps({'return_path':str(path.relative_to(ROOT)),'run_id':run_id,'gpu':gpu,'torch_probe':torch_probe},ensure_ascii=False,indent=2))
+
+if __name__=='__main__': main()

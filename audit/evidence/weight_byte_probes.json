@@ -1,0 +1,24 @@
+[
+  {
+    "name": "datasentinel",
+    "url": "https://drive.usercontent.google.com/download?id=1B0w5r5udH3I_aiZL0_-2a8WzBAqjuLsn&export=download&confirm=t",
+    "status": 206,
+    "content_type": "application/octet-stream",
+    "content_range": "bytes 0-4095/1401845934",
+    "content_disposition": "attachment; filename=\"DataSentinel_Models.zip\"",
+    "bytes_probed": 4096,
+    "first_bytes_hex": "504B03041400000000000EBE945A0000",
+    "note": "Bounded 4KB probe only. ZIP contents and adapter compatibility not verified."
+  },
+  {
+    "name": "promptlocate_oracle",
+    "url": "https://drive.usercontent.google.com/download?id=1CEaW4M6Y2_w8ca3-76SnoaNgio8x2eQB&export=download&confirm=t",
+    "status": 206,
+    "content_type": "application/octet-stream",
+    "content_range": "bytes 0-4095/701657336",
+    "content_disposition": "attachment; filename=\"promptlocate_oracle.zip\"",
+    "bytes_probed": 4096,
+    "first_bytes_hex": "504B03040A0000000000B90B745A0000",
+    "note": "Bounded 4KB probe only. ZIP contents and adapter compatibility not verified."
+  }
+]

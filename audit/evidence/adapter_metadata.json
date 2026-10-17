@@ -1,0 +1,367 @@
+[
+  {
+    "name": "datasentinel",
+    "url": "https://drive.usercontent.google.com/download?id=1B0w5r5udH3I_aiZL0_-2a8WzBAqjuLsn&export=download&confirm=t",
+    "entries": [
+      {
+        "name": "detector_large/",
+        "bytes": 0,
+        "compressed_bytes": 0
+      },
+      {
+        "name": "detector_large/.DS_Store",
+        "bytes": 6148,
+        "compressed_bytes": 380
+      },
+      {
+        "name": "__MACOSX/detector_large/._.DS_Store",
+        "bytes": 120,
+        "compressed_bytes": 53
+      },
+      {
+        "name": "detector_large/checkpoint-5000/",
+        "bytes": 0,
+        "compressed_bytes": 0
+      },
+      {
+        "name": "detector_large/checkpoint-5000/adapter_model.safetensors",
+        "bytes": 864513616,
+        "compressed_bytes": 559962811
+      },
+      {
+        "name": "__MACOSX/detector_large/checkpoint-5000/._adapter_model.safetensors",
+        "bytes": 738,
+        "compressed_bytes": 343
+      },
+      {
+        "name": "detector_large/checkpoint-5000/rng_state.pth",
+        "bytes": 14244,
+        "compressed_bytes": 10669
+      },
+      {
+        "name": "__MACOSX/detector_large/checkpoint-5000/._rng_state.pth",
+        "bytes": 440,
+        "compressed_bytes": 305
+      },
+      {
+        "name": "detector_large/checkpoint-5000/optimizer.pt",
+        "bytes": 170951516,
+        "compressed_bytes": 140229833
+      },
+      {
+        "name": "__MACOSX/detector_large/checkpoint-5000/._optimizer.pt",
+        "bytes": 725,
+        "compressed_bytes": 335
+      },
+      {
+        "name": "detector_large/checkpoint-5000/scheduler.pt",
+        "bytes": 1064,
+        "compressed_bytes": 462
+      },
+      {
+        "name": "__MACOSX/detector_large/checkpoint-5000/._scheduler.pt",
+        "bytes": 439,
+        "compressed_bytes": 303
+      },
+      {
+        "name": "detector_large/checkpoint-5000/README.md",
+        "bytes": 5099,
+        "compressed_bytes": 1746
+      },
+      {
+        "name": "__MACOSX/detector_large/checkpoint-5000/._README.md",
+        "bytes": 436,
+        "compressed_bytes": 303
+      },
+      {
+        "name": "detector_large/checkpoint-5000/training_args.bin",
+        "bytes": 5048,
+        "compressed_bytes": 2447
+      },
+      {
+        "name": "__MACOSX/detector_large/checkpoint-5000/._training_args.bin",
+        "bytes": 444,
+        "compressed_bytes": 309
+      },
+      {
+        "name": "detector_large/checkpoint-5000/adapter_config.json",
+        "bytes": 743,
+        "compressed_bytes": 342
+      },
+      {
+        "name": "__MACOSX/detector_large/checkpoint-5000/._adapter_config.json",
+        "bytes": 446,
+        "compressed_bytes": 308
+      },
+      {
+        "name": "detector_large/checkpoint-5000/trainer_state.json",
+        "bytes": 4918,
+        "compressed_bytes": 1212
+      },
+      {
+        "name": "__MACOSX/detector_large/checkpoint-5000/._trainer_state.json",
+        "bytes": 445,
+        "compressed_bytes": 309
+      },
+      {
+        "name": "detector_small/",
+        "bytes": 0,
+        "compressed_bytes": 0
+      },
+      {
+        "name": "detector_small/checkpoint-500/",
+        "bytes": 0,
+        "compressed_bytes": 0
+      },
+      {
+        "name": "detector_small/checkpoint-500/adapter_model.safetensors",
+        "bytes": 864513616,
+        "compressed_bytes": 560022962
+      },
+      {
+        "name": "__MACOSX/detector_small/checkpoint-500/._adapter_model.safetensors",
+        "bytes": 794,
+        "compressed_bytes": 387
+      },
+      {
+        "name": "detector_small/checkpoint-500/rng_state.pth",
+        "bytes": 14244,
+        "compressed_bytes": 10669
+      },
+      {
+        "name": "__MACOSX/detector_small/checkpoint-500/._rng_state.pth",
+        "bytes": 496,
+        "compressed_bytes": 352
+      },
+      {
+        "name": "detector_small/checkpoint-500/optimizer.pt",
+        "bytes": 170951516,
+        "compressed_bytes": 141581207
+      },
+      {
+        "name": "__MACOSX/detector_small/checkpoint-500/._optimizer.pt",
+        "bytes": 781,
+        "compressed_bytes": 381
+      },
+      {
+        "name": "detector_small/checkpoint-500/scheduler.pt",
+        "bytes": 1064,
+        "compressed_bytes": 462
+      },
+      {
+        "name": "__MACOSX/detector_small/checkpoint-500/._scheduler.pt",
+        "bytes": 495,
+        "compressed_bytes": 349
+      },
+      {
+        "name": "detector_small/checkpoint-500/README.md",
+        "bytes": 5104,
+        "compressed_bytes": 1750
+      },
+      {
+        "name": "__MACOSX/detector_small/checkpoint-500/._README.md",
+        "bytes": 492,
+        "compressed_bytes": 350
+      },
+      {
+        "name": "detector_small/checkpoint-500/training_args.bin",
+        "bytes": 5112,
+        "compressed_bytes": 2481
+      },
+      {
+        "name": "__MACOSX/detector_small/checkpoint-500/._training_args.bin",
+        "bytes": 500,
+        "compressed_bytes": 353
+      },
+      {
+        "name": "detector_small/checkpoint-500/adapter_config.json",
+        "bytes": 743,
+        "compressed_bytes": 342
+      },
+      {
+        "name": "__MACOSX/detector_small/checkpoint-500/._adapter_config.json",
+        "bytes": 502,
+        "compressed_bytes": 353
+      },
+      {
+        "name": "detector_small/checkpoint-500/trainer_state.json",
+        "bytes": 4878,
+        "compressed_bytes": 1224
+      },
+      {
+        "name": "__MACOSX/detector_small/checkpoint-500/._trainer_state.json",
+        "bytes": 501,
+        "compressed_bytes": 352
+      }
+    ],
+    "adapter_configs": {
+      "detector_large/checkpoint-5000/adapter_config.json": {
+        "alpha_pattern": {},
+        "auto_mapping": null,
+        "base_model_name_or_path": "mistralai/Mistral-7B-v0.1",
+        "bias": "none",
+        "fan_in_fan_out": false,
+        "inference_mode": true,
+        "init_lora_weights": true,
+        "layer_replication": null,
+        "layers_pattern": null,
+        "layers_to_transform": null,
+        "loftq_config": {},
+        "lora_alpha": 64,
+        "lora_dropout": 0.05,
+        "megatron_config": null,
+        "megatron_core": "megatron.core",
+        "modules_to_save": null,
+        "peft_type": "LORA",
+        "r": 32,
+        "rank_pattern": {},
+        "revision": null,
+        "target_modules": [
+          "lm_head",
+          "down_proj",
+          "up_proj",
+          "q_proj",
+          "k_proj",
+          "o_proj",
+          "gate_proj",
+          "v_proj"
+        ],
+        "task_type": "CAUSAL_LM",
+        "use_dora": false,
+        "use_rslora": false
+      },
+      "detector_small/checkpoint-500/adapter_config.json": {
+        "alpha_pattern": {},
+        "auto_mapping": null,
+        "base_model_name_or_path": "mistralai/Mistral-7B-v0.1",
+        "bias": "none",
+        "fan_in_fan_out": false,
+        "inference_mode": true,
+        "init_lora_weights": true,
+        "layer_replication": null,
+        "layers_pattern": null,
+        "layers_to_transform": null,
+        "loftq_config": {},
+        "lora_alpha": 64,
+        "lora_dropout": 0.05,
+        "megatron_config": null,
+        "megatron_core": "megatron.core",
+        "modules_to_save": null,
+        "peft_type": "LORA",
+        "r": 32,
+        "rank_pattern": {},
+        "revision": null,
+        "target_modules": [
+          "down_proj",
+          "k_proj",
+          "gate_proj",
+          "q_proj",
+          "v_proj",
+          "lm_head",
+          "o_proj",
+          "up_proj"
+        ],
+        "task_type": "CAUSAL_LM",
+        "use_dora": false,
+        "use_rslora": false
+      }
+    },
+    "metadata_bytes_transferred": 5651,
+    "status": "METADATA_ONLY_VERIFIED"
+  },
+  {
+    "name": "promptlocate_oracle",
+    "url": "https://drive.usercontent.google.com/download?id=1CEaW4M6Y2_w8ca3-76SnoaNgio8x2eQB&export=download&confirm=t",
+    "entries": [
+      {
+        "name": "7_1000_naive_minimax_mistral_3_1_backend_llama3_revise_beta_1_balance_finetune/",
+        "bytes": 0,
+        "compressed_bytes": 0
+      },
+      {
+        "name": "7_1000_naive_minimax_mistral_3_1_backend_llama3_revise_beta_1_balance_finetune/checkpoint-500/",
+        "bytes": 0,
+        "compressed_bytes": 0
+      },
+      {
+        "name": "7_1000_naive_minimax_mistral_3_1_backend_llama3_revise_beta_1_balance_finetune/checkpoint-500/trainer_state.json",
+        "bytes": 4885,
+        "compressed_bytes": 1200
+      },
+      {
+        "name": "7_1000_naive_minimax_mistral_3_1_backend_llama3_revise_beta_1_balance_finetune/checkpoint-500/optimizer.pt",
+        "bytes": 170951516,
+        "compressed_bytes": 142181746
+      },
+      {
+        "name": "7_1000_naive_minimax_mistral_3_1_backend_llama3_revise_beta_1_balance_finetune/checkpoint-500/adapter_model.safetensors",
+        "bytes": 864513616,
+        "compressed_bytes": 559455270
+      },
+      {
+        "name": "7_1000_naive_minimax_mistral_3_1_backend_llama3_revise_beta_1_balance_finetune/checkpoint-500/adapter_config.json",
+        "bytes": 743,
+        "compressed_bytes": 342
+      },
+      {
+        "name": "7_1000_naive_minimax_mistral_3_1_backend_llama3_revise_beta_1_balance_finetune/checkpoint-500/scheduler.pt",
+        "bytes": 1064,
+        "compressed_bytes": 462
+      },
+      {
+        "name": "7_1000_naive_minimax_mistral_3_1_backend_llama3_revise_beta_1_balance_finetune/checkpoint-500/training_args.bin",
+        "bytes": 5112,
+        "compressed_bytes": 2493
+      },
+      {
+        "name": "7_1000_naive_minimax_mistral_3_1_backend_llama3_revise_beta_1_balance_finetune/checkpoint-500/README.md",
+        "bytes": 5099,
+        "compressed_bytes": 1746
+      },
+      {
+        "name": "7_1000_naive_minimax_mistral_3_1_backend_llama3_revise_beta_1_balance_finetune/checkpoint-500/rng_state.pth",
+        "bytes": 14244,
+        "compressed_bytes": 10675
+      }
+    ],
+    "adapter_configs": {
+      "7_1000_naive_minimax_mistral_3_1_backend_llama3_revise_beta_1_balance_finetune/checkpoint-500/adapter_config.json": {
+        "alpha_pattern": {},
+        "auto_mapping": null,
+        "base_model_name_or_path": "mistralai/Mistral-7B-v0.1",
+        "bias": "none",
+        "fan_in_fan_out": false,
+        "inference_mode": true,
+        "init_lora_weights": true,
+        "layer_replication": null,
+        "layers_pattern": null,
+        "layers_to_transform": null,
+        "loftq_config": {},
+        "lora_alpha": 64,
+        "lora_dropout": 0.05,
+        "megatron_config": null,
+        "megatron_core": "megatron.core",
+        "modules_to_save": null,
+        "peft_type": "LORA",
+        "r": 32,
+        "rank_pattern": {},
+        "revision": null,
+        "target_modules": [
+          "k_proj",
+          "v_proj",
+          "o_proj",
+          "lm_head",
+          "q_proj",
+          "up_proj",
+          "down_proj",
+          "gate_proj"
+        ],
+        "task_type": "CAUSAL_LM",
+        "use_dora": false,
+        "use_rslora": false
+      }
+    },
+    "metadata_bytes_transferred": 2277,
+    "status": "METADATA_ONLY_VERIFIED"
+  }
+]

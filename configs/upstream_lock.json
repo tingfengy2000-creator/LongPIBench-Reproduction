@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "audit_date": "2026-10-17",
+  "repositories": {
+    "LongPIBench": {"url": "https://github.com/liu00222/LongPIBench.git", "commit": "c7b80114ae56f65fb8019ec82afdb3df91e4ed65"},
+    "Open-Prompt-Injection": {"url": "https://github.com/liu00222/Open-Prompt-Injection.git", "commit": "fbed5cca347488f88363790ae3ae97c56116da6a"}
+  },
+  "dataset": {"repo_id": "RainWatcher/LongPIBench", "revision": "cdfdfdba8838911ec3d120d5bbf584c0afb280f2", "suites": ["emails", "person_info"], "ids": {"start": 0, "end_exclusive": 100}},
+  "model_snapshots_observed_at_audit": {
+    "target": {"repo_id": "meta-llama/Llama-3.1-8B-Instruct", "revision": "0e9e39f249a16976918f6564b8830bc894c89659"},
+    "detector_base": {"repo_id": "mistralai/Mistral-7B-v0.1", "revision": "27d67f1b5f57dc0953326b2601d68371d40ea8da"},
+    "helper": {"repo_id": "openai-community/gpt2", "revision": "607a30d783dfa663caf39e06633721c8d4cfcd7e"}
+  },
+  "formal_plan": {
+    "status": "NOT_RUN_CONFIG_NOT_FULLY_RESOLVED",
+    "attack": "authority_spoof",
+    "email": {"goal": "0", "position": "last"},
+    "resume": {"goal": "2", "position": "footnote"},
+    "target_max_new_tokens": 20000,
+    "locator_sep_thres": 0.0,
+    "datasentinel_checkpoint": null,
+    "paper_exact_revisions_known": false,
+    "paper_llama_message_format_fully_resolved": false,
+    "paper_table1_table4_email_discrepancy_resolved": false
+  }
+}
