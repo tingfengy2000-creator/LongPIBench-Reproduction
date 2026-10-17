@@ -1,5 +1,7 @@
 # 现有Ubuntu-24.04 WSL2：下一步入口
 
+最新结果：用户已完成本页第一批检查，WSL内部能看到5090/32607MiB/610.88，系统python3=3.12.3。交互Ubuntu提示符带(base)，且曾误把Windows侧wsl命令输入Ubuntu。当前请转到 [终端切换与Linux侧Conda检查](WSL_SHELL_AND_CONDA.md)，不再重复下面的GPU查询，不安装Linux同名wsl包。
+
 用户已经回传Windows侧工具盘点：Git可用，py launcher列出Python3.14，Conda未在当前PATH找到；Ubuntu-24.04已存在，WSL版本2，当前Stopped。该信息不代表Ubuntu内部的Python版本或GPU已验证。
 
 ## 执行以下只读检查
