@@ -11,4 +11,8 @@ numpy==2.2.6
 safetensors==0.5.3
 sentencepiece==0.2.0
 spacy==3.8.7
+# spaCy 3.8.7 directly imports Click; pin both Typer distributions consistently.
+typer==0.15.2
+typer-slim==0.15.2
+click==8.1.8
 pytest==8.3.5

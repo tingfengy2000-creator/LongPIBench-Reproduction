@@ -1,0 +1,132 @@
+{
+  "retrieved_at_utc": "2026-10-17T12:32:10.4461271Z",
+  "scope": "Official PyPI declared dependency metadata, not runtime validation",
+  "packages": [
+    {
+      "source_url": "https://pypi.org/pypi/spacy/3.8.7/json",
+      "name": "spacy",
+      "version": "3.8.7",
+      "requires_python": "<3.14,>=3.9",
+      "requires_dist": [
+        "spacy-legacy<3.1.0,>=3.0.11",
+        "spacy-loggers<2.0.0,>=1.0.0",
+        "murmurhash<1.1.0,>=0.28.0",
+        "cymem<2.1.0,>=2.0.2",
+        "preshed<3.1.0,>=3.0.2",
+        "thinc<8.4.0,>=8.3.4",
+        "wasabi<1.2.0,>=0.9.1",
+        "srsly<3.0.0,>=2.4.3",
+        "catalogue<2.1.0,>=2.0.6",
+        "weasel<0.5.0,>=0.1.0",
+        "typer<1.0.0,>=0.3.0",
+        "tqdm<5.0.0,>=4.38.0",
+        "numpy>=1.15.0; python_version < \"3.9\"",
+        "numpy>=1.19.0; python_version >= \"3.9\"",
+        "requests<3.0.0,>=2.13.0",
+        "pydantic!=1.8,!=1.8.1,<3.0.0,>=1.7.4",
+        "jinja2",
+        "setuptools",
+        "packaging>=20.0",
+        "langcodes<4.0.0,>=3.2.0",
+        "spacy_lookups_data<1.1.0,>=1.0.3; extra == \"lookups\"",
+        "spacy_transformers<1.4.0,>=1.1.2; extra == \"transformers\"",
+        "cupy<13.0.0,>=5.0.0b4; extra == \"cuda\"",
+        "cupy-cuda80<13.0.0,>=5.0.0b4; extra == \"cuda80\"",
+        "cupy-cuda90<13.0.0,>=5.0.0b4; extra == \"cuda90\"",
+        "cupy-cuda91<13.0.0,>=5.0.0b4; extra == \"cuda91\"",
+        "cupy-cuda92<13.0.0,>=5.0.0b4; extra == \"cuda92\"",
+        "cupy-cuda100<13.0.0,>=5.0.0b4; extra == \"cuda100\"",
+        "cupy-cuda101<13.0.0,>=5.0.0b4; extra == \"cuda101\"",
+        "cupy-cuda102<13.0.0,>=5.0.0b4; extra == \"cuda102\"",
+        "cupy-cuda110<13.0.0,>=5.0.0b4; extra == \"cuda110\"",
+        "cupy-cuda111<13.0.0,>=5.0.0b4; extra == \"cuda111\"",
+        "cupy-cuda112<13.0.0,>=5.0.0b4; extra == \"cuda112\"",
+        "cupy-cuda113<13.0.0,>=5.0.0b4; extra == \"cuda113\"",
+        "cupy-cuda114<13.0.0,>=5.0.0b4; extra == \"cuda114\"",
+        "cupy-cuda115<13.0.0,>=5.0.0b4; extra == \"cuda115\"",
+        "cupy-cuda116<13.0.0,>=5.0.0b4; extra == \"cuda116\"",
+        "cupy-cuda117<13.0.0,>=5.0.0b4; extra == \"cuda117\"",
+        "cupy-cuda11x<13.0.0,>=11.0.0; extra == \"cuda11x\"",
+        "cupy-cuda12x<13.0.0,>=11.5.0; extra == \"cuda12x\"",
+        "cupy-wheel<13.0.0,>=11.0.0; extra == \"cuda-autodetect\"",
+        "thinc-apple-ops<2.0.0,>=1.0.0; extra == \"apple\"",
+        "sudachipy!=0.6.1,>=0.5.2; extra == \"ja\"",
+        "sudachidict_core>=20211220; extra == \"ja\"",
+        "natto-py>=0.9.0; extra == \"ko\"",
+        "pythainlp>=2.0; extra == \"th\""
+      ]
+    },
+    {
+      "source_url": "https://pypi.org/pypi/weasel/0.4.3/json",
+      "name": "weasel",
+      "version": "0.4.3",
+      "requires_python": ">=3.7",
+      "requires_dist": [
+        "confection<0.2.0,>=0.0.4",
+        "packaging>=20.0",
+        "wasabi<1.2.0,>=0.9.1",
+        "srsly<3.0.0,>=2.4.3",
+        "typer-slim<1.0.0,>=0.3.0",
+        "cloudpathlib<1.0.0,>=0.7.0",
+        "smart-open<8.0.0,>=5.2.1",
+        "requests<3.0.0,>=2.13.0",
+        "pydantic!=1.8,!=1.8.1,<3.0.0,>=1.7.4"
+      ]
+    },
+    {
+      "source_url": "https://pypi.org/pypi/typer/0.27.3/json",
+      "name": "typer",
+      "version": "0.27.3",
+      "requires_python": ">=3.10",
+      "requires_dist": [
+        "shellingham>=1.3.0",
+        "rich>=13.8.0",
+        "annotated-doc>=0.0.2",
+        "colorama; platform_system == \"Windows\""
+      ]
+    },
+    {
+      "source_url": "https://pypi.org/pypi/typer-slim/0.24.0/json",
+      "name": "typer-slim",
+      "version": "0.24.0",
+      "requires_python": ">=3.10",
+      "requires_dist": [
+        "typer>=0.24.0"
+      ]
+    },
+    {
+      "source_url": "https://pypi.org/pypi/typer/0.15.2/json",
+      "name": "typer",
+      "version": "0.15.2",
+      "requires_python": ">=3.7",
+      "requires_dist": [
+        "click>=8.0.0",
+        "typing-extensions>=3.7.4.3",
+        "shellingham>=1.3.0",
+        "rich>=10.11.0"
+      ]
+    },
+    {
+      "source_url": "https://pypi.org/pypi/typer-slim/0.15.2/json",
+      "name": "typer-slim",
+      "version": "0.15.2",
+      "requires_python": ">=3.7",
+      "requires_dist": [
+        "click>=8.0.0",
+        "typing-extensions>=3.7.4.3",
+        "shellingham>=1.3.0; extra == \"standard\"",
+        "rich>=10.11.0; extra == \"standard\""
+      ]
+    },
+    {
+      "source_url": "https://pypi.org/pypi/click/8.1.8/json",
+      "name": "click",
+      "version": "8.1.8",
+      "requires_python": ">=3.7",
+      "requires_dist": [
+        "colorama; platform_system == \"Windows\"",
+        "importlib-metadata; python_version < \"3.8\""
+      ]
+    }
+  ]
+}

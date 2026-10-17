@@ -1,5 +1,7 @@
 # 给真实5090设备本地Cursor的当前指令
 
+**当前待修复：任务004阶段C的spaCy缺少click。** 安装和pip check已通过，实际导入失败；先执行任务004顶部的固定typer0.15.2、typer-slim0.15.2、click8.1.8修复与导入/空白分句检查。此修复由协调端确定，实际验证仍待回传；GPU合成检查历史通过，不重建环境或重新下载torch。
+
 **最新接续：R0-5090-004阶段B用户回传通过。** 实际5090上的torch2.7.1+cu128、BF16、bitsandbytes0.46.1/NF4合成检查已通过；见 `coordination/returns/20261017T122535Z-user-wsl-gpu-smoke-004/REPORT.md`。沿用已有longpibench-r0，直接接续任务004阶段C完整依赖及最小导入，不重建环境、不重跑历史盘点。若尚无Linux仓库，任务004含同版本的无仓库安装命令。完整模型加载和正式实验尚未验收。以下较早步骤保留为历史，以本段和任务004最新状态为准。
 
 **当前执行任务：R0-5090-004。** 用户已在真实5090的Ubuntu中确认Conda及下载入口。请读 `coordination/tasks/R0-5090-004.md`，仅创建新longpibench-r0/Python3.11环境，按固定版本安装并执行CUDA/NF4合成检查；通过后再装requirements中的完整候选。现有base/gmtp-compat/llmguard-paper1保持原状。主要代码与依赖修复仍由协调端负责，不启动正式实验。

@@ -1,0 +1,25 @@
+No broken requirements found.
+Traceback (most recent call last):
+  File "<string>", line 3, in <module>
+  File "/home/tingfeng/miniforge3/envs/longpibench-r0/lib/python3.11/site-packages/spacy/__init__.py", line 16, in <module>
+    from .cli.info import info  # noqa: F401
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tingfeng/miniforge3/envs/longpibench-r0/lib/python3.11/site-packages/spacy/cli/__init__.py", line 4, in <module>
+    from . import download as download_module  # noqa: F401
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tingfeng/miniforge3/envs/longpibench-r0/lib/python3.11/site-packages/spacy/cli/download.py", line 19, in <module>
+    from ._util import SDIST_SUFFIX, WHEEL_SUFFIX, Arg, Opt, app
+  File "/home/tingfeng/miniforge3/envs/longpibench-r0/lib/python3.11/site-packages/spacy/cli/_util.py", line 22, in <module>
+    from click import NoSuchOption
+ModuleNotFoundError: No module named 'click'
+ERROR conda.cli.main_run:execute(148): `conda run python -c
+import sys, torch, bitsandbytes, transformers, peft, accelerate
+import huggingface_hub, tokenizers, numpy, safetensors, sentencepiece, spacy
+print("Python:", sys.version)
+print("Core dependency imports: PASS")
+print("torch:", torch.__version__)
+print("transformers:", transformers.__version__)
+print("peft:", peft.__version__)
+print("numpy:", numpy.__version__)
+` failed. (See above for error)
+(base) tingfeng@DESKTOP-B5PNBNC:~$
