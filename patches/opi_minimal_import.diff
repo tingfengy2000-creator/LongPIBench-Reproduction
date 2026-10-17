@@ -1,0 +1,11 @@
+--- a/OpenPromptInjection/apps/PromptLocate.py
++++ b/OpenPromptInjection/apps/PromptLocate.py
+@@ -1,7 +1,7 @@
+ import numpy as np
+ import random
+ import torch
+-from OpenPromptInjection.apps.DataSentinelDetector import DataSentinelDetector
++from .DataSentinelDetector import DataSentinelDetector
+ from transformers import AutoTokenizer, AutoModelForCausalLM
+ import spacy
+ import re

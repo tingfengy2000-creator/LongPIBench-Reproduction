@@ -1,0 +1,127 @@
+{
+  "schema_version": 2,
+  "task_id": "R0-LOCAL-CODE-002",
+  "run_id": "20261017T105044Z-local-5060-negative-control-089dd9b7",
+  "label": "local-5060-negative-control",
+  "timestamp_utc": "2026-10-17T10:50:44.262105+00:00",
+  "phase": "R0_PREFLIGHT_ONLY",
+  "formal_inference_executed": false,
+  "python": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:09:58) [MSC v.1929 64 bit (AMD64)]",
+  "python_executable": "D:\\anocanda\\python.exe",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "disk_free_bytes": 378363543552,
+  "packages": {
+    "torch": null,
+    "transformers": null,
+    "peft": null,
+    "bitsandbytes": null,
+    "accelerate": null,
+    "huggingface-hub": null,
+    "spacy": null,
+    "datasets": null,
+    "openai": null,
+    "fschat": null,
+    "google-generativeai": null
+  },
+  "gpu": {
+    "command": [
+      "nvidia-smi",
+      "--query-gpu=name,memory.total,memory.free,driver_version",
+      "--format=csv"
+    ],
+    "returncode": 0,
+    "stdout": "name, memory.total [MiB], memory.free [MiB], driver_version\r\nNVIDIA GeForce RTX 5060, 8151 MiB, 5408 MiB, 616.92\r\n",
+    "stderr": ""
+  },
+  "torch_probe": {
+    "status": "SKIPPED_HARDWARE_GATE_FAILED"
+  },
+  "git_head": {
+    "command": [
+      "git",
+      "-C",
+      "E:\\LongPIBench",
+      "rev-parse",
+      "HEAD"
+    ],
+    "returncode": 0,
+    "stdout": "186e6dfdb527fffe84608b8fe530a2f312828c6b\n",
+    "stderr": ""
+  },
+  "git_branch": {
+    "command": [
+      "git",
+      "-C",
+      "E:\\LongPIBench",
+      "branch",
+      "--show-current"
+    ],
+    "returncode": 0,
+    "stdout": "main\n",
+    "stderr": ""
+  },
+  "git_status_before_return": {
+    "command": [
+      "git",
+      "-C",
+      "E:\\LongPIBench",
+      "status",
+      "--short"
+    ],
+    "returncode": 0,
+    "stdout": " M scripts/remote_preflight.py\n?? configs/opi_core_sources.json\n?? patches/\n?? repro/\n?? tests/\n",
+    "stderr": ""
+  },
+  "upstream_heads": {
+    "LongPIBench": {
+      "command": [
+        "git",
+        "-C",
+        "E:\\LongPIBench\\upstream\\LongPIBench",
+        "rev-parse",
+        "HEAD"
+      ],
+      "returncode": 0,
+      "stdout": "c7b80114ae56f65fb8019ec82afdb3df91e4ed65\n",
+      "stderr": ""
+    },
+    "Open-Prompt-Injection": {
+      "command": [
+        "git",
+        "-C",
+        "E:\\LongPIBench\\upstream\\Open-Prompt-Injection",
+        "rev-parse",
+        "HEAD"
+      ],
+      "returncode": 0,
+      "stdout": "fbed5cca347488f88363790ae3ae97c56116da6a\n",
+      "stderr": ""
+    }
+  },
+  "followups": [
+    "Verify actual GPU is RTX 5090 with ~32GB",
+    "If torch is installed, inspect CUDA BF16 smoke result",
+    "NF4/model loading and authorized HF access remain separate checks",
+    "Do not infer formal readiness from this report alone"
+  ],
+  "hostname": "DESKTOP-0JKLMO4",
+  "hardware_gate": {
+    "passed": false,
+    "required_name": "RTX 5090",
+    "minimum_total_mib": 30000,
+    "devices": [
+      {
+        "name": "NVIDIA GeForce RTX 5060",
+        "memory_total_mib": 8151.0,
+        "memory_free_raw": "5408 MiB",
+        "driver": "616.92"
+      }
+    ],
+    "matching_devices": [],
+    "errors": [
+      "No single GPU matches the required name and VRAM"
+    ],
+    "scope": "Hardware inventory only; not CUDA/NF4/model acceptance"
+  },
+  "task_status": "BLOCKED"
+}

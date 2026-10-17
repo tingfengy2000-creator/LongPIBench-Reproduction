@@ -2,6 +2,8 @@
 
 审计日期：2026-10-17。状态：**R0 审计已完成；正式 R1/R2 尚不具备全部运行条件。没有产生任何本地模型 ASR。**
 
+后续进展：[协调端代码与Cloud回执审查](07_coordinator_update_20261017.md)。用户已明确代码与方法由协调端负责，Cursor只执行GPU任务；当前任务为R0-5090-002。
+
 建议先读 [审计结论与阻碍](04_findings_and_blockers.md)，再使用 [可直接交给 Codex 的中文执行 Prompt](05_codex_execution_prompt.md)。
 
 | 文件 | 内容 |

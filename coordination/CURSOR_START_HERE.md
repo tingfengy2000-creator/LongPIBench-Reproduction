@@ -1,4 +1,26 @@
-# 复制给5090设备 Cursor 的第一条指令
+# 给真实5090设备本地Cursor的当前指令
+
+**当前任务已更新为R0-5090-002。** 上次执行进入了无GPU的Cloud VM，状态BLOCKED。请在5090电脑桌面的本地Cursor终端执行下面这段：
+
+```text
+你只负责明确的GPU执行，主要代码和方法由协调端Codex负责。
+仓库：https://github.com/tingfengy2000-creator/LongPIBench-Reproduction
+先运行 nvidia-smi --query-gpu=name,memory.total --format=csv，确认5090及约32GB。
+没有对应硬件就停止，不在Cloud VM安装或下载。
+保护现有修改，fetch origin，在machine-5090合并origin/main。
+阅读AGENTS.md、coordination/PROTOCOL.md和coordination/tasks/R0-5090-002.md。
+按任务运行硬件、已有环境的合成CUDA/NF4和最小OPI导入。
+缺包/代码故障原样回传，不自行升级依赖或改主要代码，不启动正式实验。
+将新回执提交到machine-5090并push，报告commit SHA。
+```
+
+第一条项目预检命令：
+
+```text
+python scripts/remote_preflight.py --label actual-5090 --task-id R0-5090-002 --require-gpu "RTX 5090" --min-vram-mib 30000
+```
+
+以下内容为任务001的历史指令，已被任务002替代，不再执行：
 
 下面整段可直接发给远端Cursor。仓库已创建为private，先在该设备登录有仓库权限的GitHub账号。若尚未克隆，Cursor可以先使用终端完成clone并打开目录。
 
