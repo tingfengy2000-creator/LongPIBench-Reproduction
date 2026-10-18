@@ -1,0 +1,79 @@
+{
+  "attack_order": [
+    "no",
+    "authority_spoof"
+  ],
+  "condition": "no_defense",
+  "dataset_revision": "cdfdfdba8838911ec3d120d5bbf584c0afb280f2",
+  "debug_results_reused_as_formal": false,
+  "declared_differences": [
+    "Single-BOS rendered-chat tokenization; fixed public HF wrapper duplicates BOS by default",
+    "Observed public snapshots and validated compatibility stack, not recovered author environment",
+    "Full input/token/output evidence and independent validity audit; original official scores retained"
+  ],
+  "ids": {
+    "end_exclusive": 100,
+    "start": 0
+  },
+  "input_freeze": {
+    "canonical_input_set_sha256": "aec6b4e0ce04074ca850c1199d7ada5c2c09ee58f4cfbe5d64ec0210b3dd0542",
+    "planned_cases": 400,
+    "prepared_archive_sha256": "6debd80e77453e516a6db695ceea1a476909ecc588fe3e0c71d5539ff3ca6049",
+    "unique_raw_samples": 200
+  },
+  "planned_cases": 400,
+  "resume": false,
+  "retries": 0,
+  "run_kind": "formal",
+  "schema_version": 1,
+  "scoring": "fixed_official_parser_and_scorer_plus_separate_schema_audit",
+  "seed": 42,
+  "stage": "R1",
+  "statistics": "counts_only_until_coordinator_review",
+  "strict_paper_configuration_recovered": false,
+  "study_condition": "declared_public_snapshot_single_bos_v1",
+  "suite_order": [
+    "email",
+    "resume"
+  ],
+  "suites": {
+    "email": {
+      "goal": "0",
+      "position": "last"
+    },
+    "resume": {
+      "goal": "2",
+      "position": "footnote"
+    }
+  },
+  "target": {
+    "add_special_tokens_after_rendering": false,
+    "batch_size": 1,
+    "chat_template_sha256": "e10ca381b1ccc5cf9db52e371f3b6651576caee0a630b452e2816b2d404d4b65",
+    "device": "cuda:0",
+    "do_sample": false,
+    "dtype": "bfloat16",
+    "eos_token_ids": [
+      128001,
+      128008,
+      128009
+    ],
+    "inherit_other_generation_defaults_from_fixed_snapshot": true,
+    "max_new_tokens": 20000,
+    "messages": [
+      "system=original_system_prompt",
+      "user=original_data_prompt"
+    ],
+    "pad_token_id": 128009,
+    "quantization": null,
+    "repo_id": "meta-llama/Llama-3.1-8B-Instruct",
+    "revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+    "truncation": false
+  },
+  "unknowns": {
+    "paper_datasentinel_checkpoint": "unknown; not used in R1",
+    "paper_exact_code_and_model_revisions": "unknown",
+    "paper_exact_target_messages_and_seed": "unknown",
+    "table1_table4_email_discrepancy": "unresolved"
+  }
+}

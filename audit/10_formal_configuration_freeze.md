@@ -1,0 +1,19 @@
+# 正式公开版本实验条件冻结
+
+R0实际环境、固定数据、模型/adapter、完整PromptLocate和小样本接线均已有回执。014单独预算条件下两条Email有效完成；这仅支持进入冻结总体实验，不支持估计整体防御性能、合法信息保留或依据debug选择checkpoint。
+
+## R1
+
+配置configs/formal_r1_v1.json，canonical SHA256=efe2a0665ba627cf9a72b5d465690a3fc6fd62b8922cf3ed7fd902d871bf15b1；400份官方输入全集canonical SHA256=aec6b4e0ce04074ca850c1199d7ada5c2c09ee58f4cfbe5d64ec0210b3dd0542。已在协调端重构并核对全部400份官方输入、200份原文件hash，不是模型运行。
+
+R1-5090-001按两任务各100 clean+100 attack固定运行无防御Llama，budget20000、greedy、BF16、seed42、单BOS消息格式；不复用debug输出、不筛掉ID0。每次raw及全部配置/输入/token/停止原因不可覆盖。输出错误和截断单列，先完整性验收再汇总正式ASR。
+
+formal仅表示本研究预先冻结的总体执行条件。研究名称declared_public_snapshot_single_bos_v1，严格历史论文配置仍未完全找回；不使用strict reproduction措辞。原公开HF wrapper的重复BOS在独立wrapper中显式修正，补丁记录与官方评分均保留，不能悄悄归作完全相同输入。
+
+## R2未披露checkpoint
+
+固定[OPI README](https://raw.githubusercontent.com/liu00222/Open-Prompt-Injection/fbed5cca347488f88363790ae3ae97c56116da6a/README.md)只示例ft_path/detect_ft_path，未在这些示例中指定large/small；公开LongPIBench亦未给对应PromptLocate集成配置。论文实际checkpoint继续unknown。GitHub issue页面/API本轮读取失败，不能声称已穷尽最新issue或获得作者确认。
+
+候选写入configs/formal_r2_checkpoint_proposal.json，状态AWAITING_OWNER_CHECKPOINT_SELECTION。建议预先声明large/checkpoint-5000为单一主条件，或由Owner选small；选择依据不能是debug/正式ASR优劣。两个adapter加载均已通过，但未运行双checkpoint正式比较。该选择只定义公开版本执行条件，不反推论文身份。原audit/03方案要求需要人选定未披露checkpoint时只请求该具体选择；本轮已将具体候选呈现给Owner，尚未将任何选择写为已确认。
+
+R1不加载DataSentinel，可独立开始。R2将与R1共享冻结目标生成条件，另需冻结定位轨迹/有效性和资源保护口径；当前不授权R2全量。不得把012/014不同观察预算拼为一个原始运行，也不把不同checkpoint运行择优拼接。

@@ -1,0 +1,12 @@
+{
+  "source_commit": "3a098a3321a4cfd70e39bc8543a4c1f100fb6c7f",
+  "git_blobs": {
+    "coordination/returns/20261018T045920Z-email-continuation-all-dc1ca52f/email_stage.json": "da06e6bcb01ca2e63c4013919efc983694441b1b",
+    "coordination/returns/20261018T045920Z-email-continuation-all-dc1ca52f/runtime.log": "38d2bafbf1d9cf0013acc7863d4210d51002b4f4",
+    "coordination/returns/20261018T045920Z-email-continuation-defense-9f510313/email_stage.json": "45661023a6171a5fbed85c146f478bad8b00989c",
+    "coordination/returns/20261018T045920Z-email-continuation-defense-9f510313/runtime.log": "9f19748de89c983cdbc47c4acc6cd717cd792ec8",
+    "coordination/returns/20261018T050915Z-email-continuation-target-protected-fa5bd10d/email_stage.json": "4c944823935658e0806dd45d393b74f9c6c79972",
+    "coordination/returns/20261018T050915Z-email-continuation-target-protected-fa5bd10d/runtime.log": "e07872d768f40eb30904e1bd0fb3f9aba0b3a15f",
+    "coordination/returns/20261018T051231Z-email-continuation-r0-5090-014/REPORT.md": "b90a4becf132c5f225d99a5b8aad8c4b9792fa91"
+  }
+}

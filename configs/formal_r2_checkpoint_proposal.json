@@ -1,0 +1,11 @@
+{
+  "status": "AWAITING_OWNER_CHECKPOINT_SELECTION",
+  "paper_datasentinel_checkpoint": "unknown",
+  "proposed_whole_adapter": "detector_large/checkpoint-5000",
+  "alternative_whole_adapter": "detector_small/checkpoint-500",
+  "reason": "Predeclare one published adapter for the primary public-snapshot condition; no large/small ASR comparison",
+  "proposal_is_paper_identity_evidence": false,
+  "selection_based_on_debug_attack_success": false,
+  "oracle": "7_1000_naive_minimax_mistral_3_1_backend_llama3_revise_beta_1_balance_finetune/checkpoint-500",
+  "r1_depends_on_this_selection": false
+}
