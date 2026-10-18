@@ -1,0 +1,2 @@
+# Matplotlib SVG path commands contain intentional whitespace; preserve bytes.
+mechanism_panel.svg -whitespace

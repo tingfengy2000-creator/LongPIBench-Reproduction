@@ -1,0 +1,26 @@
+{
+  "status": "REAL_MECHANISM_PANEL_EXECUTED",
+  "finished_utc": "2026-10-18T13:49:14.327184+00:00",
+  "elapsed_seconds": 83.79420319999917,
+  "n_sources": 24,
+  "forward_calls": 336,
+  "n_format_records": 216,
+  "n_document_records": 72,
+  "negative_control_tolerance": 1e-06,
+  "official_predict_equivalence_verified": true,
+  "aligned_tail_identical_core_verified": true,
+  "historical_files_unchanged": 405,
+  "model_files_verified": 5,
+  "id2label": {
+    "0": "BENIGN",
+    "1": "INJECTION",
+    "2": "JAILBREAK"
+  },
+  "dtype": "float32",
+  "device": "cpu",
+  "files": {
+    "document_observations.jsonl": "3eaddfc50c4ef18927c36d845479e11b593c94ba77f051d0818588219cf52799",
+    "format_observations.jsonl": "408f54fc4d40c4967b94e94976ef16c090d71837e1892525afcdbc019a5bd90e",
+    "start.json": "d6425910be554275b97238b58f4577cc5272197dd8a163885cdee8fbea89297f"
+  }
+}

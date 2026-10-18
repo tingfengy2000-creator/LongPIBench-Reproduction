@@ -1,0 +1,227 @@
+{
+  "run_id": "20261018T134643Z-m1-boundary-efd3eb5b",
+  "n_sources": 24,
+  "formal_paper_experiment": false,
+  "format_contrasts": {
+    "tail_sep_only": {
+      "n_sources": 24,
+      "mean_delta": 0.05783931233539382,
+      "median_delta": 0.054039077142078895,
+      "median_bootstrap95": [
+        0.03857863656594418,
+        0.07670136031811126
+      ],
+      "min_delta": -0.0455888956785202,
+      "max_delta": 0.1484201200073585,
+      "positive": 22,
+      "negative": 2,
+      "ties_tolerance_1e8": 0,
+      "two_sided_sign_p": 3.5881996154785156e-05,
+      "screen_consistent": true,
+      "negative_to_positive": 0,
+      "positive_to_negative": 0,
+      "holm_sign_p": 0.00021529197692871094
+    },
+    "bare_core": {
+      "n_sources": 24,
+      "mean_delta": 0.013970854330182192,
+      "median_delta": 0.007408406803733669,
+      "median_bootstrap95": [
+        0.0024413434002781287,
+        0.03376744384877384
+      ],
+      "min_delta": -0.14658382534980774,
+      "max_delta": 0.0868320528534241,
+      "positive": 21,
+      "negative": 3,
+      "ties_tolerance_1e8": 0,
+      "two_sided_sign_p": 0.0002771615982055664,
+      "screen_consistent": true,
+      "negative_to_positive": 0,
+      "positive_to_negative": 0,
+      "holm_sign_p": 0.001385807991027832
+    },
+    "cls_only": {
+      "n_sources": 24,
+      "mean_delta": -0.017735091124753428,
+      "median_delta": -0.0001836093288147822,
+      "median_bootstrap95": [
+        -0.0009368920873384923,
+        8.638802682980895e-06
+      ],
+      "min_delta": -0.17317703121807426,
+      "max_delta": 0.00030266528483480215,
+      "positive": 8,
+      "negative": 16,
+      "ties_tolerance_1e8": 0,
+      "two_sided_sign_p": 0.15158963203430176,
+      "screen_consistent": false,
+      "negative_to_positive": 0,
+      "positive_to_negative": 0,
+      "holm_sign_p": 0.3031792640686035
+    },
+    "neutral_prefix_sep": {
+      "n_sources": 24,
+      "mean_delta": 0.02248328171541895,
+      "median_delta": 0.027066932765592355,
+      "median_bootstrap95": [
+        0.005456266226246953,
+        0.038728412066120654
+      ],
+      "min_delta": -0.15159651450812817,
+      "max_delta": 0.19372305751312524,
+      "positive": 18,
+      "negative": 6,
+      "ties_tolerance_1e8": 0,
+      "two_sided_sign_p": 0.022655844688415527,
+      "screen_consistent": true,
+      "negative_to_positive": 0,
+      "positive_to_negative": 0,
+      "holm_sign_p": 0.06796753406524658
+    },
+    "cls_neutral_suffix": {
+      "n_sources": 24,
+      "mean_delta": -0.01318144116946011,
+      "median_delta": 4.4579275709111243e-05,
+      "median_bootstrap95": [
+        -0.00046258230577223003,
+        0.00024239078629761934
+      ],
+      "min_delta": -0.15245709381997585,
+      "max_delta": 0.06666025996673852,
+      "positive": 13,
+      "negative": 11,
+      "ties_tolerance_1e8": 0,
+      "two_sided_sign_p": 0.8388197422027588,
+      "screen_consistent": false,
+      "negative_to_positive": 0,
+      "positive_to_negative": 0,
+      "holm_sign_p": 0.8388197422027588
+    },
+    "neutral_both": {
+      "n_sources": 24,
+      "mean_delta": 0.001528196043485271,
+      "median_delta": 0.005290642526233569,
+      "median_bootstrap95": [
+        0.003291999630164355,
+        0.01091666407592129
+      ],
+      "min_delta": -0.1628532912582159,
+      "max_delta": 0.08401638976647519,
+      "positive": 19,
+      "negative": 5,
+      "ties_tolerance_1e8": 0,
+      "two_sided_sign_p": 0.006610751152038574,
+      "screen_consistent": true,
+      "negative_to_positive": 0,
+      "positive_to_negative": 0,
+      "holm_sign_p": 0.026443004608154297
+    }
+  },
+  "position_negative_controls": {
+    "n_reexecutes": 48,
+    "max_abs_risk_delta": 0.0,
+    "max_abs_logit_delta": 0.0
+  },
+  "official_document_summary": {
+    "standalone": {
+      "n": 24,
+      "false_positives": 0,
+      "constructed_panel_fpr": 0.0,
+      "tail_attributable_positives": 0,
+      "median_document_max": 0.0005126199976075441,
+      "by_style": {
+        "email": {
+          "n": 12,
+          "false_positives": 0
+        },
+        "resume": {
+          "n": 12,
+          "false_positives": 0
+        }
+      }
+    },
+    "aligned_tail": {
+      "n": 24,
+      "false_positives": 0,
+      "constructed_panel_fpr": 0.0,
+      "tail_attributable_positives": 0,
+      "median_document_max": 0.06098947674036026,
+      "by_style": {
+        "email": {
+          "n": 12,
+          "false_positives": 0
+        },
+        "resume": {
+          "n": 12,
+          "false_positives": 0
+        }
+      }
+    },
+    "split_core": {
+      "n": 24,
+      "false_positives": 1,
+      "constructed_panel_fpr": 0.041666666666666664,
+      "tail_attributable_positives": 1,
+      "median_document_max": 0.11144532263278961,
+      "by_style": {
+        "email": {
+          "n": 12,
+          "false_positives": 0
+        },
+        "resume": {
+          "n": 12,
+          "false_positives": 1
+        }
+      }
+    }
+  },
+  "official_document_comparisons": {
+    "aligned_tail_minus_standalone": {
+      "n_sources": 24,
+      "mean_delta": 0.05789539914682488,
+      "median_delta": 0.054039077142078895,
+      "median_bootstrap95": [
+        0.03857863656594418,
+        0.07670136031811126
+      ],
+      "min_delta": -0.0455888956785202,
+      "max_delta": 0.1484201200073585,
+      "positive": 22,
+      "negative": 2,
+      "ties_tolerance_1e8": 0,
+      "two_sided_sign_p": 3.5881996154785156e-05,
+      "screen_consistent": true,
+      "negative_to_positive": 0,
+      "positive_to_negative": 0,
+      "causal_caveat": "Different carrier context/length; not isolated boundary causation or population FPR"
+    },
+    "split_core_minus_aligned_tail": {
+      "n_sources": 24,
+      "mean_delta": 0.07301815869868733,
+      "median_delta": 0.039535921066999435,
+      "median_bootstrap95": [
+        -0.02355358749628067,
+        0.13159485906362534
+      ],
+      "min_delta": -0.10333411768078804,
+      "max_delta": 0.5455350317060947,
+      "positive": 16,
+      "negative": 8,
+      "ties_tolerance_1e8": 0,
+      "two_sided_sign_p": 0.15158963203430176,
+      "screen_consistent": false,
+      "negative_to_positive": 1,
+      "positive_to_negative": 0,
+      "causal_caveat": "Different carrier context/length; not isolated boundary causation or population FPR"
+    }
+  },
+  "risk_semantics": "Uncalibrated model softmax-derived risk, not probability of attack in deployment",
+  "scope": "24 authored benign fragments; shared author and repeated carrier; variants not independent samples; no attack sensitivity test; no general population FPR inference",
+  "raw_files": {
+    "completion.json": "b0f03b2aae28e1586261fa8d978dc86f2147e09e28a1068850e966321c471c14",
+    "document_observations.jsonl": "3eaddfc50c4ef18927c36d845479e11b593c94ba77f051d0818588219cf52799",
+    "format_observations.jsonl": "408f54fc4d40c4967b94e94976ef16c090d71837e1892525afcdbc019a5bd90e",
+    "start.json": "d6425910be554275b97238b58f4577cc5272197dd8a163885cdee8fbea89297f"
+  }
+}

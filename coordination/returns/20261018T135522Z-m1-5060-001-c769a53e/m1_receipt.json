@@ -1,0 +1,7 @@
+{
+  "task_id": "M1-5060-001",
+  "status": "COMPLETED_EXPLORATORY_MECHANISM_NOT_ALGORITHM",
+  "run_id": "20261018T134643Z-m1-boundary-efd3eb5b",
+  "full_receipt": "ingress_detection_pilot/stage_m1/completion_receipt.json",
+  "full_receipt_sha256": "88c8f997caad61243419baa99e5a05b910622976e63752699e74a38e47d40705"
+}

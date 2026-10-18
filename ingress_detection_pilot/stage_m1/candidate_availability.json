@@ -1,0 +1,121 @@
+{
+  "retrieved_utc": "2026-10-18T13:50:12.536278+00:00",
+  "purpose": "Availability and token-length design only; these 40 inspected rows are excluded from future frozen test",
+  "detector_forwards": 0,
+  "bulk_download": false,
+  "preview_limit_per_domain": 20,
+  "datasets": {
+    "email": {
+      "dataset": "corbt/enron-emails",
+      "current_sha_before_after": "cfc06c758093d90993abce1a43668fb7357258a6",
+      "metadata_url": "https://huggingface.co/api/datasets/corbt/enron-emails",
+      "viewer_url": "https://datasets-server.huggingface.co/rows?dataset=corbt%2Fenron-emails&config=default&split=train&offset=0&length=20",
+      "viewer_revision_caveat": "Viewer has no immutable revision parameter; before/after repository SHA unchanged, response hash retained",
+      "response_sha256": "272ed53295472817a3a91de20b12f6471ebad580566ec2c71c56f63e1b8b10a9",
+      "metadata_sha256": "8db1443d3071898a7805322affb2996ee4521b4becc095e541c0fcda75c9d69c",
+      "n_inspected": 20,
+      "license_claim": "not declared",
+      "raw_local_only": "E:\\Caches\\longpibench-m1-availability\\email-preview.json",
+      "source_group_hint_distinct": 1,
+      "token_ranges": {
+        "prompt-guard": [
+          9,
+          1416
+        ],
+        "deberta": [
+          8,
+          1235
+        ],
+        "distilbert": [
+          8,
+          1301
+        ]
+      }
+    },
+    "resume": {
+      "dataset": "ahmedheakl/resume-atlas",
+      "current_sha_before_after": "3f80ca910fa9964890afb7845c09e239d07b9b1d",
+      "metadata_url": "https://huggingface.co/api/datasets/ahmedheakl/resume-atlas",
+      "viewer_url": "https://datasets-server.huggingface.co/rows?dataset=ahmedheakl%2Fresume-atlas&config=default&split=train&offset=0&length=20",
+      "viewer_revision_caveat": "Viewer has no immutable revision parameter; before/after repository SHA unchanged, response hash retained",
+      "response_sha256": "618f55fc37edbb831031793f3ea5375c0695df5182314fd6c2bca6d559822cec",
+      "metadata_sha256": "8ef83eb7659a85395ce629936b2a4a6cc8b5a60e14c835f6748295f78cee6006",
+      "n_inspected": 20,
+      "license_claim": "mit",
+      "raw_local_only": "E:\\Caches\\longpibench-m1-availability\\resume-preview.json",
+      "source_group_hint_distinct": 20,
+      "token_ranges": {
+        "prompt-guard": [
+          267,
+          562
+        ],
+        "deberta": [
+          185,
+          380
+        ],
+        "distilbert": [
+          203,
+          405
+        ]
+      }
+    }
+  },
+  "candidate_common_support_deberta_tokens": [
+    {
+      "range": [
+        128,
+        255
+      ],
+      "observed_documents": {
+        "email": 2,
+        "resume": 5
+      },
+      "both_domains_observed": true
+    },
+    {
+      "range": [
+        256,
+        511
+      ],
+      "observed_documents": {
+        "email": 2,
+        "resume": 15
+      },
+      "both_domains_observed": true
+    },
+    {
+      "range": [
+        512,
+        1023
+      ],
+      "observed_documents": {
+        "email": 1,
+        "resume": 0
+      },
+      "both_domains_observed": false
+    },
+    {
+      "range": [
+        1024,
+        2047
+      ],
+      "observed_documents": {
+        "email": 2,
+        "resume": 0
+      },
+      "both_domains_observed": false
+    },
+    {
+      "range": [
+        2048,
+        4095
+      ],
+      "observed_documents": {
+        "email": 0,
+        "resume": 0
+      },
+      "both_domains_observed": false
+    }
+  ],
+  "inference_limit": "Consecutive first20, not representative or source-independent; author clusters and OCR cleaning differ. Common interval is provisional existence evidence, not enough independent sources for800."
+}

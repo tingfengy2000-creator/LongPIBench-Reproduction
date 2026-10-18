@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "historical_files_unchanged": 405,
+  "new_sources": 24,
+  "format_records": 216,
+  "document_records": 72,
+  "raw_forward_records_checked": 336,
+  "python64_softmax_vs_recorded_fp32_max_error": 2.2537339272599155e-08,
+  "checks": [
+    "Input hashes and all token IDs",
+    "Fixed core coverage in official text witnesses",
+    "Negative-control exact logits",
+    "Independent softmax/official risk recomputation",
+    "Original document Max >=0.5 equivalence",
+    "Independent paired median and exact sign probabilities",
+    "All historical tracked hashes"
+  ],
+  "paper_confirmatory": false
+}
