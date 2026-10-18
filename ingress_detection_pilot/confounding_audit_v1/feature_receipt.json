@@ -1,0 +1,10 @@
+{
+  "status": "EXACT_CACHED_CHUNK_INPUTS_RECONSTRUCTED",
+  "n_documents": 960,
+  "n_chunks": 2900,
+  "all_input_token_hashes_match": true,
+  "new_model_forward_calls": 0,
+  "content_text_in_git": false,
+  "lexical_indicator_warning": "Predefined keyword counts are descriptive; not maliciousness labels or causal content controls",
+  "chunk_features_sha256": "82d831c143cea07b5375721d91d86202252b3830b5cdf398d69de6cf0a4fd9cc"
+}

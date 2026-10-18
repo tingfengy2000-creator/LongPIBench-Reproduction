@@ -1,0 +1,24 @@
+{
+  "status": "REAL_INDEPENDENT_CONTROLS_RECORDED",
+  "started_utc": "2026-10-18T12:39:47.375313+00:00",
+  "finished_utc": "2026-10-18T12:39:53.059909+00:00",
+  "model_repo": "fmops/distilbert-prompt-injection",
+  "model_revision": "c5da1fefd33c98c447b50dd806fe86aeb9e8c26c",
+  "n": 32,
+  "dtype": "float32",
+  "device": "cpu",
+  "torch": "2.7.1+cpu",
+  "transformers": "4.51.3",
+  "config_id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1"
+  },
+  "documented_author_space_mapping": {
+    "LABEL_0": "benign",
+    "LABEL_1": "prompt injection"
+  },
+  "author_space_revision": "ef784e4cadfe184f02683a87a6ad19f565fda9b4",
+  "observation_sha256": "fce6bfb22de88b2bd179451aa3b49f4a80fa58ba7529598841841c1d30165dcc",
+  "intended_use": "Orientation diagnostic only, never historical relabeling or generalization estimate",
+  "historical_scores_modified": false
+}

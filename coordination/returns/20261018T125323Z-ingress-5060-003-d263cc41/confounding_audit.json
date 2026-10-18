@@ -1,0 +1,42 @@
+{
+  "task_id": "INGRESS-5060-003",
+  "run_id": "20261018T125323Z-ingress-5060-003-d263cc41",
+  "status": "EXPLORATORY_CONFOUNDING_AUDIT_COMPLETE_WITH_CAVEATS",
+  "freeze_commit": "6405ce79398ef72050b57c0edf6d709085164277",
+  "freeze_parent_commit": "5849cd99520230242c223f503c399cdf08f45896",
+  "all_existing_files_sha256_unchanged": 360,
+  "historical_real_scores": 960,
+  "new_orientation_control_inferences": 32,
+  "historical_model_inferences": 0,
+  "exact_cached_chunk_token_reconstructions": 2900,
+  "strategies": [
+    "global_max",
+    "domain_max",
+    "length_max",
+    "domain_length_max"
+  ],
+  "fitting_only_original_calibration_benign": true,
+  "legacy_global_length_replay": "EXACT",
+  "new_independent_test_claim": false,
+  "model_training": false,
+  "LCMD_development": "NO_GO",
+  "R2_5090_access_or_modification": false,
+  "main_findings": [
+    "Domain Max covers all 16 DeBERTa Length-added TPs, D/L decisions agree95%; achieved FPR differs, not a causal explanatory percentage",
+    "DeBERTa D+L minus D AUROC/AP point estimates nonpositive in both domains, bootstrap CIs contain0",
+    "DistilBERT/Prompt Guard retain within-Resume token-score associations conditional on chunk count; local signals do not establish general incremental detection value",
+    "Resume tail causal contributions unresolved: content, length, role and boundary-token format confounded",
+    "Original author Space documents LABEL0 benign, LABEL1 prompt injection; independent controls TP16 FP11 TN5 FN0; historical labels unchanged"
+  ],
+  "verification": [
+    "5 unit tests PASS",
+    "All four-policy AUC/AP checked by independent rank/positive-threshold formulas",
+    "960 historical G/L classifications and original thresholds replay exactly",
+    "All2900 chunk input hashes match",
+    "5 PNG figures visually inspected; same-figure PDFs exported, not separately rasterized"
+  ],
+  "plan_sha256": "df292bcac8cd608644360a6c09ca9ba89818c5c172949feb2352fbee4fa0b32c",
+  "completion_receipt_sha256": "12c7a3f4991b511575d5ce51a351d5f572104a7e254848bf28568b07ecf1811e",
+  "report": "ingress_detection_pilot/confounding_audit_v1/diagnostic_report.md",
+  "next_plan": "ingress_detection_pilot/confounding_audit_v1/next_independent_validation_plan.md"
+}

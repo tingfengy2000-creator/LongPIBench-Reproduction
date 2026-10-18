@@ -1,0 +1,184 @@
+{
+  "resume_benign_historical_holdout": {
+    "deberta": {
+      "n_sources": 40,
+      "multichunk_sources": 3,
+      "tail_minus_first": {
+        "n": 3,
+        "min": 1.0362894045101712e-06,
+        "q25": 1.685203812940017e-06,
+        "median": 2.334118221369863e-06,
+        "q75": 3.488229287995637e-05,
+        "max": 6.743046753854287e-05,
+        "mean": 2.3600291721474303e-05
+      },
+      "positive_tail_minus_first": 3,
+      "paired_sign_p_exploratory": 0.25,
+      "tail_length_score_association": {
+        "rho": 0.4999999999999999,
+        "p": 1.0,
+        "n": 3,
+        "permutations": 3999
+      },
+      "tail_length_512_overlap_n": 0,
+      "tail_lengths": {
+        "n": 3,
+        "min": 13.0,
+        "q25": 22.0,
+        "median": 31.0,
+        "q75": 130.5,
+        "max": 230.0,
+        "mean": 91.33333333333333
+      },
+      "tails_without_start_special": 3,
+      "tails_with_end_special": 3,
+      "tail_keyword_present_n": 0,
+      "keyword_present_scores": {
+        "n": 0,
+        "min": null,
+        "q25": null,
+        "median": null,
+        "q75": null,
+        "max": null,
+        "mean": null
+      },
+      "keyword_absent_scores": {
+        "n": 3,
+        "min": 3.311054797450197e-06,
+        "q25": 3.4127554044971475e-06,
+        "median": 3.514456011544098e-06,
+        "q75": 3.608621466355544e-05,
+        "max": 6.865797331556678e-05,
+        "mean": 2.516116137485369e-05
+      }
+    },
+    "distilbert": {
+      "n_sources": 40,
+      "multichunk_sources": 4,
+      "tail_minus_first": {
+        "n": 4,
+        "min": -0.059712767601013184,
+        "q25": -0.016261205077171326,
+        "median": -0.0015156269073486328,
+        "q75": -0.0009605884552001953,
+        "max": -8.064508438110352e-05,
+        "mean": -0.015706166625022888
+      },
+      "positive_tail_minus_first": 0,
+      "paired_sign_p_exploratory": 0.125,
+      "tail_length_score_association": {
+        "rho": 0.9999999999999998,
+        "p": 0.08925,
+        "n": 4,
+        "permutations": 3999
+      },
+      "tail_length_512_overlap_n": 0,
+      "tail_lengths": {
+        "n": 4,
+        "min": 40.0,
+        "q25": 54.25,
+        "median": 66.0,
+        "q75": 131.75,
+        "max": 308.0,
+        "mean": 120.0
+      },
+      "tails_without_start_special": 4,
+      "tails_with_end_special": 4,
+      "tail_keyword_present_n": 0,
+      "keyword_present_scores": {
+        "n": 0,
+        "min": null,
+        "q25": null,
+        "median": null,
+        "q75": null,
+        "max": null,
+        "mean": null
+      },
+      "keyword_absent_scores": {
+        "n": 4,
+        "min": 0.9398737549781799,
+        "q25": 0.9833165556192398,
+        "median": 0.9980546832084656,
+        "q75": 0.998608261346817,
+        "max": 0.9994974136352539,
+        "mean": 0.9838701337575912
+      }
+    },
+    "prompt-guard": {
+      "n_sources": 40,
+      "multichunk_sources": 14,
+      "tail_minus_first": {
+        "n": 14,
+        "min": -0.004434403497725725,
+        "q25": 0.07473718706751242,
+        "median": 0.2081506015965715,
+        "q75": 0.32740276845288463,
+        "max": 0.7596474189776927,
+        "mean": 0.26278597108986496
+      },
+      "positive_tail_minus_first": 13,
+      "paired_sign_p_exploratory": 0.0018310546875,
+      "tail_length_score_association": {
+        "rho": -0.16483516483516483,
+        "p": 0.573,
+        "n": 14,
+        "permutations": 3999
+      },
+      "tail_length_512_overlap_n": 0,
+      "tail_lengths": {
+        "n": 14,
+        "min": 5.0,
+        "q25": 57.25,
+        "median": 88.5,
+        "q75": 171.75,
+        "max": 443.0,
+        "mean": 128.21428571428572
+      },
+      "tails_without_start_special": 14,
+      "tails_with_end_special": 14,
+      "tail_keyword_present_n": 1,
+      "keyword_present_scores": {
+        "n": 1,
+        "min": 0.005173153709620237,
+        "q25": 0.005173153709620237,
+        "median": 0.005173153709620237,
+        "q75": 0.005173153709620237,
+        "max": 0.005173153709620237,
+        "mean": 0.005173153709620237
+      },
+      "keyword_absent_scores": {
+        "n": 13,
+        "min": 0.04405148699879646,
+        "q25": 0.09451919049024582,
+        "median": 0.2378005087375641,
+        "q75": 0.3370804786682129,
+        "max": 0.7619487047195435,
+        "mean": 0.28682017670227933
+      }
+    }
+  },
+  "identical_input_token_audit": {
+    "deberta": {
+      "repeated_token_hash_groups": 287,
+      "same_tokens_across_position_roles_groups": 0,
+      "max_recorded_score_spread_for_identical_input_ids": 0.0,
+      "identical_tokens_equal_scores_within_2e_6": true,
+      "cross_role_examples": []
+    },
+    "distilbert": {
+      "repeated_token_hash_groups": 298,
+      "same_tokens_across_position_roles_groups": 0,
+      "max_recorded_score_spread_for_identical_input_ids": 0.0,
+      "identical_tokens_equal_scores_within_2e_6": true,
+      "cross_role_examples": []
+    },
+    "prompt-guard": {
+      "repeated_token_hash_groups": 329,
+      "same_tokens_across_position_roles_groups": 0,
+      "max_recorded_score_spread_for_identical_input_ids": 0.0,
+      "identical_tokens_equal_scores_within_2e_6": true,
+      "cross_role_examples": []
+    }
+  },
+  "causal_identification": "UNRESOLVED. No randomized content/length/position intervention, no same-length tail/first overlap in many strata. Local model does not receive document absolute position."
+}
