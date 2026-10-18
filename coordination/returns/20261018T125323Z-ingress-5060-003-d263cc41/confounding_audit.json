@@ -36,7 +36,7 @@
     "5 PNG figures visually inspected; same-figure PDFs exported, not separately rasterized"
   ],
   "plan_sha256": "df292bcac8cd608644360a6c09ca9ba89818c5c172949feb2352fbee4fa0b32c",
-  "completion_receipt_sha256": "12c7a3f4991b511575d5ce51a351d5f572104a7e254848bf28568b07ecf1811e",
+  "completion_receipt_sha256": "34811a5cf0dcdbaed3a2ccc653d2479fa301f84b32ab6e8e36ef9edb10bd8fd0",
   "report": "ingress_detection_pilot/confounding_audit_v1/diagnostic_report.md",
   "next_plan": "ingress_detection_pilot/confounding_audit_v1/next_independent_validation_plan.md"
 }

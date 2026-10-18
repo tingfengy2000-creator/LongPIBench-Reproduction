@@ -24,7 +24,7 @@
     "controls.py": "0cf19c2054b1ffe6dc5b25dc1ae59df2f4f707e44056fd3a3253774e6a562988",
     "controls_manifest.jsonl": "6a94b76d2739bc406bb042da31b17af553d8477ca26fd44b0445996c45fa215c",
     "controls_observations.jsonl": "fce6bfb22de88b2bd179451aa3b49f4a80fa58ba7529598841841c1d30165dcc",
-    "diagnostic_report.md": "2aa382fdbd36cb637d5b1534046286be825f267ab71077cbe7ccbc2b244d9edd",
+    "diagnostic_report.md": "27e44930aebdce14d8f83c860ee98e07c57a12f6e4a8786c68a2971c0b892cdb",
     "distilbert_label_audit.json": "3ff65aeb564303ff80c0f40b17d25479ec07a2e9fb02eb4afdbf6004885a6d93",
     "document_decisions.csv": "4641f7fd97a0e3d31987ab706808802dc0a301a6b32eb85e6e02697a440f3aab",
     "feature_receipt.json": "fb38fd27c24bda59755fa0552d3bcec8aace1ddceaec1de926045c5eedd0bd3a",
@@ -46,7 +46,7 @@
     "plan.json": "df292bcac8cd608644360a6c09ca9ba89818c5c172949feb2352fbee4fa0b32c",
     "position_content_audit.json": "4a6c65760acc6374f96f7b00ffbd3356f81eba8685a4d5206182350441ae6c9b",
     "README.md": "2fd522a3cb38dd00b127f96f8d488c11fbafd717f88e95bbae8934859abcb2c2",
-    "report.py": "6a326b4bba3c8560b123ccdb0c680342da94d32ccd6acd2de2eacba015ca36e1",
+    "report.py": "2715b89b544b98c8947d7a6417c8d815c4f5f24422fdc467ff52f624e026cd24",
     "resume_tail_cases.csv": "9c24a26dc0f9c180147d075e8a56ee53ba3c2b8e7e6ee4d902cf53243a799f85",
     "source_evidence/space_app.py": "403e86abab2b937bf08c4f7473c0afaef1ea835d7f39fbb7d57f1a634b13a2ef",
     "source_evidence/space_info.json": "1da8cdafdf72039eb168598bda23f4a5717ffca3da6ad6b52f531c140393b512",
@@ -66,7 +66,8 @@
   "pdf_review": "Same figure export; PDF pages not separately rasterized",
   "authoring_corrections": [
     "PR step orientation changed to pre to match noninterpolated AP; no numerical score or curve-point changes",
-    "Added explicit realized calibration-FP table to disclose discrete-budget differences"
+    "Added explicit realized calibration-FP table to disclose discrete-budget differences",
+    "Removed extra final blank line in the new diagnostic report; numerical scores and fit parameters unchanged"
   ],
   "length_development_decision": "NO_GO_PENDING_NEW_INDEPENDENT_DOMAIN_BALANCED_EVIDENCE"
 }

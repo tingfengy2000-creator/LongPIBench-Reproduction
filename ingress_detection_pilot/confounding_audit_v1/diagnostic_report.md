@@ -126,4 +126,3 @@ Domain Max只改变本域阈值，不改变本域排序，因此它与Global Max
 - distilbert_label_audit.json、controls_manifest.jsonl、controls_observations.jsonl、source_evidence/：原资料与独立控制证据。
 - figures/：三模型分域ROC/PR、域条件增量、Resume尾块与长度PNG/PDF。
 - frozen_existing_files.json及completion_receipt.json：旧证据封存与最终验封。
-

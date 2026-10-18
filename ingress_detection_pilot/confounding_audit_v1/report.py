@@ -13,7 +13,7 @@ NAMES={'global_max':'Global Max','domain_max':'Domain Max','length_max':'Length 
 
 
 def write(name,lines):
-    with (ROOT/name).open('x',encoding='utf-8') as stream:stream.write('\n'.join(lines)+'\n')
+    with (ROOT/name).open('x',encoding='utf-8') as stream:stream.write('\n'.join(lines).rstrip('\n')+'\n')
 
 
 def figures(results,metrics,tail_cases,render_revision=False):
