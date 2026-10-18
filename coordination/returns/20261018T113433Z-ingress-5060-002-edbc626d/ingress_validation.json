@@ -1,0 +1,64 @@
+{
+  "task_id": "INGRESS-5060-002",
+  "run_id": "20261018T113433Z-ingress-5060-002-edbc626d",
+  "status": "EXPANDED_REAL_VALIDATION_REVIEWED_WITH_CAVEATS",
+  "formal_paper_experiment": false,
+  "n_sources": 160,
+  "n_variants_per_detector": 320,
+  "n_total_document_scores": 960,
+  "freeze_commit": "5de3e93ea85f16b5bdf2ffb8a0d86fb42cafac72",
+  "plan_sha256": "7f93458e7c6f5c6e3f70f89226b2a8c001f34ef0a9e24159425693675be812c6",
+  "model_runs": {
+    "deberta": {
+      "input_commit": "5de3e93ea85f16b5bdf2ffb8a0d86fb42cafac72",
+      "started_utc": "2026-10-18T11:16:07.402193+00:00",
+      "finished_utc": "2026-10-18T11:28:17.254404+00:00",
+      "model_repo": "protectai/deberta-v3-base-prompt-injection-v2",
+      "model_revision": "90c9989b1a342275dd0d1a95aad283c04e075671",
+      "scores_sha256": "9ef2ba04e1e270e3515eee0cfb0a937d772179cf6b26564b752b92429612842a"
+    },
+    "distilbert": {
+      "input_commit": "5de3e93ea85f16b5bdf2ffb8a0d86fb42cafac72",
+      "started_utc": "2026-10-18T11:16:06.883599+00:00",
+      "finished_utc": "2026-10-18T11:20:41.198319+00:00",
+      "model_repo": "fmops/distilbert-prompt-injection",
+      "model_revision": "c5da1fefd33c98c447b50dd806fe86aeb9e8c26c",
+      "scores_sha256": "83b33cafe953c8c55611779653643d23964bb41061636028d5bf6cdfc19f3ec2"
+    },
+    "prompt-guard": {
+      "input_commit": "52b00478d40b7f72f828fa231fa3a0e36c04cad9",
+      "started_utc": "2026-10-18T11:16:54.888647+00:00",
+      "finished_utc": "2026-10-18T11:29:52.571344+00:00",
+      "model_repo": "meta-llama/Prompt-Guard-86M",
+      "model_revision": "1209add6ca7d9c1d815171b8e5571587fe3e7b03",
+      "scores_sha256": "1ae9063ced4a1d7d849966b7a0ab5a5ce1c24350a708e6987b5a3baa1d6adc03"
+    }
+  },
+  "H1_predeclared_gate": {
+    "deberta": false,
+    "distilbert": false,
+    "prompt-guard": false
+  },
+  "original_label_matches": 960,
+  "old_pilot_artifacts_unchanged": 65,
+  "R0_R4_modified": false,
+  "pre_model_failure": "Prompt Guard attempt1 UTF-8/GBK metadata decoding; preserved separately, no model loaded or score produced; compatibility-only diff saved",
+  "main_findings": [
+    "DeBERTa observed overall FPR10% both methods; Max TPR30%, length-calibrated Max40%; exploratory paired p=.1516, domain tradeoffs",
+    "Prompt Guard benign Resume length association replicated locally but Email did not; all cross-domain H1 gates false",
+    "DistilBERT class polarity unknown; no semantic improvement claim",
+    "Source-neighborhood domain overlap confounds interpreting length calibration; no domain-conditioned baseline in this round"
+  ],
+  "raw_score_paths": {
+    "deberta": "ingress_detection_pilot/validation_v2/results/deberta/pilot_real_scores.jsonl",
+    "distilbert": "ingress_detection_pilot/validation_v2/results/distilbert/pilot_real_scores.jsonl",
+    "prompt-guard": "ingress_detection_pilot/validation_v2/results/prompt-guard/pilot_real_scores.jsonl"
+  },
+  "report": "ingress_detection_pilot/validation_v2/review_summary.md",
+  "verification_commands": [
+    "pilot venv unittest test_capture.py: 2 PASS",
+    "analysis Python unittest test_statistics.py: 4 PASS",
+    "D:/anocanda/python.exe ingress_detection_pilot/validation_v2/analyze.py: PASS",
+    "D:/anocanda/python.exe ingress_detection_pilot/validation_v2/review.py: PASS"
+  ]
+}

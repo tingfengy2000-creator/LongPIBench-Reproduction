@@ -1,0 +1,24 @@
+{
+  "status": "STARTED",
+  "task_id": "INGRESS-5060-002",
+  "formal_paper_experiment": false,
+  "started_utc": "2026-10-18T11:16:54.888647+00:00",
+  "hostname": "DESKTOP-0JKLMO4",
+  "input_commit": "52b00478d40b7f72f828fa231fa3a0e36c04cad9",
+  "runner_sha256": "37c9e777fad08e4a169011c1b131db41498311edc33e2a7747bd3a5421891774",
+  "plan_sha256": "7f93458e7c6f5c6e3f70f89226b2a8c001f34ef0a9e24159425693675be812c6",
+  "model_repo": "meta-llama/Prompt-Guard-86M",
+  "model_revision": "1209add6ca7d9c1d815171b8e5571587fe3e7b03",
+  "python": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:09:58) [MSC v.1929 64 bit (AMD64)]",
+  "original_detectors_sha256": "0f48ab6d307576096c4d07021f78c2d587261af80ca0f315af84a714607f43af",
+  "capture_sha256": "e138f7fc9975887bc4ac0e6d74fc1f213e4573ca8fc5547ecfc5bcc503cfaedc",
+  "sample_manifest_sha256": "ea1a4b68647681fcdfa53fd64e2164902165eafd8fbb779dbd6e0bdde7f9be74",
+  "runtime": {
+    "torch": "2.7.1+cpu",
+    "transformers": "4.51.3",
+    "tokenizers": "0.21.1",
+    "numpy": "2.2.6",
+    "safetensors": "0.5.3",
+    "sentencepiece": "0.2.1"
+  }
+}

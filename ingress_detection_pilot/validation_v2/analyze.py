@@ -194,7 +194,7 @@ def charts(all_data):
         axis.axvline(.1,color='gray',linestyle='--')
         axis.set(title=f'{alias}: descriptive ROC / frozen operating points',xlabel='Observed FPR (80 benign holdout)',ylabel='TPR (80 attacks)',xlim=(-.02,1.02),ylim=(-.02,1.02))
         axis.legend(fontsize=7)
-    fig.suptitle('Expanded H1 validation | 160 new sources / 320 variants per detector | exploratory, no superiority claim')
+    fig.suptitle('Expanded H1 validation | 160 new sources / detector | scatter y scales independent | exploratory')
     fig.tight_layout()
     for ext in ['png','pdf']:fig.savefig(output/f'length_and_roc.{ext}')
     plt.close(fig)
@@ -231,13 +231,13 @@ def write_reports(all_data):
             lines.append(f"| {alias} | {domain} | {stats['benign_n']} | {rho} | {corr['permutation_two_sided_p']} | {stats['default_fp']} | {stats['max_top2_rank_inversions']} | {stats['max_q90_rank_inversions']} | {stats['multiple_chunks_n']} | {stats['last_chunk_is_max_n']} |")
         lines+=['',f"{alias}：H1 预定义留出支持门槛 = **{result['H1_predeclared_holdout_gate_passed']}**。"]
     lines+=['','门槛沿用原规则：同一检测器在两个域内均ρ>0且双侧置换p≤0.025，并在各域出现至少一次Max/Top-2或Max/Q90排序反转。复核样本仅使用本轮留出良性源；校准集关联另存，仅作描述。三检测器为探索性复核，不据此作家族层面的确认性显著性结论。',
-        '领域、内容和块位置可能混杂；单纯更长或尾块得分高不能证明长度导致误报。DistilBERT官方LABEL_1的语义仍未确认，保留原行为，不能为得到好结果翻转类别。', '',
+        '原scorer使用nextafter后的严格>判定，浮点边界略保守；保留原实现并独立核验。长度条件Max从80个良性校准源取28个近邻，留一校准也取28个，p值分辨率为1/29；这种近似局部校准没有总体FPR保证。领域、内容和块位置可能混杂；单纯更长或尾块得分高不能证明长度导致误报。DistilBERT官方LABEL_1的语义仍未确认，保留原行为，不能为得到好结果翻转类别。', '',
         '## 复核与来源','',
         f"数据 revision：`{plan['dataset_revision']}`；上游 commit：`{plan['upstream_commit']}`；样本清单 SHA256：`{plan['sample_manifest_sha256']}`。",
         '完整模型版本、环境、输入commit和源码hash见 `results/<detector>/manifest.json` / `completion.json`。Windows UTF-8启动前失败及修复diff单独保留；该次没有加载模型或产出评分，未覆盖既有输出。',
         '原始用户score_pilot.py按每模型真实分数先执行；另用NumPy/SciPy实现独立核验softmax、风险映射、默认标签、阈值和总体/分域混淆矩阵。保留原始logits/softmax和块坐标，可逐条追溯。默认判定仅作核对，不是唯一比较基线。',
         '按split/domain/label以及token/chunk桶的n和min/Q25/median/Q75/max见各 `independent_audit.json:score_distributions`；ROC点是描述性排序，不能用它重新选择部署阈值。', '',
-        '图：`figures/length_and_roc.png`、`figures/rank_changes.png`，同时提供PDF。本轮非正式论文实验；不报告下游LLM攻击成功率或合法任务损伤。','']
+        '图：`figures/length_and_roc.png`、`figures/rank_changes.png`，同时提供PDF。长度散点图各面板y轴独立缩放，只比较域内趋势，不比较图间绝对高度。本轮非正式论文实验；不报告下游LLM攻击成功率或合法任务损伤。','']
     (ROOT/'length_diagnostics.md').write_text('\n'.join(lines),encoding='utf-8')
     gates={a:r['H1_predeclared_holdout_gate_passed'] for a,_,r,_,_ in all_data}
     decision=['# Go / No-go','',f'本轮留出H1支持门槛：`{json.dumps(gates)}`。',
@@ -247,7 +247,7 @@ def write_reports(all_data):
     decision+=['','样本和阈值预先冻结，未根据留出分数或ASR选模型、换标签、调阈值或筛样本。R0–R4、旧烟测和原始数据均保持不变。详见length_diagnostics.md及每模型独立审计。','']
     (ROOT/'go_no_go.md').write_text('\n'.join(decision),encoding='utf-8')
     (ROOT/'score_schema.md').write_text('# 标准得分与原始记录\n\n沿用上轮score_schema.md及未修改的score_pilot.py字段。每模型单独JSONL，320行，sample_id唯一；source_document_id配对clean/attack不跨split。test表示扩大验证留出，不是独立论文测试。\n\nchunk_count及chunks记录[start_token,end_token)、score、完整logits/softmax、输入token hash与official/shadow前向来源；坐标基于全文一次加特殊token后512分块。score是官方选定风险类softmax分量的最大值，非校准概率。Prompt Guard选INJECTION/JAILBREAK两类的max，其他两模型按官方类别映射。\n\n默认文档判定为Max>=0.5；用户离线scorer采用校准阈值和严格>，两者分开记录。所有原始模型分数保留于results/<detector>/pilot_real_scores.jsonl。\n',encoding='utf-8')
-    (ROOT/'environment_audit.md').write_text('# 环境与版本\n\n复用E盘独立CPU环境，torch 2.7.1+cpu、transformers 4.51.3、Python 3.13.9、FP32，每检测器4线程；未下载、安装或修改依赖。权重来自上轮固定hash文件；每次加载前再校验。完整版本见原requirements_cpu_freeze.txt和本轮manifest/completion。\n\n官方检测路径及512切块语义沿用既有审计；记录适配器源码hash不变。新增执行脚本只选择预冻结新源、记录日志并拒绝覆盖。启动前遇到Windows GBK读取UTF-8元数据失败，修复及失败记录位于patches/及execution_attempts/，不修改模型行为。\n\n分析Python使用本机已有NumPy/SciPy/Matplotlib，版本见validation_receipt.json；真实得分来自独立推理环境。所有大文件、缓存及下载临时目录均在E盘，本轮完全离线。R0–R4及主分支不改。\n',encoding='utf-8')
+    (ROOT/'environment_audit.md').write_text('# 环境与版本\n\n复用E盘独立CPU环境，torch 2.7.1+cpu、transformers 4.51.3、Python 3.13.9、FP32，每检测器4线程；未下载、安装或修改依赖。权重来自上轮固定hash文件；每次加载前再校验。完整版本见原requirements_cpu_freeze.txt和本轮manifest/completion。\n\n官方检测路径及512切块语义沿用既有审计；记录适配器源码hash不变。新增执行脚本只选择预冻结新源、记录日志并拒绝覆盖。启动前遇到Windows GBK读取UTF-8元数据失败，修复及失败记录位于patches/及execution_attempts/，不修改模型行为。\n\n分析Python使用本机已有NumPy/SciPy/Matplotlib，版本见validation_receipt.json；真实得分来自独立推理环境。所有大文件、缓存及下载临时目录均在E盘，模型评分过程完全离线；另仅获取固定revision的官方模型卡小文件到E盘核查标签，见distilbert_card_audit.json。R0–R4及主分支不改。\n',encoding='utf-8')
     (ROOT/'README.md').write_text('# 扩大文档检测验证 INGRESS-5060-002\n\n结果入口：[length_diagnostics.md](length_diagnostics.md)、[go_no_go.md](go_no_go.md)。真实分数按检测器分别保存在results/，不混合重复sample_id；原score_pilot输出pilot_results.json及独立审计均在各模型目录。顶层pilot_results.json汇总全部三模型。\n\n每模型320变体/160源，排除上一轮40源；80源校准、80源留出，同源不泄漏。不是独立论文测试或新算法验证。方法表见method_metrics.csv，环境、schema、曲线及不可覆盖运行证据随附。\n\n执行：独立CPU环境运行run.py --detector {deberta,distilbert,prompt-guard}；本机分析Python运行analyze.py。输出存在则拒绝覆盖，不可直接重复执行。\n',encoding='utf-8')
 
 

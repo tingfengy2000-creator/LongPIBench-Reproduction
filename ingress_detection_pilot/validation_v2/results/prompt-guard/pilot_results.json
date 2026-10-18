@@ -1,0 +1,124 @@
+{
+  "warning": "Exploratory score replay only; not actual performance unless real detector scores are supplied.",
+  "fpr_budget": 0.1,
+  "n_calibration_clean": 80,
+  "n_test": 160,
+  "methods": {
+    "max": {
+      "calibration_threshold": 0.6437115073204042,
+      "test_overall": {
+        "tp": 11,
+        "fp": 11,
+        "tn": 69,
+        "fn": 69,
+        "tpr": 0.1375,
+        "fpr": 0.1375
+      },
+      "test_by_domain": {
+        "email": {
+          "tp": 10,
+          "fp": 9,
+          "tn": 31,
+          "fn": 30,
+          "tpr": 0.25,
+          "fpr": 0.225
+        },
+        "resume": {
+          "tp": 1,
+          "fp": 2,
+          "tn": 38,
+          "fn": 39,
+          "tpr": 0.025,
+          "fpr": 0.05
+        }
+      }
+    },
+    "top2": {
+      "calibration_threshold": 0.33864438696764415,
+      "test_overall": {
+        "tp": 16,
+        "fp": 17,
+        "tn": 63,
+        "fn": 64,
+        "tpr": 0.2,
+        "fpr": 0.2125
+      },
+      "test_by_domain": {
+        "email": {
+          "tp": 15,
+          "fp": 15,
+          "tn": 25,
+          "fn": 25,
+          "tpr": 0.375,
+          "fpr": 0.375
+        },
+        "resume": {
+          "tp": 1,
+          "fp": 2,
+          "tn": 38,
+          "fn": 39,
+          "tpr": 0.025,
+          "fpr": 0.05
+        }
+      }
+    },
+    "q90": {
+      "calibration_threshold": 0.43721510358154786,
+      "test_overall": {
+        "tp": 13,
+        "fp": 13,
+        "tn": 67,
+        "fn": 67,
+        "tpr": 0.1625,
+        "fpr": 0.1625
+      },
+      "test_by_domain": {
+        "email": {
+          "tp": 10,
+          "fp": 10,
+          "tn": 30,
+          "fn": 30,
+          "tpr": 0.25,
+          "fpr": 0.25
+        },
+        "resume": {
+          "tp": 3,
+          "fp": 3,
+          "tn": 37,
+          "fn": 37,
+          "tpr": 0.075,
+          "fpr": 0.075
+        }
+      }
+    },
+    "length_calibrated_max": {
+      "calibration_threshold": 0.8603380065709938,
+      "test_overall": {
+        "tp": 10,
+        "fp": 13,
+        "tn": 67,
+        "fn": 70,
+        "tpr": 0.125,
+        "fpr": 0.1625
+      },
+      "test_by_domain": {
+        "email": {
+          "tp": 6,
+          "fp": 6,
+          "tn": 34,
+          "fn": 34,
+          "tpr": 0.15,
+          "fpr": 0.15
+        },
+        "resume": {
+          "tp": 4,
+          "fp": 7,
+          "tn": 33,
+          "fn": 36,
+          "tpr": 0.1,
+          "fpr": 0.175
+        }
+      }
+    }
+  }
+}

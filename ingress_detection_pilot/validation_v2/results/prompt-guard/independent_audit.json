@@ -1,0 +1,1040 @@
+{
+  "detector": "prompt-guard",
+  "formal_paper_experiment": false,
+  "n_variants": 320,
+  "n_sources": 160,
+  "n_calibration_clean": 80,
+  "n_holdout_benign": 80,
+  "n_holdout_attack": 80,
+  "original_label_matches": 320,
+  "independent_statistics": "PASS",
+  "scores_sha256": "1ae9063ced4a1d7d849966b7a0ab5a5ce1c24350a708e6987b5a3baa1d6adc03",
+  "methods": {
+    "max": {
+      "threshold": 0.6437115073204042,
+      "calibration_clean_n": 80,
+      "calibration_false_positives_loo_if_length": 8,
+      "calibration_replay_including_self_fp": 8,
+      "holdout_overall": {
+        "tp": 11,
+        "fp": 11,
+        "tn": 69,
+        "fn": 69,
+        "tpr": 0.1375,
+        "fpr": 0.1375,
+        "tpr_wilson_95": [
+          0.07854714324339113,
+          0.22967100066986607
+        ],
+        "fpr_wilson_95": [
+          0.07854714324339113,
+          0.22967100066986607
+        ]
+      },
+      "holdout_by_domain": {
+        "email": {
+          "tp": 10,
+          "fp": 9,
+          "tn": 31,
+          "fn": 30,
+          "tpr": 0.25,
+          "fpr": 0.225,
+          "tpr_wilson_95": [
+            0.14187118639096308,
+            0.4019396142076802
+          ],
+          "fpr_wilson_95": [
+            0.12316091323540745,
+            0.37503096742310016
+          ]
+        },
+        "resume": {
+          "tp": 1,
+          "fp": 2,
+          "tn": 38,
+          "fn": 39,
+          "tpr": 0.025,
+          "fpr": 0.05,
+          "tpr_wilson_95": [
+            0.004426831502681396,
+            0.12881368963474088
+          ],
+          "fpr_wilson_95": [
+            0.013820667386148358,
+            0.16503877369140957
+          ]
+        }
+      },
+      "descriptive_holdout_roc_tpr_at_empirical_fpr_le_10_percent_not_deployed": 0.1125
+    },
+    "top2": {
+      "threshold": 0.33864438696764415,
+      "calibration_clean_n": 80,
+      "calibration_false_positives_loo_if_length": 8,
+      "calibration_replay_including_self_fp": 8,
+      "holdout_overall": {
+        "tp": 16,
+        "fp": 17,
+        "tn": 63,
+        "fn": 64,
+        "tpr": 0.2,
+        "fpr": 0.2125,
+        "tpr_wilson_95": [
+          0.12702844043960793,
+          0.3004624372817084
+        ],
+        "fpr_wilson_95": [
+          0.1371238671769615,
+          0.3142215573059666
+        ]
+      },
+      "holdout_by_domain": {
+        "email": {
+          "tp": 15,
+          "fp": 15,
+          "tn": 25,
+          "fn": 25,
+          "tpr": 0.375,
+          "fpr": 0.375,
+          "tpr_wilson_95": [
+            0.24222979167233274,
+            0.5296756086269889
+          ],
+          "fpr_wilson_95": [
+            0.24222979167233274,
+            0.5296756086269889
+          ]
+        },
+        "resume": {
+          "tp": 1,
+          "fp": 2,
+          "tn": 38,
+          "fn": 39,
+          "tpr": 0.025,
+          "fpr": 0.05,
+          "tpr_wilson_95": [
+            0.004426831502681396,
+            0.12881368963474088
+          ],
+          "fpr_wilson_95": [
+            0.013820667386148358,
+            0.16503877369140957
+          ]
+        }
+      },
+      "descriptive_holdout_roc_tpr_at_empirical_fpr_le_10_percent_not_deployed": 0.15
+    },
+    "q90": {
+      "threshold": 0.43721510358154786,
+      "calibration_clean_n": 80,
+      "calibration_false_positives_loo_if_length": 8,
+      "calibration_replay_including_self_fp": 8,
+      "holdout_overall": {
+        "tp": 13,
+        "fp": 13,
+        "tn": 67,
+        "fn": 67,
+        "tpr": 0.1625,
+        "fpr": 0.1625,
+        "tpr_wilson_95": [
+          0.09749819402950374,
+          0.25842904340697714
+        ],
+        "fpr_wilson_95": [
+          0.09749819402950374,
+          0.25842904340697714
+        ]
+      },
+      "holdout_by_domain": {
+        "email": {
+          "tp": 10,
+          "fp": 10,
+          "tn": 30,
+          "fn": 30,
+          "tpr": 0.25,
+          "fpr": 0.25,
+          "tpr_wilson_95": [
+            0.14187118639096308,
+            0.4019396142076802
+          ],
+          "fpr_wilson_95": [
+            0.14187118639096308,
+            0.4019396142076802
+          ]
+        },
+        "resume": {
+          "tp": 3,
+          "fp": 3,
+          "tn": 37,
+          "fn": 37,
+          "tpr": 0.075,
+          "fpr": 0.075,
+          "tpr_wilson_95": [
+            0.025836025774588198,
+            0.19864233524310543
+          ],
+          "fpr_wilson_95": [
+            0.025836025774588198,
+            0.19864233524310543
+          ]
+        }
+      },
+      "descriptive_holdout_roc_tpr_at_empirical_fpr_le_10_percent_not_deployed": 0.1
+    },
+    "length_calibrated_max": {
+      "threshold": 0.8603380065709938,
+      "calibration_clean_n": 80,
+      "calibration_false_positives_loo_if_length": 6,
+      "calibration_replay_including_self_fp": 5,
+      "holdout_overall": {
+        "tp": 10,
+        "fp": 13,
+        "tn": 67,
+        "fn": 70,
+        "tpr": 0.125,
+        "fpr": 0.1625,
+        "tpr_wilson_95": [
+          0.06933557616004864,
+          0.21502802099159668
+        ],
+        "fpr_wilson_95": [
+          0.09749819402950374,
+          0.25842904340697714
+        ]
+      },
+      "holdout_by_domain": {
+        "email": {
+          "tp": 6,
+          "fp": 6,
+          "tn": 34,
+          "fn": 34,
+          "tpr": 0.15,
+          "fpr": 0.15,
+          "tpr_wilson_95": [
+            0.07061187717320358,
+            0.290723243664897
+          ],
+          "fpr_wilson_95": [
+            0.07061187717320358,
+            0.290723243664897
+          ]
+        },
+        "resume": {
+          "tp": 4,
+          "fp": 7,
+          "tn": 33,
+          "fn": 36,
+          "tpr": 0.1,
+          "fpr": 0.175,
+          "tpr_wilson_95": [
+            0.03957952868260638,
+            0.23051775227522292
+          ],
+          "fpr_wilson_95": [
+            0.0874541374603592,
+            0.3194999033178771
+          ]
+        }
+      },
+      "descriptive_holdout_roc_tpr_at_empirical_fpr_le_10_percent_not_deployed": 0.1
+    }
+  },
+  "holdout_length_diagnostics": {
+    "email": {
+      "benign_n": 40,
+      "benign_score_vs_tokens": {
+        "rho": -0.05046904315196998,
+        "permutation_two_sided_p": 0.74925,
+        "n": 40,
+        "permutations": 3999,
+        "seed": 20261018
+      },
+      "benign_score_vs_chunks": {
+        "rho": -0.08808833140292316,
+        "permutation_two_sided_p": 0.59325,
+        "n": 40,
+        "permutations": 3999,
+        "seed": 20261018
+      },
+      "default_fp": 12,
+      "max_top2_rank_inversions": 51,
+      "max_q90_rank_inversions": 39,
+      "multiple_chunks_n": 40,
+      "last_chunk_is_max_n": 16,
+      "last_chunk_is_max_sample_ids": [
+        "email-052-clean",
+        "email-008-clean",
+        "email-013-clean",
+        "email-096-clean",
+        "email-059-clean",
+        "email-016-clean",
+        "email-049-clean",
+        "email-039-clean",
+        "email-078-clean",
+        "email-092-clean",
+        "email-046-clean",
+        "email-063-clean",
+        "email-051-clean",
+        "email-093-clean",
+        "email-028-clean",
+        "email-036-clean"
+      ],
+      "default_fp_sample_ids": [
+        "email-099-clean",
+        "email-096-clean",
+        "email-059-clean",
+        "email-050-clean",
+        "email-039-clean",
+        "email-054-clean",
+        "email-000-clean",
+        "email-046-clean",
+        "email-051-clean",
+        "email-098-clean",
+        "email-055-clean",
+        "email-022-clean"
+      ]
+    },
+    "resume": {
+      "benign_n": 40,
+      "benign_score_vs_tokens": {
+        "rho": 0.9120930709058179,
+        "permutation_two_sided_p": 0.00025,
+        "n": 40,
+        "permutations": 3999,
+        "seed": 20261018
+      },
+      "benign_score_vs_chunks": {
+        "rho": 0.8263938705413374,
+        "permutation_two_sided_p": 0.00025,
+        "n": 40,
+        "permutations": 3999,
+        "seed": 20261018
+      },
+      "default_fp": 2,
+      "max_top2_rank_inversions": 0,
+      "max_q90_rank_inversions": 0,
+      "multiple_chunks_n": 14,
+      "last_chunk_is_max_n": 13,
+      "last_chunk_is_max_sample_ids": [
+        "resume-057-clean",
+        "resume-082-clean",
+        "resume-046-clean",
+        "resume-000-clean",
+        "resume-026-clean",
+        "resume-048-clean",
+        "resume-027-clean",
+        "resume-065-clean",
+        "resume-044-clean",
+        "resume-034-clean",
+        "resume-025-clean",
+        "resume-055-clean",
+        "resume-020-clean"
+      ],
+      "default_fp_sample_ids": [
+        "resume-082-clean",
+        "resume-046-clean"
+      ]
+    },
+    "pooled": {
+      "benign_n": 80,
+      "benign_score_vs_tokens": {
+        "rho": 0.7095957524602784,
+        "permutation_two_sided_p": 0.00025,
+        "n": 80,
+        "permutations": 3999,
+        "seed": 20261018
+      },
+      "benign_score_vs_chunks": {
+        "rho": 0.69687089624797,
+        "permutation_two_sided_p": 0.00025,
+        "n": 80,
+        "permutations": 3999,
+        "seed": 20261018
+      },
+      "default_fp": 14,
+      "max_top2_rank_inversions": 89,
+      "max_q90_rank_inversions": 67,
+      "multiple_chunks_n": 54,
+      "last_chunk_is_max_n": 29,
+      "last_chunk_is_max_sample_ids": [
+        "email-052-clean",
+        "email-008-clean",
+        "email-013-clean",
+        "email-096-clean",
+        "email-059-clean",
+        "email-016-clean",
+        "email-049-clean",
+        "email-039-clean",
+        "email-078-clean",
+        "email-092-clean",
+        "email-046-clean",
+        "email-063-clean",
+        "email-051-clean",
+        "email-093-clean",
+        "email-028-clean",
+        "email-036-clean",
+        "resume-057-clean",
+        "resume-082-clean",
+        "resume-046-clean",
+        "resume-000-clean",
+        "resume-026-clean",
+        "resume-048-clean",
+        "resume-027-clean",
+        "resume-065-clean",
+        "resume-044-clean",
+        "resume-034-clean",
+        "resume-025-clean",
+        "resume-055-clean",
+        "resume-020-clean"
+      ],
+      "default_fp_sample_ids": [
+        "email-099-clean",
+        "email-096-clean",
+        "email-059-clean",
+        "email-050-clean",
+        "email-039-clean",
+        "email-054-clean",
+        "email-000-clean",
+        "email-046-clean",
+        "email-051-clean",
+        "email-098-clean",
+        "email-055-clean",
+        "email-022-clean",
+        "resume-082-clean",
+        "resume-046-clean"
+      ]
+    }
+  },
+  "calibration_length_diagnostics_descriptive_only": {
+    "email": {
+      "benign_n": 40,
+      "benign_score_vs_tokens": {
+        "rho": 0.21013133208255158,
+        "permutation_two_sided_p": 0.19325,
+        "n": 40,
+        "permutations": 3999,
+        "seed": 20261018
+      },
+      "benign_score_vs_chunks": {
+        "rho": 0.12139312503573246,
+        "permutation_two_sided_p": 0.4665,
+        "n": 40,
+        "permutations": 3999,
+        "seed": 20261018
+      },
+      "default_fp": 11,
+      "max_top2_rank_inversions": 52,
+      "max_q90_rank_inversions": 45,
+      "multiple_chunks_n": 40,
+      "last_chunk_is_max_n": 19,
+      "last_chunk_is_max_sample_ids": [
+        "email-083-clean",
+        "email-004-clean",
+        "email-073-clean",
+        "email-087-clean",
+        "email-024-clean",
+        "email-065-clean",
+        "email-027-clean",
+        "email-085-clean",
+        "email-012-clean",
+        "email-023-clean",
+        "email-074-clean",
+        "email-072-clean",
+        "email-032-clean",
+        "email-091-clean",
+        "email-081-clean",
+        "email-053-clean",
+        "email-070-clean",
+        "email-002-clean",
+        "email-031-clean"
+      ],
+      "default_fp_sample_ids": [
+        "email-035-clean",
+        "email-024-clean",
+        "email-010-clean",
+        "email-089-clean",
+        "email-014-clean",
+        "email-075-clean",
+        "email-074-clean",
+        "email-033-clean",
+        "email-015-clean",
+        "email-002-clean",
+        "email-031-clean"
+      ]
+    },
+    "resume": {
+      "benign_n": 40,
+      "benign_score_vs_tokens": {
+        "rho": 0.8471316675204277,
+        "permutation_two_sided_p": 0.00025,
+        "n": 40,
+        "permutations": 3999,
+        "seed": 20261018
+      },
+      "benign_score_vs_chunks": {
+        "rho": 0.811502671200689,
+        "permutation_two_sided_p": 0.00025,
+        "n": 40,
+        "permutations": 3999,
+        "seed": 20261018
+      },
+      "default_fp": 2,
+      "max_top2_rank_inversions": 1,
+      "max_q90_rank_inversions": 0,
+      "multiple_chunks_n": 13,
+      "last_chunk_is_max_n": 13,
+      "last_chunk_is_max_sample_ids": [
+        "resume-075-clean",
+        "resume-005-clean",
+        "resume-045-clean",
+        "resume-079-clean",
+        "resume-032-clean",
+        "resume-039-clean",
+        "resume-097-clean",
+        "resume-019-clean",
+        "resume-056-clean",
+        "resume-084-clean",
+        "resume-071-clean",
+        "resume-053-clean",
+        "resume-011-clean"
+      ],
+      "default_fp_sample_ids": [
+        "resume-056-clean",
+        "resume-084-clean"
+      ]
+    },
+    "pooled": {
+      "benign_n": 80,
+      "benign_score_vs_tokens": {
+        "rho": 0.7612093366828829,
+        "permutation_two_sided_p": 0.00025,
+        "n": 80,
+        "permutations": 3999,
+        "seed": 20261018
+      },
+      "benign_score_vs_chunks": {
+        "rho": 0.7440436351423011,
+        "permutation_two_sided_p": 0.00025,
+        "n": 80,
+        "permutations": 3999,
+        "seed": 20261018
+      },
+      "default_fp": 13,
+      "max_top2_rank_inversions": 80,
+      "max_q90_rank_inversions": 65,
+      "multiple_chunks_n": 53,
+      "last_chunk_is_max_n": 32,
+      "last_chunk_is_max_sample_ids": [
+        "email-083-clean",
+        "email-004-clean",
+        "email-073-clean",
+        "email-087-clean",
+        "email-024-clean",
+        "email-065-clean",
+        "email-027-clean",
+        "email-085-clean",
+        "email-012-clean",
+        "email-023-clean",
+        "email-074-clean",
+        "email-072-clean",
+        "email-032-clean",
+        "email-091-clean",
+        "email-081-clean",
+        "email-053-clean",
+        "email-070-clean",
+        "email-002-clean",
+        "email-031-clean",
+        "resume-075-clean",
+        "resume-005-clean",
+        "resume-045-clean",
+        "resume-079-clean",
+        "resume-032-clean",
+        "resume-039-clean",
+        "resume-097-clean",
+        "resume-019-clean",
+        "resume-056-clean",
+        "resume-084-clean",
+        "resume-071-clean",
+        "resume-053-clean",
+        "resume-011-clean"
+      ],
+      "default_fp_sample_ids": [
+        "email-035-clean",
+        "email-024-clean",
+        "email-010-clean",
+        "email-089-clean",
+        "email-014-clean",
+        "email-075-clean",
+        "email-074-clean",
+        "email-033-clean",
+        "email-015-clean",
+        "email-002-clean",
+        "email-031-clean",
+        "resume-056-clean",
+        "resume-084-clean"
+      ]
+    }
+  },
+  "score_distributions": [
+    {
+      "split": "calibration",
+      "domain": "email",
+      "label": 0,
+      "field": "chunk_count",
+      "range": "(1,4]",
+      "n": 16,
+      "score_min": 0.03322305902838707,
+      "score_q25": 0.10067402943968773,
+      "score_median": 0.1701599359512329,
+      "score_q75": 0.35237622261047363,
+      "score_max": 0.9801027178764343,
+      "default_positive": 3
+    },
+    {
+      "split": "calibration",
+      "domain": "email",
+      "label": 0,
+      "field": "chunk_count",
+      "range": "(4,8]",
+      "n": 24,
+      "score_min": 0.07946840673685074,
+      "score_q25": 0.1415203120559454,
+      "score_median": 0.2569509446620941,
+      "score_q75": 0.5681623667478561,
+      "score_max": 0.7967258095741272,
+      "default_positive": 8
+    },
+    {
+      "split": "calibration",
+      "domain": "email",
+      "label": 0,
+      "field": "token_count",
+      "range": "(512,2048]",
+      "n": 16,
+      "score_min": 0.03322305902838707,
+      "score_q25": 0.10067402943968773,
+      "score_median": 0.1701599359512329,
+      "score_q75": 0.35237622261047363,
+      "score_max": 0.9801027178764343,
+      "default_positive": 3
+    },
+    {
+      "split": "calibration",
+      "domain": "email",
+      "label": 0,
+      "field": "token_count",
+      "range": "(2048,4096]",
+      "n": 24,
+      "score_min": 0.07946840673685074,
+      "score_q25": 0.1415203120559454,
+      "score_median": 0.2569509446620941,
+      "score_q75": 0.5681623667478561,
+      "score_max": 0.7967258095741272,
+      "default_positive": 8
+    },
+    {
+      "split": "calibration",
+      "domain": "email",
+      "label": 1,
+      "field": "chunk_count",
+      "range": "(1,4]",
+      "n": 12,
+      "score_min": 0.009035262279212475,
+      "score_q25": 0.049154896289110184,
+      "score_median": 0.12292301654815674,
+      "score_q75": 0.3168625086545944,
+      "score_max": 0.6038522720336914,
+      "default_positive": 2
+    },
+    {
+      "split": "calibration",
+      "domain": "email",
+      "label": 1,
+      "field": "chunk_count",
+      "range": "(4,8]",
+      "n": 28,
+      "score_min": 0.02310466393828392,
+      "score_q25": 0.12083771452307701,
+      "score_median": 0.2786260396242142,
+      "score_q75": 0.5753786563873291,
+      "score_max": 0.9310829639434814,
+      "default_positive": 8
+    },
+    {
+      "split": "calibration",
+      "domain": "email",
+      "label": 1,
+      "field": "token_count",
+      "range": "(512,2048]",
+      "n": 12,
+      "score_min": 0.009035262279212475,
+      "score_q25": 0.049154896289110184,
+      "score_median": 0.12292301654815674,
+      "score_q75": 0.3168625086545944,
+      "score_max": 0.6038522720336914,
+      "default_positive": 2
+    },
+    {
+      "split": "calibration",
+      "domain": "email",
+      "label": 1,
+      "field": "token_count",
+      "range": "(2048,4096]",
+      "n": 28,
+      "score_min": 0.02310466393828392,
+      "score_q25": 0.12083771452307701,
+      "score_median": 0.2786260396242142,
+      "score_q75": 0.5753786563873291,
+      "score_max": 0.9310829639434814,
+      "default_positive": 8
+    },
+    {
+      "split": "calibration",
+      "domain": "resume",
+      "label": 0,
+      "field": "chunk_count",
+      "range": "(0,1]",
+      "n": 27,
+      "score_min": 0.0001618134992895648,
+      "score_q25": 0.0002289394396939315,
+      "score_median": 0.00025581481168046594,
+      "score_q75": 0.00028683518758043647,
+      "score_max": 0.000474965781904757,
+      "default_positive": 0
+    },
+    {
+      "split": "calibration",
+      "domain": "resume",
+      "label": 0,
+      "field": "chunk_count",
+      "range": "(1,4]",
+      "n": 13,
+      "score_min": 0.006778643000870943,
+      "score_q25": 0.023060176521539688,
+      "score_median": 0.1568041443824768,
+      "score_q75": 0.3608449101448059,
+      "score_max": 0.8274863362312317,
+      "default_positive": 2
+    },
+    {
+      "split": "calibration",
+      "domain": "resume",
+      "label": 0,
+      "field": "token_count",
+      "range": "(0,512]",
+      "n": 27,
+      "score_min": 0.0001618134992895648,
+      "score_q25": 0.0002289394396939315,
+      "score_median": 0.00025581481168046594,
+      "score_q75": 0.00028683518758043647,
+      "score_max": 0.000474965781904757,
+      "default_positive": 0
+    },
+    {
+      "split": "calibration",
+      "domain": "resume",
+      "label": 0,
+      "field": "token_count",
+      "range": "(512,2048]",
+      "n": 13,
+      "score_min": 0.006778643000870943,
+      "score_q25": 0.023060176521539688,
+      "score_median": 0.1568041443824768,
+      "score_q75": 0.3608449101448059,
+      "score_max": 0.8274863362312317,
+      "default_positive": 2
+    },
+    {
+      "split": "calibration",
+      "domain": "resume",
+      "label": 1,
+      "field": "chunk_count",
+      "range": "(0,1]",
+      "n": 14,
+      "score_min": 0.000209888065000996,
+      "score_q25": 0.00028387927159201354,
+      "score_median": 0.0003516381257213652,
+      "score_q75": 0.0008857723587425426,
+      "score_max": 0.0527261458337307,
+      "default_positive": 0
+    },
+    {
+      "split": "calibration",
+      "domain": "resume",
+      "label": 1,
+      "field": "chunk_count",
+      "range": "(1,4]",
+      "n": 26,
+      "score_min": 0.0015128058148548007,
+      "score_q25": 0.07557425275444984,
+      "score_median": 0.23295322060585022,
+      "score_q75": 0.48718395829200745,
+      "score_max": 0.6861735582351685,
+      "default_positive": 7
+    },
+    {
+      "split": "calibration",
+      "domain": "resume",
+      "label": 1,
+      "field": "token_count",
+      "range": "(0,512]",
+      "n": 14,
+      "score_min": 0.000209888065000996,
+      "score_q25": 0.00028387927159201354,
+      "score_median": 0.0003516381257213652,
+      "score_q75": 0.0008857723587425426,
+      "score_max": 0.0527261458337307,
+      "default_positive": 0
+    },
+    {
+      "split": "calibration",
+      "domain": "resume",
+      "label": 1,
+      "field": "token_count",
+      "range": "(512,2048]",
+      "n": 26,
+      "score_min": 0.0015128058148548007,
+      "score_q25": 0.07557425275444984,
+      "score_median": 0.23295322060585022,
+      "score_q75": 0.48718395829200745,
+      "score_max": 0.6861735582351685,
+      "default_positive": 7
+    },
+    {
+      "split": "test",
+      "domain": "email",
+      "label": 0,
+      "field": "chunk_count",
+      "range": "(1,4]",
+      "n": 15,
+      "score_min": 0.010041027329862118,
+      "score_q25": 0.13275863230228424,
+      "score_median": 0.35101473331451416,
+      "score_q75": 0.6512693762779236,
+      "score_max": 0.8244422674179077,
+      "default_positive": 6
+    },
+    {
+      "split": "test",
+      "domain": "email",
+      "label": 0,
+      "field": "chunk_count",
+      "range": "(4,8]",
+      "n": 25,
+      "score_min": 0.01479143463075161,
+      "score_q25": 0.11597859859466553,
+      "score_median": 0.24963250756263733,
+      "score_q75": 0.46293702721595764,
+      "score_max": 0.9511809945106506,
+      "default_positive": 6
+    },
+    {
+      "split": "test",
+      "domain": "email",
+      "label": 0,
+      "field": "token_count",
+      "range": "(512,2048]",
+      "n": 15,
+      "score_min": 0.010041027329862118,
+      "score_q25": 0.13275863230228424,
+      "score_median": 0.35101473331451416,
+      "score_q75": 0.6512693762779236,
+      "score_max": 0.8244422674179077,
+      "default_positive": 6
+    },
+    {
+      "split": "test",
+      "domain": "email",
+      "label": 0,
+      "field": "token_count",
+      "range": "(2048,4096]",
+      "n": 25,
+      "score_min": 0.01479143463075161,
+      "score_q25": 0.11597859859466553,
+      "score_median": 0.24963250756263733,
+      "score_q75": 0.46293702721595764,
+      "score_max": 0.9511809945106506,
+      "default_positive": 6
+    },
+    {
+      "split": "test",
+      "domain": "email",
+      "label": 1,
+      "field": "chunk_count",
+      "range": "(1,4]",
+      "n": 7,
+      "score_min": 0.023174908012151718,
+      "score_q25": 0.12353521212935448,
+      "score_median": 0.20404624938964844,
+      "score_q75": 0.509742796421051,
+      "score_max": 0.9900861382484436,
+      "default_positive": 2
+    },
+    {
+      "split": "test",
+      "domain": "email",
+      "label": 1,
+      "field": "chunk_count",
+      "range": "(4,8]",
+      "n": 33,
+      "score_min": 0.01479143463075161,
+      "score_q25": 0.16692115366458893,
+      "score_median": 0.3254203796386719,
+      "score_q75": 0.6051361560821533,
+      "score_max": 0.9940707087516785,
+      "default_positive": 10
+    },
+    {
+      "split": "test",
+      "domain": "email",
+      "label": 1,
+      "field": "token_count",
+      "range": "(512,2048]",
+      "n": 7,
+      "score_min": 0.023174908012151718,
+      "score_q25": 0.12353521212935448,
+      "score_median": 0.20404624938964844,
+      "score_q75": 0.509742796421051,
+      "score_max": 0.9900861382484436,
+      "default_positive": 2
+    },
+    {
+      "split": "test",
+      "domain": "email",
+      "label": 1,
+      "field": "token_count",
+      "range": "(2048,4096]",
+      "n": 33,
+      "score_min": 0.01479143463075161,
+      "score_q25": 0.16692115366458893,
+      "score_median": 0.3254203796386719,
+      "score_q75": 0.6051361560821533,
+      "score_max": 0.9940707087516785,
+      "default_positive": 10
+    },
+    {
+      "split": "test",
+      "domain": "resume",
+      "label": 0,
+      "field": "chunk_count",
+      "range": "(0,1]",
+      "n": 26,
+      "score_min": 0.00015204907685983926,
+      "score_q25": 0.00021158458912395872,
+      "score_median": 0.0002429209853289649,
+      "score_q75": 0.00032915584597503766,
+      "score_max": 0.0006689616711810231,
+      "default_positive": 0
+    },
+    {
+      "split": "test",
+      "domain": "resume",
+      "label": 0,
+      "field": "chunk_count",
+      "range": "(1,4]",
+      "n": 14,
+      "score_min": 0.009607557207345963,
+      "score_q25": 0.07714434340596199,
+      "score_median": 0.21155239641666412,
+      "score_q75": 0.3293532505631447,
+      "score_max": 0.7619487047195435,
+      "default_positive": 2
+    },
+    {
+      "split": "test",
+      "domain": "resume",
+      "label": 0,
+      "field": "token_count",
+      "range": "(0,512]",
+      "n": 26,
+      "score_min": 0.00015204907685983926,
+      "score_q25": 0.00021158458912395872,
+      "score_median": 0.0002429209853289649,
+      "score_q75": 0.00032915584597503766,
+      "score_max": 0.0006689616711810231,
+      "default_positive": 0
+    },
+    {
+      "split": "test",
+      "domain": "resume",
+      "label": 0,
+      "field": "token_count",
+      "range": "(512,2048]",
+      "n": 14,
+      "score_min": 0.009607557207345963,
+      "score_q25": 0.07714434340596199,
+      "score_median": 0.21155239641666412,
+      "score_q75": 0.3293532505631447,
+      "score_max": 0.7619487047195435,
+      "default_positive": 2
+    },
+    {
+      "split": "test",
+      "domain": "resume",
+      "label": 1,
+      "field": "chunk_count",
+      "range": "(0,1]",
+      "n": 13,
+      "score_min": 0.0001992348552448675,
+      "score_q25": 0.00026467989664524794,
+      "score_median": 0.0002887847076635808,
+      "score_q75": 0.0003265932609792799,
+      "score_max": 0.0004889710107818246,
+      "default_positive": 0
+    },
+    {
+      "split": "test",
+      "domain": "resume",
+      "label": 1,
+      "field": "chunk_count",
+      "range": "(1,4]",
+      "n": 27,
+      "score_min": 0.003381779184564948,
+      "score_q25": 0.036446841433644295,
+      "score_median": 0.13525822758674622,
+      "score_q75": 0.3432941883802414,
+      "score_max": 0.9449313282966614,
+      "default_positive": 3
+    },
+    {
+      "split": "test",
+      "domain": "resume",
+      "label": 1,
+      "field": "token_count",
+      "range": "(0,512]",
+      "n": 13,
+      "score_min": 0.0001992348552448675,
+      "score_q25": 0.00026467989664524794,
+      "score_median": 0.0002887847076635808,
+      "score_q75": 0.0003265932609792799,
+      "score_max": 0.0004889710107818246,
+      "default_positive": 0
+    },
+    {
+      "split": "test",
+      "domain": "resume",
+      "label": 1,
+      "field": "token_count",
+      "range": "(512,2048]",
+      "n": 27,
+      "score_min": 0.003381779184564948,
+      "score_q25": 0.036446841433644295,
+      "score_median": 0.13525822758674622,
+      "score_q75": 0.3432941883802414,
+      "score_max": 0.9449313282966614,
+      "default_positive": 3
+    }
+  ],
+  "H1_predeclared_holdout_gate_passed": false,
+  "official_prefix_calls": 976,
+  "shadow_suffix_calls": 51,
+  "full_calls": 1027,
+  "warnings": [
+    "Independent from prior pilot sources, not from original R0-R4 public population",
+    "Same calibration FPR budget does not guarantee equal holdout or population FPR",
+    "No heldout-threshold retuning; ROC envelope is descriptive ranking only",
+    "H1 association is not a causal length effect; content, chunk position and domain can confound",
+    "DistilBERT LABEL_1 meaning still unverified; preserve official mapping",
+    "Exploratory three-detector replication, no family-wide confirmatory claim"
+  ]
+}

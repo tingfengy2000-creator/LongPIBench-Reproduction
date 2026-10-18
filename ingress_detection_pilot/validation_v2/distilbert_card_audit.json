@@ -1,0 +1,8 @@
+{
+  "source": "https://huggingface.co/fmops/distilbert-prompt-injection/raw/c5da1fefd33c98c447b50dd806fe86aeb9e8c26c/README.md",
+  "revision": "c5da1fefd33c98c447b50dd806fe86aeb9e8c26c",
+  "retrieved_utc": "2026-10-18T11:21:37.6421155Z",
+  "saved_file": "distilbert_model_card.md",
+  "saved_sha256": "d0324b133335892623f0b1c0545e70ec0cc8959ef7f7ff2cc4e5a92cb11b7457",
+  "observation": "Model card only contains dataset/language/license metadata; config contains no explicit id2label. Class polarity remains unverified. No mapping change authorized or applied."
+}
