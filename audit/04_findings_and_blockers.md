@@ -2,6 +2,8 @@
 
 **当前判定：代码与数据具备继续做工程复现的基础；严格复现 Table 4 仍有配置溯源和环境阻碍。尚无本地性能结果，不能进入针对某类失败的新方法设计。**
 
+2026-10-18接续：011来源0476ab8的large/small/oracle独立适配器张量和短query验收均通过。010工具误判已由新运行解决，原始失败仍保留；基础环境阶段结束。012开始真实ID0样本的完整接线debug，完整PromptLocate/定位实际触发、长输入helper有效性及目标配对输出以新回执为准。B05正式checkpoint仍unknown，不从debug选优；正式生成预算/配置与全量日志仍待冻结。
+
 2026-10-18最新：010原分句初始化实际通过，禁用parser/senter且在parser前插入组件在当前spaCy3.8.7/模型3.8.0上可运行；此前静态疑点不再作为已确认初始化阻碍。真实Llama tokenizer单BOS修复通过。large停在协调端工具集合检查，PEFT强制导出额外底座输入embedding导致过严误判；不归为防御算法失败或正式F6发生率。修正工具后的适配器逐值检查与query待011，small/oracle尚未运行；B05仍unknown，完整PromptLocate与B08/B09/B11等待处理。
 
 2026-10-18后续：007的两个ZIP/6个推理成员及spaCy wheel文件范围验收完成，来源8657879。首次观察hash不代表作者公开摘要；未安装/加载。010将独立验证原版spaCy初始化和三个适配器；B05 large/small仍unknown，B13分句初始化实际兼容性尚待回执。详见coordination/returns/20261018T024358Z-coordinator-aux-files-review/REVIEW.md；下文“007待回执”为历史状态。

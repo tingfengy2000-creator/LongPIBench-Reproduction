@@ -1,0 +1,17 @@
+# 011验收与真实样本debug接续
+
+来源0476ab88e7426fbe78897e2bba81525c453292ed，输入34795d71acbc5630e44dc2c02444c1b3d5d4b1af。通过Git审查3份JSON/3份日志/1份REPORT，共7个小文件；凭据模式扫描未命中。source_blobs.json记录原始Git blob，正常merge保留来源祖先，不改010历史失败或其他回执。
+
+接受COMPLETED_ADAPTER_ENGINEERING_ONLY。large、small、oracle分别20261018T030940Z-aux-runtime-adapter-large-6d20db5a、20261018T031132Z-aux-runtime-adapter-small-6be8f67c、20261018T031318Z-aux-runtime-adapter-oracle-a59f5a5b，全部ADAPTER_LOAD_AND_SYNTHETIC_QUERY_PASSED。各451存盘张量逐值匹配（允许加载dtype转换）、450活动adapter键无缺失，导出452键的唯一额外输入embedding与固定底座逐值一致。224NF4层/quant_state/default adapter均通过；有限CUDA logits及原10token query已记录，三项均synthetic_decision=0。该标签不用于准确率或checkpoint比较。
+
+输入commit/真实主机一致，准备回执及007 SHA256引用按仓库原始字节校验通过。formal_samples_used/formal_inference_executed/formal_checkpoint_selected/full_promptlocate_constructor_verified均false。011解决独立适配器工程验收，不能外推完整PromptLocate或任何ASR。
+
+## 012准备
+
+本轮新增run_debug_pilot.py与locator_trace.py，012进入固定真实样本调试：Email/Resume各ID0，干净/authority_spoof共4份输入，两个条件最多8次目标生成。先无防御target，再完整whole+PromptLocate处理，最后恢复后target，三个独立GPU进程避免全部模型同时常驻。whole=large为预先固定的debug接线条件，正式large/small仍unknown；不跑small对比，不从结果选优。
+
+目标BF16/greedy及512token为本轮debug条件，消息模板保留实际tokens，单BOS差异记录为patches/target_chat_tokenization.diff，不修改固定上游。原定位分段、搜索、oracle/query、helper概率均观察并返回原值；明确预算保护及异常/非有限值后跳过该case下游的debug控制流差异。完整raw留唯一runs目录，Git仅回传小型响应/状态/token统计与原文件hash；未知坐标不伪造。完整形式化日志和20000token配置仍待后续验收。
+
+已在协调端使用固定官方prepare_example重建4份输入并与既有归档/原始SHA256核对：email clean10524/attack11242字符，resume clean3265/attack3738字符。该检查没有调用模型，实际012尚待5090运行。
+
+验证：python -m pytest tests -q --basetemp .pytest-local-real-pilot-20261018-c -p no:cacheprovider，65 passed；新脚本编译通过。测试包括按序且不能丢非空白内容的原坐标映射、literal-backslash-n回映射、非有限值保留、观察不改返回对象、预算错误、helper NaN不改原返回、不可覆盖raw及错误主机门槛；依然是离线契约测试，不冒充实际链路通过。

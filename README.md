@@ -4,6 +4,8 @@ LongPIBench / PromptLocate 基线复现与逐案例失败归因。本仓库用�
 
 **当前阶段：R0 审计与5090环境准备。尚未运行正式模型实验，没有本地 ASR。**
 
+当前进展（2026-10-18）：011三套适配器工程路径均已验收，来源0476ab8；[012](coordination/tasks/R0-5090-012.md)开始固定真实样本端到端debug，Email/Resume各ID0，干净/攻击、无防御/PromptLocate共最多8次目标生成，分进程适配32GB显存。代码与任务已准备，执行结果仍待5090回执；不计算ASR，不选择正式checkpoint。以下为历史进展。
+
 当前进展（2026-10-18）：010为PARTIAL_WITH_BLOCKERS：推理文件提取、spaCy模型安装及原分句初始化、真实Llama tokenizer单BOS均通过；large因协调端张量集合检查过严停止，small/oracle未执行。原回执ba6d4bc保留。[011](coordination/tasks/R0-5090-011.md)已准备修正工具后仅接续三个适配器检查，不重跑已通过阶段。尚无正式样本或完整PromptLocate结果；以下为历史进展。
 
 当前进展（2026-10-18）：[007](coordination/tasks/R0-5090-007.md)两个官方适配器ZIP及spaCy wheel文件校验已验收，来源8657879；[010](coordination/tasks/R0-5090-010.md)已准备推理文件提取、本地spaCy安装、原分句初始化和三个适配器独立GPU加载检查。当前仍未验收适配器/spaCy初始化或完整PromptLocate；不选择large/small、不运行正式样本。以下为历史进展。

@@ -1,0 +1,12 @@
+{
+  "source_commit": "0476ab88e7426fbe78897e2bba81525c453292ed",
+  "git_blobs": {
+    "coordination/returns/20261018T030940Z-aux-runtime-adapter-large-6d20db5a/aux_runtime.json": "84f22ae8a8fc6528a96736ff7528be0b1e767d0f",
+    "coordination/returns/20261018T030940Z-aux-runtime-adapter-large-6d20db5a/runtime.log": "1233bc6ae86e6329b5197ba6e34edda8f31e38c6",
+    "coordination/returns/20261018T031132Z-aux-runtime-adapter-small-6be8f67c/aux_runtime.json": "2ec2df7a07228fa23be733894fe00bb4a090aeb1",
+    "coordination/returns/20261018T031132Z-aux-runtime-adapter-small-6be8f67c/runtime.log": "90f4acab909e95bacea7d4671d59b2354001a41a",
+    "coordination/returns/20261018T031318Z-aux-runtime-adapter-oracle-a59f5a5b/aux_runtime.json": "ea80810e852ac9c31039991d39d9bd1c320d46da",
+    "coordination/returns/20261018T031318Z-aux-runtime-adapter-oracle-a59f5a5b/runtime.log": "612255c9e6361f08cc86f051aee9f0040181fecd",
+    "coordination/returns/20261018T031547Z-aux-runtime-r0-5090-011/REPORT.md": "166132ded9b53bb4b8f10913e65134609c506494"
+  }
+}

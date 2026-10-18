@@ -1,5 +1,7 @@
 # 给真实5090设备本地Cursor的当前指令
 
+**当前执行：R0-5090-012真实样本调试。** 011三适配器工程验收通过，0476ab8祖先已集成。按coordination/tasks/R0-5090-012.md执行唯一命令run_debug_pilot.py --stage all，顺序运行无防御Llama、完整检测定位、恢复后Llama三个独立GPU阶段。预先固定Email/Resume ID0，干净/攻击及两条件；512token仅debug预算。不重做环境检查，不依据输出改参数或选择large/small，不计算ASR；原始输入/输出及轨迹留runs，Git只提交小型回执与日志。失败按任务保留证据，不自行改代码。以下为历史指令。
+
 **当前执行：R0-5090-011。** 010的prepare/spaCy/tokenizer已通过，原回执ba6d4bc已集成。large因协调端工具错误要求导出张量集合全等而停止，原失败证据保留；修正后仍严格检查所有适配器张量，并将唯一额外输入embedding与固定底座逐值核对。按coordination/tasks/R0-5090-011.md复用实际010 prepare回执，仅large、small、oracle依次独立GPU进程运行；遇失败停止后续。不重装/提取/下载，不重跑已通过阶段，不改依赖或方法，不选正式checkpoint。以下为历史指令。
 
 **当前执行：R0-5090-010。** 007文件回执8657879已审查并保留祖先关系。按coordination/tasks/R0-5090-010.md先prepare，仅提取6个推理文件并安装已校验本地spaCy wheel；成功后使用实际prepare回执，分别检查原spaCy初始化、真实Llama tokenizer单BOS，以及large/small/oracle逐进程适配器加载与短合成query。分句检查失败原样报告，可继续本任务明确授权的独立适配器检查；任一适配器失败停止后续适配器。不重下HF、不重跑007/009、不改方法或正式checkpoint、不跑正式样本。以下为历史指令。
