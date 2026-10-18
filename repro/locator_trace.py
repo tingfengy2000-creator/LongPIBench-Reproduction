@@ -1,11 +1,13 @@
-"""Read-only observations around pinned locator calls, for sequential debug use.
+"""Read-only observations around pinned locator calls, for sequential runs.
 
 Wrappers return the original objects. Budget exceptions and downstream stops
-are explicit debug controls, not a formal implementation of the original method.
+are declared execution controls, not changes to the upstream search algorithm.
+Debug defaults remain unchanged; formal guarded conditions use explicit labels.
 """
 import functools
 import logging
 import math
+import sys
 import time
 
 
@@ -59,11 +61,16 @@ def map_segments(original, segments):
 
 
 class LocatorTrace(logging.Handler):
-    def __init__(self, module, *, max_calls=256, max_seconds=1200):
+    def __init__(self, module, *, max_calls=256, max_seconds=1200,
+                 whole_label='whole_large_debug_only', budget_error='DEBUG_TRACE_BUDGET_EXCEEDED',
+                 record_boundaries=False):
         super().__init__(level=logging.ERROR)
         self.module = module
         self.max_calls = max_calls
         self.max_seconds = max_seconds
+        self.whole_label = whole_label
+        self.budget_error = budget_error
+        self.record_boundaries = record_boundaries
         self.originals = []
         self.reset()
 
@@ -71,6 +78,7 @@ class LocatorTrace(logging.Handler):
         self.events = []
         self.errors = []
         self.nonfinite = False
+        self.boundary_nonfinite = False
         self.calls = 0
         self.started = time.monotonic()
         self.segment_mapping = None
@@ -81,8 +89,8 @@ class LocatorTrace(logging.Handler):
     def check_budget(self):
         self.calls += 1
         if self.calls > self.max_calls or time.monotonic() - self.started > self.max_seconds:
-            self.errors.append({'level': 'ERROR', 'message': 'DEBUG_TRACE_BUDGET_EXCEEDED'})
-            raise RuntimeError('DEBUG_TRACE_BUDGET_EXCEEDED')
+            self.errors.append({'level': 'ERROR', 'message': self.budget_error})
+            raise RuntimeError(self.budget_error)
 
     def wrap(self, owner, name, observe):
         original = getattr(owner, name)
@@ -126,7 +134,9 @@ class LocatorTrace(logging.Handler):
             self.wrap(detector, name, observe)
 
     def install(self, whole_detector, locator):
-        self.observe_query_model(whole_detector, 'whole_large_debug_only')
+        if self.record_boundaries:
+            self.install_boundary_observer()
+        self.observe_query_model(whole_detector, self.whole_label)
         self.observe_query_model(locator.bd, 'localization_oracle')
 
         def split(event, args, kwargs, result):
@@ -173,6 +183,36 @@ class LocatorTrace(logging.Handler):
         logging.getLogger(self.module.__name__).addHandler(self)
         return self
 
+    def install_boundary_observer(self):
+        # Replace this module's numpy reference, not global numpy functions.
+        # Read the actual split_sentence locals at its original np.where call;
+        # return exactly the original result, with no recomputation of scores.
+        original = self.module.np
+        observer = self
+
+        class NumpyObserver:
+            def __getattr__(self, name):
+                return getattr(original, name)
+
+            def where(self, *args, **kwargs):
+                result = original.where(*args, **kwargs)
+                frame = sys._getframe(1)
+                values = frame.f_locals
+                if frame.f_code.co_name == 'split_sentence' and 'cos_sim' in values:
+                    scores = values['cos_sim'].tolist()
+                    finite = all(math.isfinite(float(v)) for v in scores)
+                    observer.boundary_nonfinite = observer.boundary_nonfinite or not finite
+                    row = {'clause': values['sub_sentence'], 'words': list(values['words']),
+                           'clause_offsets': safe_value(values['offsets']),
+                           'adjacent_word_cosine': safe_value(scores), 'finite': finite,
+                           'threshold': float(values['thres']), 'split_positions': result[0].tolist()}
+                    event = next(e for e in reversed(observer.events) if e['function'] == 'split_sentence')
+                    event.setdefault('boundary_observations', []).append(row)
+                return result
+
+        self.originals.append((self.module, 'np', original))
+        self.module.np = NumpyObserver()
+
     def close(self):
         logging.getLogger(self.module.__name__).removeHandler(self)
         for owner, name, original in reversed(self.originals):
@@ -182,5 +222,6 @@ class LocatorTrace(logging.Handler):
 
     def record(self):
         return {'events': self.events, 'logged_errors': self.errors, 'nonfinite_helper': self.nonfinite,
+                'nonfinite_boundary': self.boundary_nonfinite,
                 'call_count': self.calls, 'segment_mapping': self.segment_mapping,
                 'debug_budgets': {'max_observed_calls': self.max_calls, 'max_seconds': self.max_seconds}}

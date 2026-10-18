@@ -1,0 +1,67 @@
+diff --git a/repro/locator_trace.py b/repro/locator_trace.py
+index b233aa9..0d79a0f 100644
+--- a/repro/locator_trace.py
++++ b/repro/locator_trace.py
+@@ -1 +1 @@
+-"""Read-only observations around pinned locator calls, for sequential debug use.
++"""Read-only observations around pinned locator calls, for sequential runs.
+@@ -4 +4,2 @@ Wrappers return the original objects. Budget exceptions and downstream stops
+-are explicit debug controls, not a formal implementation of the original method.
++are declared execution controls, not changes to the upstream search algorithm.
++Debug defaults remain unchanged; formal guarded conditions use explicit labels.
+@@ -8,0 +10 @@ import math
++import sys
+@@ -62 +64,3 @@ class LocatorTrace(logging.Handler):
+-    def __init__(self, module, *, max_calls=256, max_seconds=1200):
++    def __init__(self, module, *, max_calls=256, max_seconds=1200,
++                 whole_label='whole_large_debug_only', budget_error='DEBUG_TRACE_BUDGET_EXCEEDED',
++                 record_boundaries=False):
+@@ -66,0 +71,3 @@ class LocatorTrace(logging.Handler):
++        self.whole_label = whole_label
++        self.budget_error = budget_error
++        self.record_boundaries = record_boundaries
+@@ -73,0 +81 @@ class LocatorTrace(logging.Handler):
++        self.boundary_nonfinite = False
+@@ -84,2 +92,2 @@ class LocatorTrace(logging.Handler):
+-            self.errors.append({'level': 'ERROR', 'message': 'DEBUG_TRACE_BUDGET_EXCEEDED'})
+-            raise RuntimeError('DEBUG_TRACE_BUDGET_EXCEEDED')
++            self.errors.append({'level': 'ERROR', 'message': self.budget_error})
++            raise RuntimeError(self.budget_error)
+@@ -129 +137,3 @@ class LocatorTrace(logging.Handler):
+-        self.observe_query_model(whole_detector, 'whole_large_debug_only')
++        if self.record_boundaries:
++            self.install_boundary_observer()
++        self.observe_query_model(whole_detector, self.whole_label)
+@@ -175,0 +186,30 @@ class LocatorTrace(logging.Handler):
++    def install_boundary_observer(self):
++        # Replace this module's numpy reference, not global numpy functions.
++        # Read the actual split_sentence locals at its original np.where call;
++        # return exactly the original result, with no recomputation of scores.
++        original = self.module.np
++        observer = self
++
++        class NumpyObserver:
++            def __getattr__(self, name):
++                return getattr(original, name)
++
++            def where(self, *args, **kwargs):
++                result = original.where(*args, **kwargs)
++                frame = sys._getframe(1)
++                values = frame.f_locals
++                if frame.f_code.co_name == 'split_sentence' and 'cos_sim' in values:
++                    scores = values['cos_sim'].tolist()
++                    finite = all(math.isfinite(float(v)) for v in scores)
++                    observer.boundary_nonfinite = observer.boundary_nonfinite or not finite
++                    row = {'clause': values['sub_sentence'], 'words': list(values['words']),
++                           'clause_offsets': safe_value(values['offsets']),
++                           'adjacent_word_cosine': safe_value(scores), 'finite': finite,
++                           'threshold': float(values['thres']), 'split_positions': result[0].tolist()}
++                    event = next(e for e in reversed(observer.events) if e['function'] == 'split_sentence')
++                    event.setdefault('boundary_observations', []).append(row)
++                return result
++
++        self.originals.append((self.module, 'np', original))
++        self.module.np = NumpyObserver()
++
+@@ -184,0 +225 @@ class LocatorTrace(logging.Handler):
++                'nonfinite_boundary': self.boundary_nonfinite,

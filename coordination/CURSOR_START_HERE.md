@@ -1,5 +1,7 @@
 # 给真实5090设备本地Cursor的当前指令
 
+**当前执行：R2-5090-001正式配对防御。** R1回执b90b150已按原历史集成，400清单/冻结配置一致，原始raw及唯一解析F6保留。按coordination/tasks/R2-5090-001.md运行run_formal_r2.py：自动先CPU只读核验400份既有R1 raw/tokens/评分，通过后两个独立GPU进程执行400检测定位及有效恢复后的Llama。不重跑R1、环境或debug；固定large和预声明资源条件，不据ASR改参数。失败保留新回执并停止后续，不自行重试。以下为历史指令。
+
 **当前执行：R1-5090-001正式无防御基线。** 014两条Email独立条件已核验通过，3a098a3祖先已保留。按coordination/tasks/R1-5090-001.md运行run_formal_r1.py：固定200原始样本、400份clean/attack输入、Llama BF16/greedy/20000上限；先clean后attack，不重用debug结果，不重跑环境。完整raw留runs，小型计数/有效性/hash清单回Git；异常/截断单列，不自动重试或改参数。Owner已固定R2全文检测器detector_large/checkpoint-5000，不按ASR换权重；论文实际checkpoint仍unknown。该决定不改R1配置，不要求中断正在执行的R1或中途更新代码；R2仍须等待明确任务。以下为历史指令。
 
 **当前执行：R0-5090-014独立Email条件。** 013摘要777f194已核验：搜索段数持续减少，012观察预算截断了推进过程。按coordination/tasks/R0-5090-014.md执行run_email_continuation.py --stage all，从相同原输入重跑两条Email定位；观察8192/3600秒，模型/方法配置不变，旧记录保留。自动比较旧已完成逻辑前缀并附新轨迹摘要；定位有效后才独立生成Llama输出。无防御、Resume、环境不重跑；遇失败按任务保留证据，不自行放宽预算或修方法。以下为历史指令。

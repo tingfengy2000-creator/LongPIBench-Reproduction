@@ -4,6 +4,8 @@ R0实际环境、固定数据、模型/adapter、完整PromptLocate和小样本�
 
 ## R1
 
+2026-10-18执行回执b90b150已集成。实际输入3771540只比原派发main新增Owner R2选择记录，R1代码/冻结配置未改。400次生成完成；清单399 VALID、1个Email解析F6，无截断。协调端已核对回执/计数/版本/400唯一ID；raw只读核验由R2-5090-001首阶段完成，不能把本地清单核对声称为全部原始文件已读。
+
 配置configs/formal_r1_v1.json，canonical SHA256=efe2a0665ba627cf9a72b5d465690a3fc6fd62b8922cf3ed7fd902d871bf15b1；400份官方输入全集canonical SHA256=aec6b4e0ce04074ca850c1199d7ada5c2c09ee58f4cfbe5d64ec0210b3dd0542。已在协调端重构并核对全部400份官方输入、200份原文件hash，不是模型运行。
 
 R1-5090-001按两任务各100 clean+100 attack固定运行无防御Llama，budget20000、greedy、BF16、seed42、单BOS消息格式；不复用debug输出、不筛掉ID0。每次raw及全部配置/输入/token/停止原因不可覆盖。输出错误和截断单列，先完整性验收再汇总正式ASR。
@@ -18,4 +20,16 @@ formal仅表示本研究预先冻结的总体执行条件。研究名称declared
 
 此前候选写入configs/formal_r2_checkpoint_proposal.json，现以RESOLVED_BY_OWNER指向独立选择记录。两个adapter加载均已通过，但未运行双checkpoint正式比较。Owner选择只定义本研究公开版本执行条件，不反推论文身份。
 
-R1不加载DataSentinel，可独立开始。R2将与R1共享冻结目标生成条件，另需冻结定位轨迹/有效性和资源保护口径；当前不授权R2全量。不得把012/014不同观察预算拼为一个原始运行，也不把不同checkpoint运行择优拼接。
+R1不加载DataSentinel。R2目标生成直接使用R1冻结条件；输入全集亦相同。不得把012/014不同观察预算拼为一个原始运行，也不把不同checkpoint运行择优拼接。
+
+## R2全量执行条件
+
+configs/formal_r2_v1.json canonical SHA256=5d12649f82f7fde7f45b8f1c7ba9adf7b3366163423e8ffc1e3ab428adcec568；任务R2-5090-001。先只读核验既有R1 raw，再两个独立GPU进程处理全部400份检测定位和有效恢复后目标，不重跑无防御。R1解析F6案例仍保留其R2对应输入；配对统计以后显式处理无效对，不据结果过滤。
+
+全文large与oracle沿用已验收007/010/011身份；helper/分句/搜索/恢复保持公开快照算法及sep_thres=0.0。新增观察器从原split_sentence的实际np.where调用读取相邻词cosine、阈值及split indices，不重算、不替换其结果，不全局修改numpy函数；模块引用退出时恢复，观察器差异另存patches/formal_locator_observation.diff（相对原调试观察器，不修改上游源码）。坐标仅在非空白有序覆盖可证明时给出，否则归因Uncertain。helper和边界非有限值不修算法，记录F6。
+
+预声明每条8192次嵌套观察调用/3600秒软保护，包含检测；入口检查不能中断正在执行的CUDA调用，事件数不等于GPU查询数。超过预算标CENSORED_RESOURCE，不运行该条目标；普通上游错误/非有限值标F6，原吞错fallback保留在raw而不冒充有效防御输出。其余输入继续固定顺序，CUDA/OOM保存attempt后停止整个阶段，不自动重试。阶段磁盘空闲要求20GiB。目标EOS/上限/解析错误继续独立记录。
+
+这定义declared_public_snapshot_single_bos_large_guarded_v1，是有资源保护及错误透出的公开版本条件，与无限预算且吞错后继续目标的原执行方式不同。R2大样本结果尚未产生，不宣称严格原论文性能；资源限制不因后续ASR放宽。clean也走完整防御，保留被删范围和目标输出，不能以目标未被攻击当合法任务质量无损。
+
+执行后仍需协调端审查raw清单、有效性及配对分母才能汇总ASR/失败归因。attempted按已记录配对位置计数，target_generation_attempted/returned单列，避免把上游无效跳过报成目标生成。当前正式ASR尚未验收。

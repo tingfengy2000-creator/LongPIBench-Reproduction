@@ -2,7 +2,9 @@
 
 LongPIBench / PromptLocate 基线复现与逐案例失败归因。本仓库用于本机 Codex 与 RTX 5090 32GB 主机上的 Cursor 通过 Git 交接代码、任务和可核查的回执。
 
-**当前阶段：端到端debug已完成，正式R1配置与执行器已准备。尚无正式ASR。**
+**当前阶段：正式R1已完成400次无防御生成；R2配对防御任务已准备。正式统计待raw核验。**
+
+最新（2026-10-18）：R1来源b90b150已集成，冻结配置/输入及400条清单通过协调端核对；399条VALID，email-072-authority_spoof为解析F6，无截断。完整raw在5090，下一条[R2-5090-001](coordination/tasks/R2-5090-001.md)先在CPU只读重验全部R1原始记录及评分，通过后直接依次执行400条检测定位与有效恢复后的Llama生成。large固定、不重跑R1、不调整阈值；[R2配置](configs/formal_r2_v1.json)预声明观察资源保护及F6/跳过口径。下列R1未启动等为历史状态。
 
 当前进展（2026-10-18）：014两条Email有效完成定位/目标生成，来源3a098a3；[正式R1任务](coordination/tasks/R1-5090-001.md)固定400份输入及20000生成上限，无防御基线独立执行。Owner已[固定R2全文检测器为detector_large/checkpoint-5000](configs/formal_r2_checkpoint_selection_v1.json)，不按ASR换权重；[配置冻结说明](audit/10_formal_configuration_freeze.md)保留公开快照/单BOS差异及论文checkpoint未知。R1配置保持不变，实际启动与结果仍待5090回执；R2全量任务尚待准备。以下为历史进展。
 

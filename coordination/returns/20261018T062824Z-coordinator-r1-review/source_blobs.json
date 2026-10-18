@@ -1,0 +1,8 @@
+{
+  "git_blobs": {
+    "coordination/returns/20261018T055552Z-formal-r1-b00a0078/REPORT.md": "9cfafca2073bd70b33f4f69ffb4fffac930d9bfa",
+    "coordination/returns/20261018T055552Z-formal-r1-b00a0078/r1_run.json": "f63a9ec5640c88156114a3dd23ae1d019b6a111b",
+    "coordination/returns/20261018T055552Z-formal-r1-b00a0078/runtime.log": "180c8004b952803dca5e078079321ce0be5219d0"
+  },
+  "source_commit": "b90b1504e28717c0a1dca492b56a1c23d1ec21ae"
+}

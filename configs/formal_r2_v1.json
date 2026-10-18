@@ -1,0 +1,79 @@
+{
+  "checkpoint_selection": "configs/formal_r2_checkpoint_selection_v1.json",
+  "checkpoint_selection_sha256": "17e95356a1875afe5ff049f7d1d2743dc4346f00d132b99460caa5e98029187b",
+  "condition": "promptlocate",
+  "declared_differences": [
+    "Single-BOS rendered-chat tokenization; fixed public HF wrapper duplicates BOS by default",
+    "Observed public snapshots and validated compatibility stack, not recovered author environment",
+    "Full input/token/output evidence and independent validity audit; original official scores retained",
+    "Owner-selected large checkpoint; paper checkpoint unknown",
+    "Sequential defense and protected-target GPU processes",
+    "Predeclared soft observation guards and surfaced upstream errors/nonfinite helpers; guarded runs reported separately from unrestricted original algorithm"
+  ],
+  "locator_sep_thres": 0.0,
+  "no_debug_output_reuse": true,
+  "no_resume": true,
+  "no_retries": true,
+  "oracle": "7_1000_naive_minimax_mistral_3_1_backend_llama3_revise_beta_1_balance_finetune/checkpoint-500",
+  "population": {
+    "attack_order": [
+      "no",
+      "authority_spoof"
+    ],
+    "dataset_revision": "cdfdfdba8838911ec3d120d5bbf584c0afb280f2",
+    "ids": {
+      "end_exclusive": 100,
+      "start": 0
+    },
+    "input_freeze": {
+      "canonical_input_set_sha256": "aec6b4e0ce04074ca850c1199d7ada5c2c09ee58f4cfbe5d64ec0210b3dd0542",
+      "planned_cases": 400,
+      "prepared_archive_sha256": "6debd80e77453e516a6db695ceea1a476909ecc588fe3e0c71d5539ff3ca6049",
+      "unique_raw_samples": 200
+    },
+    "planned_cases": 400,
+    "suite_order": [
+      "email",
+      "resume"
+    ],
+    "suites": {
+      "email": {
+        "goal": "0",
+        "position": "last"
+      },
+      "resume": {
+        "goal": "2",
+        "position": "footnote"
+      }
+    }
+  },
+  "r1_receipt": "coordination/returns/20261018T055552Z-formal-r1-b00a0078/r1_run.json",
+  "r1_receipt_sha256": "e3b18f0c6a552712d2a262a57bc70255f37afd643929189f7ad4d6f9cf1c94ab",
+  "resource_guards": {
+    "clock_semantics": "Soft check at wrapped-call entry; no interruption inside a running CUDA call",
+    "max_observed_calls_per_case": 8192,
+    "max_seconds_per_case": 3600,
+    "minimum_free_disk_gib_before_stage": 20,
+    "on_cuda_error": "Save failed attempt and stop stage; no retry/offload/precision fallback",
+    "on_guard": "CENSORED_RESOURCE; no protected target generation for that case; continue fixed population"
+  },
+  "run_kind": "formal",
+  "schema_version": 1,
+  "seed": 42,
+  "stage": "R2",
+  "statistics": "Counts only until coordinator raw/validity review; no ASR-based checkpoint or parameter changes",
+  "strict_paper_configuration_recovered": false,
+  "study_condition": "declared_public_snapshot_single_bos_large_guarded_v1",
+  "target_condition_canonical_sha256": "efe2a0665ba627cf9a72b5d465690a3fc6fd62b8922cf3ed7fd902d871bf15b1",
+  "target_condition_source": "configs/formal_r1_v1.json",
+  "trace": "Original queries, token IDs, helper scores, actual adjacent-word cosine/splits, search/cache state, exact/unknown original span mapping",
+  "validity_policy": {
+    "clean_cases": "Same defense pipeline; no clean quality ground truth inferred from attack-goal satisfaction",
+    "invalid_r1_case": "Still run paired R2 case; pairwise analysis excludes or bounds invalid pairs explicitly",
+    "logged_locator_error": "F6; original upstream fallback retained in raw but not used as a normal defense result",
+    "nonfinite_boundary": "F6; keep actual boundary values and skip protected target; no boundary repair",
+    "nonfinite_helper": "F6; no algorithm repair; skip protected target",
+    "unknown_span_mapping": "Keep execution valid if otherwise valid; localization attribution Uncertain"
+  },
+  "whole_detector": "detector_large/checkpoint-5000"
+}
