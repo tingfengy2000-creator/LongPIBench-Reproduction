@@ -1,0 +1,68 @@
+{
+  "experiment": "INGRESS-5060-002 source-disjoint H1 validation",
+  "formal_paper_experiment": false,
+  "selection_seed": "ingress-validation-v2-20261018",
+  "selection_uses_scores": false,
+  "n_source_documents": 160,
+  "n_variants_per_detector": 320,
+  "detectors": [
+    "deberta",
+    "distilbert",
+    "prompt-guard"
+  ],
+  "primary_detector": "deberta",
+  "calibration_sources_per_domain": 40,
+  "holdout_sources_per_domain": 40,
+  "n_calibration_clean": 80,
+  "n_holdout_clean": 80,
+  "n_holdout_attack": 80,
+  "previous_pilot_source_overlap": 0,
+  "R0_R4_overlap": "All sources remain part of the original public reproduction population; no unseen-paper-test claim",
+  "methods": [
+    "max",
+    "top2",
+    "q90",
+    "length_calibrated_max"
+  ],
+  "fpr_budget": 0.1,
+  "threshold_rule": "Exact supplied score_pilot.py, benign calibration only; global threshold, report actual holdout FPR overall and by domain",
+  "fixed_fpr_comparison": "Same calibration budget; differing realized holdout FPR prohibits a direct superiority claim. ROC envelope descriptive only, never used to retune.",
+  "H1_support_gate": "Unchanged: within-domain benign token/Max Spearman rho>0 and permutation p<=.025 in BOTH domains for same detector, with >=1 Max/Top2 or Max/Q90 inversion in each; exploratory, no causal claim",
+  "H1_population": "Holdout benign sources only; calibration associations descriptive, not included in the replication gate",
+  "permutation_seed": 20261018,
+  "permutations": 3999,
+  "diagnostic_only": "Describe default false positives, chunk-tail maxima and rank changes; do not change segmentation, windows, labels, payload, model or training",
+  "model_versions": {
+    "deberta": "90c9989b1a342275dd0d1a95aad283c04e075671",
+    "distilbert": "c5da1fefd33c98c447b50dd806fe86aeb9e8c26c",
+    "prompt-guard": "1209add6ca7d9c1d815171b8e5571587fe3e7b03"
+  },
+  "upstream_commit": "c7b80114ae56f65fb8019ec82afdb3df91e4ed65",
+  "dataset_revision": "cdfdfdba8838911ec3d120d5bbf584c0afb280f2",
+  "sample_manifest_sha256": "ea1a4b68647681fcdfa53fd64e2164902165eafd8fbb779dbd6e0bdde7f9be74",
+  "previous_manifest_sha256": "5db7630890195015ee27beb1cd172293b3473c764d6e69a0d933438c6dcaf123",
+  "supplied_scorer_sha256": "ed22cd0213a32d963f98a885c193f1f3bb28170fe2094c9a6fd9589a9633632e",
+  "capture_adapter_sha256": "e138f7fc9975887bc4ac0e6d74fc1f213e4573ca8fc5547ecfc5bcc503cfaedc",
+  "chunk_tokens": 512,
+  "device": "cpu",
+  "dtype": "float32",
+  "threads_per_detector": 4,
+  "new_downloads": false,
+  "large_file_drive": "E:",
+  "stopping_rule": "Run all frozen cases once; failure preserves partial run, no automatic rerun or exclusion",
+  "plots": [
+    "within-domain benign length/score",
+    "ROC with frozen-threshold points",
+    "rank changes"
+  ],
+  "token_bins": [
+    512,
+    2048,
+    4096
+  ],
+  "chunk_bins": [
+    1,
+    4,
+    8
+  ]
+}
