@@ -1,5 +1,7 @@
 # 给真实5090设备本地Cursor的当前指令
 
+**当前执行：R0-5090-014独立Email条件。** 013摘要777f194已核验：搜索段数持续减少，012观察预算截断了推进过程。按coordination/tasks/R0-5090-014.md执行run_email_continuation.py --stage all，从相同原输入重跑两条Email定位；观察8192/3600秒，模型/方法配置不变，旧记录保留。自动比较旧已完成逻辑前缀并附新轨迹摘要；定位有效后才独立生成Llama输出。无防御、Resume、环境不重跑；遇失败按任务保留证据，不自行放宽预算或修方法。以下为历史指令。
+
 **当前执行：R0-5090-013既有轨迹分析。** 012三阶段回执cbe3dca已集成：完整PromptLocate构造及6次真实目标生成已完成，两条Email定位受调试观察预算中断。按coordination/tasks/R0-5090-013.md运行标准库只读分析器analyze_debug_trace.py，仅导出本地raw的真实generate/oracle计数、搜索进度及末尾错误；不使用GPU、不改预算、不重跑样本/环境。原始hash必须匹配，不改旧证据，不自行继续GPU任务。以下为历史指令。
 
 **当前执行：R0-5090-012真实样本调试。** 011三适配器工程验收通过，0476ab8祖先已集成。按coordination/tasks/R0-5090-012.md执行唯一命令run_debug_pilot.py --stage all，顺序运行无防御Llama、完整检测定位、恢复后Llama三个独立GPU阶段。预先固定Email/Resume ID0，干净/攻击及两条件；512token仅debug预算。不重做环境检查，不依据输出改参数或选择large/small，不计算ASR；原始输入/输出及轨迹留runs，Git只提交小型回执与日志。失败按任务保留证据，不自行改代码。以下为历史指令。
