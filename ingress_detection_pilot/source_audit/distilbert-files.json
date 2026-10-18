@@ -1,0 +1,164 @@
+{
+  "_id": "64b5af4b60274cbb296c0f88",
+  "id": "fmops/distilbert-prompt-injection",
+  "private": false,
+  "pipeline_tag": "text-classification",
+  "library_name": "transformers",
+  "tags": [
+    "transformers",
+    "pytorch",
+    "tensorboard",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "en",
+    "de",
+    "es",
+    "dataset:deepset/prompt-injections",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "downloads": 1534,
+  "likes": 7,
+  "modelId": "fmops/distilbert-prompt-injection",
+  "author": "fmops",
+  "sha": "c5da1fefd33c98c447b50dd806fe86aeb9e8c26c",
+  "lastModified": "2023-07-28T17:56:32.000Z",
+  "gated": false,
+  "disabled": false,
+  "mask_token": "[MASK]",
+  "widgetData": [
+    {
+      "text": "I like you. I love you"
+    }
+  ],
+  "model-index": null,
+  "config": {
+    "architectures": [
+      "DistilBertForSequenceClassification"
+    ],
+    "model_type": "distilbert",
+    "tokenizer_config": {
+      "cls_token": "[CLS]",
+      "mask_token": "[MASK]",
+      "pad_token": "[PAD]",
+      "sep_token": "[SEP]",
+      "unk_token": "[UNK]"
+    }
+  },
+  "cardData": {
+    "license": "apache-2.0",
+    "datasets": [
+      "deepset/prompt-injections"
+    ],
+    "language": [
+      "en",
+      "de",
+      "es"
+    ],
+    "metrics": [
+      "accuracy"
+    ],
+    "library_name": "transformers"
+  },
+  "transformersInfo": {
+    "auto_model": "AutoModelForSequenceClassification",
+    "pipeline_tag": "text-classification",
+    "processor": "AutoTokenizer"
+  },
+  "siblings": [
+    {
+      "rfilename": ".gitattributes",
+      "blobId": "a6344aac8c09253b3b630fb776ae94478aa0275b",
+      "size": 1519
+    },
+    {
+      "rfilename": ".gitignore",
+      "blobId": "0348ea97130c017c407fcfb6fd4003859f17b84c",
+      "size": 13
+    },
+    {
+      "rfilename": "README.md",
+      "blobId": "0c2a1446357e58e0feb10819c9d9b4ff7a6e6b50",
+      "size": 137
+    },
+    {
+      "rfilename": "config.json",
+      "blobId": "7ddc823970c33003067f792460fbcd93dd52e245",
+      "size": 615
+    },
+    {
+      "rfilename": "model.safetensors",
+      "blobId": "f61a10f0ff9984e6e4073da2fc6145a34305b390",
+      "size": 267832560,
+      "lfs": {
+        "sha256": "2e4646e1f03c0ced285c67a52353b829ff6d76a1bf35ab5ee0beb19dd4447eef",
+        "size": 267832560,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "pytorch_model.bin",
+      "blobId": "be416e5fa0a3b7ab334d2d4991982d11f57f3960",
+      "size": 267855533,
+      "lfs": {
+        "sha256": "33209d85b4cebd299dccde657d5bcc39db91cd08eb43cb52974de20ad11cb456",
+        "size": 267855533,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "runs/Jul17_21-59-57_3f0f079c503b/events.out.tfevents.1689631208.3f0f079c503b.32686.3",
+      "blobId": "877f37b03815726bfeabcbbbb54e88265bc7ce3a",
+      "size": 5872,
+      "lfs": {
+        "sha256": "3cbad871a73ffe10f6b0161a84c6e7a8d9e2723c73bada18e97167f15f825afd",
+        "size": 5872,
+        "pointerSize": 129
+      }
+    },
+    {
+      "rfilename": "special_tokens_map.json",
+      "blobId": "a8b3208c2884c4efb86e49300fdd3dc877220cdf",
+      "size": 125
+    },
+    {
+      "rfilename": "tokenizer.json",
+      "blobId": "688882a79f44442ddc1f60d70334a7ff5df0fb47",
+      "size": 711396
+    },
+    {
+      "rfilename": "tokenizer_config.json",
+      "blobId": "4ef60ec0d5ae1c4734806dc596587e23620da2d1",
+      "size": 320
+    },
+    {
+      "rfilename": "training_args.bin",
+      "blobId": "f9b822baa6e12d888590441d3f948710bb4b62bb",
+      "size": 4027,
+      "lfs": {
+        "sha256": "f8b27f52d41172a53c87ce5a886954781ad53dc50fe659aff6798112483e4c8a",
+        "size": 4027,
+        "pointerSize": 129
+      }
+    },
+    {
+      "rfilename": "vocab.txt",
+      "blobId": "fb140275c155a9c7c5a3b3e0e77a9e839594a938",
+      "size": 231508
+    }
+  ],
+  "spaces": [
+    "fmops/prompt-injection-classifier"
+  ],
+  "createdAt": "2023-07-17T21:14:51.000Z",
+  "safetensors": {
+    "parameters": {
+      "F32": 66955010
+    },
+    "total": 66955010
+  },
+  "usedStorage": 535697992
+}

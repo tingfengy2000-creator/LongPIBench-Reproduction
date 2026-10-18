@@ -1,0 +1,50 @@
+{
+  "experiment": "H1-only ingress detection engineering pilot",
+  "created_before_detector_inference": true,
+  "formal_paper_experiment": false,
+  "data_revision": "cdfdfdba8838911ec3d120d5bbf584c0afb280f2",
+  "official_current_commit": "c7b80114ae56f65fb8019ec82afdb3df91e4ed65",
+  "parent_commit": "06d103b11aaa5d821a2f819b9cca66f586312591",
+  "n_documents": 80,
+  "n_source_documents": 40,
+  "per_domain": {
+    "clean": 20,
+    "authority_spoof": 20
+  },
+  "calibration_sources_per_domain": 12,
+  "development_holdout_sources_per_domain": 8,
+  "schema_test_means": "development holdout only; no claim of a new independent paper test set",
+  "R0_R4_overlap": "All public sources already belong to frozen reproduction population; pilot uses a readonly separate view, not independent unseen data",
+  "primary_detector": "deberta",
+  "replication_detector": "distilbert",
+  "prompt_guard_status": "Pinned metadata; 401 on protected config/tokenizer, no weights downloaded",
+  "fpr_budget": 0.1,
+  "official_chunk_tokens": 512,
+  "methods": [
+    "max",
+    "top2",
+    "q90",
+    "length_calibrated_max"
+  ],
+  "supplied_scorer_sha256": "ed22cd0213a32d963f98a885c193f1f3bb28170fe2094c9a6fd9589a9633632e",
+  "sample_manifest_sha256": "5db7630890195015ee27beb1cd172293b3473c764d6e69a0d933438c6dcaf123",
+  "token_bins": [
+    512,
+    2048,
+    4096
+  ],
+  "chunk_bins": [
+    1,
+    4,
+    8
+  ],
+  "H1_scope": "Descriptive benign length-score/false-positive association and aggregation rank reversals; no new algorithm, training or window change",
+  "H1_support_gate": "Predeclared positive within-domain benign length association in both domains for the same detector, each permutation p<=0.025 and at least one aggregation rank reversal; exploratory support only, no causal or performance claim",
+  "no_go_if": "Gate absent or data/errors prevent assessment: no multiscale or region-review next-stage proposal",
+  "independent_analysis": "Recompute chunk softmax mapping, official >=0.5 labels and all scorer thresholds/confusions; heldout FPR reported actual, not forced to 10%",
+  "detector_run_scope": [
+    "deberta",
+    "distilbert"
+  ],
+  "prompt_guard_owner_decision": "Deferred: user asked to complete the two public detectors first; authorization unconfirmed"
+}

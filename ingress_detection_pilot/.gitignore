@@ -1,0 +1,5 @@
+.venv/
+models/
+*.part
+__pycache__/
+.pytest*/

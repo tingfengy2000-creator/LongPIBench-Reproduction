@@ -1,0 +1,101 @@
+{
+  "sha": "c7b80114ae56f65fb8019ec82afdb3df91e4ed65",
+  "node_id": "C_kwDOUC7YIdoAKGM3YjgwMTE0YWU1NmY2NWZiODAxOWVjODJhZmRiM2RmOTFlNGVkNjU",
+  "commit": {
+    "author": {
+      "name": "liu00222",
+      "email": "42081599+liu00222@users.noreply.github.com",
+      "date": "2026-09-22T17:46:17Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2026-09-22T17:46:17Z"
+    },
+    "message": "Update DATA_CARD.md",
+    "tree": {
+      "sha": "2383dcf3a1d21858286e178f82f63adfa454accc",
+      "url": "https://api.github.com/repos/liu00222/LongPIBench/git/trees/2383dcf3a1d21858286e178f82f63adfa454accc"
+    },
+    "url": "https://api.github.com/repos/liu00222/LongPIBench/git/commits/c7b80114ae56f65fb8019ec82afdb3df91e4ed65",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqsr7pCRC1aQ7uu5UhlAAAk7QQADFO2J9vJUu5Cfms8lA9gdUT\n8wlN7ySfdjK28+ZFMlfuIall0pYw0yXuQ0rg7N7GWwboaHXx3OrolrQZjGvbQ+X1\nLgP/mRwUn9tBPtF21dVQoE65TrSMEOtl0GrDL+ZIFQWB+1acnC45QNpNBkfi/xk2\nMtTCjOzws8+XKW9xb2ZWsQMEqdXeCwVtr+31sSMPkDkdjVMQVLj5C72yGAl7UE73\nbRkFX/y3yr14xYKhahjPiCdga8wOt3nj9tnpdcGjKMGJg4asZ+3lgifLX7T5+acU\nNrb6m7G+vvyQisV2CavMYTlGuCrZ2jALhLzS2bbSt6Ui68OC9qAzgx1+qHta3XuO\nV//feVO3Q0VfxmGd0d3rBbZtSfgegUMCEBG4gKm1paJjwiRpVDzwOFW0bDaA3ER/\n95WtWacGzrLheys7T7weevOZ9xkNk1CytLT6aZkT20mgrFhNov89oavosJBjQh+J\npDV3YCgQEOBlHN7H1pMsMXjaJKRZ98rS6ZgDpFRmxPy3Jk80lOprMwkbK3ZIy9Xl\ny3ApN6cYfF1I0Bx2SLHubabVavQuGp0VtyPQSwVGa3Jan+D8xu403XV/QnW+n8Ts\nWfar9/La/8iJKiTY1X6Umwc8eYDWT60n3B0x0uRjyDYnoEgibE8uFK/FdR/ub91O\nqn1M1w4I8Ka5Vf1Cx7q+\n=Yn0X\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 2383dcf3a1d21858286e178f82f63adfa454accc\nparent 76c2232db04e3c9b850e3295e17ad9bb68ee77ea\nauthor liu00222 <42081599+liu00222@users.noreply.github.com> 1790099177 -0400\ncommitter GitHub <noreply@github.com> 1790099177 -0400\n\nUpdate DATA_CARD.md",
+      "verified_at": "2026-09-22T17:46:18Z"
+    }
+  },
+  "url": "https://api.github.com/repos/liu00222/LongPIBench/commits/c7b80114ae56f65fb8019ec82afdb3df91e4ed65",
+  "html_url": "https://github.com/liu00222/LongPIBench/commit/c7b80114ae56f65fb8019ec82afdb3df91e4ed65",
+  "comments_url": "https://api.github.com/repos/liu00222/LongPIBench/commits/c7b80114ae56f65fb8019ec82afdb3df91e4ed65/comments",
+  "author": {
+    "login": "liu00222",
+    "id": 42081599,
+    "node_id": "MDQ6VXNlcjQyMDgxNTk5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/42081599?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/liu00222",
+    "html_url": "https://github.com/liu00222",
+    "followers_url": "https://api.github.com/users/liu00222/followers",
+    "following_url": "https://api.github.com/users/liu00222/following{/other_user}",
+    "gists_url": "https://api.github.com/users/liu00222/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/liu00222/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/liu00222/subscriptions",
+    "organizations_url": "https://api.github.com/users/liu00222/orgs",
+    "repos_url": "https://api.github.com/users/liu00222/repos",
+    "events_url": "https://api.github.com/users/liu00222/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/liu00222/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "76c2232db04e3c9b850e3295e17ad9bb68ee77ea",
+      "url": "https://api.github.com/repos/liu00222/LongPIBench/commits/76c2232db04e3c9b850e3295e17ad9bb68ee77ea",
+      "html_url": "https://github.com/liu00222/LongPIBench/commit/76c2232db04e3c9b850e3295e17ad9bb68ee77ea"
+    }
+  ],
+  "stats": {
+    "total": 27,
+    "additions": 0,
+    "deletions": 27
+  },
+  "files": [
+    {
+      "sha": "dfea4d765cd1ad337d9d9f290871173cc43bc0a4",
+      "filename": "DATA_CARD.md",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 27,
+      "changes": 27,
+      "blob_url": "https://github.com/liu00222/LongPIBench/blob/c7b80114ae56f65fb8019ec82afdb3df91e4ed65/DATA_CARD.md",
+      "raw_url": "https://github.com/liu00222/LongPIBench/raw/c7b80114ae56f65fb8019ec82afdb3df91e4ed65/DATA_CARD.md",
+      "contents_url": "https://api.github.com/repos/liu00222/LongPIBench/contents/DATA_CARD.md?ref=c7b80114ae56f65fb8019ec82afdb3df91e4ed65",
+      "patch": "@@ -29,30 +29,3 @@ local and does not download examples individually.\n   `attachment_content` strings.\n - `longpibench/datasets/code_changes/<id>.json` contains `language`, `task_type`, `task_description`,\n   `before_code`, and `after_code` strings.\n-\n-## Intended use\n-\n-The data is intended for controlled research on indirect prompt injection in\n-long-context LLM tasks, including attack measurement, detector evaluation, and\n-defense research. It is not a security certification suite and should not be\n-used as the sole evidence that a deployed system is safe.\n-\n-## Limitations\n-\n-- All released examples are synthetic and may not represent the distribution or\n-  complexity of production data.\n-- Attack-success metrics are goal-specific string/structure checks; they do not\n-  capture every harmful model behavior.\n-- Model serving stacks, chat templates, quantization, and generation settings\n-  can materially change results and should be reported with scores.\n-- Detection aliases may refer to gated or externally hosted checkpoints and may\n-  require separate terms or access approval from their publishers.\n-- This streamlined release builds deterministic text inputs from the public\n-  source data. It does not distribute generated PDF artifacts.\n-\n-## Privacy\n-\n-The released collections were generated for benchmarking. They are not the\n-private real-world suite. If an apparent real person's information is found,\n-please report it through the repository's issue tracker without reposting the\n-content."
+    }
+  ]
+}
