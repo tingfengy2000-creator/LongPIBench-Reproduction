@@ -4,6 +4,8 @@ LongPIBench / PromptLocate 基线复现与逐案例失败归因。本仓库用�
 
 **当前阶段：R0 审计与5090环境准备。尚未运行正式模型实验，没有本地 ASR。**
 
+当前进展（2026-10-18）：[007](coordination/tasks/R0-5090-007.md)两个官方适配器ZIP及spaCy wheel文件校验已验收，来源8657879；[010](coordination/tasks/R0-5090-010.md)已准备推理文件提取、本地spaCy安装、原分句初始化和三个适配器独立GPU加载检查。当前仍未验收适配器/spaCy初始化或完整PromptLocate；不选择large/small、不运行正式样本。以下为历史进展。
+
 当前进展（2026-10-18）：[009](coordination/tasks/R0-5090-009.md)三套本地模型已在真实5090逐进程通过GPU加载及短合成检查，原始回执101c124已审查；[007](coordination/tasks/R0-5090-007.md)适配器/spaCy文件准备是当前下一步，尚无完成回执。[审查记录](coordination/returns/20261018T022045Z-coordinator-model-load-review/REVIEW.md)保留重复BOS发现及修复待实测范围。完整DataSentinel/PromptLocate、长上下文与正式配置仍未验收；以下为历史进展。
 
 当前进展：006/008的三模型31个文件已审查通过；[009](coordination/tasks/R0-5090-009.md)进入逐进程真实GPU加载及合成短推理检查。权重保留在5090的E盘链接目录，007的adapter/spaCy准备仍待回执。当前不运行正式样本，不产生ASR；下文下载中等旧状态为历史。
