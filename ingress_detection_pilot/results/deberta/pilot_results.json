@@ -1,0 +1,124 @@
+{
+  "warning": "Exploratory score replay only; not actual performance unless real detector scores are supplied.",
+  "fpr_budget": 0.1,
+  "n_calibration_clean": 24,
+  "n_test": 32,
+  "methods": {
+    "max": {
+      "calibration_threshold": 0.6013488173484803,
+      "test_overall": {
+        "tp": 8,
+        "fp": 1,
+        "tn": 15,
+        "fn": 8,
+        "tpr": 0.5,
+        "fpr": 0.0625
+      },
+      "test_by_domain": {
+        "email": {
+          "tp": 6,
+          "fp": 1,
+          "tn": 7,
+          "fn": 2,
+          "tpr": 0.75,
+          "fpr": 0.125
+        },
+        "resume": {
+          "tp": 2,
+          "fp": 0,
+          "tn": 8,
+          "fn": 6,
+          "tpr": 0.25,
+          "fpr": 0.0
+        }
+      }
+    },
+    "top2": {
+      "calibration_threshold": 0.30076141039171495,
+      "test_overall": {
+        "tp": 8,
+        "fp": 1,
+        "tn": 15,
+        "fn": 8,
+        "tpr": 0.5,
+        "fpr": 0.0625
+      },
+      "test_by_domain": {
+        "email": {
+          "tp": 6,
+          "fp": 1,
+          "tn": 7,
+          "fn": 2,
+          "tpr": 0.75,
+          "fpr": 0.125
+        },
+        "resume": {
+          "tp": 2,
+          "fp": 0,
+          "tn": 8,
+          "fn": 6,
+          "tpr": 0.25,
+          "fpr": 0.0
+        }
+      }
+    },
+    "q90": {
+      "calibration_threshold": 0.3608788917830681,
+      "test_overall": {
+        "tp": 8,
+        "fp": 1,
+        "tn": 15,
+        "fn": 8,
+        "tpr": 0.5,
+        "fpr": 0.0625
+      },
+      "test_by_domain": {
+        "email": {
+          "tp": 6,
+          "fp": 1,
+          "tn": 7,
+          "fn": 2,
+          "tpr": 0.75,
+          "fpr": 0.125
+        },
+        "resume": {
+          "tp": 2,
+          "fp": 0,
+          "tn": 8,
+          "fn": 6,
+          "tpr": 0.25,
+          "fpr": 0.0
+        }
+      }
+    },
+    "length_calibrated_max": {
+      "calibration_threshold": 0.8450980400142569,
+      "test_overall": {
+        "tp": 8,
+        "fp": 1,
+        "tn": 15,
+        "fn": 8,
+        "tpr": 0.5,
+        "fpr": 0.0625
+      },
+      "test_by_domain": {
+        "email": {
+          "tp": 6,
+          "fp": 1,
+          "tn": 7,
+          "fn": 2,
+          "tpr": 0.75,
+          "fpr": 0.125
+        },
+        "resume": {
+          "tp": 2,
+          "fp": 0,
+          "tn": 8,
+          "fn": 6,
+          "tpr": 0.25,
+          "fpr": 0.0
+        }
+      }
+    }
+  }
+}

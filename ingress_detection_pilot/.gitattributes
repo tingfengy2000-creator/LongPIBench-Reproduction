@@ -1,0 +1,4 @@
+# Preserve exact source/scorer/evidence bytes across Windows and WSL.
+* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+source_audit/** -whitespace
+requirements_cpu_freeze.txt -whitespace

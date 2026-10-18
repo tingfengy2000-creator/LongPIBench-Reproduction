@@ -1,0 +1,26 @@
+{
+  "status": "STARTED",
+  "is_formal_paper_experiment": false,
+  "run_started_utc": "2026-10-18T10:31:01.993745+00:00",
+  "hostname": "DESKTOP-0JKLMO4",
+  "python": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:09:58) [MSC v.1929 64 bit (AMD64)]",
+  "input_commit": "06c0f476dc1771864773d6aad2d3ed50fa5b8f4f",
+  "model_repo": "protectai/deberta-v3-base-prompt-injection-v2",
+  "model_revision": "90c9989b1a342275dd0d1a95aad283c04e075671",
+  "sample_manifest_sha256": "5db7630890195015ee27beb1cd172293b3473c764d6e69a0d933438c6dcaf123",
+  "original_detectors_sha256": "0f48ab6d307576096c4d07021f78c2d587261af80ca0f315af84a714607f43af",
+  "adapter_sha256": "e138f7fc9975887bc4ac0e6d74fc1f213e4573ca8fc5547ecfc5bcc503cfaedc",
+  "threads": 4,
+  "dtype": "original_from_pretrained_default",
+  "chunk_tokens": 512,
+  "threshold": 0.5,
+  "suffix_policy": "Separate shadow forwards; do not alter official early exit",
+  "runtime": {
+    "torch": "2.7.1+cpu",
+    "transformers": "4.51.3",
+    "tokenizers": "0.21.1",
+    "numpy": "2.2.6",
+    "safetensors": "0.5.3",
+    "sentencepiece": "0.2.1"
+  }
+}

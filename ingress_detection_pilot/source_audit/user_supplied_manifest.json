@@ -1,0 +1,30 @@
+{
+  "files": {
+    "Codex_快速跑测指令.md": {
+      "sha256": "26d0e544c75a144bb2675242c30f4fc45f98d6678e5940c921a31dc2478c800a",
+      "bytes": 3258
+    },
+    "README_交付说明.md": {
+      "sha256": "933ac9b7db4f37a10002c1cc928a9208c959c5ef0700fd9a634002ac4037d158",
+      "bytes": 2077
+    },
+    "score_fixture_FAKE.jsonl": {
+      "sha256": "34e9d28152137eb5b392998da17e52224b10ed4963eb9dad0062116839dc817c",
+      "bytes": 16127
+    },
+    "score_pilot.py": {
+      "sha256": "ed22cd0213a32d963f98a885c193f1f3bb28170fe2094c9a6fd9589a9633632e",
+      "bytes": 6885
+    },
+    "研究方案评审稿.docx": {
+      "sha256": "bdb6266e2b18168843651d7ecbe93c4517c75cd5cc0a531d50bb76c58b3d3b56",
+      "bytes": 52388
+    },
+    "研究方案评审稿.md": {
+      "sha256": "eabe0ceb6463b971308bfef582613805398a08dcc34fe3a345a4aca240990c7f",
+      "bytes": 21287
+    }
+  },
+  "fake_fixture_used_as_experimental_input": false,
+  "md_docs_role": "Source context only; user task controls scope"
+}
