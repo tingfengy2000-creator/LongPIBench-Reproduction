@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "task_id": "R0-5090-007",
+  "run_id": "20261018T023636Z-aux-downloads-fe64f023",
+  "model_load_verified": false,
+  "formal_inference_executed": false,
+  "scope": "Observed hashes are not independently author-published digests; no extraction or pickle loading",
+  "download_dir": "/mnt/e/LongPIBench-Reproduction/models/resource-download-20261018T022505Z-AXb5d0",
+  "results": [
+    {
+      "filename": "DataSentinel_Models.zip",
+      "source_url": "https://drive.usercontent.google.com/download?id=1B0w5r5udH3I_aiZL0_-2a8WzBAqjuLsn&export=download&confirm=t",
+      "files": [
+        {
+          "member": "detector_large/checkpoint-5000/adapter_model.safetensors",
+          "size_bytes": 864513616,
+          "sha256_first_observed": "b1b023e63d3d49663187565c66d202c779dadf2af865d332643bd4a963125534",
+          "zip_crc_verified": true
+        },
+        {
+          "member": "detector_large/checkpoint-5000/adapter_config.json",
+          "size_bytes": 743,
+          "sha256_first_observed": "ed0fe22bf07b9a426cdb3eac4a33b517b855ddcec67b666a37dbdaa4d2493145",
+          "zip_crc_verified": true
+        },
+        {
+          "member": "detector_small/checkpoint-500/adapter_model.safetensors",
+          "size_bytes": 864513616,
+          "sha256_first_observed": "4a61e16cbfa1286b7a207ccee420ffca1c98cfc90f6f4b5ef5fa0afa076bb3a5",
+          "zip_crc_verified": true
+        },
+        {
+          "member": "detector_small/checkpoint-500/adapter_config.json",
+          "size_bytes": 743,
+          "sha256_first_observed": "7ee1d177b7364be88793e86788a50d8646bb89027d7d2373ecea416db971ec25",
+          "zip_crc_verified": true
+        }
+      ],
+      "author_published_sha256_available": false,
+      "archive_sha256_first_observed": "7fd3b5ae4fb97d5fd8ad425e1125bee3504dfe640b22faecde3bba6f586b6767",
+      "status": "SOURCE_SIZE_CONFIG_AND_CRC_CHECKED"
+    },
+    {
+      "filename": "promptlocate_oracle.zip",
+      "source_url": "https://drive.usercontent.google.com/download?id=1CEaW4M6Y2_w8ca3-76SnoaNgio8x2eQB&export=download&confirm=t",
+      "files": [
+        {
+          "member": "7_1000_naive_minimax_mistral_3_1_backend_llama3_revise_beta_1_balance_finetune/checkpoint-500/adapter_model.safetensors",
+          "size_bytes": 864513616,
+          "sha256_first_observed": "7bfe075fd82b4843962b5e61ba9ff067350cfd914a17ff58c0a159f3bf473a7a",
+          "zip_crc_verified": true
+        },
+        {
+          "member": "7_1000_naive_minimax_mistral_3_1_backend_llama3_revise_beta_1_balance_finetune/checkpoint-500/adapter_config.json",
+          "size_bytes": 743,
+          "sha256_first_observed": "cdcabca9d558f71d9485f2012f5f6ba6d9fb587ef44a24f8faa384ca7a6ce929",
+          "zip_crc_verified": true
+        }
+      ],
+      "author_published_sha256_available": false,
+      "archive_sha256_first_observed": "c888231a4bbec391fcbfa2853600b8c7161a950e98942851eac6c70203500fc6",
+      "status": "SOURCE_SIZE_CONFIG_AND_CRC_CHECKED"
+    },
+    {
+      "filename": "en_core_web_sm-3.8.0-py3-none-any.whl",
+      "source_url": "https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl",
+      "author_published_sha256_available": false,
+      "sha256_first_observed": "1932429db727d4bff3deed6b34cfc05df17794f4a52eeb26cf8928f7c1a0fb85",
+      "status": "SOURCE_SIZE_VERSION_AND_CRC_CHECKED"
+    }
+  ],
+  "status": "FILES_CHECKED_NOT_MODEL_LOADED"
+}
