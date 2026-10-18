@@ -1,0 +1,58 @@
+{
+  "asr_computed": false,
+  "children": [
+    {
+      "command": [
+        "/home/tingfeng/miniforge3/envs/longpibench-r0/bin/python",
+        "/home/tingfeng/LongPIBench-Reproduction/scripts/run_email_continuation.py",
+        "--stage",
+        "defense",
+        "--plan",
+        "/home/tingfeng/LongPIBench-Reproduction/runs/20261018T045920Z-email-continuation-all-dc1ca52f/plan.json"
+      ],
+      "exit_code": 0,
+      "operation": "defense",
+      "return_path": "coordination/returns/20261018T045920Z-email-continuation-defense-9f510313/email_stage.json",
+      "status": "DEBUG_DEFENSE_RECORDED"
+    },
+    {
+      "command": [
+        "/home/tingfeng/miniforge3/envs/longpibench-r0/bin/python",
+        "/home/tingfeng/LongPIBench-Reproduction/scripts/run_email_continuation.py",
+        "--stage",
+        "target-protected",
+        "--plan",
+        "/home/tingfeng/LongPIBench-Reproduction/runs/20261018T045920Z-email-continuation-all-dc1ca52f/plan.json",
+        "--defense-report",
+        "/home/tingfeng/LongPIBench-Reproduction/coordination/returns/20261018T045920Z-email-continuation-defense-9f510313/email_stage.json"
+      ],
+      "exit_code": 0,
+      "operation": "target-protected",
+      "return_path": "coordination/returns/20261018T050915Z-email-continuation-target-protected-fa5bd10d/email_stage.json",
+      "status": "DEBUG_TARGET_RECORDED"
+    }
+  ],
+  "formal_checkpoint_selected": false,
+  "formal_inference_executed": false,
+  "formal_readiness": false,
+  "git_head": "c7f8970154eeffd51efaf030b896728a2ee3550e",
+  "hostname": "DESKTOP-B5PNBNC",
+  "old_evidence_modified": false,
+  "operation": "all",
+  "packages": {
+    "accelerate": "1.6.0",
+    "bitsandbytes": "0.46.1",
+    "peft": "0.15.2",
+    "spacy": "3.8.7",
+    "torch": "2.7.1+cu128",
+    "transformers": "4.51.3"
+  },
+  "plan_path": "/home/tingfeng/LongPIBench-Reproduction/runs/20261018T045920Z-email-continuation-all-dc1ca52f/plan.json",
+  "plan_sha256": "5e26f5782e0513fce2dc8d301c89ed5de1225665a30e2892f8e76d34f062d728",
+  "platform": "Linux",
+  "raw_dir": "/home/tingfeng/LongPIBench-Reproduction/runs/20261018T045920Z-email-continuation-all-dc1ca52f",
+  "run_id": "20261018T045920Z-email-continuation-all-dc1ca52f",
+  "run_kind": "debug",
+  "status": "DEBUG_EMAIL_CONDITION_EXECUTED_REVIEW_REQUIRED",
+  "task_id": "R0-5090-014"
+}

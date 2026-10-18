@@ -1,0 +1,10 @@
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:43<00:43, 43.03s/it]Loading checkpoint shards: 100%|██████████| 2/2 [01:09<00:00, 33.01s/it]Loading checkpoint shards: 100%|██████████| 2/2 [01:09<00:00, 34.51s/it]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:41<00:41, 41.77s/it]Loading checkpoint shards: 100%|██████████| 2/2 [01:02<00:00, 29.36s/it]Loading checkpoint shards: 100%|██████████| 2/2 [01:02<00:00, 31.22s/it]
+/home/tingfeng/miniforge3/envs/longpibench-r0/lib/python3.11/site-packages/transformers/generation/configuration_utils.py:820: UserWarning: `return_dict_in_generate` is NOT set to `True`, but `output_attentions` is. When `return_dict_in_generate` is not `True`, `output_attentions` is ignored.
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+Asking to truncate to max_length but no maximum length is provided and the model has no predefined maximum length. Default to no truncation.
+/home/tingfeng/miniforge3/envs/longpibench-r0/lib/python3.11/site-packages/transformers/generation/configuration_utils.py:631: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+`torch.nn.functional.scaled_dot_product_attention` does not support `output_attentions=True`. Falling back to eager attention. This warning can be removed using the argument `attn_implementation="eager"` when loading the model.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.

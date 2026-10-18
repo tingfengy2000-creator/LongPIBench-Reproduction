@@ -1,0 +1,5 @@
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:18<00:54, 18.01s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:36<00:36, 18.23s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:59<00:20, 20.57s/it]Loading checkpoint shards: 100%|██████████| 4/4 [01:05<00:00, 14.89s/it]Loading checkpoint shards: 100%|██████████| 4/4 [01:05<00:00, 16.48s/it]
+/home/tingfeng/miniforge3/envs/longpibench-r0/lib/python3.11/site-packages/transformers/generation/configuration_utils.py:631: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/tingfeng/miniforge3/envs/longpibench-r0/lib/python3.11/site-packages/transformers/generation/configuration_utils.py:636: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
