@@ -1,0 +1,23 @@
+diff --git a/ingress_detection_pilot/validation_v2/run.py b/ingress_detection_pilot/validation_v2/run.py
+index 8adaeee..62a647e 100644
+--- a/ingress_detection_pilot/validation_v2/run.py
++++ b/ingress_detection_pilot/validation_v2/run.py
+@@ -24,14 +24,14 @@ def main():
+     args=parser.parse_args()
+     assert ROOT.resolve().drive.upper()=='E:'
+     os.environ.update(HF_HUB_OFFLINE='1',TRANSFORMERS_OFFLINE='1',HF_HUB_DISABLE_IMPLICIT_TOKEN='1')
+-    plan=json.loads((ROOT/'plan.json').read_text())
++    plan=json.loads((ROOT/'plan.json').read_text(encoding='utf-8'))
+     assert sha(PILOT/'collect_scores.py')==plan['capture_adapter_sha256']
+     assert sha(PILOT/'score_pilot.py')==plan['supplied_scorer_sha256']
+     assert sha(ROOT/'sample_manifest.jsonl')==plan['sample_manifest_sha256']
+     records,cases=build()
+-    assert records==[json.loads(x) for x in (ROOT/'sample_manifest.jsonl').read_text().splitlines()]
+-    meta=json.loads((PILOT/'source_audit'/f'{args.detector}.json').read_text())
+-    bundle=json.loads((PILOT/'source_audit'/f'{args.detector}-download.json').read_text())
++    assert records==[json.loads(x) for x in (ROOT/'sample_manifest.jsonl').read_text(encoding='utf-8').splitlines()]
++    meta=json.loads((PILOT/'source_audit'/f'{args.detector}.json').read_text(encoding='utf-8'))
++    bundle=json.loads((PILOT/'source_audit'/f'{args.detector}-download.json').read_text(encoding='utf-8'))
+     assert meta['sha']==bundle['revision']==plan['model_versions'][args.detector]
+     model_dir=PILOT/'models'/args.detector
+     for file in bundle['files']:assert sha(model_dir/file['filename'])==file['sha256']

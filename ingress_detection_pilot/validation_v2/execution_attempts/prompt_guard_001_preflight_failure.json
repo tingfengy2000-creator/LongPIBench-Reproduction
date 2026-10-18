@@ -1,0 +1,17 @@
+{
+  "task_id": "INGRESS-5060-002",
+  "attempt": 1,
+  "input_commit": "5de3e93",
+  "detector": "prompt-guard",
+  "observed_utc": "2026-10-18T11:16:12Z",
+  "command": ".venv/Scripts/python.exe -u validation_v2/run.py --detector prompt-guard",
+  "exit_code": 1,
+  "status": "PRE_MODEL_METADATA_READ_FAILED",
+  "error_type": "UnicodeDecodeError",
+  "error": "'gbk' codec can't decode byte 0x9d in position 4287: illegal multibyte sequence",
+  "evidence_source": "Coordinator exec output at run.py line 33 reading source_audit/prompt-guard.json",
+  "new_scores_produced": 0,
+  "model_loaded": false,
+  "output_directory_created": false,
+  "disposition": "Preserved as failed preflight; explicit UTF-8 compatibility repair, then separately launch attempt 2. No score rerun or overwrite."
+}
