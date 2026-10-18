@@ -1,0 +1,14 @@
+{
+  "source_commit": "ba6d4bc15ef2d26e7bc05bcc44e85ec9baed65f0",
+  "git_blobs": {
+    "coordination/returns/20261018T024846Z-aux-runtime-prepare-f576e035/aux_runtime.json": "5d6a651d6175bfb018eec842dc1084c7c1f09127",
+    "coordination/returns/20261018T024846Z-aux-runtime-prepare-f576e035/runtime.log": "3223d6dfb10189a8690a0033c3afc77e2e68d24a",
+    "coordination/returns/20261018T025301Z-aux-runtime-spacy-303d02c0/aux_runtime.json": "ee32b23e9a6c48b6276ff10314b4ee39a9b16667",
+    "coordination/returns/20261018T025301Z-aux-runtime-spacy-303d02c0/runtime.log": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "coordination/returns/20261018T025307Z-aux-runtime-target-tokenizer-a21d4faa/aux_runtime.json": "cfa60ddf89a5e78a4213c5cb57d433ab92fc9469",
+    "coordination/returns/20261018T025307Z-aux-runtime-target-tokenizer-a21d4faa/runtime.log": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "coordination/returns/20261018T025445Z-aux-runtime-adapter-large-fbedb182/aux_runtime.json": "b56d489a020826b76637d61532e5bdef191f05e2",
+    "coordination/returns/20261018T025445Z-aux-runtime-adapter-large-fbedb182/runtime.log": "03295869358d6ac8856846574db232e07b97ccda",
+    "coordination/returns/20261018T025653Z-aux-runtime-r0-5090-010/REPORT.md": "fa985316e825b65de4c2e7a568cbdc8e42832f5c"
+  }
+}

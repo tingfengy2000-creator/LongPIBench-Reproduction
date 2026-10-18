@@ -2,6 +2,8 @@
 
 **当前判定：代码与数据具备继续做工程复现的基础；严格复现 Table 4 仍有配置溯源和环境阻碍。尚无本地性能结果，不能进入针对某类失败的新方法设计。**
 
+2026-10-18最新：010原分句初始化实际通过，禁用parser/senter且在parser前插入组件在当前spaCy3.8.7/模型3.8.0上可运行；此前静态疑点不再作为已确认初始化阻碍。真实Llama tokenizer单BOS修复通过。large停在协调端工具集合检查，PEFT强制导出额外底座输入embedding导致过严误判；不归为防御算法失败或正式F6发生率。修正工具后的适配器逐值检查与query待011，small/oracle尚未运行；B05仍unknown，完整PromptLocate与B08/B09/B11等待处理。
+
 2026-10-18后续：007的两个ZIP/6个推理成员及spaCy wheel文件范围验收完成，来源8657879。首次观察hash不代表作者公开摘要；未安装/加载。010将独立验证原版spaCy初始化和三个适配器；B05 large/small仍unknown，B13分句初始化实际兼容性尚待回执。详见coordination/returns/20261018T024358Z-coordinator-aux-files-review/REVIEW.md；下文“007待回执”为历史状态。
 
 2026-10-18进展：实际5090身份、候选依赖、HF访问及三套固定模型文件、逐进程GPU加载/有限logits/短合成生成均已有回执。B01—B03的设备/环境/访问阻碍在上述工程范围解除，以下表格为最初审计发现。007适配器/spaCy文件尚待回执，完整加载和长上下文未验收；B04—B15相关方法问题不据此消除。009另发现Llama合成输入重复BOS，协调端已修复检查脚本并做离线回归，实际修正输入仍待后续验证，原009保留不改。详见coordination/returns/20261018T022045Z-coordinator-model-load-review/REVIEW.md。

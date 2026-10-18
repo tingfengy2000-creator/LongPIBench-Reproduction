@@ -1,11 +1,105 @@
 import hashlib
 import json
 import sys
+from types import SimpleNamespace
 import zipfile
 
 import pytest
 
 from scripts import aux_runtime_probe as probe
+
+
+def test_exported_base_embedding_does_not_imply_unsaved_adapter_tensor():
+    lora = {'layer.lora_A.weight', 'layer.lora_B.weight'}
+    saved = lora | {'lm_head.base_layer.weight'}
+    report = {}
+    extra = probe.validate_adapter_keys(saved, saved | {probe.BASE_INPUT_EMBEDDING}, lora, report)
+    assert extra == {probe.BASE_INPUT_EMBEDDING}
+    assert report['tensor_key_audit']['base_extra_verified'] is False
+    # Classification is conditional: runtime must still prove equality to base.
+    assert report['tensor_key_audit']['active_adapter_keys_absent_from_file'] == []
+    assert probe.validate_adapter_keys(saved, saved, lora, {}) == set()
+
+
+@pytest.mark.parametrize('fault', ['missing_saved', 'missing_active', 'extra_lora', 'unknown_base', 'empty'])
+def test_key_audit_still_rejects_incomplete_or_unexplained_weights(fault):
+    required = {'layer.lora_A.weight', 'layer.lora_B.weight'}
+    saved = required | {'lm_head.base_layer.weight'}
+    exported = saved | {probe.BASE_INPUT_EMBEDDING}
+    if fault == 'missing_saved':
+        exported.remove('lm_head.base_layer.weight')
+    elif fault == 'missing_active':
+        saved.remove('layer.lora_B.weight')
+    elif fault == 'extra_lora':
+        exported.add('other.lora_B.weight')
+    elif fault == 'unknown_base':
+        exported.add('some_other_base.weight')
+    else:
+        saved = set()
+    with pytest.raises(ValueError):
+        probe.validate_adapter_keys(saved, exported, required, {})
+
+
+@pytest.mark.parametrize('fault', [None, 'wrong_module', 'changed_base_value'])
+def test_extra_embedding_requires_module_identity_and_fixed_base_values(tmp_path, monkeypatch, fault):
+    class Tensor:
+        shape = (1, 2)
+        dtype = 'float16'
+        device = 'cuda:0'
+
+        def __init__(self, values, pointer=10):
+            self.values = values
+            self.pointer = pointer
+
+        def data_ptr(self):
+            return self.pointer
+
+        def detach(self):
+            return self
+
+        def cpu(self):
+            return self
+
+        def to(self, dtype):
+            return self
+
+    loaded = Tensor([1, 2])
+    actual_input = Tensor([1, 2], pointer=99 if fault == 'wrong_module' else 10)
+    expected = Tensor([1, 9] if fault == 'changed_base_value' else [1, 2])
+
+    class Archive:
+        def __enter__(self):
+            return self
+
+        def __exit__(self, *args):
+            return False
+
+        def get_tensor(self, key):
+            assert key == 'model.embed_tokens.weight'
+            return expected
+
+    monkeypatch.setitem(sys.modules, 'torch', SimpleNamespace(equal=lambda a, b: a.values == b.values))
+    monkeypatch.setitem(sys.modules, 'safetensors', SimpleNamespace(safe_open=lambda *a, **k: Archive()))
+    monkeypatch.setattr(probe, 'ROOT', tmp_path)
+    base = tmp_path / 'snapshot'
+    base.mkdir()
+    shard_name = 'model-00001-of-00002.safetensors'
+    (base / shard_name).write_bytes(b'data')
+    (base / 'model.safetensors.index.json').write_text(json.dumps({
+        'weight_map': {'model.embed_tokens.weight': shard_name}}))
+    (tmp_path / 'configs').mkdir()
+    (tmp_path / 'configs/offline_transfer_manifest.json').write_text(json.dumps({
+        'hf_models': [{'role': 'detector_base', 'files': [{'filename': shard_name, 'size_bytes': 4}]}]}))
+    model = SimpleNamespace(get_input_embeddings=lambda: SimpleNamespace(weight=actual_input))
+    report = {'tensor_key_audit': {'base_extra_verified': False}}
+    if fault:
+        with pytest.raises(ValueError):
+            probe.verify_base_input_embedding(model, {probe.BASE_INPUT_EMBEDDING: loaded}, base, report)
+        assert report['tensor_key_audit']['base_extra_verified'] is False
+    else:
+        probe.verify_base_input_embedding(model, {probe.BASE_INPUT_EMBEDDING: loaded}, base, report)
+        assert report['tensor_key_audit']['base_extra_verified'] is True
+        assert report['base_input_embedding_check']['equals_base_after_dtype_cast'] is True
 
 
 def fixture_archive(tmp_path, corrupt=False):

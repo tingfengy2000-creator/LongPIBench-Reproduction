@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "task_id": "R0-5090-010",
+  "run_id": "20261018T025307Z-aux-runtime-target-tokenizer-a21d4faa",
+  "operation": "target-tokenizer",
+  "hostname": "DESKTOP-B5PNBNC",
+  "platform": "Linux",
+  "run_kind": "debug",
+  "formal_samples_used": false,
+  "formal_inference_executed": false,
+  "formal_checkpoint_selected": false,
+  "full_promptlocate_constructor_verified": false,
+  "adapter_loaded_verified": false,
+  "status": "TARGET_SINGLE_BOS_TOKENIZER_PASSED",
+  "stage": "complete",
+  "git_head": "4ad060e1f88cfd7e867996397f23ebed741540bf",
+  "hardware_gate": {
+    "passed": true,
+    "required_name": "RTX 5090",
+    "minimum_total_mib": 30000,
+    "devices": [
+      {
+        "name": "NVIDIA GeForce RTX 5090",
+        "memory_total_mib": 32607.0,
+        "memory_free_raw": "31962 MiB",
+        "driver": "610.88"
+      }
+    ],
+    "matching_devices": [
+      {
+        "name": "NVIDIA GeForce RTX 5090",
+        "memory_total_mib": 32607.0,
+        "memory_free_raw": "31962 MiB",
+        "driver": "610.88"
+      }
+    ],
+    "errors": [],
+    "scope": "Hardware inventory only; not CUDA/NF4/model acceptance"
+  },
+  "packages": {
+    "torch": "2.7.1+cu128",
+    "transformers": "4.51.3",
+    "bitsandbytes": "0.46.1",
+    "accelerate": "1.6.0",
+    "peft": "0.15.2",
+    "spacy": "3.8.7"
+  },
+  "model_source": {
+    "role": "target",
+    "repo_id": "meta-llama/Llama-3.1-8B-Instruct",
+    "revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+    "path": "/home/tingfeng/LongPIBench-Reproduction/models/direct-hf/hf/target",
+    "resolved_path": "/mnt/e/LongPIBench-Reproduction/models/direct-hf/hf/target",
+    "source_receipt": "coordination/returns/20261017T160020Z-offline-hf-0a7c5a5d/hf_files.json",
+    "source_receipt_sha256": "c905fd9396c6fb1dac00396893482874e56b4dca4dba1460413e63d45a423587",
+    "config_sha256": "29e4c210b0d6ac178b16b2a255a568bdb23b581e50ca1ef6a6d071dd85704e6e",
+    "file_check_scope": "Prior accepted full hashes plus current sizes; no repeated large-file hashing"
+  },
+  "synthetic_messages": [
+    {
+      "role": "system",
+      "content": "Reply with the single word READY."
+    },
+    {
+      "role": "user",
+      "content": "This is an isolated model loading check."
+    }
+  ],
+  "chat_template_sha256": "e10ca381b1ccc5cf9db52e371f3b6651576caee0a630b452e2816b2d404d4b65",
+  "tokenization": {
+    "rendered_chat": true,
+    "add_special_tokens": false
+  },
+  "synthetic_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 26 Jul 2024\n\nReply with the single word READY.<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nThis is an isolated model loading check.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+  "input_token_ids": [
+    128000,
+    128006,
+    9125,
+    128007,
+    271,
+    38766,
+    1303,
+    33025,
+    2696,
+    25,
+    6790,
+    220,
+    2366,
+    18,
+    198,
+    15724,
+    2696,
+    25,
+    220,
+    1627,
+    10263,
+    220,
+    2366,
+    19,
+    271,
+    21509,
+    449,
+    279,
+    3254,
+    3492,
+    86432,
+    13,
+    128009,
+    128006,
+    882,
+    128007,
+    271,
+    2028,
+    374,
+    459,
+    25181,
+    1646,
+    8441,
+    1817,
+    13,
+    128009,
+    128006,
+    78191,
+    128007,
+    271
+  ],
+  "actual_tokenizer_verified": true
+}

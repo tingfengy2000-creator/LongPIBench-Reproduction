@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "task_id": "R0-5090-010",
+  "run_id": "20261018T025445Z-aux-runtime-adapter-large-fbedb182",
+  "operation": "adapter",
+  "hostname": "DESKTOP-B5PNBNC",
+  "platform": "Linux",
+  "run_kind": "debug",
+  "formal_samples_used": false,
+  "formal_inference_executed": false,
+  "formal_checkpoint_selected": false,
+  "full_promptlocate_constructor_verified": false,
+  "adapter_loaded_verified": false,
+  "status": "FAILED",
+  "stage": "loaded_tensor_comparison",
+  "git_head": "4ad060e1f88cfd7e867996397f23ebed741540bf",
+  "hardware_gate": {
+    "passed": true,
+    "required_name": "RTX 5090",
+    "minimum_total_mib": 30000,
+    "devices": [
+      {
+        "name": "NVIDIA GeForce RTX 5090",
+        "memory_total_mib": 32607.0,
+        "memory_free_raw": "31962 MiB",
+        "driver": "610.88"
+      }
+    ],
+    "matching_devices": [
+      {
+        "name": "NVIDIA GeForce RTX 5090",
+        "memory_total_mib": 32607.0,
+        "memory_free_raw": "31962 MiB",
+        "driver": "610.88"
+      }
+    ],
+    "errors": [],
+    "scope": "Hardware inventory only; not CUDA/NF4/model acceptance"
+  },
+  "prepared_receipt": "coordination/returns/20261018T024846Z-aux-runtime-prepare-f576e035/aux_runtime.json",
+  "prepared_receipt_sha256": "423e245fc1b8b980f644addd7884af4bb89305ab7e900e8f28bcf08ee3f00dee",
+  "source_receipt": "coordination/returns/20261018T023636Z-aux-downloads-fe64f023/aux_downloads.json",
+  "source_receipt_sha256": "c25fa5ff5591a4668762f80948f4c4d43c13db4cc9ae48dfd98df38fcf8752f7",
+  "adapter": "large",
+  "adapter_path": "/home/tingfeng/LongPIBench-Reproduction/models/runtime-aux-20261018T024846Z-aux-runtime-prepare-f576e035/detector_large/checkpoint-5000",
+  "adapter_files": [
+    {
+      "member": "detector_large/checkpoint-5000/adapter_model.safetensors",
+      "size_bytes": 864513616,
+      "sha256_first_observed": "b1b023e63d3d49663187565c66d202c779dadf2af865d332643bd4a963125534",
+      "zip_crc_verified": true
+    },
+    {
+      "member": "detector_large/checkpoint-5000/adapter_config.json",
+      "size_bytes": 743,
+      "sha256_first_observed": "ed0fe22bf07b9a426cdb3eac4a33b517b855ddcec67b666a37dbdaa4d2493145",
+      "zip_crc_verified": true
+    }
+  ],
+  "packages": {
+    "torch": "2.7.1+cu128",
+    "transformers": "4.51.3",
+    "bitsandbytes": "0.46.1",
+    "accelerate": "1.6.0",
+    "peft": "0.15.2",
+    "spacy": "3.8.7"
+  },
+  "cuda": {
+    "name": "NVIDIA GeForce RTX 5090",
+    "free_before_bytes": 32429309952,
+    "total_bytes": 34190458880
+  },
+  "model_source": {
+    "role": "detector_base",
+    "repo_id": "mistralai/Mistral-7B-v0.1",
+    "revision": "27d67f1b5f57dc0953326b2601d68371d40ea8da",
+    "path": "/home/tingfeng/LongPIBench-Reproduction/models/hf-cache/models--mistralai--Mistral-7B-v0.1/snapshots/27d67f1b5f57dc0953326b2601d68371d40ea8da",
+    "resolved_path": "/mnt/e/LongPIBench-Reproduction/models/hf-cache/models--mistralai--Mistral-7B-v0.1/snapshots/27d67f1b5f57dc0953326b2601d68371d40ea8da",
+    "source_receipt": "coordination/returns/20261017T152919Z-public-models-f7e08811/public_models.json",
+    "source_receipt_sha256": "145777673cb0fe916fcbbb2567d783dd144f3684161104fcfe895ae5e4838acf",
+    "config_sha256": "cf25cdf4719f181d1d1d371973285d9afe9afde0d0c6a6fd48de857555ce1e0d",
+    "file_check_scope": "Prior accepted full hashes plus current sizes; no repeated large-file hashing"
+  },
+  "config_template_sha256": "bf6afaf43a1326be2ac4f4340bbb5f9df9a6c8e09b0786ed665de706335806e9",
+  "debug_model_config": {
+    "model_info": {
+      "provider": "mistral",
+      "name": "/mnt/e/LongPIBench-Reproduction/models/hf-cache/models--mistralai--Mistral-7B-v0.1/snapshots/27d67f1b5f57dc0953326b2601d68371d40ea8da"
+    },
+    "api_key_info": {
+      "api_keys": [
+        0
+      ],
+      "api_key_use": 0
+    },
+    "params": {
+      "temperature": 0.1,
+      "seed": 42,
+      "gpus": [
+        "0"
+      ],
+      "device": "cuda",
+      "max_output_tokens": 128,
+      "ft_path": "/home/tingfeng/LongPIBench-Reproduction/models/runtime-aux-20261018T024846Z-aux-runtime-prepare-f576e035/detector_large/checkpoint-5000",
+      "decoding_method": "greedy"
+    }
+  },
+  "opi_provenance": {
+    "upstream_commit": "fbed5cca347488f88363790ae3ae97c56116da6a",
+    "source_hashes": {
+      "models/Model.py": "acc81c28b4b07a361629abbb03e9629101d7fc660541ddd62ca32d80aca66767",
+      "models/QLoraModel.py": "acfd983fa3c80ac006b860373fd8cea25122b0e831628fd4f7707f0972bb0441",
+      "apps/DataSentinelDetector.py": "3a52c112a8e9dcea08d45efca0643e739ee7e1c45fa8f5dbd89bfdf413de96a6",
+      "apps/PromptLocate.py": "d7d6628486bb58583657dc2a382389663b5b20020d44712fdb783c68dc205b28"
+    },
+    "source_hash_policy": "CRLF_to_LF",
+    "runtime_namespace": "repro._pinned_opi",
+    "source_root": "/home/tingfeng/LongPIBench-Reproduction/upstream/Open-Prompt-Injection/OpenPromptInjection",
+    "import_transform": {
+      "before": "from OpenPromptInjection.apps.DataSentinelDetector import DataSentinelDetector",
+      "after": "from .DataSentinelDetector import DataSentinelDetector"
+    },
+    "method_behavior_modified": false,
+    "gpu_load_verified": false
+  },
+  "nf4_linear_count": 224,
+  "nf4_quant_states_present": true,
+  "active_adapters": [
+    "default"
+  ],
+  "tensor_key_mismatch": {
+    "missing_in_model": [],
+    "extra_in_model": [
+      "base_model.model.model.embed_tokens.weight"
+    ]
+  },
+  "error_type": "ValueError",
+  "error_message": "Saved and loaded adapter tensor sets differ",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/tingfeng/LongPIBench-Reproduction/scripts/aux_runtime_probe.py\", line 398, in main\n    adapter_probe(args.adapter, args.prepared_report, report)\n  File \"/home/tingfeng/LongPIBench-Reproduction/scripts/aux_runtime_probe.py\", line 250, in adapter_probe\n    raise ValueError('Saved and loaded adapter tensor sets differ')\nValueError: Saved and loaded adapter tensor sets differ\n"
+}

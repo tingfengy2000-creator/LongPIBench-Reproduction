@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "task_id": "R0-5090-010",
+  "run_id": "20261018T024846Z-aux-runtime-prepare-f576e035",
+  "operation": "prepare",
+  "hostname": "DESKTOP-B5PNBNC",
+  "platform": "Linux",
+  "run_kind": "debug",
+  "formal_samples_used": false,
+  "formal_inference_executed": false,
+  "formal_checkpoint_selected": false,
+  "full_promptlocate_constructor_verified": false,
+  "adapter_loaded_verified": false,
+  "status": "INFERENCE_FILES_STAGED_SPACY_INSTALLED",
+  "stage": "complete",
+  "git_head": "4ad060e1f88cfd7e867996397f23ebed741540bf",
+  "hardware_gate": {
+    "passed": true,
+    "required_name": "RTX 5090",
+    "minimum_total_mib": 30000,
+    "devices": [
+      {
+        "name": "NVIDIA GeForce RTX 5090",
+        "memory_total_mib": 32607.0,
+        "memory_free_raw": "31962 MiB",
+        "driver": "610.88"
+      }
+    ],
+    "matching_devices": [
+      {
+        "name": "NVIDIA GeForce RTX 5090",
+        "memory_total_mib": 32607.0,
+        "memory_free_raw": "31962 MiB",
+        "driver": "610.88"
+      }
+    ],
+    "errors": [],
+    "scope": "Hardware inventory only; not CUDA/NF4/model acceptance"
+  },
+  "source_receipt": "coordination/returns/20261018T023636Z-aux-downloads-fe64f023/aux_downloads.json",
+  "source_receipt_sha256": "c25fa5ff5591a4668762f80948f4c4d43c13db4cc9ae48dfd98df38fcf8752f7",
+  "resource_dir": "/mnt/e/LongPIBench-Reproduction/models/resource-download-20261018T022505Z-AXb5d0",
+  "prepared_dir": "/home/tingfeng/LongPIBench-Reproduction/models/runtime-aux-20261018T024846Z-aux-runtime-prepare-f576e035",
+  "extracted_files": [
+    {
+      "member": "detector_large/checkpoint-5000/adapter_model.safetensors",
+      "size_bytes": 864513616,
+      "sha256": "b1b023e63d3d49663187565c66d202c779dadf2af865d332643bd4a963125534"
+    },
+    {
+      "member": "detector_large/checkpoint-5000/adapter_config.json",
+      "size_bytes": 743,
+      "sha256": "ed0fe22bf07b9a426cdb3eac4a33b517b855ddcec67b666a37dbdaa4d2493145"
+    },
+    {
+      "member": "detector_small/checkpoint-500/adapter_model.safetensors",
+      "size_bytes": 864513616,
+      "sha256": "4a61e16cbfa1286b7a207ccee420ffca1c98cfc90f6f4b5ef5fa0afa076bb3a5"
+    },
+    {
+      "member": "detector_small/checkpoint-500/adapter_config.json",
+      "size_bytes": 743,
+      "sha256": "7ee1d177b7364be88793e86788a50d8646bb89027d7d2373ecea416db971ec25"
+    },
+    {
+      "member": "7_1000_naive_minimax_mistral_3_1_backend_llama3_revise_beta_1_balance_finetune/checkpoint-500/adapter_model.safetensors",
+      "size_bytes": 864513616,
+      "sha256": "7bfe075fd82b4843962b5e61ba9ff067350cfd914a17ff58c0a159f3bf473a7a"
+    },
+    {
+      "member": "7_1000_naive_minimax_mistral_3_1_backend_llama3_revise_beta_1_balance_finetune/checkpoint-500/adapter_config.json",
+      "size_bytes": 743,
+      "sha256": "cdcabca9d558f71d9485f2012f5f6ba6d9fb587ef44a24f8faa384ca7a6ce929"
+    }
+  ],
+  "adapter_paths": {
+    "large": "/home/tingfeng/LongPIBench-Reproduction/models/runtime-aux-20261018T024846Z-aux-runtime-prepare-f576e035/detector_large/checkpoint-5000",
+    "small": "/home/tingfeng/LongPIBench-Reproduction/models/runtime-aux-20261018T024846Z-aux-runtime-prepare-f576e035/detector_small/checkpoint-500",
+    "oracle": "/home/tingfeng/LongPIBench-Reproduction/models/runtime-aux-20261018T024846Z-aux-runtime-prepare-f576e035/7_1000_naive_minimax_mistral_3_1_backend_llama3_revise_beta_1_balance_finetune/checkpoint-500"
+  },
+  "packages_before": {
+    "torch": "2.7.1+cu128",
+    "transformers": "4.51.3",
+    "bitsandbytes": "0.46.1",
+    "accelerate": "1.6.0",
+    "peft": "0.15.2",
+    "spacy": "3.8.7"
+  },
+  "spacy_model_before": null,
+  "install_command": [
+    "/home/tingfeng/miniforge3/envs/longpibench-r0/bin/python",
+    "-m",
+    "pip",
+    "install",
+    "--no-index",
+    "--no-deps",
+    "/mnt/e/LongPIBench-Reproduction/models/resource-download-20261018T022505Z-AXb5d0/en_core_web_sm-3.8.0-py3-none-any.whl"
+  ],
+  "spacy_model_after": "3.8.0",
+  "packages_after": {
+    "torch": "2.7.1+cu128",
+    "transformers": "4.51.3",
+    "bitsandbytes": "0.46.1",
+    "accelerate": "1.6.0",
+    "peft": "0.15.2",
+    "spacy": "3.8.7"
+  },
+  "installed_wheel_package_members_verified": 28,
+  "pip_check_returncode": 0,
+  "spacy_model_installed_verified": true
+}

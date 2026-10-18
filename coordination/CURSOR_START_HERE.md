@@ -1,5 +1,7 @@
 # 给真实5090设备本地Cursor的当前指令
 
+**当前执行：R0-5090-011。** 010的prepare/spaCy/tokenizer已通过，原回执ba6d4bc已集成。large因协调端工具错误要求导出张量集合全等而停止，原失败证据保留；修正后仍严格检查所有适配器张量，并将唯一额外输入embedding与固定底座逐值核对。按coordination/tasks/R0-5090-011.md复用实际010 prepare回执，仅large、small、oracle依次独立GPU进程运行；遇失败停止后续。不重装/提取/下载，不重跑已通过阶段，不改依赖或方法，不选正式checkpoint。以下为历史指令。
+
 **当前执行：R0-5090-010。** 007文件回执8657879已审查并保留祖先关系。按coordination/tasks/R0-5090-010.md先prepare，仅提取6个推理文件并安装已校验本地spaCy wheel；成功后使用实际prepare回执，分别检查原spaCy初始化、真实Llama tokenizer单BOS，以及large/small/oracle逐进程适配器加载与短合成query。分句检查失败原样报告，可继续本任务明确授权的独立适配器检查；任一适配器失败停止后续适配器。不重下HF、不重跑007/009、不改方法或正式checkpoint、不跑正式样本。以下为历史指令。
 
 **当前执行：R0-5090-007资源准备。** 009的三套模型GPU加载/短合成检查已审查通过，101c124历史已集成。按coordination/tasks/R0-5090-007.md先检查并复用已有资源，再获取/验证两个官方Drive ZIP及固定spaCy wheel；只回传小型aux_downloads.json和REPORT.md。不重下HF模型、不重跑009，不提取/安装/加载adapter或跑正式数据。协调端已修正检查脚本重复BOS，未替换原始009证据，正式消息格式仍待后续验证。下面各段为历史指令，以本段及007当前接续为准。

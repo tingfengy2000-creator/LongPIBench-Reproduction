@@ -1,4 +1,4 @@
-"""R0-5090-010: local inference-only adapter staging and isolated debug checks."""
+"""R0-5090-010/011: local adapter staging and isolated debug checks."""
 import argparse
 import contextlib
 from datetime import datetime, timezone
@@ -32,6 +32,7 @@ ADAPTER_DIRS = {
 }
 EXPECTED = {'torch': '2.7.1+cu128', 'transformers': '4.51.3', 'bitsandbytes': '0.46.1',
             'accelerate': '1.6.0', 'peft': '0.15.2', 'spacy': '3.8.7'}
+BASE_INPUT_EMBEDDING = 'base_model.model.model.embed_tokens.weight'
 
 
 def read_json(path):
@@ -189,6 +190,69 @@ def prepared_source(path, report):
     return data, source, plan, destination
 
 
+def validate_adapter_keys(saved, exported, required_adapter, report):
+    """Require every saved and active adapter key; classify only known base extra."""
+    saved, exported, required_adapter = set(saved), set(exported), set(required_adapter)
+    missing = saved - exported
+    unsaved_adapter = required_adapter - saved
+    extra = exported - saved
+    unexplained = extra - {BASE_INPUT_EMBEDDING}
+    report['tensor_key_audit'] = {
+        'policy_version': 2, 'saved_count': len(saved), 'exported_count': len(exported),
+        'required_adapter_count': len(required_adapter), 'missing_in_model': sorted(missing),
+        'active_adapter_keys_absent_from_file': sorted(unsaved_adapter),
+        'extra_exported_keys': sorted(extra), 'unexplained_extra_keys': sorted(unexplained),
+        'base_extra_verified': False if extra else None,
+    }
+    if not saved or not any('lora_' in k for k in saved) or not required_adapter:
+        raise ValueError('No active LoRA tensors to verify')
+    if missing or unsaved_adapter or unexplained:
+        raise ValueError('Missing saved/active adapter tensor or unexplained exported tensor')
+    return extra
+
+
+def verify_base_input_embedding(model, state, base_path, report):
+    """The exporter may add input embeddings absent from the adapter file.
+
+    Prove that this one extra is the actual input embedding and still equals
+    the accepted fixed base snapshot; never ignore an arbitrary extra tensor.
+    """
+    import torch
+    from safetensors import safe_open
+    tensor = state[BASE_INPUT_EMBEDDING]
+    embedding = model.get_input_embeddings().weight
+    if (tensor.data_ptr() != embedding.data_ptr() or tensor.device != embedding.device
+            or tensor.shape != embedding.shape):
+        raise ValueError('Known extra key is not the actual model input embedding')
+    index_path = base_path / 'model.safetensors.index.json'
+    index = read_json(index_path)
+    key = 'model.embed_tokens.weight'
+    shard_name = index['weight_map'][key]
+    plan = read_json(ROOT / 'configs/offline_transfer_manifest.json')
+    files = next(m['files'] for m in plan['hf_models'] if m['role'] == 'detector_base')
+    fixed_file = next(f for f in files if f['filename'] == shard_name)
+    if Path(shard_name).name != shard_name or not shard_name.endswith('.safetensors'):
+        raise ValueError('Unsafe or unexpected fixed base shard')
+    shard = base_path / shard_name
+    # HF snapshot files are symlinks into the sibling blobs directory; keep
+    # those accepted cache links intact rather than requiring physical nesting.
+    if shard.stat().st_size != fixed_file['size_bytes']:
+        raise ValueError('Fixed base shard changed size')
+    with safe_open(str(shard), framework='pt', device='cpu') as archive:
+        expected = archive.get_tensor(key)
+        actual = tensor.detach().cpu()
+        if actual.shape != expected.shape or not torch.equal(actual, expected.to(actual.dtype)):
+            raise ValueError('Extra input embedding differs from the fixed base snapshot')
+    report['base_input_embedding_check'] = {
+        'exported_key': BASE_INPUT_EMBEDDING, 'base_key': key, 'shard': shard_name,
+        'resolved_shard_path': str(shard.resolve()),
+        'index_sha256': file_sha(index_path), 'shape': list(actual.shape), 'dtype': str(actual.dtype),
+        'equals_base_after_dtype_cast': True, 'is_actual_input_embedding': True,
+        'file_check_scope': 'Prior accepted shard digest plus current size; exact embedding tensor comparison',
+    }
+    report['tensor_key_audit']['base_extra_verified'] = True
+
+
 def adapter_probe(name, prepared, report):
     data, source, plan, destination = prepared_source(prepared, report)
     adapter_path = destination / ADAPTER_DIRS[name]
@@ -239,15 +303,13 @@ def adapter_probe(name, prepared, report):
     report['stage'] = 'loaded_tensor_comparison'
     # Include saved base embeddings/lm_head when present, not just LoRA matrices.
     state = get_peft_model_state_dict(model, adapter_name='default', save_embedding_layers=True)
+    required_adapter = get_peft_model_state_dict(model, adapter_name='default', save_embedding_layers=False)
     matched = []
     with safe_open(str(adapter_path / 'adapter_model.safetensors'), framework='pt', device='cpu') as archive:
         keys = set(archive.keys())
-        if not keys or not any('lora_' in key for key in keys):
-            raise ValueError('No LoRA tensors in inference weights')
-        if keys != set(state):
-            report['tensor_key_mismatch'] = {'missing_in_model': sorted(keys - set(state)),
-                                            'extra_in_model': sorted(set(state) - keys)}
-            raise ValueError('Saved and loaded adapter tensor sets differ')
+        extra = validate_adapter_keys(keys, state, required_adapter, report)
+        if extra:
+            verify_base_input_embedding(model, state, Path(spec['resolved_path']), report)
         for key in sorted(keys):
             actual = state[key].detach().cpu()
             expected = archive.get_tensor(key)
@@ -255,7 +317,7 @@ def adapter_probe(name, prepared, report):
                 raise ValueError('Loaded tensor differs from saved adapter: ' + key)
             matched.append({'key': key, 'shape': list(actual.shape), 'dtype': str(actual.dtype)})
     report.update(adapter_loaded_verified=True, tensors_matched_after_dtype_cast=matched)
-    del state
+    del state, required_adapter
     report['stage'] = 'synthetic_forward'
     sample = 'A synthetic document contains a meeting scheduled for Tuesday.'
     from importlib import import_module
@@ -358,16 +420,19 @@ def main():
     parser.add_argument('--stage', required=True, choices=['prepare', 'spacy', 'adapter', 'target-tokenizer'])
     parser.add_argument('--prepared-report', type=Path)
     parser.add_argument('--adapter', choices=ADAPTER_DIRS)
+    parser.add_argument('--task-id', choices=['R0-5090-010', 'R0-5090-011'], default='R0-5090-010')
     args = parser.parse_args()
     if args.stage in {'spacy', 'adapter'} and args.prepared_report is None:
         parser.error('--prepared-report is required for spacy/adapter')
     if args.stage == 'adapter' and args.adapter is None:
         parser.error('--adapter is required for adapter stage')
+    if args.task_id == 'R0-5090-011' and args.stage != 'adapter':
+        parser.error('011 only resumes adapter stages; do not rerun accepted preparation/CPU checks')
     label = args.stage + ('-' + args.adapter if args.adapter else '')
     run_id = datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ') + '-aux-runtime-' + label + '-' + uuid.uuid4().hex[:8]
     folder = ROOT / 'coordination/returns' / run_id
     folder.mkdir(parents=True, exist_ok=False)
-    report = {'schema_version': 1, 'task_id': 'R0-5090-010', 'run_id': run_id,
+    report = {'schema_version': 1, 'task_id': args.task_id, 'run_id': run_id,
               'operation': args.stage, 'hostname': platform.node(), 'platform': platform.system(),
               'run_kind': 'debug', 'formal_samples_used': False, 'formal_inference_executed': False,
               'formal_checkpoint_selected': False, 'full_promptlocate_constructor_verified': False,
