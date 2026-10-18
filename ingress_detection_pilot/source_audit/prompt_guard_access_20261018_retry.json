@@ -1,0 +1,18 @@
+{
+  "model_repo": "meta-llama/Prompt-Guard-86M",
+  "revision": "1209add6ca7d9c1d815171b8e5571587fe3e7b03",
+  "token_file_present": true,
+  "token_environment_present": false,
+  "large_weights_downloaded": false,
+  "account": "Liam11222",
+  "login_verified": true,
+  "status": "FIXED_CONFIG_ACCESS_PASSED",
+  "config_path": "E:\\Caches\\huggingface\\hub\\models--meta-llama--Prompt-Guard-86M\\snapshots\\1209add6ca7d9c1d815171b8e5571587fe3e7b03\\config.json",
+  "bytes": 1031,
+  "id2label": {
+    "0": "BENIGN",
+    "1": "INJECTION",
+    "2": "JAILBREAK"
+  },
+  "max_position_embeddings": 512
+}

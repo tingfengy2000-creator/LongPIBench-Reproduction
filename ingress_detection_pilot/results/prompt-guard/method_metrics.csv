@@ -1,0 +1,13 @@
+detector,method,domain,threshold,tp,fp,tn,fn,tpr,fpr
+prompt-guard,max,overall,0.3571386337280274,5,2,14,11,0.3125,0.125
+prompt-guard,max,email,0.3571386337280274,2,1,7,6,0.25,0.125
+prompt-guard,max,resume,0.3571386337280274,3,1,7,5,0.375,0.125
+prompt-guard,top2,overall,0.2560997112886981,4,1,15,12,0.25,0.0625
+prompt-guard,top2,email,0.2560997112886981,2,1,7,6,0.25,0.125
+prompt-guard,top2,resume,0.2560997112886981,2,0,8,6,0.25,0.0
+prompt-guard,q90,overall,0.2997293293476106,4,2,14,12,0.25,0.125
+prompt-guard,q90,email,0.2997293293476106,1,1,7,7,0.125,0.125
+prompt-guard,q90,resume,0.2997293293476106,3,1,7,5,0.375,0.125
+prompt-guard,length_calibrated_max,overall,0.8450980400142569,5,2,14,11,0.3125,0.125
+prompt-guard,length_calibrated_max,email,0.8450980400142569,2,1,7,6,0.25,0.125
+prompt-guard,length_calibrated_max,resume,0.8450980400142569,3,1,7,5,0.375,0.125

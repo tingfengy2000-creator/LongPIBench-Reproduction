@@ -1,0 +1,43 @@
+{
+  "status": "REAL_SCORES_COLLECTED",
+  "is_formal_paper_experiment": false,
+  "run_started_utc": "2026-10-18T11:07:36.269414+00:00",
+  "hostname": "DESKTOP-0JKLMO4",
+  "python": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:09:58) [MSC v.1929 64 bit (AMD64)]",
+  "input_commit": "b9c3f6df9ab6fd0f92738361ed4d3f12f4dab27b",
+  "model_repo": "meta-llama/Prompt-Guard-86M",
+  "model_revision": "1209add6ca7d9c1d815171b8e5571587fe3e7b03",
+  "sample_manifest_sha256": "5db7630890195015ee27beb1cd172293b3473c764d6e69a0d933438c6dcaf123",
+  "original_detectors_sha256": "0f48ab6d307576096c4d07021f78c2d587261af80ca0f315af84a714607f43af",
+  "adapter_sha256": "e138f7fc9975887bc4ac0e6d74fc1f213e4573ca8fc5547ecfc5bcc503cfaedc",
+  "threads": 4,
+  "dtype": "original_from_pretrained_default",
+  "chunk_tokens": 512,
+  "threshold": 0.5,
+  "suffix_policy": "Separate shadow forwards; do not alter official early exit",
+  "runtime": {
+    "torch": "2.7.1+cpu",
+    "transformers": "4.51.3",
+    "tokenizers": "0.21.1",
+    "numpy": "2.2.6",
+    "safetensors": "0.5.3",
+    "sentencepiece": "0.2.1"
+  },
+  "runtime_model": {
+    "tokenizer_class": "DebertaV2TokenizerFast",
+    "tokenizer_model_max_length": 1000000000000000019884624838656,
+    "architecture_max_position_embeddings": 512,
+    "id2label": {
+      "0": "BENIGN",
+      "1": "INJECTION",
+      "2": "JAILBREAK"
+    },
+    "device": "cpu",
+    "dtype": "torch.float32",
+    "parameters": 278811651
+  },
+  "n_documents": 80,
+  "n_independent_sources": 40,
+  "scores_sha256": "ccb5d8b74817062fca3d51ec555e127ee1d0aeb743273ccf918ec6b654d2b9cd",
+  "finished_utc": "2026-10-18T11:09:50.707060+00:00"
+}

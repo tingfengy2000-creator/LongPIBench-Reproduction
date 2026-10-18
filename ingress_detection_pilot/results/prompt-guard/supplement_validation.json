@@ -1,0 +1,22 @@
+{
+  "status": "REAL_PROMPT_GUARD_SUPPLEMENT_VALIDATED",
+  "timestamp_utc": "2026-10-18T11:09:58.621246+00:00",
+  "formal_paper_experiment": false,
+  "previous_artifacts_unchanged": 55,
+  "original_label_matches": 80,
+  "independent_replay_checks": "PASS",
+  "R0_R4_modified": false,
+  "file_sha256": {
+    "results/prompt-guard/completion.json": "9fbc3c1812cebc3e6d64a07255d74d41c1d9cf5d10a8bf8b3e124c7fe9cc22f7",
+    "results/prompt-guard/independent_audit.json": "9d6251be01130065ff26db81401a9f814da634c05bb35a6ba224751f82d7c3b8",
+    "results/prompt-guard/length_and_roc.pdf": "5166ea262334e004edd8259501d43070e9ac5d416f2225a2b73ef9dc96e8de7d",
+    "results/prompt-guard/length_and_roc.png": "5c33ee8144f67c68a4d6a88102af80e4e2cbbded2ae27f8d6dbe6f23e97da2e1",
+    "results/prompt-guard/manifest.json": "0ea892ae0a24e59ca3842bea019d35ec95bb387541eef6303f21317380844486",
+    "results/prompt-guard/method_metrics.csv": "446d87a8038cf145b5557402968fb214832aef841cd2935d8eff5b0e31e59a21",
+    "results/prompt-guard/pilot_real_scores.jsonl": "ccb5d8b74817062fca3d51ec555e127ee1d0aeb743273ccf918ec6b654d2b9cd",
+    "results/prompt-guard/pilot_results.json": "66c726275b854e718173d7ace047eab94ddb789f072dff6c450ae7b84162f6da",
+    "results/prompt-guard/roc_points.json": "89d7b50a71bf69e847d528b12006e44c1dc75c491f6ce5ad6a98b63ef655b8cb",
+    "results/prompt-guard/supplement_report.md": "8cdc173f93eda21d80756b816a6da6b28d5ac07d4c4513944e913218f6632ddf"
+  },
+  "analyzer_sha256": "1cee02539128e36e761214fa19be34f84d1d4be605d8df511b32d546433fe3ab"
+}

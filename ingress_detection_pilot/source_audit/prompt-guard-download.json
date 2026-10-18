@@ -1,0 +1,33 @@
+{
+  "repo_id": "meta-llama/Prompt-Guard-86M",
+  "revision": "1209add6ca7d9c1d815171b8e5571587fe3e7b03",
+  "files": [
+    {
+      "filename": "config.json",
+      "bytes": 1031,
+      "sha256": "4729879ff68c7766830270d5a4da768a0f8c56406a7aa148ddee8e5ff8cabe91"
+    },
+    {
+      "filename": "model.safetensors",
+      "bytes": 1115271284,
+      "sha256": "1771712866662626517f2d85057de2d7078389a4c1f0bc93e461bdc4fdae4bd5"
+    },
+    {
+      "filename": "special_tokens_map.json",
+      "bytes": 286,
+      "sha256": "9463f61e1b109a8eb4688b829260d7c6b1e6dff04c98ff7269bb89e2b92369b9"
+    },
+    {
+      "filename": "tokenizer.json",
+      "bytes": 16331639,
+      "sha256": "7dbb7b63c76007984d0e58a90ee901ceb5b16c8e78252d36ddcde748b3474a1a"
+    },
+    {
+      "filename": "tokenizer_config.json",
+      "bytes": 1284,
+      "sha256": "fbab5e63e411db37631bc9eeaf5c628e9718be610838636ed76ebcc6d7c1f77a"
+    }
+  ],
+  "status": "INFERENCE_FILES_VERIFIED",
+  "credentials_exposed": false
+}
