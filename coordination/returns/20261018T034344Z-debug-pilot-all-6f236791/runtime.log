@@ -1,0 +1,3 @@
+{"return_path": "coordination/returns/20261018T034344Z-debug-pilot-target-no-defense-b8ca2158/pilot_stage.json", "status": "DEBUG_TARGET_RECORDED", "stage": "complete"}
+{"return_path": "coordination/returns/20261018T034557Z-debug-pilot-defense-16a9eecd/pilot_stage.json", "status": "DEBUG_DEFENSE_RECORDED", "stage": "complete"}
+{"return_path": "coordination/returns/20261018T035559Z-debug-pilot-target-protected-92619ec3/pilot_stage.json", "status": "DEBUG_TARGET_RECORDED", "stage": "complete"}

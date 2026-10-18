@@ -2,7 +2,9 @@
 
 LongPIBench / PromptLocate 基线复现与逐案例失败归因。本仓库用于本机 Codex 与 RTX 5090 32GB 主机上的 Cursor 通过 Git 交接代码、任务和可核查的回执。
 
-**当前阶段：R0 审计与5090环境准备。尚未运行正式模型实验，没有本地 ASR。**
+**当前阶段：真实样本debug及定位轨迹审查。已产生小样本模型输出，尚无正式ASR。**
+
+当前进展（2026-10-18）：012三阶段真实ID0试跑已完成并审查，来源cbe3dca。完整PromptLocate构造通过，6次目标生成VALID/EOS；两条Email定位受观察预算中断，防御后目标未运行；Resume未触发定位。[013](coordination/tasks/R0-5090-013.md)只读分析已保存轨迹，不用GPU、不调整预算重跑。以下为历史进展。
 
 当前进展（2026-10-18）：011三套适配器工程路径均已验收，来源0476ab8；[012](coordination/tasks/R0-5090-012.md)开始固定真实样本端到端debug，Email/Resume各ID0，干净/攻击、无防御/PromptLocate共最多8次目标生成，分进程适配32GB显存。代码与任务已准备，执行结果仍待5090回执；不计算ASR，不选择正式checkpoint。以下为历史进展。
 

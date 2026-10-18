@@ -1,0 +1,14 @@
+{
+  "source_commit": "cbe3dcac3a9d5004fabb6acc1404605fc3cbb70c",
+  "git_blobs": {
+    "coordination/returns/20261018T034344Z-debug-pilot-all-6f236791/pilot_stage.json": "44c4b516e8268c538996564fbe773cbbfb8a9498",
+    "coordination/returns/20261018T034344Z-debug-pilot-all-6f236791/runtime.log": "fe910eeb00e71b0f3dbc0a5f350fd09f0c0b62a8",
+    "coordination/returns/20261018T034344Z-debug-pilot-target-no-defense-b8ca2158/pilot_stage.json": "9ca1902281d5e4990b770b4ed2d4b482d262632a",
+    "coordination/returns/20261018T034344Z-debug-pilot-target-no-defense-b8ca2158/runtime.log": "dfa6cd11d17518506975106e486e63d68844b404",
+    "coordination/returns/20261018T034557Z-debug-pilot-defense-16a9eecd/pilot_stage.json": "5ead8203a08848476d9d06fbfcc13670e1674825",
+    "coordination/returns/20261018T034557Z-debug-pilot-defense-16a9eecd/runtime.log": "28f82a0eadd8cb6d01d88dbb439ca23ba45b8f78",
+    "coordination/returns/20261018T035559Z-debug-pilot-target-protected-92619ec3/pilot_stage.json": "47030d04351b8309cba527756042a50aff906b3a",
+    "coordination/returns/20261018T035559Z-debug-pilot-target-protected-92619ec3/runtime.log": "2ef70ae88e315bad37637fb13594c9583d2a435b",
+    "coordination/returns/20261018T035824Z-debug-pilot-r0-5090-012/REPORT.md": "b79a03db88a9976c5fec33956e27966feb148e59"
+  }
+}

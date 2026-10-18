@@ -1,5 +1,7 @@
 # 给真实5090设备本地Cursor的当前指令
 
+**当前执行：R0-5090-013既有轨迹分析。** 012三阶段回执cbe3dca已集成：完整PromptLocate构造及6次真实目标生成已完成，两条Email定位受调试观察预算中断。按coordination/tasks/R0-5090-013.md运行标准库只读分析器analyze_debug_trace.py，仅导出本地raw的真实generate/oracle计数、搜索进度及末尾错误；不使用GPU、不改预算、不重跑样本/环境。原始hash必须匹配，不改旧证据，不自行继续GPU任务。以下为历史指令。
+
 **当前执行：R0-5090-012真实样本调试。** 011三适配器工程验收通过，0476ab8祖先已集成。按coordination/tasks/R0-5090-012.md执行唯一命令run_debug_pilot.py --stage all，顺序运行无防御Llama、完整检测定位、恢复后Llama三个独立GPU阶段。预先固定Email/Resume ID0，干净/攻击及两条件；512token仅debug预算。不重做环境检查，不依据输出改参数或选择large/small，不计算ASR；原始输入/输出及轨迹留runs，Git只提交小型回执与日志。失败按任务保留证据，不自行改代码。以下为历史指令。
 
 **当前执行：R0-5090-011。** 010的prepare/spaCy/tokenizer已通过，原回执ba6d4bc已集成。large因协调端工具错误要求导出张量集合全等而停止，原失败证据保留；修正后仍严格检查所有适配器张量，并将唯一额外输入embedding与固定底座逐值核对。按coordination/tasks/R0-5090-011.md复用实际010 prepare回执，仅large、small、oracle依次独立GPU进程运行；遇失败停止后续。不重装/提取/下载，不重跑已通过阶段，不改依赖或方法，不选正式checkpoint。以下为历史指令。

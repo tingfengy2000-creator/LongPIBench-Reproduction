@@ -1,0 +1,112 @@
+{
+  "asr_computed": false,
+  "benchmark_samples_used": true,
+  "case_ids": [
+    "email-000-no",
+    "email-000-authority_spoof",
+    "resume-000-no",
+    "resume-000-authority_spoof"
+  ],
+  "children": [
+    {
+      "command": [
+        "/home/tingfeng/miniforge3/envs/longpibench-r0/bin/python",
+        "/home/tingfeng/LongPIBench-Reproduction/scripts/run_debug_pilot.py",
+        "--stage",
+        "target-no-defense",
+        "--plan",
+        "/home/tingfeng/LongPIBench-Reproduction/runs/20261018T034344Z-debug-pilot-all-6f236791/plan.json"
+      ],
+      "exit_code": 0,
+      "return_path": "coordination/returns/20261018T034344Z-debug-pilot-target-no-defense-b8ca2158/pilot_stage.json",
+      "stage": "complete",
+      "status": "DEBUG_TARGET_RECORDED"
+    },
+    {
+      "command": [
+        "/home/tingfeng/miniforge3/envs/longpibench-r0/bin/python",
+        "/home/tingfeng/LongPIBench-Reproduction/scripts/run_debug_pilot.py",
+        "--stage",
+        "defense",
+        "--plan",
+        "/home/tingfeng/LongPIBench-Reproduction/runs/20261018T034344Z-debug-pilot-all-6f236791/plan.json"
+      ],
+      "exit_code": 0,
+      "return_path": "coordination/returns/20261018T034557Z-debug-pilot-defense-16a9eecd/pilot_stage.json",
+      "stage": "complete",
+      "status": "DEBUG_DEFENSE_RECORDED"
+    },
+    {
+      "command": [
+        "/home/tingfeng/miniforge3/envs/longpibench-r0/bin/python",
+        "/home/tingfeng/LongPIBench-Reproduction/scripts/run_debug_pilot.py",
+        "--stage",
+        "target-protected",
+        "--plan",
+        "/home/tingfeng/LongPIBench-Reproduction/runs/20261018T034344Z-debug-pilot-all-6f236791/plan.json",
+        "--defense-report",
+        "/home/tingfeng/LongPIBench-Reproduction/coordination/returns/20261018T034557Z-debug-pilot-defense-16a9eecd/pilot_stage.json"
+      ],
+      "exit_code": 0,
+      "return_path": "coordination/returns/20261018T035559Z-debug-pilot-target-protected-92619ec3/pilot_stage.json",
+      "stage": "complete",
+      "status": "DEBUG_TARGET_RECORDED"
+    }
+  ],
+  "formal_checkpoint_selected": false,
+  "formal_inference_executed": false,
+  "formal_readiness": false,
+  "git_head": "1bf211123caaf53318bfc34bb3c92466f7e4abab",
+  "hardware_gate": {
+    "devices": [
+      {
+        "driver": "610.88",
+        "memory_free_raw": "31962 MiB",
+        "memory_total_mib": 32607.0,
+        "name": "NVIDIA GeForce RTX 5090"
+      }
+    ],
+    "errors": [],
+    "matching_devices": [
+      {
+        "driver": "610.88",
+        "memory_free_raw": "31962 MiB",
+        "memory_total_mib": 32607.0,
+        "name": "NVIDIA GeForce RTX 5090"
+      }
+    ],
+    "minimum_total_mib": 30000,
+    "passed": true,
+    "required_name": "RTX 5090",
+    "scope": "Hardware inventory only; not CUDA/NF4/model acceptance"
+  },
+  "hostname": "DESKTOP-B5PNBNC",
+  "missing_formal_features": [
+    "Formal checkpoint/config freeze",
+    "Full 20000-token generation budget",
+    "Per-token cosine scores and full semantic span review",
+    "Complete population run and paired validity accounting"
+  ],
+  "operation": "all",
+  "packages": {
+    "accelerate": "1.6.0",
+    "bitsandbytes": "0.46.1",
+    "peft": "0.15.2",
+    "spacy": "3.8.7",
+    "torch": "2.7.1+cu128",
+    "transformers": "4.51.3"
+  },
+  "plan_path": "/home/tingfeng/LongPIBench-Reproduction/runs/20261018T034344Z-debug-pilot-all-6f236791/plan.json",
+  "plan_sha256": "2724c9190c88e998c5bc9fdeef6888b14301467229660dd0965e7c29d0567754",
+  "platform": "Linux",
+  "prepared_receipt": "coordination/returns/20261018T024846Z-aux-runtime-prepare-f576e035/aux_runtime.json",
+  "prepared_receipt_sha256": "423e245fc1b8b980f644addd7884af4bb89305ab7e900e8f28bcf08ee3f00dee",
+  "raw_dir": "/home/tingfeng/LongPIBench-Reproduction/runs/20261018T034344Z-debug-pilot-all-6f236791",
+  "run_id": "20261018T034344Z-debug-pilot-all-6f236791",
+  "run_kind": "debug",
+  "source_receipt": "coordination/returns/20261018T023636Z-aux-downloads-fe64f023/aux_downloads.json",
+  "source_receipt_sha256": "c25fa5ff5591a4668762f80948f4c4d43c13db4cc9ae48dfd98df38fcf8752f7",
+  "stage": "complete",
+  "status": "DEBUG_PILOT_EXECUTED_REVIEW_REQUIRED",
+  "task_id": "R0-5090-012"
+}
