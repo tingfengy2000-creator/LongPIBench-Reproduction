@@ -5,6 +5,30 @@ import pytest
 from scripts import local_model_probe as probe
 
 
+def test_rendered_target_chat_does_not_duplicate_bos():
+    class Tokenizer:
+        chat_template = '<BOS>chat'
+
+        def apply_chat_template(self, messages, **kwargs):
+            return '<BOS>system user assistant'
+
+        def __call__(self, prompt, return_tensors, add_special_tokens=True):
+            ids = ([128000] if prompt.startswith('<BOS>') else []) + [42]
+            if add_special_tokens:
+                ids.insert(0, 128000)
+            return {'input_ids': ids}
+
+    tokenizer = Tokenizer()
+    # Reproduce the observed original 009 failure before checking the repair.
+    assert tokenizer('<BOS>system user assistant', return_tensors='pt')['input_ids'][:2] == [128000, 128000]
+    report = {}
+    inputs = probe.tokenize_synthetic_prompt(tokenizer, 'target', report)
+    assert inputs['input_ids'] == [128000, 42]
+    assert report['tokenization']['add_special_tokens'] is False
+    # Plain-text helper/base inputs retain their existing tokenizer defaults.
+    assert probe.tokenize_synthetic_prompt(tokenizer, 'detector_base', {})['input_ids'] == [128000, 42]
+
+
 @pytest.mark.parametrize('correct_host', [False, True])
 def test_hardware_or_host_gate_prevents_model_runtime(tmp_path, monkeypatch, correct_host):
     calls = []

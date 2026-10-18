@@ -55,6 +55,25 @@ def local_spec(root, role):
             'file_check_scope': 'Prior accepted full hashes plus current sizes; no repeated large-file hashing'}
 
 
+def tokenize_synthetic_prompt(tokenizer, role, report):
+    if role == 'target':
+        messages = [{'role': 'system', 'content': 'Reply with the single word READY.'},
+                    {'role': 'user', 'content': 'This is an isolated model loading check.'}]
+        prompt = tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
+        report['synthetic_messages'] = messages
+        report['chat_template_sha256'] = hashlib.sha256((tokenizer.chat_template or '').encode('utf-8')).hexdigest()
+        # The rendered chat already includes BOS and role delimiters. Adding
+        # tokenizer special tokens again duplicated BOS in the original 009.
+        inputs = tokenizer(prompt, return_tensors='pt', add_special_tokens=False)
+        report['tokenization'] = {'rendered_chat': True, 'add_special_tokens': False}
+    else:
+        prompt = 'This is a synthetic model loading check.'
+        inputs = tokenizer(prompt, return_tensors='pt')
+        report['tokenization'] = {'rendered_chat': False, 'add_special_tokens': 'tokenizer_default'}
+    report['synthetic_prompt'] = prompt
+    return inputs
+
+
 def probe_runtime(spec, report):
     # Set before importing the GPU/model runtime. Explicit token=False below also
     # avoids credential lookup in library requests, even with local_files_only.
@@ -89,16 +108,7 @@ def probe_runtime(spec, report):
     report['stage'] = 'tokenizer'
     tokenizer = AutoTokenizer.from_pretrained(path, **local,
         **({'add_bos_token': True} if spec['role'] == 'detector_base' else {}))
-    if spec['role'] == 'target':
-        messages = [{'role': 'system', 'content': 'Reply with the single word READY.'},
-                    {'role': 'user', 'content': 'This is an isolated model loading check.'}]
-        prompt = tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
-        report['synthetic_messages'] = messages
-        report['chat_template_sha256'] = hashlib.sha256((tokenizer.chat_template or '').encode('utf-8')).hexdigest()
-    else:
-        prompt = 'This is a synthetic model loading check.'
-    report['synthetic_prompt'] = prompt
-    inputs = tokenizer(prompt, return_tensors='pt')
+    inputs = tokenize_synthetic_prompt(tokenizer, spec['role'], report)
     report['input_token_ids'] = inputs['input_ids'][0].tolist()
     report['input_token_count'] = int(inputs['input_ids'].shape[1])
     kwargs = {**local, 'use_safetensors': True, 'low_cpu_mem_usage': True,
