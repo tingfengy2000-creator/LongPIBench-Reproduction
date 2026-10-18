@@ -1,0 +1,21 @@
+{
+  "status": "SMOKE_ENGINEERING_PASS",
+  "run_id": "20261018T153058Z-m2-smoke-21ce25f1",
+  "phase": "smoke",
+  "n_variants": 8,
+  "n_sources": 4,
+  "forward_calls": 176,
+  "elapsed_seconds": 94.78485270001693,
+  "finished_utc": "2026-10-18T15:32:39.223966+00:00",
+  "official_max_equivalence_verified": true,
+  "fixed_whole_token_shadow_verified": true,
+  "exact_global_negative_controls_verified": true,
+  "recovery_full_reference_score_verified": true,
+  "all_input_limits_le512": true,
+  "historical_files_unchanged": 437,
+  "observations_sha256": "db96bfe9fcd7b0a922463328cd7502acf1c2b96ef05aca4b4a290097dacba76a",
+  "runner_sha256": "80e1d5220fe0c9e9b70869ec2610853ce9f61350f4e3d673655dff6c81990069",
+  "completion_path": "E:\\LongPIBench\\runs\\20261018T153058Z-m2-smoke-21ce25f1\\completion.json",
+  "completion_sha256": "ac890a9fa1a63cccfeabf4834e44c82c8a374e593182467373e65c5c28601542",
+  "observations_path": "E:\\LongPIBench\\runs\\20261018T153058Z-m2-smoke-21ce25f1\\observations.jsonl"
+}
