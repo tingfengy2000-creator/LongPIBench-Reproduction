@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "verified_utc": "2026-10-18T15:35:09.477795+00:00",
+  "phase": "smoke",
+  "n_sources": 4,
+  "variants": 8,
+  "forward_records": 176,
+  "max_python64_vs_fp32_risk_error": 7.37517706905777e-08,
+  "exact_negative_control_reexecutes": 16,
+  "history_hashes_unchanged": 437,
+  "table_counts": [],
+  "raw_sha256": "db96bfe9fcd7b0a922463328cd7502acf1c2b96ef05aca4b4a290097dacba76a",
+  "checks": [
+    "Raw input IDs/hash and <=512 limit",
+    "Complete ordered fixed-token shadow coverage",
+    "Official Max/early-exit equivalence",
+    "Source-paired input labels and frozen core coverage",
+    "512-length controls with one token change only",
+    "Exact negative-control logits",
+    "Independent softmax risk and confusion counts",
+    "Combinatorial exact McNemar",
+    "Historical hashes"
+  ]
+}

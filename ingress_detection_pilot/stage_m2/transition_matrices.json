@@ -1,0 +1,82 @@
+{
+  "native_truncated_to_partial16_label0": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      40
+    ]
+  ],
+  "native_truncated_to_partial16_label1": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      40
+    ]
+  ],
+  "native_truncated_to_full_label0": [
+    [
+      0,
+      0
+    ],
+    [
+      21,
+      19
+    ]
+  ],
+  "native_truncated_to_full_label1": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      40
+    ]
+  ],
+  "matched512_truncated_to_partial16_label0": [
+    [
+      17,
+      10
+    ],
+    [
+      0,
+      13
+    ]
+  ],
+  "matched512_truncated_to_partial16_label1": [
+    [
+      0,
+      27
+    ],
+    [
+      0,
+      13
+    ]
+  ],
+  "matched512_truncated_to_full_label0": [
+    [
+      20,
+      7
+    ],
+    [
+      0,
+      13
+    ]
+  ],
+  "matched512_truncated_to_full_label1": [
+    [
+      0,
+      27
+    ],
+    [
+      0,
+      13
+    ]
+  ]
+}

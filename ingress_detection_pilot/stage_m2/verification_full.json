@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "verified_utc": "2026-10-18T15:50:26.375709+00:00",
+  "phase": "full",
+  "n_sources": 40,
+  "variants": 80,
+  "forward_records": 1760,
+  "max_python64_vs_fp32_risk_error": 9.844853132712217e-08,
+  "exact_negative_control_reexecutes": 160,
+  "matched512_shared_suffix_positions_identical": true,
+  "history_hashes_unchanged": 437,
+  "table_counts": [
+    {
+      "file": "03_official_chunk_results.csv",
+      "rows": 320
+    },
+    {
+      "file": "04_shadow_chunk_results.csv",
+      "rows": 160
+    },
+    {
+      "file": "05_context_recovery_results.csv",
+      "rows": 480
+    }
+  ],
+  "raw_sha256": "79fe6b6a8ecd334069b98be24a67f69acec6d16b7a2d76408a9a6ed29862e176",
+  "checks": [
+    "Raw input IDs/hash and <=512 limit",
+    "Complete ordered fixed-token shadow coverage",
+    "Official Max/early-exit equivalence",
+    "Source-paired input labels and frozen core coverage",
+    "512-length controls with one token change only",
+    "Exact negative-control logits",
+    "Independent softmax risk and confusion counts",
+    "Combinatorial exact McNemar",
+    "Historical hashes"
+  ]
+}

@@ -1,0 +1,4214 @@
+[
+  {
+    "scope": "controls",
+    "condition": "global1",
+    "domain": "overall",
+    "text_type": "all",
+    "n_sources": 40,
+    "n_inputs": 80,
+    "tp": 40,
+    "fp": 19,
+    "tn": 21,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.475,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.525,
+    "source_bootstrap95": {
+      "fpr": [
+        0.325,
+        0.625
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "controls",
+    "condition": "global1",
+    "domain": "overall",
+    "text_type": "ordinary",
+    "n_sources": 20,
+    "n_inputs": 40,
+    "tp": 20,
+    "fp": 0,
+    "tn": 20,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.0,
+    "fnr": 0.0,
+    "benign_pass_rate": 1.0,
+    "source_bootstrap95": {
+      "fpr": [
+        0.0,
+        0.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "controls",
+    "condition": "global1",
+    "domain": "overall",
+    "text_type": "hard_benign",
+    "n_sources": 20,
+    "n_inputs": 40,
+    "tp": 20,
+    "fp": 19,
+    "tn": 1,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.95,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.05,
+    "source_bootstrap95": {
+      "fpr": [
+        0.85,
+        1.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "controls",
+    "condition": "global1",
+    "domain": "email",
+    "text_type": "all",
+    "n_sources": 20,
+    "n_inputs": 40,
+    "tp": 20,
+    "fp": 9,
+    "tn": 11,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.45,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.55,
+    "source_bootstrap95": {
+      "fpr": [
+        0.25,
+        0.65
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "controls",
+    "condition": "global1",
+    "domain": "email",
+    "text_type": "ordinary",
+    "n_sources": 10,
+    "n_inputs": 20,
+    "tp": 10,
+    "fp": 0,
+    "tn": 10,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.0,
+    "fnr": 0.0,
+    "benign_pass_rate": 1.0,
+    "source_bootstrap95": {
+      "fpr": [
+        0.0,
+        0.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "controls",
+    "condition": "global1",
+    "domain": "email",
+    "text_type": "hard_benign",
+    "n_sources": 10,
+    "n_inputs": 20,
+    "tp": 10,
+    "fp": 9,
+    "tn": 1,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.9,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.1,
+    "source_bootstrap95": {
+      "fpr": [
+        0.7,
+        1.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "controls",
+    "condition": "global1",
+    "domain": "resume",
+    "text_type": "all",
+    "n_sources": 20,
+    "n_inputs": 40,
+    "tp": 20,
+    "fp": 10,
+    "tn": 10,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.5,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.5,
+    "source_bootstrap95": {
+      "fpr": [
+        0.3,
+        0.7
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "controls",
+    "condition": "global1",
+    "domain": "resume",
+    "text_type": "ordinary",
+    "n_sources": 10,
+    "n_inputs": 20,
+    "tp": 10,
+    "fp": 0,
+    "tn": 10,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.0,
+    "fnr": 0.0,
+    "benign_pass_rate": 1.0,
+    "source_bootstrap95": {
+      "fpr": [
+        0.0,
+        0.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "controls",
+    "condition": "global1",
+    "domain": "resume",
+    "text_type": "hard_benign",
+    "n_sources": 10,
+    "n_inputs": 20,
+    "tp": 10,
+    "fp": 10,
+    "tn": 0,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 1.0,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.0,
+    "source_bootstrap95": {
+      "fpr": [
+        1.0,
+        1.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "controls",
+    "condition": "global7",
+    "domain": "overall",
+    "text_type": "all",
+    "n_sources": 40,
+    "n_inputs": 80,
+    "tp": 40,
+    "fp": 19,
+    "tn": 21,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.475,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.525,
+    "source_bootstrap95": {
+      "fpr": [
+        0.325,
+        0.625
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "controls",
+    "condition": "global7",
+    "domain": "overall",
+    "text_type": "ordinary",
+    "n_sources": 20,
+    "n_inputs": 40,
+    "tp": 20,
+    "fp": 0,
+    "tn": 20,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.0,
+    "fnr": 0.0,
+    "benign_pass_rate": 1.0,
+    "source_bootstrap95": {
+      "fpr": [
+        0.0,
+        0.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "controls",
+    "condition": "global7",
+    "domain": "overall",
+    "text_type": "hard_benign",
+    "n_sources": 20,
+    "n_inputs": 40,
+    "tp": 20,
+    "fp": 19,
+    "tn": 1,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.95,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.05,
+    "source_bootstrap95": {
+      "fpr": [
+        0.85,
+        1.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "controls",
+    "condition": "global7",
+    "domain": "email",
+    "text_type": "all",
+    "n_sources": 20,
+    "n_inputs": 40,
+    "tp": 20,
+    "fp": 9,
+    "tn": 11,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.45,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.55,
+    "source_bootstrap95": {
+      "fpr": [
+        0.25,
+        0.65
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "controls",
+    "condition": "global7",
+    "domain": "email",
+    "text_type": "ordinary",
+    "n_sources": 10,
+    "n_inputs": 20,
+    "tp": 10,
+    "fp": 0,
+    "tn": 10,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.0,
+    "fnr": 0.0,
+    "benign_pass_rate": 1.0,
+    "source_bootstrap95": {
+      "fpr": [
+        0.0,
+        0.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "controls",
+    "condition": "global7",
+    "domain": "email",
+    "text_type": "hard_benign",
+    "n_sources": 10,
+    "n_inputs": 20,
+    "tp": 10,
+    "fp": 9,
+    "tn": 1,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.9,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.1,
+    "source_bootstrap95": {
+      "fpr": [
+        0.7,
+        1.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "controls",
+    "condition": "global7",
+    "domain": "resume",
+    "text_type": "all",
+    "n_sources": 20,
+    "n_inputs": 40,
+    "tp": 20,
+    "fp": 10,
+    "tn": 10,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.5,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.5,
+    "source_bootstrap95": {
+      "fpr": [
+        0.3,
+        0.7
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "controls",
+    "condition": "global7",
+    "domain": "resume",
+    "text_type": "ordinary",
+    "n_sources": 10,
+    "n_inputs": 20,
+    "tp": 10,
+    "fp": 0,
+    "tn": 10,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.0,
+    "fnr": 0.0,
+    "benign_pass_rate": 1.0,
+    "source_bootstrap95": {
+      "fpr": [
+        0.0,
+        0.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "controls",
+    "condition": "global7",
+    "domain": "resume",
+    "text_type": "hard_benign",
+    "n_sources": 10,
+    "n_inputs": 20,
+    "tp": 10,
+    "fp": 10,
+    "tn": 0,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 1.0,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.0,
+    "source_bootstrap95": {
+      "fpr": [
+        1.0,
+        1.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "controls",
+    "condition": "local16",
+    "domain": "overall",
+    "text_type": "all",
+    "n_sources": 40,
+    "n_inputs": 80,
+    "tp": 40,
+    "fp": 38,
+    "tn": 2,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.95,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.05,
+    "source_bootstrap95": {
+      "fpr": [
+        0.875,
+        1.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "controls",
+    "condition": "local16",
+    "domain": "overall",
+    "text_type": "ordinary",
+    "n_sources": 20,
+    "n_inputs": 40,
+    "tp": 20,
+    "fp": 18,
+    "tn": 2,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.9,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.1,
+    "source_bootstrap95": {
+      "fpr": [
+        0.75,
+        1.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "controls",
+    "condition": "local16",
+    "domain": "overall",
+    "text_type": "hard_benign",
+    "n_sources": 20,
+    "n_inputs": 40,
+    "tp": 20,
+    "fp": 20,
+    "tn": 0,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 1.0,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.0,
+    "source_bootstrap95": {
+      "fpr": [
+        1.0,
+        1.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "controls",
+    "condition": "local16",
+    "domain": "email",
+    "text_type": "all",
+    "n_sources": 20,
+    "n_inputs": 40,
+    "tp": 20,
+    "fp": 19,
+    "tn": 1,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.95,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.05,
+    "source_bootstrap95": {
+      "fpr": [
+        0.85,
+        1.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "controls",
+    "condition": "local16",
+    "domain": "email",
+    "text_type": "ordinary",
+    "n_sources": 10,
+    "n_inputs": 20,
+    "tp": 10,
+    "fp": 9,
+    "tn": 1,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.9,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.1,
+    "source_bootstrap95": {
+      "fpr": [
+        0.7,
+        1.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "controls",
+    "condition": "local16",
+    "domain": "email",
+    "text_type": "hard_benign",
+    "n_sources": 10,
+    "n_inputs": 20,
+    "tp": 10,
+    "fp": 10,
+    "tn": 0,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 1.0,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.0,
+    "source_bootstrap95": {
+      "fpr": [
+        1.0,
+        1.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "controls",
+    "condition": "local16",
+    "domain": "resume",
+    "text_type": "all",
+    "n_sources": 20,
+    "n_inputs": 40,
+    "tp": 20,
+    "fp": 19,
+    "tn": 1,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.95,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.05,
+    "source_bootstrap95": {
+      "fpr": [
+        0.85,
+        1.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "controls",
+    "condition": "local16",
+    "domain": "resume",
+    "text_type": "ordinary",
+    "n_sources": 10,
+    "n_inputs": 20,
+    "tp": 10,
+    "fp": 9,
+    "tn": 1,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.9,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.1,
+    "source_bootstrap95": {
+      "fpr": [
+        0.7,
+        1.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "controls",
+    "condition": "local16",
+    "domain": "resume",
+    "text_type": "hard_benign",
+    "n_sources": 10,
+    "n_inputs": 20,
+    "tp": 10,
+    "fp": 10,
+    "tn": 0,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 1.0,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.0,
+    "source_bootstrap95": {
+      "fpr": [
+        1.0,
+        1.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "controls",
+    "condition": "local192",
+    "domain": "overall",
+    "text_type": "all",
+    "n_sources": 40,
+    "n_inputs": 80,
+    "tp": 40,
+    "fp": 35,
+    "tn": 5,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.875,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.125,
+    "source_bootstrap95": {
+      "fpr": [
+        0.775,
+        0.975
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "controls",
+    "condition": "local192",
+    "domain": "overall",
+    "text_type": "ordinary",
+    "n_sources": 20,
+    "n_inputs": 40,
+    "tp": 20,
+    "fp": 15,
+    "tn": 5,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.75,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.25,
+    "source_bootstrap95": {
+      "fpr": [
+        0.55,
+        0.9
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "controls",
+    "condition": "local192",
+    "domain": "overall",
+    "text_type": "hard_benign",
+    "n_sources": 20,
+    "n_inputs": 40,
+    "tp": 20,
+    "fp": 20,
+    "tn": 0,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 1.0,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.0,
+    "source_bootstrap95": {
+      "fpr": [
+        1.0,
+        1.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "controls",
+    "condition": "local192",
+    "domain": "email",
+    "text_type": "all",
+    "n_sources": 20,
+    "n_inputs": 40,
+    "tp": 20,
+    "fp": 16,
+    "tn": 4,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.8,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.2,
+    "source_bootstrap95": {
+      "fpr": [
+        0.6,
+        0.95
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "controls",
+    "condition": "local192",
+    "domain": "email",
+    "text_type": "ordinary",
+    "n_sources": 10,
+    "n_inputs": 20,
+    "tp": 10,
+    "fp": 6,
+    "tn": 4,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.6,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.4,
+    "source_bootstrap95": {
+      "fpr": [
+        0.3,
+        0.9
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "controls",
+    "condition": "local192",
+    "domain": "email",
+    "text_type": "hard_benign",
+    "n_sources": 10,
+    "n_inputs": 20,
+    "tp": 10,
+    "fp": 10,
+    "tn": 0,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 1.0,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.0,
+    "source_bootstrap95": {
+      "fpr": [
+        1.0,
+        1.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "controls",
+    "condition": "local192",
+    "domain": "resume",
+    "text_type": "all",
+    "n_sources": 20,
+    "n_inputs": 40,
+    "tp": 20,
+    "fp": 19,
+    "tn": 1,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.95,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.05,
+    "source_bootstrap95": {
+      "fpr": [
+        0.85,
+        1.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "controls",
+    "condition": "local192",
+    "domain": "resume",
+    "text_type": "ordinary",
+    "n_sources": 10,
+    "n_inputs": 20,
+    "tp": 10,
+    "fp": 9,
+    "tn": 1,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.9,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.1,
+    "source_bootstrap95": {
+      "fpr": [
+        0.7,
+        1.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "controls",
+    "condition": "local192",
+    "domain": "resume",
+    "text_type": "hard_benign",
+    "n_sources": 10,
+    "n_inputs": 20,
+    "tp": 10,
+    "fp": 10,
+    "tn": 0,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 1.0,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.0,
+    "source_bootstrap95": {
+      "fpr": [
+        1.0,
+        1.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "controls",
+    "condition": "replace_cls",
+    "domain": "overall",
+    "text_type": "all",
+    "n_sources": 40,
+    "n_inputs": 80,
+    "tp": 40,
+    "fp": 25,
+    "tn": 15,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.625,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.375,
+    "source_bootstrap95": {
+      "fpr": [
+        0.475,
+        0.775
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "controls",
+    "condition": "replace_cls",
+    "domain": "overall",
+    "text_type": "ordinary",
+    "n_sources": 20,
+    "n_inputs": 40,
+    "tp": 20,
+    "fp": 5,
+    "tn": 15,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.25,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.75,
+    "source_bootstrap95": {
+      "fpr": [
+        0.1,
+        0.45
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "controls",
+    "condition": "replace_cls",
+    "domain": "overall",
+    "text_type": "hard_benign",
+    "n_sources": 20,
+    "n_inputs": 40,
+    "tp": 20,
+    "fp": 20,
+    "tn": 0,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 1.0,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.0,
+    "source_bootstrap95": {
+      "fpr": [
+        1.0,
+        1.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "controls",
+    "condition": "replace_cls",
+    "domain": "email",
+    "text_type": "all",
+    "n_sources": 20,
+    "n_inputs": 40,
+    "tp": 20,
+    "fp": 12,
+    "tn": 8,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.6,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.4,
+    "source_bootstrap95": {
+      "fpr": [
+        0.4,
+        0.8
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "controls",
+    "condition": "replace_cls",
+    "domain": "email",
+    "text_type": "ordinary",
+    "n_sources": 10,
+    "n_inputs": 20,
+    "tp": 10,
+    "fp": 2,
+    "tn": 8,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.2,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.8,
+    "source_bootstrap95": {
+      "fpr": [
+        0.0,
+        0.5
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "controls",
+    "condition": "replace_cls",
+    "domain": "email",
+    "text_type": "hard_benign",
+    "n_sources": 10,
+    "n_inputs": 20,
+    "tp": 10,
+    "fp": 10,
+    "tn": 0,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 1.0,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.0,
+    "source_bootstrap95": {
+      "fpr": [
+        1.0,
+        1.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "controls",
+    "condition": "replace_cls",
+    "domain": "resume",
+    "text_type": "all",
+    "n_sources": 20,
+    "n_inputs": 40,
+    "tp": 20,
+    "fp": 13,
+    "tn": 7,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.65,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.35,
+    "source_bootstrap95": {
+      "fpr": [
+        0.45,
+        0.85
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "controls",
+    "condition": "replace_cls",
+    "domain": "resume",
+    "text_type": "ordinary",
+    "n_sources": 10,
+    "n_inputs": 20,
+    "tp": 10,
+    "fp": 3,
+    "tn": 7,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.3,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.7,
+    "source_bootstrap95": {
+      "fpr": [
+        0.0,
+        0.6
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "controls",
+    "condition": "replace_cls",
+    "domain": "resume",
+    "text_type": "hard_benign",
+    "n_sources": 10,
+    "n_inputs": 20,
+    "tp": 10,
+    "fp": 10,
+    "tn": 0,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 1.0,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.0,
+    "source_bootstrap95": {
+      "fpr": [
+        1.0,
+        1.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "controls",
+    "condition": "replace_sep",
+    "domain": "overall",
+    "text_type": "all",
+    "n_sources": 40,
+    "n_inputs": 80,
+    "tp": 40,
+    "fp": 33,
+    "tn": 7,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.825,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.175,
+    "source_bootstrap95": {
+      "fpr": [
+        0.7,
+        0.925
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "controls",
+    "condition": "replace_sep",
+    "domain": "overall",
+    "text_type": "ordinary",
+    "n_sources": 20,
+    "n_inputs": 40,
+    "tp": 20,
+    "fp": 13,
+    "tn": 7,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.65,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.35,
+    "source_bootstrap95": {
+      "fpr": [
+        0.45,
+        0.85
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "controls",
+    "condition": "replace_sep",
+    "domain": "overall",
+    "text_type": "hard_benign",
+    "n_sources": 20,
+    "n_inputs": 40,
+    "tp": 20,
+    "fp": 20,
+    "tn": 0,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 1.0,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.0,
+    "source_bootstrap95": {
+      "fpr": [
+        1.0,
+        1.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "controls",
+    "condition": "replace_sep",
+    "domain": "email",
+    "text_type": "all",
+    "n_sources": 20,
+    "n_inputs": 40,
+    "tp": 20,
+    "fp": 17,
+    "tn": 3,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.85,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.15,
+    "source_bootstrap95": {
+      "fpr": [
+        0.65,
+        1.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "controls",
+    "condition": "replace_sep",
+    "domain": "email",
+    "text_type": "ordinary",
+    "n_sources": 10,
+    "n_inputs": 20,
+    "tp": 10,
+    "fp": 7,
+    "tn": 3,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.7,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.3,
+    "source_bootstrap95": {
+      "fpr": [
+        0.4,
+        1.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "controls",
+    "condition": "replace_sep",
+    "domain": "email",
+    "text_type": "hard_benign",
+    "n_sources": 10,
+    "n_inputs": 20,
+    "tp": 10,
+    "fp": 10,
+    "tn": 0,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 1.0,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.0,
+    "source_bootstrap95": {
+      "fpr": [
+        1.0,
+        1.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "controls",
+    "condition": "replace_sep",
+    "domain": "resume",
+    "text_type": "all",
+    "n_sources": 20,
+    "n_inputs": 40,
+    "tp": 20,
+    "fp": 16,
+    "tn": 4,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.8,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.2,
+    "source_bootstrap95": {
+      "fpr": [
+        0.6,
+        0.95
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "controls",
+    "condition": "replace_sep",
+    "domain": "resume",
+    "text_type": "ordinary",
+    "n_sources": 10,
+    "n_inputs": 20,
+    "tp": 10,
+    "fp": 6,
+    "tn": 4,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.6,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.4,
+    "source_bootstrap95": {
+      "fpr": [
+        0.3,
+        0.9
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "controls",
+    "condition": "replace_sep",
+    "domain": "resume",
+    "text_type": "hard_benign",
+    "n_sources": 10,
+    "n_inputs": 20,
+    "tp": 10,
+    "fp": 10,
+    "tn": 0,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 1.0,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.0,
+    "source_bootstrap95": {
+      "fpr": [
+        1.0,
+        1.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "official",
+    "condition": "A_complete",
+    "domain": "overall",
+    "text_type": "all",
+    "n_sources": 40,
+    "n_inputs": 80,
+    "tp": 40,
+    "fp": 20,
+    "tn": 20,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.5,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.5,
+    "source_bootstrap95": {
+      "fpr": [
+        0.35,
+        0.65
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "official",
+    "condition": "A_complete",
+    "domain": "overall",
+    "text_type": "ordinary",
+    "n_sources": 20,
+    "n_inputs": 40,
+    "tp": 20,
+    "fp": 0,
+    "tn": 20,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.0,
+    "fnr": 0.0,
+    "benign_pass_rate": 1.0,
+    "source_bootstrap95": {
+      "fpr": [
+        0.0,
+        0.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "official",
+    "condition": "A_complete",
+    "domain": "overall",
+    "text_type": "hard_benign",
+    "n_sources": 20,
+    "n_inputs": 40,
+    "tp": 20,
+    "fp": 20,
+    "tn": 0,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 1.0,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.0,
+    "source_bootstrap95": {
+      "fpr": [
+        1.0,
+        1.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "official",
+    "condition": "A_complete",
+    "domain": "email",
+    "text_type": "all",
+    "n_sources": 20,
+    "n_inputs": 40,
+    "tp": 20,
+    "fp": 10,
+    "tn": 10,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.5,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.5,
+    "source_bootstrap95": {
+      "fpr": [
+        0.3,
+        0.7
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "official",
+    "condition": "A_complete",
+    "domain": "email",
+    "text_type": "ordinary",
+    "n_sources": 10,
+    "n_inputs": 20,
+    "tp": 10,
+    "fp": 0,
+    "tn": 10,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.0,
+    "fnr": 0.0,
+    "benign_pass_rate": 1.0,
+    "source_bootstrap95": {
+      "fpr": [
+        0.0,
+        0.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "official",
+    "condition": "A_complete",
+    "domain": "email",
+    "text_type": "hard_benign",
+    "n_sources": 10,
+    "n_inputs": 20,
+    "tp": 10,
+    "fp": 10,
+    "tn": 0,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 1.0,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.0,
+    "source_bootstrap95": {
+      "fpr": [
+        1.0,
+        1.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "official",
+    "condition": "A_complete",
+    "domain": "resume",
+    "text_type": "all",
+    "n_sources": 20,
+    "n_inputs": 40,
+    "tp": 20,
+    "fp": 10,
+    "tn": 10,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.5,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.5,
+    "source_bootstrap95": {
+      "fpr": [
+        0.3,
+        0.7
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "official",
+    "condition": "A_complete",
+    "domain": "resume",
+    "text_type": "ordinary",
+    "n_sources": 10,
+    "n_inputs": 20,
+    "tp": 10,
+    "fp": 0,
+    "tn": 10,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.0,
+    "fnr": 0.0,
+    "benign_pass_rate": 1.0,
+    "source_bootstrap95": {
+      "fpr": [
+        0.0,
+        0.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "official",
+    "condition": "A_complete",
+    "domain": "resume",
+    "text_type": "hard_benign",
+    "n_sources": 10,
+    "n_inputs": 20,
+    "tp": 10,
+    "fp": 10,
+    "tn": 0,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 1.0,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.0,
+    "source_bootstrap95": {
+      "fpr": [
+        1.0,
+        1.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "official",
+    "condition": "B_cross",
+    "domain": "overall",
+    "text_type": "all",
+    "n_sources": 40,
+    "n_inputs": 80,
+    "tp": 23,
+    "fp": 33,
+    "tn": 7,
+    "fn": 17,
+    "tpr": 0.575,
+    "fpr": 0.825,
+    "fnr": 0.425,
+    "benign_pass_rate": 0.175,
+    "source_bootstrap95": {
+      "fpr": [
+        0.7,
+        0.925
+      ],
+      "tpr": [
+        0.425,
+        0.725
+      ]
+    }
+  },
+  {
+    "scope": "official",
+    "condition": "B_cross",
+    "domain": "overall",
+    "text_type": "ordinary",
+    "n_sources": 20,
+    "n_inputs": 40,
+    "tp": 13,
+    "fp": 13,
+    "tn": 7,
+    "fn": 7,
+    "tpr": 0.65,
+    "fpr": 0.65,
+    "fnr": 0.35,
+    "benign_pass_rate": 0.35,
+    "source_bootstrap95": {
+      "fpr": [
+        0.45,
+        0.85
+      ],
+      "tpr": [
+        0.45,
+        0.85
+      ]
+    }
+  },
+  {
+    "scope": "official",
+    "condition": "B_cross",
+    "domain": "overall",
+    "text_type": "hard_benign",
+    "n_sources": 20,
+    "n_inputs": 40,
+    "tp": 10,
+    "fp": 20,
+    "tn": 0,
+    "fn": 10,
+    "tpr": 0.5,
+    "fpr": 1.0,
+    "fnr": 0.5,
+    "benign_pass_rate": 0.0,
+    "source_bootstrap95": {
+      "fpr": [
+        1.0,
+        1.0
+      ],
+      "tpr": [
+        0.3,
+        0.7
+      ]
+    }
+  },
+  {
+    "scope": "official",
+    "condition": "B_cross",
+    "domain": "email",
+    "text_type": "all",
+    "n_sources": 20,
+    "n_inputs": 40,
+    "tp": 10,
+    "fp": 16,
+    "tn": 4,
+    "fn": 10,
+    "tpr": 0.5,
+    "fpr": 0.8,
+    "fnr": 0.5,
+    "benign_pass_rate": 0.2,
+    "source_bootstrap95": {
+      "fpr": [
+        0.6,
+        0.95
+      ],
+      "tpr": [
+        0.3,
+        0.7
+      ]
+    }
+  },
+  {
+    "scope": "official",
+    "condition": "B_cross",
+    "domain": "email",
+    "text_type": "ordinary",
+    "n_sources": 10,
+    "n_inputs": 20,
+    "tp": 6,
+    "fp": 6,
+    "tn": 4,
+    "fn": 4,
+    "tpr": 0.6,
+    "fpr": 0.6,
+    "fnr": 0.4,
+    "benign_pass_rate": 0.4,
+    "source_bootstrap95": {
+      "fpr": [
+        0.3,
+        0.9
+      ],
+      "tpr": [
+        0.3,
+        0.9
+      ]
+    }
+  },
+  {
+    "scope": "official",
+    "condition": "B_cross",
+    "domain": "email",
+    "text_type": "hard_benign",
+    "n_sources": 10,
+    "n_inputs": 20,
+    "tp": 4,
+    "fp": 10,
+    "tn": 0,
+    "fn": 6,
+    "tpr": 0.4,
+    "fpr": 1.0,
+    "fnr": 0.6,
+    "benign_pass_rate": 0.0,
+    "source_bootstrap95": {
+      "fpr": [
+        1.0,
+        1.0
+      ],
+      "tpr": [
+        0.1,
+        0.7
+      ]
+    }
+  },
+  {
+    "scope": "official",
+    "condition": "B_cross",
+    "domain": "resume",
+    "text_type": "all",
+    "n_sources": 20,
+    "n_inputs": 40,
+    "tp": 13,
+    "fp": 17,
+    "tn": 3,
+    "fn": 7,
+    "tpr": 0.65,
+    "fpr": 0.85,
+    "fnr": 0.35,
+    "benign_pass_rate": 0.15,
+    "source_bootstrap95": {
+      "fpr": [
+        0.7,
+        1.0
+      ],
+      "tpr": [
+        0.45,
+        0.85
+      ]
+    }
+  },
+  {
+    "scope": "official",
+    "condition": "B_cross",
+    "domain": "resume",
+    "text_type": "ordinary",
+    "n_sources": 10,
+    "n_inputs": 20,
+    "tp": 7,
+    "fp": 7,
+    "tn": 3,
+    "fn": 3,
+    "tpr": 0.7,
+    "fpr": 0.7,
+    "fnr": 0.3,
+    "benign_pass_rate": 0.3,
+    "source_bootstrap95": {
+      "fpr": [
+        0.4,
+        1.0
+      ],
+      "tpr": [
+        0.4,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "official",
+    "condition": "B_cross",
+    "domain": "resume",
+    "text_type": "hard_benign",
+    "n_sources": 10,
+    "n_inputs": 20,
+    "tp": 6,
+    "fp": 10,
+    "tn": 0,
+    "fn": 4,
+    "tpr": 0.6,
+    "fpr": 1.0,
+    "fnr": 0.4,
+    "benign_pass_rate": 0.0,
+    "source_bootstrap95": {
+      "fpr": [
+        1.0,
+        1.0
+      ],
+      "tpr": [
+        0.3,
+        0.9
+      ]
+    }
+  },
+  {
+    "scope": "official",
+    "condition": "C_tail",
+    "domain": "overall",
+    "text_type": "all",
+    "n_sources": 40,
+    "n_inputs": 80,
+    "tp": 40,
+    "fp": 20,
+    "tn": 20,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.5,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.5,
+    "source_bootstrap95": {
+      "fpr": [
+        0.35,
+        0.65
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "official",
+    "condition": "C_tail",
+    "domain": "overall",
+    "text_type": "ordinary",
+    "n_sources": 20,
+    "n_inputs": 40,
+    "tp": 20,
+    "fp": 0,
+    "tn": 20,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.0,
+    "fnr": 0.0,
+    "benign_pass_rate": 1.0,
+    "source_bootstrap95": {
+      "fpr": [
+        0.0,
+        0.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "official",
+    "condition": "C_tail",
+    "domain": "overall",
+    "text_type": "hard_benign",
+    "n_sources": 20,
+    "n_inputs": 40,
+    "tp": 20,
+    "fp": 20,
+    "tn": 0,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 1.0,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.0,
+    "source_bootstrap95": {
+      "fpr": [
+        1.0,
+        1.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "official",
+    "condition": "C_tail",
+    "domain": "email",
+    "text_type": "all",
+    "n_sources": 20,
+    "n_inputs": 40,
+    "tp": 20,
+    "fp": 10,
+    "tn": 10,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.5,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.5,
+    "source_bootstrap95": {
+      "fpr": [
+        0.3,
+        0.7
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "official",
+    "condition": "C_tail",
+    "domain": "email",
+    "text_type": "ordinary",
+    "n_sources": 10,
+    "n_inputs": 20,
+    "tp": 10,
+    "fp": 0,
+    "tn": 10,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.0,
+    "fnr": 0.0,
+    "benign_pass_rate": 1.0,
+    "source_bootstrap95": {
+      "fpr": [
+        0.0,
+        0.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "official",
+    "condition": "C_tail",
+    "domain": "email",
+    "text_type": "hard_benign",
+    "n_sources": 10,
+    "n_inputs": 20,
+    "tp": 10,
+    "fp": 10,
+    "tn": 0,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 1.0,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.0,
+    "source_bootstrap95": {
+      "fpr": [
+        1.0,
+        1.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "official",
+    "condition": "C_tail",
+    "domain": "resume",
+    "text_type": "all",
+    "n_sources": 20,
+    "n_inputs": 40,
+    "tp": 20,
+    "fp": 10,
+    "tn": 10,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.5,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.5,
+    "source_bootstrap95": {
+      "fpr": [
+        0.3,
+        0.7
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "official",
+    "condition": "C_tail",
+    "domain": "resume",
+    "text_type": "ordinary",
+    "n_sources": 10,
+    "n_inputs": 20,
+    "tp": 10,
+    "fp": 0,
+    "tn": 10,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.0,
+    "fnr": 0.0,
+    "benign_pass_rate": 1.0,
+    "source_bootstrap95": {
+      "fpr": [
+        0.0,
+        0.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "official",
+    "condition": "C_tail",
+    "domain": "resume",
+    "text_type": "hard_benign",
+    "n_sources": 10,
+    "n_inputs": 20,
+    "tp": 10,
+    "fp": 10,
+    "tn": 0,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 1.0,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.0,
+    "source_bootstrap95": {
+      "fpr": [
+        1.0,
+        1.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "official",
+    "condition": "core_reference",
+    "domain": "overall",
+    "text_type": "all",
+    "n_sources": 40,
+    "n_inputs": 80,
+    "tp": 40,
+    "fp": 19,
+    "tn": 21,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.475,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.525,
+    "source_bootstrap95": {
+      "fpr": [
+        0.325,
+        0.625
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "official",
+    "condition": "core_reference",
+    "domain": "overall",
+    "text_type": "ordinary",
+    "n_sources": 20,
+    "n_inputs": 40,
+    "tp": 20,
+    "fp": 0,
+    "tn": 20,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.0,
+    "fnr": 0.0,
+    "benign_pass_rate": 1.0,
+    "source_bootstrap95": {
+      "fpr": [
+        0.0,
+        0.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "official",
+    "condition": "core_reference",
+    "domain": "overall",
+    "text_type": "hard_benign",
+    "n_sources": 20,
+    "n_inputs": 40,
+    "tp": 20,
+    "fp": 19,
+    "tn": 1,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.95,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.05,
+    "source_bootstrap95": {
+      "fpr": [
+        0.85,
+        1.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "official",
+    "condition": "core_reference",
+    "domain": "email",
+    "text_type": "all",
+    "n_sources": 20,
+    "n_inputs": 40,
+    "tp": 20,
+    "fp": 9,
+    "tn": 11,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.45,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.55,
+    "source_bootstrap95": {
+      "fpr": [
+        0.25,
+        0.65
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "official",
+    "condition": "core_reference",
+    "domain": "email",
+    "text_type": "ordinary",
+    "n_sources": 10,
+    "n_inputs": 20,
+    "tp": 10,
+    "fp": 0,
+    "tn": 10,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.0,
+    "fnr": 0.0,
+    "benign_pass_rate": 1.0,
+    "source_bootstrap95": {
+      "fpr": [
+        0.0,
+        0.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "official",
+    "condition": "core_reference",
+    "domain": "email",
+    "text_type": "hard_benign",
+    "n_sources": 10,
+    "n_inputs": 20,
+    "tp": 10,
+    "fp": 9,
+    "tn": 1,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.9,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.1,
+    "source_bootstrap95": {
+      "fpr": [
+        0.7,
+        1.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "official",
+    "condition": "core_reference",
+    "domain": "resume",
+    "text_type": "all",
+    "n_sources": 20,
+    "n_inputs": 40,
+    "tp": 20,
+    "fp": 10,
+    "tn": 10,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.5,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.5,
+    "source_bootstrap95": {
+      "fpr": [
+        0.3,
+        0.7
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "official",
+    "condition": "core_reference",
+    "domain": "resume",
+    "text_type": "ordinary",
+    "n_sources": 10,
+    "n_inputs": 20,
+    "tp": 10,
+    "fp": 0,
+    "tn": 10,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.0,
+    "fnr": 0.0,
+    "benign_pass_rate": 1.0,
+    "source_bootstrap95": {
+      "fpr": [
+        0.0,
+        0.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "official",
+    "condition": "core_reference",
+    "domain": "resume",
+    "text_type": "hard_benign",
+    "n_sources": 10,
+    "n_inputs": 20,
+    "tp": 10,
+    "fp": 10,
+    "tn": 0,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 1.0,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.0,
+    "source_bootstrap95": {
+      "fpr": [
+        1.0,
+        1.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "recovery",
+    "condition": "matched512_full",
+    "domain": "overall",
+    "text_type": "all",
+    "n_sources": 40,
+    "n_inputs": 80,
+    "tp": 40,
+    "fp": 20,
+    "tn": 20,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.5,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.5,
+    "source_bootstrap95": {
+      "fpr": [
+        0.35,
+        0.65
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "recovery",
+    "condition": "matched512_full",
+    "domain": "overall",
+    "text_type": "ordinary",
+    "n_sources": 20,
+    "n_inputs": 40,
+    "tp": 20,
+    "fp": 0,
+    "tn": 20,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.0,
+    "fnr": 0.0,
+    "benign_pass_rate": 1.0,
+    "source_bootstrap95": {
+      "fpr": [
+        0.0,
+        0.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "recovery",
+    "condition": "matched512_full",
+    "domain": "overall",
+    "text_type": "hard_benign",
+    "n_sources": 20,
+    "n_inputs": 40,
+    "tp": 20,
+    "fp": 20,
+    "tn": 0,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 1.0,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.0,
+    "source_bootstrap95": {
+      "fpr": [
+        1.0,
+        1.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "recovery",
+    "condition": "matched512_full",
+    "domain": "email",
+    "text_type": "all",
+    "n_sources": 20,
+    "n_inputs": 40,
+    "tp": 20,
+    "fp": 10,
+    "tn": 10,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.5,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.5,
+    "source_bootstrap95": {
+      "fpr": [
+        0.3,
+        0.7
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "recovery",
+    "condition": "matched512_full",
+    "domain": "email",
+    "text_type": "ordinary",
+    "n_sources": 10,
+    "n_inputs": 20,
+    "tp": 10,
+    "fp": 0,
+    "tn": 10,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.0,
+    "fnr": 0.0,
+    "benign_pass_rate": 1.0,
+    "source_bootstrap95": {
+      "fpr": [
+        0.0,
+        0.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "recovery",
+    "condition": "matched512_full",
+    "domain": "email",
+    "text_type": "hard_benign",
+    "n_sources": 10,
+    "n_inputs": 20,
+    "tp": 10,
+    "fp": 10,
+    "tn": 0,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 1.0,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.0,
+    "source_bootstrap95": {
+      "fpr": [
+        1.0,
+        1.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "recovery",
+    "condition": "matched512_full",
+    "domain": "resume",
+    "text_type": "all",
+    "n_sources": 20,
+    "n_inputs": 40,
+    "tp": 20,
+    "fp": 10,
+    "tn": 10,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.5,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.5,
+    "source_bootstrap95": {
+      "fpr": [
+        0.3,
+        0.7
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "recovery",
+    "condition": "matched512_full",
+    "domain": "resume",
+    "text_type": "ordinary",
+    "n_sources": 10,
+    "n_inputs": 20,
+    "tp": 10,
+    "fp": 0,
+    "tn": 10,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.0,
+    "fnr": 0.0,
+    "benign_pass_rate": 1.0,
+    "source_bootstrap95": {
+      "fpr": [
+        0.0,
+        0.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "recovery",
+    "condition": "matched512_full",
+    "domain": "resume",
+    "text_type": "hard_benign",
+    "n_sources": 10,
+    "n_inputs": 20,
+    "tp": 10,
+    "fp": 10,
+    "tn": 0,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 1.0,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.0,
+    "source_bootstrap95": {
+      "fpr": [
+        1.0,
+        1.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "recovery",
+    "condition": "matched512_partial16",
+    "domain": "overall",
+    "text_type": "all",
+    "n_sources": 40,
+    "n_inputs": 80,
+    "tp": 40,
+    "fp": 23,
+    "tn": 17,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.575,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.425,
+    "source_bootstrap95": {
+      "fpr": [
+        0.425,
+        0.725
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "recovery",
+    "condition": "matched512_partial16",
+    "domain": "overall",
+    "text_type": "ordinary",
+    "n_sources": 20,
+    "n_inputs": 40,
+    "tp": 20,
+    "fp": 3,
+    "tn": 17,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.15,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.85,
+    "source_bootstrap95": {
+      "fpr": [
+        0.0,
+        0.3
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "recovery",
+    "condition": "matched512_partial16",
+    "domain": "overall",
+    "text_type": "hard_benign",
+    "n_sources": 20,
+    "n_inputs": 40,
+    "tp": 20,
+    "fp": 20,
+    "tn": 0,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 1.0,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.0,
+    "source_bootstrap95": {
+      "fpr": [
+        1.0,
+        1.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "recovery",
+    "condition": "matched512_partial16",
+    "domain": "email",
+    "text_type": "all",
+    "n_sources": 20,
+    "n_inputs": 40,
+    "tp": 20,
+    "fp": 12,
+    "tn": 8,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.6,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.4,
+    "source_bootstrap95": {
+      "fpr": [
+        0.4,
+        0.8
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "recovery",
+    "condition": "matched512_partial16",
+    "domain": "email",
+    "text_type": "ordinary",
+    "n_sources": 10,
+    "n_inputs": 20,
+    "tp": 10,
+    "fp": 2,
+    "tn": 8,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.2,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.8,
+    "source_bootstrap95": {
+      "fpr": [
+        0.0,
+        0.5
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "recovery",
+    "condition": "matched512_partial16",
+    "domain": "email",
+    "text_type": "hard_benign",
+    "n_sources": 10,
+    "n_inputs": 20,
+    "tp": 10,
+    "fp": 10,
+    "tn": 0,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 1.0,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.0,
+    "source_bootstrap95": {
+      "fpr": [
+        1.0,
+        1.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "recovery",
+    "condition": "matched512_partial16",
+    "domain": "resume",
+    "text_type": "all",
+    "n_sources": 20,
+    "n_inputs": 40,
+    "tp": 20,
+    "fp": 11,
+    "tn": 9,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.55,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.45,
+    "source_bootstrap95": {
+      "fpr": [
+        0.35,
+        0.75
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "recovery",
+    "condition": "matched512_partial16",
+    "domain": "resume",
+    "text_type": "ordinary",
+    "n_sources": 10,
+    "n_inputs": 20,
+    "tp": 10,
+    "fp": 1,
+    "tn": 9,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.1,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.9,
+    "source_bootstrap95": {
+      "fpr": [
+        0.0,
+        0.3
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "recovery",
+    "condition": "matched512_partial16",
+    "domain": "resume",
+    "text_type": "hard_benign",
+    "n_sources": 10,
+    "n_inputs": 20,
+    "tp": 10,
+    "fp": 10,
+    "tn": 0,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 1.0,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.0,
+    "source_bootstrap95": {
+      "fpr": [
+        1.0,
+        1.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "recovery",
+    "condition": "matched512_truncated",
+    "domain": "overall",
+    "text_type": "all",
+    "n_sources": 40,
+    "n_inputs": 80,
+    "tp": 13,
+    "fp": 13,
+    "tn": 27,
+    "fn": 27,
+    "tpr": 0.325,
+    "fpr": 0.325,
+    "fnr": 0.675,
+    "benign_pass_rate": 0.675,
+    "source_bootstrap95": {
+      "fpr": [
+        0.175,
+        0.475
+      ],
+      "tpr": [
+        0.175,
+        0.475
+      ]
+    }
+  },
+  {
+    "scope": "recovery",
+    "condition": "matched512_truncated",
+    "domain": "overall",
+    "text_type": "ordinary",
+    "n_sources": 20,
+    "n_inputs": 40,
+    "tp": 9,
+    "fp": 0,
+    "tn": 20,
+    "fn": 11,
+    "tpr": 0.45,
+    "fpr": 0.0,
+    "fnr": 0.55,
+    "benign_pass_rate": 1.0,
+    "source_bootstrap95": {
+      "fpr": [
+        0.0,
+        0.0
+      ],
+      "tpr": [
+        0.25,
+        0.65
+      ]
+    }
+  },
+  {
+    "scope": "recovery",
+    "condition": "matched512_truncated",
+    "domain": "overall",
+    "text_type": "hard_benign",
+    "n_sources": 20,
+    "n_inputs": 40,
+    "tp": 4,
+    "fp": 13,
+    "tn": 7,
+    "fn": 16,
+    "tpr": 0.2,
+    "fpr": 0.65,
+    "fnr": 0.8,
+    "benign_pass_rate": 0.35,
+    "source_bootstrap95": {
+      "fpr": [
+        0.45,
+        0.85
+      ],
+      "tpr": [
+        0.05,
+        0.4
+      ]
+    }
+  },
+  {
+    "scope": "recovery",
+    "condition": "matched512_truncated",
+    "domain": "email",
+    "text_type": "all",
+    "n_sources": 20,
+    "n_inputs": 40,
+    "tp": 6,
+    "fp": 6,
+    "tn": 14,
+    "fn": 14,
+    "tpr": 0.3,
+    "fpr": 0.3,
+    "fnr": 0.7,
+    "benign_pass_rate": 0.7,
+    "source_bootstrap95": {
+      "fpr": [
+        0.1,
+        0.5
+      ],
+      "tpr": [
+        0.1,
+        0.5
+      ]
+    }
+  },
+  {
+    "scope": "recovery",
+    "condition": "matched512_truncated",
+    "domain": "email",
+    "text_type": "ordinary",
+    "n_sources": 10,
+    "n_inputs": 20,
+    "tp": 4,
+    "fp": 0,
+    "tn": 10,
+    "fn": 6,
+    "tpr": 0.4,
+    "fpr": 0.0,
+    "fnr": 0.6,
+    "benign_pass_rate": 1.0,
+    "source_bootstrap95": {
+      "fpr": [
+        0.0,
+        0.0
+      ],
+      "tpr": [
+        0.1,
+        0.7
+      ]
+    }
+  },
+  {
+    "scope": "recovery",
+    "condition": "matched512_truncated",
+    "domain": "email",
+    "text_type": "hard_benign",
+    "n_sources": 10,
+    "n_inputs": 20,
+    "tp": 2,
+    "fp": 6,
+    "tn": 4,
+    "fn": 8,
+    "tpr": 0.2,
+    "fpr": 0.6,
+    "fnr": 0.8,
+    "benign_pass_rate": 0.4,
+    "source_bootstrap95": {
+      "fpr": [
+        0.3,
+        0.9
+      ],
+      "tpr": [
+        0.0,
+        0.5
+      ]
+    }
+  },
+  {
+    "scope": "recovery",
+    "condition": "matched512_truncated",
+    "domain": "resume",
+    "text_type": "all",
+    "n_sources": 20,
+    "n_inputs": 40,
+    "tp": 7,
+    "fp": 7,
+    "tn": 13,
+    "fn": 13,
+    "tpr": 0.35,
+    "fpr": 0.35,
+    "fnr": 0.65,
+    "benign_pass_rate": 0.65,
+    "source_bootstrap95": {
+      "fpr": [
+        0.15,
+        0.55
+      ],
+      "tpr": [
+        0.15,
+        0.55
+      ]
+    }
+  },
+  {
+    "scope": "recovery",
+    "condition": "matched512_truncated",
+    "domain": "resume",
+    "text_type": "ordinary",
+    "n_sources": 10,
+    "n_inputs": 20,
+    "tp": 5,
+    "fp": 0,
+    "tn": 10,
+    "fn": 5,
+    "tpr": 0.5,
+    "fpr": 0.0,
+    "fnr": 0.5,
+    "benign_pass_rate": 1.0,
+    "source_bootstrap95": {
+      "fpr": [
+        0.0,
+        0.0
+      ],
+      "tpr": [
+        0.2,
+        0.8
+      ]
+    }
+  },
+  {
+    "scope": "recovery",
+    "condition": "matched512_truncated",
+    "domain": "resume",
+    "text_type": "hard_benign",
+    "n_sources": 10,
+    "n_inputs": 20,
+    "tp": 2,
+    "fp": 7,
+    "tn": 3,
+    "fn": 8,
+    "tpr": 0.2,
+    "fpr": 0.7,
+    "fnr": 0.8,
+    "benign_pass_rate": 0.3,
+    "source_bootstrap95": {
+      "fpr": [
+        0.4,
+        1.0
+      ],
+      "tpr": [
+        0.0,
+        0.5
+      ]
+    }
+  },
+  {
+    "scope": "recovery",
+    "condition": "native_full",
+    "domain": "overall",
+    "text_type": "all",
+    "n_sources": 40,
+    "n_inputs": 80,
+    "tp": 40,
+    "fp": 19,
+    "tn": 21,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.475,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.525,
+    "source_bootstrap95": {
+      "fpr": [
+        0.325,
+        0.625
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "recovery",
+    "condition": "native_full",
+    "domain": "overall",
+    "text_type": "ordinary",
+    "n_sources": 20,
+    "n_inputs": 40,
+    "tp": 20,
+    "fp": 0,
+    "tn": 20,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.0,
+    "fnr": 0.0,
+    "benign_pass_rate": 1.0,
+    "source_bootstrap95": {
+      "fpr": [
+        0.0,
+        0.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "recovery",
+    "condition": "native_full",
+    "domain": "overall",
+    "text_type": "hard_benign",
+    "n_sources": 20,
+    "n_inputs": 40,
+    "tp": 20,
+    "fp": 19,
+    "tn": 1,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.95,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.05,
+    "source_bootstrap95": {
+      "fpr": [
+        0.85,
+        1.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "recovery",
+    "condition": "native_full",
+    "domain": "email",
+    "text_type": "all",
+    "n_sources": 20,
+    "n_inputs": 40,
+    "tp": 20,
+    "fp": 9,
+    "tn": 11,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.45,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.55,
+    "source_bootstrap95": {
+      "fpr": [
+        0.25,
+        0.65
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "recovery",
+    "condition": "native_full",
+    "domain": "email",
+    "text_type": "ordinary",
+    "n_sources": 10,
+    "n_inputs": 20,
+    "tp": 10,
+    "fp": 0,
+    "tn": 10,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.0,
+    "fnr": 0.0,
+    "benign_pass_rate": 1.0,
+    "source_bootstrap95": {
+      "fpr": [
+        0.0,
+        0.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "recovery",
+    "condition": "native_full",
+    "domain": "email",
+    "text_type": "hard_benign",
+    "n_sources": 10,
+    "n_inputs": 20,
+    "tp": 10,
+    "fp": 9,
+    "tn": 1,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.9,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.1,
+    "source_bootstrap95": {
+      "fpr": [
+        0.7,
+        1.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "recovery",
+    "condition": "native_full",
+    "domain": "resume",
+    "text_type": "all",
+    "n_sources": 20,
+    "n_inputs": 40,
+    "tp": 20,
+    "fp": 10,
+    "tn": 10,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.5,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.5,
+    "source_bootstrap95": {
+      "fpr": [
+        0.3,
+        0.7
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "recovery",
+    "condition": "native_full",
+    "domain": "resume",
+    "text_type": "ordinary",
+    "n_sources": 10,
+    "n_inputs": 20,
+    "tp": 10,
+    "fp": 0,
+    "tn": 10,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 0.0,
+    "fnr": 0.0,
+    "benign_pass_rate": 1.0,
+    "source_bootstrap95": {
+      "fpr": [
+        0.0,
+        0.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "recovery",
+    "condition": "native_full",
+    "domain": "resume",
+    "text_type": "hard_benign",
+    "n_sources": 10,
+    "n_inputs": 20,
+    "tp": 10,
+    "fp": 10,
+    "tn": 0,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 1.0,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.0,
+    "source_bootstrap95": {
+      "fpr": [
+        1.0,
+        1.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "recovery",
+    "condition": "native_partial16",
+    "domain": "overall",
+    "text_type": "all",
+    "n_sources": 40,
+    "n_inputs": 80,
+    "tp": 40,
+    "fp": 40,
+    "tn": 0,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 1.0,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.0,
+    "source_bootstrap95": {
+      "fpr": [
+        1.0,
+        1.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "recovery",
+    "condition": "native_partial16",
+    "domain": "overall",
+    "text_type": "ordinary",
+    "n_sources": 20,
+    "n_inputs": 40,
+    "tp": 20,
+    "fp": 20,
+    "tn": 0,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 1.0,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.0,
+    "source_bootstrap95": {
+      "fpr": [
+        1.0,
+        1.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "recovery",
+    "condition": "native_partial16",
+    "domain": "overall",
+    "text_type": "hard_benign",
+    "n_sources": 20,
+    "n_inputs": 40,
+    "tp": 20,
+    "fp": 20,
+    "tn": 0,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 1.0,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.0,
+    "source_bootstrap95": {
+      "fpr": [
+        1.0,
+        1.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "recovery",
+    "condition": "native_partial16",
+    "domain": "email",
+    "text_type": "all",
+    "n_sources": 20,
+    "n_inputs": 40,
+    "tp": 20,
+    "fp": 20,
+    "tn": 0,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 1.0,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.0,
+    "source_bootstrap95": {
+      "fpr": [
+        1.0,
+        1.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "recovery",
+    "condition": "native_partial16",
+    "domain": "email",
+    "text_type": "ordinary",
+    "n_sources": 10,
+    "n_inputs": 20,
+    "tp": 10,
+    "fp": 10,
+    "tn": 0,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 1.0,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.0,
+    "source_bootstrap95": {
+      "fpr": [
+        1.0,
+        1.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "recovery",
+    "condition": "native_partial16",
+    "domain": "email",
+    "text_type": "hard_benign",
+    "n_sources": 10,
+    "n_inputs": 20,
+    "tp": 10,
+    "fp": 10,
+    "tn": 0,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 1.0,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.0,
+    "source_bootstrap95": {
+      "fpr": [
+        1.0,
+        1.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "recovery",
+    "condition": "native_partial16",
+    "domain": "resume",
+    "text_type": "all",
+    "n_sources": 20,
+    "n_inputs": 40,
+    "tp": 20,
+    "fp": 20,
+    "tn": 0,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 1.0,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.0,
+    "source_bootstrap95": {
+      "fpr": [
+        1.0,
+        1.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "recovery",
+    "condition": "native_partial16",
+    "domain": "resume",
+    "text_type": "ordinary",
+    "n_sources": 10,
+    "n_inputs": 20,
+    "tp": 10,
+    "fp": 10,
+    "tn": 0,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 1.0,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.0,
+    "source_bootstrap95": {
+      "fpr": [
+        1.0,
+        1.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "recovery",
+    "condition": "native_partial16",
+    "domain": "resume",
+    "text_type": "hard_benign",
+    "n_sources": 10,
+    "n_inputs": 20,
+    "tp": 10,
+    "fp": 10,
+    "tn": 0,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 1.0,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.0,
+    "source_bootstrap95": {
+      "fpr": [
+        1.0,
+        1.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "recovery",
+    "condition": "native_truncated",
+    "domain": "overall",
+    "text_type": "all",
+    "n_sources": 40,
+    "n_inputs": 80,
+    "tp": 40,
+    "fp": 40,
+    "tn": 0,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 1.0,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.0,
+    "source_bootstrap95": {
+      "fpr": [
+        1.0,
+        1.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "recovery",
+    "condition": "native_truncated",
+    "domain": "overall",
+    "text_type": "ordinary",
+    "n_sources": 20,
+    "n_inputs": 40,
+    "tp": 20,
+    "fp": 20,
+    "tn": 0,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 1.0,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.0,
+    "source_bootstrap95": {
+      "fpr": [
+        1.0,
+        1.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "recovery",
+    "condition": "native_truncated",
+    "domain": "overall",
+    "text_type": "hard_benign",
+    "n_sources": 20,
+    "n_inputs": 40,
+    "tp": 20,
+    "fp": 20,
+    "tn": 0,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 1.0,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.0,
+    "source_bootstrap95": {
+      "fpr": [
+        1.0,
+        1.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "recovery",
+    "condition": "native_truncated",
+    "domain": "email",
+    "text_type": "all",
+    "n_sources": 20,
+    "n_inputs": 40,
+    "tp": 20,
+    "fp": 20,
+    "tn": 0,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 1.0,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.0,
+    "source_bootstrap95": {
+      "fpr": [
+        1.0,
+        1.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "recovery",
+    "condition": "native_truncated",
+    "domain": "email",
+    "text_type": "ordinary",
+    "n_sources": 10,
+    "n_inputs": 20,
+    "tp": 10,
+    "fp": 10,
+    "tn": 0,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 1.0,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.0,
+    "source_bootstrap95": {
+      "fpr": [
+        1.0,
+        1.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "recovery",
+    "condition": "native_truncated",
+    "domain": "email",
+    "text_type": "hard_benign",
+    "n_sources": 10,
+    "n_inputs": 20,
+    "tp": 10,
+    "fp": 10,
+    "tn": 0,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 1.0,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.0,
+    "source_bootstrap95": {
+      "fpr": [
+        1.0,
+        1.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "recovery",
+    "condition": "native_truncated",
+    "domain": "resume",
+    "text_type": "all",
+    "n_sources": 20,
+    "n_inputs": 40,
+    "tp": 20,
+    "fp": 20,
+    "tn": 0,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 1.0,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.0,
+    "source_bootstrap95": {
+      "fpr": [
+        1.0,
+        1.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "recovery",
+    "condition": "native_truncated",
+    "domain": "resume",
+    "text_type": "ordinary",
+    "n_sources": 10,
+    "n_inputs": 20,
+    "tp": 10,
+    "fp": 10,
+    "tn": 0,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 1.0,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.0,
+    "source_bootstrap95": {
+      "fpr": [
+        1.0,
+        1.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "recovery",
+    "condition": "native_truncated",
+    "domain": "resume",
+    "text_type": "hard_benign",
+    "n_sources": 10,
+    "n_inputs": 20,
+    "tp": 10,
+    "fp": 10,
+    "tn": 0,
+    "fn": 0,
+    "tpr": 1.0,
+    "fpr": 1.0,
+    "fnr": 0.0,
+    "benign_pass_rate": 0.0,
+    "source_bootstrap95": {
+      "fpr": [
+        1.0,
+        1.0
+      ],
+      "tpr": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "shadow",
+    "condition": "offset0",
+    "domain": "overall",
+    "text_type": "all",
+    "n_sources": 40,
+    "n_inputs": 80,
+    "tp": 23,
+    "fp": 33,
+    "tn": 7,
+    "fn": 17,
+    "tpr": 0.575,
+    "fpr": 0.825,
+    "fnr": 0.425,
+    "benign_pass_rate": 0.175,
+    "source_bootstrap95": {
+      "fpr": [
+        0.7,
+        0.925
+      ],
+      "tpr": [
+        0.425,
+        0.725
+      ]
+    }
+  },
+  {
+    "scope": "shadow",
+    "condition": "offset0",
+    "domain": "overall",
+    "text_type": "ordinary",
+    "n_sources": 20,
+    "n_inputs": 40,
+    "tp": 13,
+    "fp": 13,
+    "tn": 7,
+    "fn": 7,
+    "tpr": 0.65,
+    "fpr": 0.65,
+    "fnr": 0.35,
+    "benign_pass_rate": 0.35,
+    "source_bootstrap95": {
+      "fpr": [
+        0.45,
+        0.85
+      ],
+      "tpr": [
+        0.45,
+        0.85
+      ]
+    }
+  },
+  {
+    "scope": "shadow",
+    "condition": "offset0",
+    "domain": "overall",
+    "text_type": "hard_benign",
+    "n_sources": 20,
+    "n_inputs": 40,
+    "tp": 10,
+    "fp": 20,
+    "tn": 0,
+    "fn": 10,
+    "tpr": 0.5,
+    "fpr": 1.0,
+    "fnr": 0.5,
+    "benign_pass_rate": 0.0,
+    "source_bootstrap95": {
+      "fpr": [
+        1.0,
+        1.0
+      ],
+      "tpr": [
+        0.3,
+        0.7
+      ]
+    }
+  },
+  {
+    "scope": "shadow",
+    "condition": "offset0",
+    "domain": "email",
+    "text_type": "all",
+    "n_sources": 20,
+    "n_inputs": 40,
+    "tp": 10,
+    "fp": 16,
+    "tn": 4,
+    "fn": 10,
+    "tpr": 0.5,
+    "fpr": 0.8,
+    "fnr": 0.5,
+    "benign_pass_rate": 0.2,
+    "source_bootstrap95": {
+      "fpr": [
+        0.6,
+        0.95
+      ],
+      "tpr": [
+        0.3,
+        0.7
+      ]
+    }
+  },
+  {
+    "scope": "shadow",
+    "condition": "offset0",
+    "domain": "email",
+    "text_type": "ordinary",
+    "n_sources": 10,
+    "n_inputs": 20,
+    "tp": 6,
+    "fp": 6,
+    "tn": 4,
+    "fn": 4,
+    "tpr": 0.6,
+    "fpr": 0.6,
+    "fnr": 0.4,
+    "benign_pass_rate": 0.4,
+    "source_bootstrap95": {
+      "fpr": [
+        0.3,
+        0.9
+      ],
+      "tpr": [
+        0.3,
+        0.9
+      ]
+    }
+  },
+  {
+    "scope": "shadow",
+    "condition": "offset0",
+    "domain": "email",
+    "text_type": "hard_benign",
+    "n_sources": 10,
+    "n_inputs": 20,
+    "tp": 4,
+    "fp": 10,
+    "tn": 0,
+    "fn": 6,
+    "tpr": 0.4,
+    "fpr": 1.0,
+    "fnr": 0.6,
+    "benign_pass_rate": 0.0,
+    "source_bootstrap95": {
+      "fpr": [
+        1.0,
+        1.0
+      ],
+      "tpr": [
+        0.1,
+        0.7
+      ]
+    }
+  },
+  {
+    "scope": "shadow",
+    "condition": "offset0",
+    "domain": "resume",
+    "text_type": "all",
+    "n_sources": 20,
+    "n_inputs": 40,
+    "tp": 13,
+    "fp": 17,
+    "tn": 3,
+    "fn": 7,
+    "tpr": 0.65,
+    "fpr": 0.85,
+    "fnr": 0.35,
+    "benign_pass_rate": 0.15,
+    "source_bootstrap95": {
+      "fpr": [
+        0.7,
+        1.0
+      ],
+      "tpr": [
+        0.45,
+        0.85
+      ]
+    }
+  },
+  {
+    "scope": "shadow",
+    "condition": "offset0",
+    "domain": "resume",
+    "text_type": "ordinary",
+    "n_sources": 10,
+    "n_inputs": 20,
+    "tp": 7,
+    "fp": 7,
+    "tn": 3,
+    "fn": 3,
+    "tpr": 0.7,
+    "fpr": 0.7,
+    "fnr": 0.3,
+    "benign_pass_rate": 0.3,
+    "source_bootstrap95": {
+      "fpr": [
+        0.4,
+        1.0
+      ],
+      "tpr": [
+        0.4,
+        1.0
+      ]
+    }
+  },
+  {
+    "scope": "shadow",
+    "condition": "offset0",
+    "domain": "resume",
+    "text_type": "hard_benign",
+    "n_sources": 10,
+    "n_inputs": 20,
+    "tp": 6,
+    "fp": 10,
+    "tn": 0,
+    "fn": 4,
+    "tpr": 0.6,
+    "fpr": 1.0,
+    "fnr": 0.4,
+    "benign_pass_rate": 0.0,
+    "source_bootstrap95": {
+      "fpr": [
+        1.0,
+        1.0
+      ],
+      "tpr": [
+        0.3,
+        0.9
+      ]
+    }
+  },
+  {
+    "scope": "shadow",
+    "condition": "offset256",
+    "domain": "overall",
+    "text_type": "all",
+    "n_sources": 40,
+    "n_inputs": 80,
+    "tp": 6,
+    "fp": 6,
+    "tn": 34,
+    "fn": 34,
+    "tpr": 0.15,
+    "fpr": 0.15,
+    "fnr": 0.85,
+    "benign_pass_rate": 0.85,
+    "source_bootstrap95": {
+      "fpr": [
+        0.05,
+        0.275
+      ],
+      "tpr": [
+        0.05,
+        0.275
+      ]
+    }
+  },
+  {
+    "scope": "shadow",
+    "condition": "offset256",
+    "domain": "overall",
+    "text_type": "ordinary",
+    "n_sources": 20,
+    "n_inputs": 40,
+    "tp": 3,
+    "fp": 0,
+    "tn": 20,
+    "fn": 17,
+    "tpr": 0.15,
+    "fpr": 0.0,
+    "fnr": 0.85,
+    "benign_pass_rate": 1.0,
+    "source_bootstrap95": {
+      "fpr": [
+        0.0,
+        0.0
+      ],
+      "tpr": [
+        0.0,
+        0.3
+      ]
+    }
+  },
+  {
+    "scope": "shadow",
+    "condition": "offset256",
+    "domain": "overall",
+    "text_type": "hard_benign",
+    "n_sources": 20,
+    "n_inputs": 40,
+    "tp": 3,
+    "fp": 6,
+    "tn": 14,
+    "fn": 17,
+    "tpr": 0.15,
+    "fpr": 0.3,
+    "fnr": 0.85,
+    "benign_pass_rate": 0.7,
+    "source_bootstrap95": {
+      "fpr": [
+        0.1,
+        0.5
+      ],
+      "tpr": [
+        0.0,
+        0.3
+      ]
+    }
+  },
+  {
+    "scope": "shadow",
+    "condition": "offset256",
+    "domain": "email",
+    "text_type": "all",
+    "n_sources": 20,
+    "n_inputs": 40,
+    "tp": 5,
+    "fp": 2,
+    "tn": 18,
+    "fn": 15,
+    "tpr": 0.25,
+    "fpr": 0.1,
+    "fnr": 0.75,
+    "benign_pass_rate": 0.9,
+    "source_bootstrap95": {
+      "fpr": [
+        0.0,
+        0.25
+      ],
+      "tpr": [
+        0.05,
+        0.45
+      ]
+    }
+  },
+  {
+    "scope": "shadow",
+    "condition": "offset256",
+    "domain": "email",
+    "text_type": "ordinary",
+    "n_sources": 10,
+    "n_inputs": 20,
+    "tp": 3,
+    "fp": 0,
+    "tn": 10,
+    "fn": 7,
+    "tpr": 0.3,
+    "fpr": 0.0,
+    "fnr": 0.7,
+    "benign_pass_rate": 1.0,
+    "source_bootstrap95": {
+      "fpr": [
+        0.0,
+        0.0
+      ],
+      "tpr": [
+        0.0,
+        0.6
+      ]
+    }
+  },
+  {
+    "scope": "shadow",
+    "condition": "offset256",
+    "domain": "email",
+    "text_type": "hard_benign",
+    "n_sources": 10,
+    "n_inputs": 20,
+    "tp": 2,
+    "fp": 2,
+    "tn": 8,
+    "fn": 8,
+    "tpr": 0.2,
+    "fpr": 0.2,
+    "fnr": 0.8,
+    "benign_pass_rate": 0.8,
+    "source_bootstrap95": {
+      "fpr": [
+        0.0,
+        0.5
+      ],
+      "tpr": [
+        0.0,
+        0.5
+      ]
+    }
+  },
+  {
+    "scope": "shadow",
+    "condition": "offset256",
+    "domain": "resume",
+    "text_type": "all",
+    "n_sources": 20,
+    "n_inputs": 40,
+    "tp": 1,
+    "fp": 4,
+    "tn": 16,
+    "fn": 19,
+    "tpr": 0.05,
+    "fpr": 0.2,
+    "fnr": 0.95,
+    "benign_pass_rate": 0.8,
+    "source_bootstrap95": {
+      "fpr": [
+        0.05,
+        0.4
+      ],
+      "tpr": [
+        0.0,
+        0.15
+      ]
+    }
+  },
+  {
+    "scope": "shadow",
+    "condition": "offset256",
+    "domain": "resume",
+    "text_type": "ordinary",
+    "n_sources": 10,
+    "n_inputs": 20,
+    "tp": 0,
+    "fp": 0,
+    "tn": 10,
+    "fn": 10,
+    "tpr": 0.0,
+    "fpr": 0.0,
+    "fnr": 1.0,
+    "benign_pass_rate": 1.0,
+    "source_bootstrap95": {
+      "fpr": [
+        0.0,
+        0.0
+      ],
+      "tpr": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  {
+    "scope": "shadow",
+    "condition": "offset256",
+    "domain": "resume",
+    "text_type": "hard_benign",
+    "n_sources": 10,
+    "n_inputs": 20,
+    "tp": 1,
+    "fp": 4,
+    "tn": 6,
+    "fn": 9,
+    "tpr": 0.1,
+    "fpr": 0.4,
+    "fnr": 0.9,
+    "benign_pass_rate": 0.6,
+    "source_bootstrap95": {
+      "fpr": [
+        0.1,
+        0.7
+      ],
+      "tpr": [
+        0.0,
+        0.3
+      ]
+    }
+  }
+]

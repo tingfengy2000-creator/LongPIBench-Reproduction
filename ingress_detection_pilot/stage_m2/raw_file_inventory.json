@@ -1,0 +1,80 @@
+[
+  {
+    "path": "E:\\LongPIBench\\runs\\20261018T152807Z-m2-context-4972b7f6\\construction_start.json",
+    "bytes": 148,
+    "sha256": "01d886dfb6b880e5ac775e28c4561b803e54768f584192bb873698daefb9f115",
+    "stored_in_git": false
+  },
+  {
+    "path": "E:\\LongPIBench\\runs\\20261018T152807Z-m2-context-4972b7f6\\FAILED.json",
+    "bytes": 266,
+    "sha256": "ff58b52e2b1ef7861b212706cc7d21fda6f0fed3c53424ba211389a38fa4af88",
+    "stored_in_git": false
+  },
+  {
+    "path": "E:\\LongPIBench\\runs\\20261018T152807Z-m2-context-4972b7f6\\frozen_inputs.jsonl",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stored_in_git": false
+  },
+  {
+    "path": "E:\\LongPIBench\\runs\\20261018T152953Z-m2-context-6e5c0c4d\\construction_start.json",
+    "bytes": 148,
+    "sha256": "59fec4750777f1eccf4644173a7a8e6bf5411177152bef043151f138d3ba1620",
+    "stored_in_git": false
+  },
+  {
+    "path": "E:\\LongPIBench\\runs\\20261018T152953Z-m2-context-6e5c0c4d\\frozen_inputs.jsonl",
+    "bytes": 4696706,
+    "sha256": "3a489dca282189431127367a93d709535e9e325f18ed18a472e2c80e7874a255",
+    "stored_in_git": false
+  },
+  {
+    "path": "E:\\LongPIBench\\runs\\20261018T153058Z-m2-smoke-21ce25f1\\completion.json",
+    "bytes": 708,
+    "sha256": "ac890a9fa1a63cccfeabf4834e44c82c8a374e593182467373e65c5c28601542",
+    "stored_in_git": false
+  },
+  {
+    "path": "E:\\LongPIBench\\runs\\20261018T153058Z-m2-smoke-21ce25f1\\observations.jsonl",
+    "bytes": 504998,
+    "sha256": "db96bfe9fcd7b0a922463328cd7502acf1c2b96ef05aca4b4a290097dacba76a",
+    "stored_in_git": false
+  },
+  {
+    "path": "E:\\LongPIBench\\runs\\20261018T153058Z-m2-smoke-21ce25f1\\runtime.log",
+    "bytes": 1713,
+    "sha256": "dd4748d3b01fc1ad230772a49d178759811890e821c75b40e747264c3d3f63a3",
+    "stored_in_git": false
+  },
+  {
+    "path": "E:\\LongPIBench\\runs\\20261018T153058Z-m2-smoke-21ce25f1\\start.json",
+    "bytes": 966,
+    "sha256": "1af09c7603e75f62b98cdbea2a98b575af6b066110cf4e689c455e093292749d",
+    "stored_in_git": false
+  },
+  {
+    "path": "E:\\LongPIBench\\runs\\20261018T153419Z-m2-full-974bbbce\\completion.json",
+    "bytes": 719,
+    "sha256": "2654aadfa5f278a2501d5df59d8d320f30c6f224c01343257f0565727308ba6d",
+    "stored_in_git": false
+  },
+  {
+    "path": "E:\\LongPIBench\\runs\\20261018T153419Z-m2-full-974bbbce\\observations.jsonl",
+    "bytes": 5030232,
+    "sha256": "79fe6b6a8ecd334069b98be24a67f69acec6d16b7a2d76408a9a6ed29862e176",
+    "stored_in_git": false
+  },
+  {
+    "path": "E:\\LongPIBench\\runs\\20261018T153419Z-m2-full-974bbbce\\runtime.log",
+    "bytes": 11369,
+    "sha256": "fba5ec627083c9e2722d3ca82c0ed1fa028ed042dfe1d7021ca9a5cf15a71857",
+    "stored_in_git": false
+  },
+  {
+    "path": "E:\\LongPIBench\\runs\\20261018T153419Z-m2-full-974bbbce\\start.json",
+    "bytes": 964,
+    "sha256": "2aebc37b47bc659394fa7aec93e7a274f4a623eee8cb1313232ddccc29185a13",
+    "stored_in_git": false
+  }
+]

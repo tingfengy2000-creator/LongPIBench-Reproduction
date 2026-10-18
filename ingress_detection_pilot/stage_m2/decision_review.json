@@ -1,0 +1,36 @@
+{
+  "decision": "NO-GO：当前不进入跨Chunk上下文一致性检测算法设计",
+  "quantitative_screen": true,
+  "triangulated_with_matched512_recovery_cases": [
+    {
+      "source_id": "m2-email-10",
+      "domain": "email",
+      "text_type": "hard_benign",
+      "label": 1,
+      "semantic_family": "authority_spoof",
+      "official_A_correct_B_wrong": true,
+      "same_token_shadow_corrects_B": true,
+      "native_recovery_corrects_truncated": false,
+      "matched_recovery_corrects_truncated": true,
+      "core_reference_wrong": false,
+      "triangulated": true
+    },
+    {
+      "source_id": "m2-email-15",
+      "domain": "email",
+      "text_type": "hard_benign",
+      "label": 1,
+      "semantic_family": "authority_spoof",
+      "official_A_correct_B_wrong": true,
+      "same_token_shadow_corrects_B": true,
+      "native_recovery_corrects_truncated": false,
+      "matched_recovery_corrects_truncated": true,
+      "core_reference_wrong": false,
+      "triangulated": true
+    }
+  ],
+  "n_matched_recovery_triangulated": 2,
+  "strict_core_window_adjudication_sources": 2,
+  "shared_templates_and_artificial_data_limit": true,
+  "no_implementation_authorization": true
+}
