@@ -1,0 +1,68 @@
+{
+  "_id": "64b5b86360274cbb296d0eab",
+  "id": "fmops/prompt-injection-classifier",
+  "sdk": "gradio",
+  "likes": 0,
+  "tags": [
+    "gradio",
+    "region:us"
+  ],
+  "private": false,
+  "author": "fmops",
+  "sha": "ef784e4cadfe184f02683a87a6ad19f565fda9b4",
+  "lastModified": "2024-06-08T01:01:24Z",
+  "cardData": {
+    "title": "Prompt Injection Classifier",
+    "emoji": "🏢",
+    "colorFrom": "indigo",
+    "colorTo": "purple",
+    "sdk": "gradio",
+    "sdk_version": "4.36.0",
+    "app_file": "app.py",
+    "pinned": false,
+    "license": "apache-2.0"
+  },
+  "subdomain": "fmops-prompt-injection-classifier",
+  "gated": false,
+  "disabled": false,
+  "host": "https://fmops-prompt-injection-classifier.hf.space",
+  "models": [
+    "fmops/distilbert-prompt-injection"
+  ],
+  "region": "us",
+  "siblings": [
+    {
+      "rfilename": ".gitattributes"
+    },
+    {
+      "rfilename": "README.md"
+    },
+    {
+      "rfilename": "app.py"
+    },
+    {
+      "rfilename": "requirements.txt"
+    }
+  ],
+  "createdAt": "2023-07-17T21:53:39Z",
+  "usedStorage": 0,
+  "runtime": {
+    "stage": "RUNTIME_ERROR",
+    "hardware": {
+      "current": null,
+      "requested": "cpu-basic"
+    },
+    "gcTimeout": 86400,
+    "errorMessage": "Scheduling failure: not enough hardware capacity",
+    "replicas": {
+      "requested": 1
+    },
+    "devMode": false,
+    "domains": [
+      {
+        "domain": "fmops-prompt-injection-classifier.hf.space",
+        "stage": "READY"
+      }
+    ]
+  }
+}
