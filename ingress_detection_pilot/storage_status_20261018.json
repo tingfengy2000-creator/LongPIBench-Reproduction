@@ -1,0 +1,24 @@
+{
+  "status": "FUTURE_LARGE_FILE_PATHS_CONFIGURED_ON_E",
+  "local_auth": {
+    "HF_TOKEN_env_present": false,
+    "HUGGING_FACE_HUB_TOKEN_env_present": false,
+    "active_token_file_exists": false
+  },
+  "paths": {
+    "HF_HUB_CACHE": "E:\\Caches\\huggingface\\hub",
+    "HF_ASSETS_CACHE": "E:\\Caches\\huggingface\\assets",
+    "HF_XET_CACHE": "E:\\Caches\\huggingface\\xet",
+    "HF_DATASETS_CACHE": "E:\\Caches\\huggingface\\datasets",
+    "TRANSFORMERS_CACHE": "E:\\Caches\\huggingface\\hub",
+    "TORCH_HOME": "E:\\Caches\\torch",
+    "PIP_CACHE_DIR": "E:\\Caches\\pip",
+    "TEMP": "E:\\Caches\\download-temp",
+    "TMP": "E:\\Caches\\download-temp"
+  },
+  "existing_c_pip_cache_deleted": false,
+  "existing_c_pip_cache_migrated": false,
+  "migration_action_auto_review_rejected": true,
+  "credentials_read_or_printed": false,
+  "models_resolved_path": "E:\\LongPIBench\\ingress_detection_pilot\\models"
+}
