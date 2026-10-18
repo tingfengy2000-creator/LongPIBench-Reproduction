@@ -1,0 +1,21 @@
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:16<00:50, 16.75s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:35<00:36, 18.15s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:53<00:18, 18.08s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:57<00:00, 12.54s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:57<00:00, 14.48s/it]
+/home/tingfeng/miniforge3/envs/longpibench-r0/lib/python3.11/site-packages/transformers/generation/configuration_utils.py:631: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/tingfeng/miniforge3/envs/longpibench-r0/lib/python3.11/site-packages/transformers/generation/configuration_utils.py:636: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+{"recorded_cases": 25, "planned_cases": 400, "last_case": "email-024-no", "validity": "VALID"}
+{"recorded_cases": 50, "planned_cases": 400, "last_case": "email-049-no", "validity": "VALID"}
+{"recorded_cases": 75, "planned_cases": 400, "last_case": "email-074-no", "validity": "VALID"}
+{"recorded_cases": 100, "planned_cases": 400, "last_case": "email-099-no", "validity": "VALID"}
+{"recorded_cases": 125, "planned_cases": 400, "last_case": "resume-024-no", "validity": "VALID"}
+{"recorded_cases": 150, "planned_cases": 400, "last_case": "resume-049-no", "validity": "VALID"}
+{"recorded_cases": 175, "planned_cases": 400, "last_case": "resume-074-no", "validity": "VALID"}
+{"recorded_cases": 200, "planned_cases": 400, "last_case": "resume-099-no", "validity": "VALID"}
+{"recorded_cases": 225, "planned_cases": 400, "last_case": "email-024-authority_spoof", "validity": "VALID"}
+{"recorded_cases": 250, "planned_cases": 400, "last_case": "email-049-authority_spoof", "validity": "VALID"}
+{"recorded_cases": 275, "planned_cases": 400, "last_case": "email-074-authority_spoof", "validity": "VALID"}
+{"recorded_cases": 300, "planned_cases": 400, "last_case": "email-099-authority_spoof", "validity": "VALID"}
+{"recorded_cases": 325, "planned_cases": 400, "last_case": "resume-024-authority_spoof", "validity": "VALID"}
+{"recorded_cases": 350, "planned_cases": 400, "last_case": "resume-049-authority_spoof", "validity": "VALID"}
+{"recorded_cases": 375, "planned_cases": 400, "last_case": "resume-074-authority_spoof", "validity": "VALID"}
+{"recorded_cases": 400, "planned_cases": 400, "last_case": "resume-099-authority_spoof", "validity": "VALID"}
