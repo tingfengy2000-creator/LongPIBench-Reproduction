@@ -1,5 +1,7 @@
 # 给真实5090设备本地Cursor的当前指令
 
+**当前执行：R0-5090-009。** 006的GPT-2/Mistral和008的Llama共31个文件回执已审查，保留5f02133历史。按任务009在真实5090 WSL用已有E盘链接顺序加载helper、detector_base、target，每条命令独立进程；全程本地、无下载、无adapter、独立合成短输入，不运行正式数据。007资源仍有效，完成状态待回执。不重下/复制/移动模型，失败交协调端处理。
+
 **当前队列：006保持运行，008排队直接下载Llama。** 新账号的三个固定config访问已通过并集成7cf3b28；不再安排网盘，不更换目标。不要停止Mistral或删除GPT-2缓存。006自然结束后按coordination/tasks/R0-5090-008.md下载/校验target的13个文件，不重下其他role；无需再次等协调端批准。007非HF资源任务保持有效，不自动重复已运行任务。此阶段不加载模型或启动正式实验。
 
 **当前分工更新：HF三模型走合法离线交接，执行端做007非HF资源准备。** 见coordination/OFFLINE_MODEL_HANDOFF.md。保留原Llama目标和Rejected记录，不执行Qwen候选；006已有HF文件复用。按coordination/tasks/R0-5090-007.md下载两个官方Drive包和spaCy wheel，只验证文件，不安装/加载模型或运行正式实验。
