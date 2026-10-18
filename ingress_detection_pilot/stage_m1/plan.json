@@ -1,0 +1,49 @@
+{
+  "task_id": "M1-5060-001",
+  "stage": "M1 minimal boundary mechanism feasibility",
+  "run_id": "20261018T134643Z-m1-boundary-efd3eb5b",
+  "formal_paper_experiment": false,
+  "parent_commit": "5769d41b4a7eba70e985ea0a115ebd19bb65e73d",
+  "n_sources": 24,
+  "n_styles": {
+    "email": 12,
+    "resume": 12
+  },
+  "model_repo": "meta-llama/Prompt-Guard-86M",
+  "revision": "1209add6ca7d9c1d815171b8e5571587fe3e7b03",
+  "device": "cpu",
+  "dtype": "float32",
+  "threads": 4,
+  "seed": 20261018,
+  "chunk_tokens": 512,
+  "threshold": 0.5,
+  "risk": "max(softmax(logits)[INJECTION], softmax(logits)[JAILBREAK])",
+  "forward": "Official input_ids only; no attention_mask, no global offset; local position resets",
+  "sources_sha256": "89896b92325bfe639badf592a03f0de27daf6f6f257879fb752ef31c05770c9c",
+  "official_detector_sha256": "0f48ab6d307576096c4d07021f78c2d587261af80ca0f315af84a714607f43af",
+  "conditions": {
+    "both_special": "Official short whole document",
+    "tail_sep_only": "Actual official tail, verified identical to aligned_tail last chunk",
+    "bare_core": "NONSTANDARD short interior analogue (official interior is 512 tokens)",
+    "cls_only": "NONSTANDARD short first analogue (official first nonfinal is 512 tokens)",
+    "neutral_prefix_sep": "NONSTANDARD length-matched replacement of CLS with benign ordinary token",
+    "cls_neutral_suffix": "NONSTANDARD length-matched replacement of SEP with benign ordinary token",
+    "neutral_both": "NONSTANDARD length-matched replacements of both special tokens"
+  },
+  "negative_control": "Reexecute BOTH_SPECIAL with identical token IDs at metadata-only global indices 0,1,7; offset never passed to model",
+  "natural_documents": "Same fixed core in constructed text at token offsets 512 (aligned tail) or 480 (straddles boundary). Official tokenization/slicing, all chunks observed; prefix differs by 32 carrier tokens, so effects include changed local content and context.",
+  "primary_contrast": "tail_sep_only minus both_special, paired by 24 sources, fixed core; length differs by one token",
+  "length_matched_contrast": "neutral_prefix_sep minus both_special; same length and core, changed prefix identity; ordinary replacement has semantic confounding",
+  "analysis": "All source-paired differences, median/mean, source bootstrap 10000 seed20261018, exact two-sided sign test; Holm correction across 6 format contrasts. Shared carrier/authorship limits independence.",
+  "stability_definition": "Descriptive consistent effect if median CI excludes zero and >=18/24 have same direction. This is a screening rule, not confirmatory inference or a vulnerability claim.",
+  "document_decisions": "Original >=0.5 and Max equivalence. Report official documents and tail-attributable positives when preceding chunks all <0.5. Artificial variant flips are NOT natural document FPR estimates.",
+  "prohibitions": [
+    "threshold tuning",
+    "training",
+    "LCMD",
+    "multiscale",
+    "old960 overwrite",
+    "5090 R2 access",
+    "800-source collection"
+  ]
+}
