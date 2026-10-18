@@ -1,0 +1,60 @@
+{
+  "decision_id": "R2-CHECKPOINT-SELECTION-001",
+  "file_identity_evidence": "coordination/returns/20261018T023636Z-aux-downloads-fe64f023/aux_downloads.json",
+  "formal_r2_execution_dispatched": false,
+  "full_r2_configuration_frozen": false,
+  "hash_policy": "First-observed transport hashes; not independently author-published digests",
+  "oracle": {
+    "files": [
+      {
+        "member": "7_1000_naive_minimax_mistral_3_1_backend_llama3_revise_beta_1_balance_finetune/checkpoint-500/adapter_model.safetensors",
+        "sha256_first_observed": "7bfe075fd82b4843962b5e61ba9ff067350cfd914a17ff58c0a159f3bf473a7a",
+        "size_bytes": 864513616,
+        "zip_crc_verified": true
+      },
+      {
+        "member": "7_1000_naive_minimax_mistral_3_1_backend_llama3_revise_beta_1_balance_finetune/checkpoint-500/adapter_config.json",
+        "sha256_first_observed": "cdcabca9d558f71d9485f2012f5f6ba6d9fb587ef44a24f8faa384ca7a6ce929",
+        "size_bytes": 743,
+        "zip_crc_verified": true
+      }
+    ],
+    "relative_path": "7_1000_naive_minimax_mistral_3_1_backend_llama3_revise_beta_1_balance_finetune/checkpoint-500"
+  },
+  "owner_text": "固定 large/checkpoint-5000 为主条件，不按 ASR 换权重（建议）",
+  "paper_datasentinel_checkpoint": "unknown",
+  "r1_config_canonical_sha256": "efe2a0665ba627cf9a72b5d465690a3fc6fd62b8922cf3ed7fd902d871bf15b1",
+  "r1_config_changed": false,
+  "recorded_utc": "2026-10-18T05:45:09Z",
+  "remaining_preparation": [
+    "Formal R2 runner",
+    "Trace and validity policy",
+    "Resource guard policy"
+  ],
+  "schema_version": 1,
+  "scope": "Formal R2 whole-document detector for our declared public-snapshot condition",
+  "selected_before_formal_r2": true,
+  "selection_based_on_debug_attack_success": false,
+  "selection_based_on_formal_asr": false,
+  "selection_is_paper_identity_evidence": false,
+  "selection_source": "USER_EXPLICIT_TEXT_SELECTION",
+  "status": "OWNER_CONFIRMED_PRIMARY_CHECKPOINT",
+  "switch_checkpoint_based_on_asr_allowed": false,
+  "whole_detector": {
+    "files": [
+      {
+        "member": "detector_large/checkpoint-5000/adapter_model.safetensors",
+        "sha256_first_observed": "b1b023e63d3d49663187565c66d202c779dadf2af865d332643bd4a963125534",
+        "size_bytes": 864513616,
+        "zip_crc_verified": true
+      },
+      {
+        "member": "detector_large/checkpoint-5000/adapter_config.json",
+        "sha256_first_observed": "ed0fe22bf07b9a426cdb3eac4a33b517b855ddcec67b666a37dbdaa4d2493145",
+        "size_bytes": 743,
+        "zip_crc_verified": true
+      }
+    ],
+    "relative_path": "detector_large/checkpoint-5000"
+  }
+}

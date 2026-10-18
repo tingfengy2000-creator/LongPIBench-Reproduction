@@ -1,5 +1,6 @@
 {
-  "status": "AWAITING_OWNER_CHECKPOINT_SELECTION",
+  "status": "RESOLVED_BY_OWNER",
+  "selection_record": "configs/formal_r2_checkpoint_selection_v1.json",
   "paper_datasentinel_checkpoint": "unknown",
   "proposed_whole_adapter": "detector_large/checkpoint-5000",
   "alternative_whole_adapter": "detector_small/checkpoint-500",

@@ -4,7 +4,7 @@ LongPIBench / PromptLocate 基线复现与逐案例失败归因。本仓库用�
 
 **当前阶段：端到端debug已完成，正式R1配置与执行器已准备。尚无正式ASR。**
 
-当前进展（2026-10-18）：014两条Email有效完成定位/目标生成，来源3a098a3；[正式R1任务](coordination/tasks/R1-5090-001.md)固定400份输入及20000生成上限，无防御基线独立执行。[配置冻结说明](audit/10_formal_configuration_freeze.md)明确公开快照/单BOS差异及R2 checkpoint待选；R1不依赖该选择。正式R1实际启动与结果仍待5090回执。以下为历史进展。
+当前进展（2026-10-18）：014两条Email有效完成定位/目标生成，来源3a098a3；[正式R1任务](coordination/tasks/R1-5090-001.md)固定400份输入及20000生成上限，无防御基线独立执行。Owner已[固定R2全文检测器为detector_large/checkpoint-5000](configs/formal_r2_checkpoint_selection_v1.json)，不按ASR换权重；[配置冻结说明](audit/10_formal_configuration_freeze.md)保留公开快照/单BOS差异及论文checkpoint未知。R1配置保持不变，实际启动与结果仍待5090回执；R2全量任务尚待准备。以下为历史进展。
 
 当前进展（2026-10-18）：013已核验，Email搜索段数214→131、221→100持续减少，012观察预算截断推进；实际generate220/219，已完成helper有限。[014](coordination/tasks/R0-5090-014.md)以独立更宽观察预算仅重跑两条Email定位，保留012原条件与全部证据，自动核对逻辑前缀并在有效恢复后接续目标生成。不改模型/阈值，不重跑Resume/无防御，不据此选checkpoint或计算ASR。以下为历史进展。
 

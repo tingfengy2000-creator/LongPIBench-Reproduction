@@ -10,10 +10,12 @@ R1-5090-001按两任务各100 clean+100 attack固定运行无防御Llama，budge
 
 formal仅表示本研究预先冻结的总体执行条件。研究名称declared_public_snapshot_single_bos_v1，严格历史论文配置仍未完全找回；不使用strict reproduction措辞。原公开HF wrapper的重复BOS在独立wrapper中显式修正，补丁记录与官方评分均保留，不能悄悄归作完全相同输入。
 
-## R2未披露checkpoint
+## R2主条件已选定，论文checkpoint仍未披露
+
+2026-10-18 Owner明确选择：“固定 large/checkpoint-5000 为主条件，不按 ASR 换权重（建议）”。正式R2全文检测器固定为detector_large/checkpoint-5000；机器可读身份及007已验收文件hash见configs/formal_r2_checkpoint_selection_v1.json，原始选择文字见coordination/returns/20261018T054509Z-owner-r2-checkpoint-selection/REPORT.md。small不作为按结果替换的候选。此选择不来自debug或正式ASR比较，不改变R1冻结配置；configs/upstream_lock.json中作者checkpoint的null继续保留。
 
 固定[OPI README](https://raw.githubusercontent.com/liu00222/Open-Prompt-Injection/fbed5cca347488f88363790ae3ae97c56116da6a/README.md)只示例ft_path/detect_ft_path，未在这些示例中指定large/small；公开LongPIBench亦未给对应PromptLocate集成配置。论文实际checkpoint继续unknown。GitHub issue页面/API本轮读取失败，不能声称已穷尽最新issue或获得作者确认。
 
-候选写入configs/formal_r2_checkpoint_proposal.json，状态AWAITING_OWNER_CHECKPOINT_SELECTION。建议预先声明large/checkpoint-5000为单一主条件，或由Owner选small；选择依据不能是debug/正式ASR优劣。两个adapter加载均已通过，但未运行双checkpoint正式比较。该选择只定义公开版本执行条件，不反推论文身份。原audit/03方案要求需要人选定未披露checkpoint时只请求该具体选择；本轮已将具体候选呈现给Owner，尚未将任何选择写为已确认。
+此前候选写入configs/formal_r2_checkpoint_proposal.json，现以RESOLVED_BY_OWNER指向独立选择记录。两个adapter加载均已通过，但未运行双checkpoint正式比较。Owner选择只定义本研究公开版本执行条件，不反推论文身份。
 
 R1不加载DataSentinel，可独立开始。R2将与R1共享冻结目标生成条件，另需冻结定位轨迹/有效性和资源保护口径；当前不授权R2全量。不得把012/014不同观察预算拼为一个原始运行，也不把不同checkpoint运行择优拼接。
