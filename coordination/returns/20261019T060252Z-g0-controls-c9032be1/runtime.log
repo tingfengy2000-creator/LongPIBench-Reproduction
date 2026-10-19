@@ -1,0 +1,65 @@
+Checking fixed file: README.md
+Checking fixed file: config.json
+Checking fixed file: generation_config.json
+Checking fixed file: model-00001-of-00002.safetensors
+Checking fixed file: model-00002-of-00002.safetensors
+Checking fixed file: model.safetensors.index.json
+Checking fixed file: special_tokens_map.json
+Checking fixed file: tokenizer.json
+Checking fixed file: tokenizer.model
+Checking fixed file: tokenizer_config.json
+Checking fixed file: adapter_model.safetensors
+Checking fixed file: adapter_config.json
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:51<00:51, 51.41s/it]Loading checkpoint shards: 100%|██████████| 2/2 [01:13<00:00, 33.98s/it]Loading checkpoint shards: 100%|██████████| 2/2 [01:13<00:00, 36.59s/it]
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+{"completed_frozen_queries": 1, "planned": 26, "last_control": "natural-email-000"}
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+{"completed_frozen_queries": 2, "planned": 26, "last_control": "natural-email-050"}
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+{"completed_frozen_queries": 3, "planned": 26, "last_control": "natural-resume-000"}
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+{"completed_frozen_queries": 4, "planned": 26, "last_control": "natural-resume-050"}
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+{"completed_frozen_queries": 5, "planned": 26, "last_control": "payload-only-email"}
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+{"completed_frozen_queries": 6, "planned": 26, "last_control": "payload-only-resume"}
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+{"completed_frozen_queries": 7, "planned": 26, "last_control": "prefix-email-000-n128-pemail"}
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+{"completed_frozen_queries": 8, "planned": 26, "last_control": "prefix-email-000-n128-presume"}
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+{"completed_frozen_queries": 9, "planned": 26, "last_control": "prefix-email-000-n320-pemail"}
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+{"completed_frozen_queries": 10, "planned": 26, "last_control": "prefix-email-000-n320-presume"}
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+{"completed_frozen_queries": 11, "planned": 26, "last_control": "prefix-email-050-n128-pemail"}
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+{"completed_frozen_queries": 12, "planned": 26, "last_control": "prefix-email-050-n128-presume"}
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+{"completed_frozen_queries": 13, "planned": 26, "last_control": "prefix-email-050-n320-pemail"}
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+{"completed_frozen_queries": 14, "planned": 26, "last_control": "prefix-email-050-n320-presume"}
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+{"completed_frozen_queries": 15, "planned": 26, "last_control": "prefix-resume-000-n128-pemail"}
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+{"completed_frozen_queries": 16, "planned": 26, "last_control": "prefix-resume-000-n128-presume"}
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+{"completed_frozen_queries": 17, "planned": 26, "last_control": "prefix-resume-000-n320-pemail"}
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+{"completed_frozen_queries": 18, "planned": 26, "last_control": "prefix-resume-000-n320-presume"}
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+{"completed_frozen_queries": 19, "planned": 26, "last_control": "prefix-resume-050-n128-pemail"}
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+{"completed_frozen_queries": 20, "planned": 26, "last_control": "prefix-resume-050-n128-presume"}
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+{"completed_frozen_queries": 21, "planned": 26, "last_control": "prefix-resume-050-n320-pemail"}
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+{"completed_frozen_queries": 22, "planned": 26, "last_control": "prefix-resume-050-n320-presume"}
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+{"completed_frozen_queries": 23, "planned": 26, "last_control": "right-crop-email-000"}
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+{"completed_frozen_queries": 24, "planned": 26, "last_control": "right-crop-email-050"}
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+{"completed_frozen_queries": 25, "planned": 26, "last_control": "right-crop-resume-000"}
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+{"completed_frozen_queries": 26, "planned": 26, "last_control": "right-crop-resume-050"}
