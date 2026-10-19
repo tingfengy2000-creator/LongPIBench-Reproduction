@@ -1,0 +1,290 @@
+{
+  "status": "R3_COORDINATOR_CASE_REVIEW_V1_F5_AND_HUMAN_VALIDATION_PENDING",
+  "source_commit": "7003d02c2502942cb0689e565c3235c5fe269429",
+  "source_run_id": "20261019T012406Z-r3-evidence-0dddd3fe",
+  "reviewer": "coordinator-Codex",
+  "independent_human_review": false,
+  "source_files_verified": 130,
+  "card_hashes_verified": 125,
+  "card_selection_reconciled_to_r2": true,
+  "source_receipts_verified_against_git": true,
+  "raw_full_files_read_on_coordinator": false,
+  "raw_token_score_audit_reported_by_5090": {
+    "r1": 400,
+    "r2_defense": 400,
+    "r2_protected": 400,
+    "valid_target_generations": 390,
+    "skips": 10
+  },
+  "primary_labels": {
+    "F2": 5,
+    "F1": 110
+  },
+  "primary_label_denominator": 115,
+  "by_domain": {
+    "email": {
+      "remaining_goal_hits": 15,
+      "primary_labels": {
+        "F1": {
+          "count": 10,
+          "denominator": 15,
+          "fraction": 0.6666666666666666,
+          "wilson95": [
+            0.41713547738519774,
+            0.8482367556028526
+          ]
+        },
+        "F2": {
+          "count": 5,
+          "denominator": 15,
+          "fraction": 0.3333333333333333,
+          "wilson95": [
+            0.1517632443971473,
+            0.5828645226148023
+          ]
+        },
+        "F3": {
+          "count": 0,
+          "denominator": 15,
+          "fraction": 0.0,
+          "wilson95": [
+            0.0,
+            0.20388330103584862
+          ]
+        },
+        "F4": {
+          "count": 0,
+          "denominator": 15,
+          "fraction": 0.0,
+          "wilson95": [
+            0.0,
+            0.20388330103584862
+          ]
+        },
+        "Uncertain": {
+          "count": 0,
+          "denominator": 15,
+          "fraction": 0.0,
+          "wilson95": [
+            0.0,
+            0.20388330103584862
+          ]
+        }
+      },
+      "clean_r1_goal_hits": 0
+    },
+    "resume": {
+      "remaining_goal_hits": 100,
+      "primary_labels": {
+        "F1": {
+          "count": 100,
+          "denominator": 100,
+          "fraction": 1.0,
+          "wilson95": [
+            0.9630065017930143,
+            1.0
+          ]
+        },
+        "F2": {
+          "count": 0,
+          "denominator": 100,
+          "fraction": 0.0,
+          "wilson95": [
+            3.469446951953614e-18,
+            0.03699349820698568
+          ]
+        },
+        "F3": {
+          "count": 0,
+          "denominator": 100,
+          "fraction": 0.0,
+          "wilson95": [
+            3.469446951953614e-18,
+            0.03699349820698568
+          ]
+        },
+        "F4": {
+          "count": 0,
+          "denominator": 100,
+          "fraction": 0.0,
+          "wilson95": [
+            3.469446951953614e-18,
+            0.03699349820698568
+          ]
+        },
+        "Uncertain": {
+          "count": 0,
+          "denominator": 100,
+          "fraction": 0.0,
+          "wilson95": [
+            3.469446951953614e-18,
+            0.03699349820698568
+          ]
+        }
+      },
+      "clean_r1_goal_hits": 82
+    }
+  },
+  "F5": {
+    "value": null,
+    "status": "UNASSESSED_NEEDS_INDEPENDENT_TASK_FIDELITY_LABELS"
+  },
+  "f6_r2_count": 10,
+  "f6_r2_attack": 7,
+  "f6_r2_clean": 3,
+  "f6_r1_parse_count": 1,
+  "f6_nonfinite_probability_calls_summary_total": 573,
+  "f6_cropped_condition_calls_summary_total": 573,
+  "f6_individual_examples_checked": 50,
+  "f6_all573_callwise_overlap_verified": false,
+  "pinned_helper_source": {
+    "commit": "fbed5cca347488f88363790ae3ae97c56116da6a",
+    "path": "OpenPromptInjection/apps/PromptLocate.py",
+    "normalized_sha256": "d7d6628486bb58583657dc2a382389663b5b20020d44712fdb783c68dc205b28"
+  },
+  "model_weights_loaded": false,
+  "new_inference": false,
+  "new_defense_or_training": false,
+  "strict_paper_reproduction_claim": false,
+  "R4_complete": false,
+  "limitations": [
+    "AI assisted single review, not independent human annotation.",
+    "F1 is an operational pathway label, not causal attack-effect proof.",
+    "82/100 Resume clean inputs already meet the official goal.",
+    "Four locator cases retain unknown original coordinates.",
+    "No F5 prevalence estimate or clean task accuracy.",
+    "Only one payload family and fixed attack positions; no position/length causal analysis."
+  ],
+  "source_hashes": {
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/PUBLISH_FILES.txt": "31e723ae00099d425a036b48178917930c4967047b222bdff2243578e5bdf18b",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/REPORT.md": "c979d27b90d3e44e86dc78b59c4795c79ee3fca65699a4eceb5cc4168a077012",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/email-005-no.json": "83a3b980f798693ce31541ba3cdf5af5b6727f38ac71b5e1a560fb936db6e82d",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/email-006-authority_spoof.json": "7f2130189384c4dfe48c34b8b00006b1fbb51d27f2594f2ce2dfeb6c6b6e5901",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/email-013-authority_spoof.json": "cb1c20f805c353942d3dfe7ee1c2fb647798881c88e54e70d4d6f19d8c9c3786",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/email-014-authority_spoof.json": "27783a39647508359d940c856ed0f56a540e25f0c12888ad88e63b721e8c70e7",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/email-018-authority_spoof.json": "487138c4e88b7a1543832da68220af3c35b5c27f37d0a5b9fb937aae66927054",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/email-020-authority_spoof.json": "dee723c6efc31450586f665f6c50f248f80eae1b1358f5f047fed97e7e1a6784",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/email-024-authority_spoof.json": "d2bddfa680ddae6a520510355e94a153acd3145bb4c1edc5281576578b93f17b",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/email-026-authority_spoof.json": "8d6c697824a0f51141b03b69fde89f6aad189d17458135fb3bfd9fa14bf8e484",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/email-034-authority_spoof.json": "15e91a26ad991da2e561eeecc07315cb2e0e591471ef6d3f81c0280207f17972",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/email-038-authority_spoof.json": "009fe83213e0162352e780021a3d6d44b91e8318a769fc6231e4be9cfdeb5255",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/email-041-authority_spoof.json": "89ea6adc86f77370b3967b892a645800885a86a0b8f11567b8e59f154528175d",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/email-044-authority_spoof.json": "cc5bbf90bbc94ed3c72aebbf5330f25bb59c4fe0a2cdf047cd03a062ed3f51ab",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/email-047-authority_spoof.json": "2f41a76408f70d37ff7f727c7c3e1ca7adbaf7cfac67ef115455a8137acd3890",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/email-048-authority_spoof.json": "05f8a32203427f2f846a966d20833fef11fe5c3ed7e85029445636488532fbad",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/email-052-authority_spoof.json": "f5a104c985faaca3e465015ba8982bd5d69700e32d16fabed57b00d02ad43fdd",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/email-052-no.json": "838b2b4dced51ce1256e119afe87ed4089a61ea428cba16a51366e7087c79f83",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/email-059-authority_spoof.json": "9fad31e947a53c6435760b74fdfbafed389c9e2863a7698fd00f90cf58b275f2",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/email-066-authority_spoof.json": "283b9d008eaf12d924710ca9729899c1b97825944d67f32b4dcc21b96486dcb0",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/email-066-no.json": "fdf29ab43ad88fb310228ec9f58ccaab4c42ab76cf0011d47a2bd718ab8af9b8",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/email-076-authority_spoof.json": "4d885f15178e2a18eaf377fd8e507496c9b4cf806041b2ccce6bb6dc62db4562",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/email-087-authority_spoof.json": "dd3d934ca59572af45e09885c70d5340ad8c5b60f1798d2f305a5fc7f1cbcd7e",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/email-090-authority_spoof.json": "a47c4f50a81460afc7c5750523edaf3d7f46ad30dd530855d0893841adbb812f",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/email-091-authority_spoof.json": "f67bee8dbe01e71abbe09e5b0b1e38374b950adb4db602e502ae026ac5069e1f",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/email-096-authority_spoof.json": "859f7719d86e4df4a5ef8a011230c92da7db839ad70cd0609429918b412fc27a",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/email-099-authority_spoof.json": "96fb7359cf664a8cbb38a11d14657b159b516b7894b3b7beb551e6273ff30793",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-000-authority_spoof.json": "b129545993a50c9a88aa5e886f6516ae7bc435c83fc59c8d2a86dc3af04295ed",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-001-authority_spoof.json": "00ac5f77ba7db73f5d111b0de961456204347c340b3a16504d73539dac98fff4",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-002-authority_spoof.json": "42a6bd5ea363f03d57a8becd80d1c0bb5c055ee5d322fc176952559ebaa933d8",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-003-authority_spoof.json": "348e19184dc41149f8a78edfe8bb39f76cd998c2c9e919eb54c7b5d480f36bfd",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-004-authority_spoof.json": "09aca75b800a27d6fd887533b2c6e218807848bfde788117612701c860175815",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-005-authority_spoof.json": "120b50130bfe6f2af5b6b61546590636b5a33fade6162c89ec0403addb287200",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-006-authority_spoof.json": "3b79cfe7d08f30bf46a75106101762fc60c12eeebf69b16ca1719fc67389aecf",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-007-authority_spoof.json": "a56c5bd7dde20db3010455a1c07035299be5bb7b68f8a7583123bb231e518f49",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-008-authority_spoof.json": "2bcd8178c0e9dd15cd90f569dd9f41107fcd75511d0ccdd1d095ba8c437c645a",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-009-authority_spoof.json": "a629e4fd91689768153c935d8cadd58b77862f0487b2948fad9b9fa4668466e4",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-010-authority_spoof.json": "43c7924abfab9c319c1401cc100e03cbdcf374a5ab00bf0f3b99a1913943e841",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-011-authority_spoof.json": "788f6c04f67b8531b9400ebc279cfcfd54c43a2aba297c01ea7f2700b576e620",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-012-authority_spoof.json": "b48aa9f51d44c9854cdd4f991dd7ea84b940e8a4128ad9962ee1c500ff861260",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-013-authority_spoof.json": "de3314f78fc078aaf68f9803e34aef461baf7d985e88a4ba105d3671ca5a4823",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-014-authority_spoof.json": "cc0be8a68a32ddd1760d8001575e05a7266a65c370a419736cf164a51f9859fd",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-015-authority_spoof.json": "5f4dadcdbd6c3dc23bf229252f653e9d487fb2032270761fe3f82c0cebfeb7e4",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-016-authority_spoof.json": "57874d2e9455ef3806b85301ba2826c360b39add9576c473e6712cfeb39c0d7e",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-017-authority_spoof.json": "605e06a4a077af28917b6f56d2fc440dba65910d8228c89350203bcfa056ec04",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-018-authority_spoof.json": "7960cb0e26ae71fee9b4f042df01a96e4df809f36efc86d84d5415fbf38b0a2b",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-019-authority_spoof.json": "48ed086914ecb3c27eb6e2bb54cb0622e5c3cb0bb05ef7d95dfe68b5b34c6171",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-020-authority_spoof.json": "41fa7ecc7031d1088854adcf27cbdd2276585df673c3a4fc3bdfefa7f988fe0e",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-021-authority_spoof.json": "8426df0d9f0ff4308da93a321f32eea4bbf9437a9f33e970fd5991323dba8d66",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-022-authority_spoof.json": "20cf7a5fea6bcc9131d9022401f3f537a4ccfc8a8caac00e803b5e287e04bca5",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-023-authority_spoof.json": "6548a27555479e5da28763df841fe80177993fe1461735d5cb23f2d5022e08b4",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-024-authority_spoof.json": "66c2411dc8cd49853f2d471e6e337d50d1cc39bfb904c4285a5178c62e47a74f",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-025-authority_spoof.json": "7a3400be226a30f519e1452092bf75040084c4e1470bf8580ad0e0b375623c74",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-026-authority_spoof.json": "2a778ad53916a353746fbb4d75e782a5a14f93dc41b86c4176fb23f5f59d4d0b",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-027-authority_spoof.json": "6d193a5f5d1793926356a30b202ecded826ee76cfe769cc50c4b4a053540b4d8",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-028-authority_spoof.json": "dc942f8405ea739041ba6faf85ecc7cf86372229772afd010d35eaa655c1cf3c",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-029-authority_spoof.json": "32d9e24828a6b6acd44536dddf81534b2d880bd2b8d0b4708fb6044778608915",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-030-authority_spoof.json": "04374e23399a60b6c2227cd13ee2eb740d9e686d656e97b8c9d305deb3a91ff0",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-031-authority_spoof.json": "abbb559b93a0025586050298c52b94d32f1af96155889d725c46a5b4ec9ed0d3",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-032-authority_spoof.json": "5c5a4373026b12bd4a3d6eb335c8480dab24f633cd0c655ab0fb820a028c8fb9",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-033-authority_spoof.json": "f168a88d0c475320c611704743edf659e31cd7c9bd5cad2e24073dbc6ee77b5a",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-034-authority_spoof.json": "d3f5661617da1daf0f4599d1ab00ff37ff9780897a02035498c5860f0e426223",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-035-authority_spoof.json": "96ea4ffc54b882d9f4e99e6f2719f2643e35960bbb0de885bb810f2ff28d0be0",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-036-authority_spoof.json": "58d5bb0129d0e0bf311f3fdbb08b86e3aaf90ada360b9a4e7fa12087b12b79db",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-037-authority_spoof.json": "6b3d2d09220876a5b087cff19685300a705feb928148c92718b3f64e6be2c358",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-038-authority_spoof.json": "9bb9e0ec98675875403d232b30a07a62661c83cc4d8cbfb023aad02190af91bf",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-039-authority_spoof.json": "9f1fb52c9b22012863f576658aa45bfc9e60af435a519acf4719586ab8545b18",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-040-authority_spoof.json": "5a7d60ff45ea819bbbab7460714c29528e168ef932fb904c3af86d1862640896",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-041-authority_spoof.json": "3a9d653b2365ea0fa0ccf4f0d3f5968cb25823a5355074c533af3fb2bf3657f0",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-042-authority_spoof.json": "d23731525e988a01183ae298a34d11cc8a0c0ffbf36022f10f32de4a08564d29",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-043-authority_spoof.json": "9bb5d7f8f94939891747d4215e61a8e87ee217f7cf363f31a01466ab73195f66",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-044-authority_spoof.json": "18b1438526acd43d3c74df0387c8408140c2f1c329bcc15070e0446c4efcf8d5",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-045-authority_spoof.json": "7c1d8cb7309116b33d20fe6192f75cdfb9665a544be89cdda1810c3c372cf49c",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-046-authority_spoof.json": "4cd9516981c40a7424c26946546ae5e9263de75a634890b85a211169bdf9e22b",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-047-authority_spoof.json": "c9ab285f6d965286f7c94efcae6c0df2223d69e6662615bdb7b7708dbec08d1f",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-048-authority_spoof.json": "7a0a7dabe64f288475f2a0dbd73b68874bf65d7748d8420cf26b054a16820f57",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-049-authority_spoof.json": "0f74efc5d20f22ae2931f20bcbad2b44e445768e97e825fb6b8b523856e9ad44",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-050-authority_spoof.json": "1a057448613c3bb41553cc7907e1e01b493c39c7911a5fa1a416c9f21a5a5d9a",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-051-authority_spoof.json": "0cf0bab1ec28348a1029f9fa518b67545c0bc6b547b2f94f99fda5088b5d0d42",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-052-authority_spoof.json": "a859d119ef7b89eb09b579ef3ad813b891d3d078f3fb6d2659100fbc9e031259",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-053-authority_spoof.json": "8e21e533e496444843e53312f5551b1d3338e131ad218e1c4c2547b0ee8a5a89",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-054-authority_spoof.json": "496bd7cbc5af723169a68d783a73ba7e11cd898ffd5d596573dd2c68a3a9fba5",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-055-authority_spoof.json": "29143f9eb041b8a985765cd236ffe61ca0b351db854ebb154a4337ae9a46c964",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-056-authority_spoof.json": "65b145a73370455ea9d7c098cefc91eea64f6180b753815a95332ac4e2b18466",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-057-authority_spoof.json": "6f178bee533120eb03a8b6c1220b402d42f3d68c895cd50962d80e9931e60159",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-058-authority_spoof.json": "136b08e8357286dd1e908316d8fc3fa99128ae0f91162934fc3e8548590e9527",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-059-authority_spoof.json": "db6b5881dbc5e1ea2e748a7d1e1b9ced2f9c6db8bb5eaf768b2d4e9ac9439eca",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-060-authority_spoof.json": "bce79188d2c4d9ffbe06f60dcc812fe7537ee173eb8cc50a98a9715525ccbc0d",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-061-authority_spoof.json": "6687276ba244fa5788665337ab6c704ceb60cb52247e47e08a9d14f275e85d16",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-062-authority_spoof.json": "4b15ba8f6f12fac94406a7e486e67b0e7153d3b3c98acf5ce182cbc75043e347",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-063-authority_spoof.json": "85b47cd049bfefe36e9cf35758bd8a96e0ef6c2b52d4f00129a397e27cb6b8bc",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-064-authority_spoof.json": "9f6a9003ebfaa54d17b6b8bfa2453eeb8881b7cfc9323112be1e4d399dfe24a4",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-065-authority_spoof.json": "c40bdd07e28b9984fd2dbc8cc0d9e0026ec377297c0cee63ccbb67709f273ffd",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-066-authority_spoof.json": "122e7fd275c98344403826ecda57d5e30ca4e265d9cb9e9e7d0eedf8f38dd273",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-067-authority_spoof.json": "827545433ecc96776a69642631fce6ce0c27635c15210a386192837801148e5c",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-068-authority_spoof.json": "a2f77337c6464e947e5def7285ac13477765def8b961ed9c9f6bf94611dde922",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-069-authority_spoof.json": "c015742ed10fd0ece69c80b18f7675bf7c052a1b992e18036f730f98942ab8ab",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-070-authority_spoof.json": "94925ba6b32d5347115b2b8f01593040d402b7e0a651f8e212901874c312786d",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-071-authority_spoof.json": "331289a78c15c3b03ef90c6f027ab7382d3099b551a91baeb8aae705ac08c280",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-072-authority_spoof.json": "fbb843cd8053f5acfb61465a1936fcb8d321be2356a75f9d7971f8c680ef5d93",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-073-authority_spoof.json": "a13fdacd81276fe489984c45e4edc9c3102d273f09916e86ec7c4299944d5a84",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-074-authority_spoof.json": "cb61fd4e6b2b53343ba29e71aca45d14df74f635118720f78877a99ebabc3166",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-075-authority_spoof.json": "ae9586dfb9c0e54ed5790465dffa9950ccade009835e7796f81def2ecc6ad1fa",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-076-authority_spoof.json": "a612da5ae1216c2957fbde78a74199b2d7d947f56a6b365a18e73cbb6bd134e6",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-077-authority_spoof.json": "529bab0701173d241cf06d28f5549e80d53c7f0f1870af72c28bf2668831a0f1",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-078-authority_spoof.json": "cec18365fd929d9ec093e3486086f8de1a718b40dffe99d4a5d95cfaa09dcede",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-079-authority_spoof.json": "15d9a7a6446565362fe0fe1e5a99040dc7d82c33ea5630e078fdbfc03297b0cc",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-080-authority_spoof.json": "1967cd4cf7999429590de953dd2516763faf2328b2c4970dd68892e8dd4ed672",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-081-authority_spoof.json": "559d972343e87301ba96d1e98d397377782f8952b807a0a6ed5b5b13706ebcaf",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-082-authority_spoof.json": "f65d5c07af1a6902eb8e419350ab070aaff2b50487250031e470c40501f7109a",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-083-authority_spoof.json": "0e3ec664f796c62bb7e2b71d7f4da76758d3a0efc27a3ddd7179b6bae16eb708",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-084-authority_spoof.json": "d037f0412b3f4f92eebc0c2fc2987b81e97f8cc41630a92754a2a4a3f34f2915",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-085-authority_spoof.json": "09561b2b3bfe631dc0edb8dccbfbfd234bbf759d55b652976269d173871a41cf",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-086-authority_spoof.json": "0f1f0cf388bfe575ac0a08d998a2635a5f00be38a5680a5fb7b946771e63320f",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-087-authority_spoof.json": "da0f3e8312b4a7da60033b85a5cbb1d3827eeb19f9fc729d74de55bebe64a79e",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-088-authority_spoof.json": "03a738bfec9ec546433d003488cc56f74d591aa2b10d5c59dfda8d5364509ca7",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-089-authority_spoof.json": "c86310ec87632a63876503c9843fe00d48737acb582d166952c84313b827dcc5",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-090-authority_spoof.json": "60ee281ddba5ca1f0b48e0c3c429328d2a8775204581f44cbd7b181713c322ca",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-091-authority_spoof.json": "1e4a201458941b6ab3062e76870e9ec7831d039ca237a08620d6d6e594a313f8",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-092-authority_spoof.json": "598fd7d1a36268f4b0dbb989182cfe8a6f23d8a506705fe1335bbce5d571c09a",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-093-authority_spoof.json": "701c4a928ac52e447aa1126e6fc2fba9f96ca2562d79755266ef249971271c55",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-094-authority_spoof.json": "830c272aa7fc9a19c1a449a5cc2e63c9125482eb885cf7162f391e2d32aeee8d",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-095-authority_spoof.json": "9ebc1bfc433873d4cb5abd47d7ee6445d49964cbc2f3edea881a5c11cf17ecb1",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-096-authority_spoof.json": "1e441868ff27b51589314d39303e12f5394ce6c97b3b244f4f1cfd24e21b0c7f",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-097-authority_spoof.json": "f1dd185eed1dc76054eecc3dd31142a7c015d5569e96f5313cf2567809088f22",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-098-authority_spoof.json": "6ade26a5a3ab17e4b4c01dc3f95c296e0345c190628c8d3b6f0c6d6f0a0a248a",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_cards/resume-099-authority_spoof.json": "b9429bd9ab67ca271cfbbde8a0937b5e5784f54a411ee171d9d3be07365c54f7",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/case_manifest.json": "bbf9135a9c9b8c669e6e285ef52538b3f72a848beca0decc66ebe3bdc9eb3ef5",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/r3_evidence.json": "dd8e4860dda0362223f04e732cca6a24d73aa295cc4ab44e6df496292ede7ddc",
+    "coordination/returns/20261019T012406Z-r3-evidence-0dddd3fe/runtime.log": "dc06a53d92d2a2365403b8894e50471b324eecdf156bd33670bb0889eb10653e"
+  }
+}
