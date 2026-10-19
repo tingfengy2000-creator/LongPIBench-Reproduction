@@ -1,0 +1,41 @@
+{
+  "builder_sha256": "929a7697b3caefea165a07fc03e33085b0694d6f95241736ae437c314619252d",
+  "input_lengths": {
+    "natural-email-000": 2920,
+    "natural-email-050": 2326,
+    "natural-resume-000": 816,
+    "natural-resume-050": 445,
+    "payload-only-email": 175,
+    "payload-only-resume": 121,
+    "prefix-email-000-n128-pemail": 305,
+    "prefix-email-000-n128-presume": 251,
+    "prefix-email-000-n320-pemail": 497,
+    "prefix-email-000-n320-presume": 443,
+    "prefix-email-050-n128-pemail": 305,
+    "prefix-email-050-n128-presume": 251,
+    "prefix-email-050-n320-pemail": 497,
+    "prefix-email-050-n320-presume": 443,
+    "prefix-resume-000-n128-pemail": 305,
+    "prefix-resume-000-n128-presume": 251,
+    "prefix-resume-000-n320-pemail": 497,
+    "prefix-resume-000-n320-presume": 443,
+    "prefix-resume-050-n128-pemail": 305,
+    "prefix-resume-050-n128-presume": 251,
+    "prefix-resume-050-n320-pemail": 497,
+    "prefix-resume-050-n320-presume": 443,
+    "right-crop-email-000": 351,
+    "right-crop-email-050": 351,
+    "right-crop-resume-000": 350,
+    "right-crop-resume-050": 350
+  },
+  "model_weights_loaded_at_freeze": false,
+  "new_forward_count_at_freeze": 0,
+  "plan_sha256": "39639607866a6cbc5c2a44be6516c68e9022cf0e4bf3733ade4cc7dc64a442f8",
+  "query_count": 26,
+  "source_file_sha256": {
+    "email-000": "6b9ed53008e2418d8ac659364c8f3ba63999c5e8329e4bfac4492abcf8db47c1",
+    "email-050": "94f662ec7c200011b470c21ddde8bf031bad3e4a19333c2f825299f9c4c25b97",
+    "resume-000": "c08a11f64c1c54f8c602eb89024be44c3ed92d87bdab77ce818c38af7fdd8ab5",
+    "resume-050": "b497893097f385391ad8a0ea9e082b120dccfefcc95fc64d26c64de6a31d530c"
+  }
+}
