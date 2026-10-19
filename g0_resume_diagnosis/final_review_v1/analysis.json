@@ -1,0 +1,233 @@
+{
+  "algorithm_development_go": false,
+  "all26_frozen_inputs_decode_binary_reconstructed_on_coordinator": true,
+  "conclusion": "Historical Resume misses are B: no input coverage/truncation or binary-interface failure. Controls show payload/context interactions; pure domain or pure length causation is not identified.",
+  "control_count": 26,
+  "crossed_matrix": [
+    {
+      "actual_total_tokens": 305,
+      "body_domain": "email",
+      "body_tokens": 128,
+      "control_ids": "prefix-email-000-n128-pemail|prefix-email-050-n128-pemail",
+      "flag0_count": 2,
+      "flag1_count": 0,
+      "payload_domain": "email",
+      "source_count": 2
+    },
+    {
+      "actual_total_tokens": 497,
+      "body_domain": "email",
+      "body_tokens": 320,
+      "control_ids": "prefix-email-000-n320-pemail|prefix-email-050-n320-pemail",
+      "flag0_count": 2,
+      "flag1_count": 0,
+      "payload_domain": "email",
+      "source_count": 2
+    },
+    {
+      "actual_total_tokens": 251,
+      "body_domain": "email",
+      "body_tokens": 128,
+      "control_ids": "prefix-email-000-n128-presume|prefix-email-050-n128-presume",
+      "flag0_count": 2,
+      "flag1_count": 0,
+      "payload_domain": "resume",
+      "source_count": 2
+    },
+    {
+      "actual_total_tokens": 443,
+      "body_domain": "email",
+      "body_tokens": 320,
+      "control_ids": "prefix-email-000-n320-presume|prefix-email-050-n320-presume",
+      "flag0_count": 2,
+      "flag1_count": 0,
+      "payload_domain": "resume",
+      "source_count": 2
+    },
+    {
+      "actual_total_tokens": 305,
+      "body_domain": "resume",
+      "body_tokens": 128,
+      "control_ids": "prefix-resume-000-n128-pemail|prefix-resume-050-n128-pemail",
+      "flag0_count": 0,
+      "flag1_count": 2,
+      "payload_domain": "email",
+      "source_count": 2
+    },
+    {
+      "actual_total_tokens": 497,
+      "body_domain": "resume",
+      "body_tokens": 320,
+      "control_ids": "prefix-resume-000-n320-pemail|prefix-resume-050-n320-pemail",
+      "flag0_count": 2,
+      "flag1_count": 0,
+      "payload_domain": "email",
+      "source_count": 2
+    },
+    {
+      "actual_total_tokens": 251,
+      "body_domain": "resume",
+      "body_tokens": 128,
+      "control_ids": "prefix-resume-000-n128-presume|prefix-resume-050-n128-presume",
+      "flag0_count": 2,
+      "flag1_count": 0,
+      "payload_domain": "resume",
+      "source_count": 2
+    },
+    {
+      "actual_total_tokens": 443,
+      "body_domain": "resume",
+      "body_tokens": 320,
+      "control_ids": "prefix-resume-000-n320-presume|prefix-resume-050-n320-presume",
+      "flag0_count": 2,
+      "flag1_count": 0,
+      "payload_domain": "resume",
+      "source_count": 2
+    }
+  ],
+  "domain_pairs": [
+    {
+      "body_tokens": 128,
+      "email_control": "prefix-email-000-n128-pemail",
+      "email_flag": 0,
+      "payload_domain": "email",
+      "resume_control": "prefix-resume-000-n128-pemail",
+      "resume_flag": 1,
+      "total_tokens_each": 305
+    },
+    {
+      "body_tokens": 128,
+      "email_control": "prefix-email-000-n128-presume",
+      "email_flag": 0,
+      "payload_domain": "resume",
+      "resume_control": "prefix-resume-000-n128-presume",
+      "resume_flag": 0,
+      "total_tokens_each": 251
+    },
+    {
+      "body_tokens": 320,
+      "email_control": "prefix-email-000-n320-pemail",
+      "email_flag": 0,
+      "payload_domain": "email",
+      "resume_control": "prefix-resume-000-n320-pemail",
+      "resume_flag": 0,
+      "total_tokens_each": 497
+    },
+    {
+      "body_tokens": 320,
+      "email_control": "prefix-email-000-n320-presume",
+      "email_flag": 0,
+      "payload_domain": "resume",
+      "resume_control": "prefix-resume-000-n320-presume",
+      "resume_flag": 0,
+      "total_tokens_each": 443
+    },
+    {
+      "body_tokens": 128,
+      "email_control": "prefix-email-050-n128-pemail",
+      "email_flag": 0,
+      "payload_domain": "email",
+      "resume_control": "prefix-resume-050-n128-pemail",
+      "resume_flag": 1,
+      "total_tokens_each": 305
+    },
+    {
+      "body_tokens": 128,
+      "email_control": "prefix-email-050-n128-presume",
+      "email_flag": 0,
+      "payload_domain": "resume",
+      "resume_control": "prefix-resume-050-n128-presume",
+      "resume_flag": 0,
+      "total_tokens_each": 251
+    },
+    {
+      "body_tokens": 320,
+      "email_control": "prefix-email-050-n320-pemail",
+      "email_flag": 0,
+      "payload_domain": "email",
+      "resume_control": "prefix-resume-050-n320-pemail",
+      "resume_flag": 0,
+      "total_tokens_each": 497
+    },
+    {
+      "body_tokens": 320,
+      "email_control": "prefix-email-050-n320-presume",
+      "email_flag": 0,
+      "payload_domain": "resume",
+      "resume_control": "prefix-resume-050-n320-presume",
+      "resume_flag": 0,
+      "total_tokens_each": 443
+    }
+  ],
+  "frozen_plan_sha256": "39639607866a6cbc5c2a44be6516c68e9022cf0e4bf3733ade4cc7dc64a442f8",
+  "full_npz_arrays_independently_read_on_coordinator": false,
+  "history_root_categories_resume100": {
+    "A": 0,
+    "B": 100,
+    "C": 0,
+    "D": 0,
+    "E": 0
+  },
+  "identifiability_limits": [
+    "Only4 source documents and2 fixed payloads, constructed prefixes; not26 independent samples.",
+    "Increasing prefix length also adds content; length-only causal effect not isolated.",
+    "Changing payload changes both semantics and54 input tokens; semantics-only causal effect not isolated.",
+    "Same-payload same-length cross-domain contrast is content/context-specific, not population domain causation.",
+    "Full raw/NPZ arrays remain on5090; local checks cover returned records, decoded outputs and1300 top5 raw values."
+  ],
+  "intentional_payload_exclusion_flags0": 4,
+  "local_weights_loaded": false,
+  "natural_history_replay_identical": 4,
+  "new_local_model_forward_count": 0,
+  "payload_only": {
+    "email": 0,
+    "resume": 0
+  },
+  "raw_full_logit_values_stored_on_source": 8320000,
+  "raw_logit_top5_values_checked_on_coordinator": 1300,
+  "raw_logits_reported_finite_on_source": 26,
+  "risk_probability_produced": false,
+  "script_sha256": "b014c3e8401265cc7ea32949a2bc2d7c7746a661f69fc485b8748b1e21f4f56c",
+  "source_commit": "a857540235093e302b0644c4aebf38184a6045a9",
+  "source_document_count": 4,
+  "source_return_file_sha256": {
+    "coordination/returns/20261019T060252Z-g0-controls-c9032be1/PUBLISH_FILES.txt": "29b627b5c9ea42dbe80c98cf27d9741278fb0a1c3448034104980c3c61c462d0",
+    "coordination/returns/20261019T060252Z-g0-controls-c9032be1/REPORT.md": "3405dc6d6371400e72e82d7154805429c571b7a5233556f78d78a0079618459a",
+    "coordination/returns/20261019T060252Z-g0-controls-c9032be1/control_results.json": "7243c7ec486a64c7308bf6d24cacf3a6d93b19591b0d1ac7525eb36acdd276b3",
+    "coordination/returns/20261019T060252Z-g0-controls-c9032be1/g0_controls.json": "ae91c58dce7fcd97aade10c0f9975d555fd0e02235e1381ef65764224e91f343",
+    "coordination/returns/20261019T060252Z-g0-controls-c9032be1/natural-email-000.json": "50ebe19f12ec2d9a256a010cba88969871eafa2224a5aa3c492b8591dd164e35",
+    "coordination/returns/20261019T060252Z-g0-controls-c9032be1/natural-email-050.json": "420cd3ac7e2a35842a474eea8c3d4e0634a7ae91e6d2ada100bec26733b6e171",
+    "coordination/returns/20261019T060252Z-g0-controls-c9032be1/natural-resume-000.json": "0cbe74f94f496604b589378e2859888684b0943ec3fd40c1af59c88741e99ac0",
+    "coordination/returns/20261019T060252Z-g0-controls-c9032be1/natural-resume-050.json": "74b089046ed0d1d362a03714f334e7112e26bf42e8622ecedd21e2957e482655",
+    "coordination/returns/20261019T060252Z-g0-controls-c9032be1/payload-only-email.json": "4897d56312832fdd04cdaa2cb53fe65f643d6b8d58b3b4921736a8ad0cff2f4b",
+    "coordination/returns/20261019T060252Z-g0-controls-c9032be1/payload-only-resume.json": "397b2473c4632b4cbc70af621945379d3c747f4710193b050f53cbf5f0c51483",
+    "coordination/returns/20261019T060252Z-g0-controls-c9032be1/prefix-email-000-n128-pemail.json": "f65c7527f0a0e9139440fddc4014b1d630e480ee1de21da5979d47b3fd4948ae",
+    "coordination/returns/20261019T060252Z-g0-controls-c9032be1/prefix-email-000-n128-presume.json": "7f9c73205ad3582fd19022eb843feb427bfa856fda74a42fff2d4507fb37494d",
+    "coordination/returns/20261019T060252Z-g0-controls-c9032be1/prefix-email-000-n320-pemail.json": "25ffc3656398ef99ecd201020e1ba1cca99a295668c88b4fa42de85ea9a389f9",
+    "coordination/returns/20261019T060252Z-g0-controls-c9032be1/prefix-email-000-n320-presume.json": "f18f17fa3a79a9132a5a3a7f8ef6d96ab8e5806562250bf48f5937c598010033",
+    "coordination/returns/20261019T060252Z-g0-controls-c9032be1/prefix-email-050-n128-pemail.json": "bc210ccfaf24f2882920bd5738abb39a16f63f8a67991ccf2e0de015735e93b8",
+    "coordination/returns/20261019T060252Z-g0-controls-c9032be1/prefix-email-050-n128-presume.json": "fc01caa708cc7dfd76e4655e1507962d37b070a7c7ed36377421177d5bb90198",
+    "coordination/returns/20261019T060252Z-g0-controls-c9032be1/prefix-email-050-n320-pemail.json": "4bc1a2a46afcf02d2efe1a3283f4ef3ca23bf45279638ef04b9e5c97d92f8462",
+    "coordination/returns/20261019T060252Z-g0-controls-c9032be1/prefix-email-050-n320-presume.json": "5bf6e914a215602e7aeacddc0c507f825b4b74a4d7c8dbde15e87304783f748d",
+    "coordination/returns/20261019T060252Z-g0-controls-c9032be1/prefix-resume-000-n128-pemail.json": "feb9819b25ee6a401a99b67509a34e6c465919f2d4006649382e0184d6a59185",
+    "coordination/returns/20261019T060252Z-g0-controls-c9032be1/prefix-resume-000-n128-presume.json": "750cd3e59c5e618e7aa9c0a84c4e72cbacdffdee272735dee32af13c2f0ca3f8",
+    "coordination/returns/20261019T060252Z-g0-controls-c9032be1/prefix-resume-000-n320-pemail.json": "6f705a10d164964e69b72247182b420d007dbc6bf78170513b41aef240cf4fc5",
+    "coordination/returns/20261019T060252Z-g0-controls-c9032be1/prefix-resume-000-n320-presume.json": "80fa4eca37726830dc22740b38197dc8d08c65e3081cadb0ec4909af2516f4d4",
+    "coordination/returns/20261019T060252Z-g0-controls-c9032be1/prefix-resume-050-n128-pemail.json": "f0b4be62a49a068358b405077e9f1f8107436ff2d23080a545c0f358055a8097",
+    "coordination/returns/20261019T060252Z-g0-controls-c9032be1/prefix-resume-050-n128-presume.json": "ff508ba98bbbe7f3f07d2adce6dc9347e95dec474145b8792e1fbb4c3f8c3679",
+    "coordination/returns/20261019T060252Z-g0-controls-c9032be1/prefix-resume-050-n320-pemail.json": "9226b4457311a63f4b756211e1b20ef0d9d8237025987d63db43d0f33cddd474",
+    "coordination/returns/20261019T060252Z-g0-controls-c9032be1/prefix-resume-050-n320-presume.json": "f819c59b2a870281c9f9f44b2318e787ce6d9c1ff0d452bf1cd57fb7afc10cf4",
+    "coordination/returns/20261019T060252Z-g0-controls-c9032be1/right-crop-email-000.json": "25d09cdbc13b0dac9582bf547332daef9e74fb215dfcf927df660dbdf03ab19d",
+    "coordination/returns/20261019T060252Z-g0-controls-c9032be1/right-crop-email-050.json": "faa7280c73f67a89eb1fea99222996fae0492075b471e35199a30d7645fb9aff",
+    "coordination/returns/20261019T060252Z-g0-controls-c9032be1/right-crop-resume-000.json": "7fe74327d3cc251784de507b1e28add3352071845ad2bee4494802b380636479",
+    "coordination/returns/20261019T060252Z-g0-controls-c9032be1/right-crop-resume-050.json": "9df0184e665fc476a3dc046a858ef7fc85b5fe9298fcfd00c1d84701dde0fa02",
+    "coordination/returns/20261019T060252Z-g0-controls-c9032be1/runtime.log": "ad9b668b21ddd8da077863003c4c1e9be2aee3136e9e91b3d36e33a5d53ea7c0"
+  },
+  "source_run_id": "20261019T060252Z-g0-controls-c9032be1",
+  "status": "G0_DIAGNOSIS_COMPLETE_WITH_IDENTIFIABILITY_LIMITS_STOP",
+  "stop_after_G0": true,
+  "total_flags": {
+    "0": 22,
+    "1": 4
+  }
+}
