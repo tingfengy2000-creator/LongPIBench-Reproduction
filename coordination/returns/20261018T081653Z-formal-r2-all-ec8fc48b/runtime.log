@@ -1,0 +1,3 @@
+{"return_path": "coordination/returns/20261018T081653Z-r1-raw-audit-d8c49161/r1_audit.json", "status": "R1_RAW_VERIFIED_WITH_SEPARATE_INVALID_OUTCOMES"}
+{"return_path": "coordination/returns/20261018T081658Z-formal-r2-defense-6a4b35b2/r2_stage.json", "status": "FORMAL_R2_DEFENSE_EXECUTED_REVIEW_REQUIRED"}
+{"return_path": "coordination/returns/20261018T194035Z-formal-r2-protected-2dd91d66/r2_stage.json", "status": "FORMAL_R2_PROTECTED_EXECUTED_REVIEW_REQUIRED"}
