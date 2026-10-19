@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "source_receipt_commit": "10c24c83d906f2d7b7a830bbdc143a5dbc5add72",
+  "source_git_blobs_preserved": 8,
+  "working_copy_exact_files": [
+    "coordination/returns/20261018T081653Z-formal-r2-all-ec8fc48b/r2_stage.json",
+    "coordination/returns/20261018T081653Z-r1-raw-audit-d8c49161/r1_audit.json",
+    "coordination/returns/20261018T081658Z-formal-r2-defense-6a4b35b2/r2_stage.json",
+    "coordination/returns/20261018T081658Z-formal-r2-defense-6a4b35b2/runtime.log",
+    "coordination/returns/20261018T194035Z-formal-r2-protected-2dd91d66/r2_stage.json",
+    "coordination/returns/20261018T194035Z-formal-r2-protected-2dd91d66/runtime.log",
+    "coordination/returns/20261018T195820Z-formal-r2-r0-5090-001/REPORT.md"
+  ],
+  "working_copy_only_crlf_conversion": [
+    "coordination/returns/20261018T081653Z-formal-r2-all-ec8fc48b/runtime.log"
+  ],
+  "independent_wilson_statsmodels": true,
+  "independent_mcnemar_scipy": true,
+  "all400_cases_joined": true,
+  "remote_R2_raw_locally_verified": false,
+  "no_model_loaded": true
+}
