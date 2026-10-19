@@ -1,0 +1,52 @@
+Hashing fixed model file: README.md
+Hashing fixed model file: config.json
+Hashing fixed model file: generation_config.json
+Hashing fixed model file: model-00001-of-00002.safetensors
+Hashing fixed model file: model-00002-of-00002.safetensors
+Hashing fixed model file: model.safetensors.index.json
+Hashing fixed model file: special_tokens_map.json
+Hashing fixed model file: tokenizer.json
+Hashing fixed model file: tokenizer.model
+Hashing fixed model file: tokenizer_config.json
+Hashing fixed adapter file: adapter_model.safetensors
+Hashing fixed adapter file: adapter_config.json
+{"historical_cases_checked": 10, "planned": 400}
+{"historical_cases_checked": 20, "planned": 400}
+{"historical_cases_checked": 30, "planned": 400}
+{"historical_cases_checked": 40, "planned": 400}
+{"historical_cases_checked": 50, "planned": 400}
+{"historical_cases_checked": 60, "planned": 400}
+{"historical_cases_checked": 70, "planned": 400}
+{"historical_cases_checked": 80, "planned": 400}
+{"historical_cases_checked": 90, "planned": 400}
+{"historical_cases_checked": 100, "planned": 400}
+{"historical_cases_checked": 110, "planned": 400}
+{"historical_cases_checked": 120, "planned": 400}
+{"historical_cases_checked": 130, "planned": 400}
+{"historical_cases_checked": 140, "planned": 400}
+{"historical_cases_checked": 150, "planned": 400}
+{"historical_cases_checked": 160, "planned": 400}
+{"historical_cases_checked": 170, "planned": 400}
+{"historical_cases_checked": 180, "planned": 400}
+{"historical_cases_checked": 190, "planned": 400}
+{"historical_cases_checked": 200, "planned": 400}
+{"historical_cases_checked": 210, "planned": 400}
+{"historical_cases_checked": 220, "planned": 400}
+{"historical_cases_checked": 230, "planned": 400}
+{"historical_cases_checked": 240, "planned": 400}
+{"historical_cases_checked": 250, "planned": 400}
+{"historical_cases_checked": 260, "planned": 400}
+{"historical_cases_checked": 270, "planned": 400}
+{"historical_cases_checked": 280, "planned": 400}
+{"historical_cases_checked": 290, "planned": 400}
+{"historical_cases_checked": 300, "planned": 400}
+{"historical_cases_checked": 310, "planned": 400}
+{"historical_cases_checked": 320, "planned": 400}
+{"historical_cases_checked": 330, "planned": 400}
+{"historical_cases_checked": 340, "planned": 400}
+{"historical_cases_checked": 350, "planned": 400}
+{"historical_cases_checked": 360, "planned": 400}
+{"historical_cases_checked": 370, "planned": 400}
+{"historical_cases_checked": 380, "planned": 400}
+{"historical_cases_checked": 390, "planned": 400}
+{"historical_cases_checked": 400, "planned": 400}
