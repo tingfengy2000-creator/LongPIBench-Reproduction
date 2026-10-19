@@ -1,0 +1,176 @@
+{
+  "status": "PASS_R4_DESCRIPTIVE_DELIVERABLE_WITH_DECLARED_LIMITS",
+  "input_commit": "1e3f56506a7736fec745936d85c6ed75e71dab11",
+  "receipt_commit": "a7e5e4eea4ea7c800e8f983a6e31928464b2e136",
+  "receipt_file_git_sha256": {
+    "coordination/returns/20261019T152826Z-r4-summary-b6255840/OPEN_ITEMS.md": "b2a62e3b6ff0934bacc96c18eca83242d0a050ef1e0b68848271f11b6d91c189",
+    "coordination/returns/20261019T152826Z-r4-summary-b6255840/R4_REPORT.md": "402f1c97dd0301ceb14114b9eb64ba0f30b834cd8f5806f4b049e0e73d5a2778",
+    "coordination/returns/20261019T152826Z-r4-summary-b6255840/REPORT.md": "7316978a1ea2cdbe0250b08d54a9c122e5a67bd4e056e1213f988afab5768e63",
+    "coordination/returns/20261019T152826Z-r4-summary-b6255840/RESULT_TABLES.md": "dfcfee0bbfe19faceb57d55b97fa1ddb18eaed695f1fe4637ed959d78246c5c1"
+  },
+  "only_four_additions_no_prior_file_changes": true,
+  "retained_source_hashes_verified": 165,
+  "formal_rows_independently_recounted": 400,
+  "groups": {
+    "email:no": {
+      "planned": 100,
+      "r1": {
+        "hits": 0,
+        "valid": 100,
+        "F6": 0
+      },
+      "r2": {
+        "hits": 0,
+        "valid": 97,
+        "F6": 3
+      },
+      "paired": {
+        "n": 97,
+        "r1_hits": 0,
+        "r2_hits": 0,
+        "drop_pp": 0.0,
+        "success_to_failure": 0,
+        "failure_to_success": 0
+      }
+    },
+    "resume:no": {
+      "planned": 100,
+      "r1": {
+        "hits": 82,
+        "valid": 100,
+        "F6": 0
+      },
+      "r2": {
+        "hits": 82,
+        "valid": 100,
+        "F6": 0
+      },
+      "paired": {
+        "n": 100,
+        "r1_hits": 82,
+        "r2_hits": 82,
+        "drop_pp": 0.0,
+        "success_to_failure": 0,
+        "failure_to_success": 0
+      }
+    },
+    "email:authority_spoof": {
+      "planned": 100,
+      "r1": {
+        "hits": 96,
+        "valid": 99,
+        "F6": 1
+      },
+      "r2": {
+        "hits": 15,
+        "valid": 93,
+        "F6": 7
+      },
+      "paired": {
+        "n": 92,
+        "r1_hits": 89,
+        "r2_hits": 15,
+        "drop_pp": 80.43478260869566,
+        "success_to_failure": 74,
+        "failure_to_success": 0
+      }
+    },
+    "resume:authority_spoof": {
+      "planned": 100,
+      "r1": {
+        "hits": 100,
+        "valid": 100,
+        "F6": 0
+      },
+      "r2": {
+        "hits": 100,
+        "valid": 100,
+        "F6": 0
+      },
+      "paired": {
+        "n": 100,
+        "r1_hits": 100,
+        "r2_hits": 100,
+        "drop_pp": 0.0,
+        "success_to_failure": 0,
+        "failure_to_success": 0
+      }
+    }
+  },
+  "existing_wilson95_reconciled": {
+    "email:no": {
+      "r1": [
+        3.469446951953614e-18,
+        0.03699349820698568
+      ],
+      "r2": [
+        0,
+        0.03809404252594769
+      ]
+    },
+    "resume:no": {
+      "r1": [
+        0.7333264161369926,
+        0.8829977450105364
+      ],
+      "r2": [
+        0.7333264161369926,
+        0.8829977450105364
+      ]
+    },
+    "email:authority_spoof": {
+      "r1": [
+        0.9146631979389799,
+        0.9896413604215459
+      ],
+      "r2": [
+        0.1002507837734874,
+        0.24920139541510739
+      ]
+    },
+    "resume:authority_spoof": {
+      "r1": [
+        0.9630065017930143,
+        1
+      ],
+      "r2": [
+        0.9630065017930143,
+        1
+      ]
+    }
+  },
+  "r3_primary_counts": {
+    "F2": 5,
+    "F1": 110
+  },
+  "r3_by_domain": {
+    "email": {
+      "F2": 5,
+      "F1": 10
+    },
+    "resume": {
+      "F1": 100
+    }
+  },
+  "F6": {
+    "r1_parse": 1,
+    "r2_upstream": 10,
+    "nonfinite_calls": 573,
+    "crop_calls": 573,
+    "prior_individually_checked_examples": 50
+  },
+  "resume_visibility_B": 100,
+  "controls_separate_n": 26,
+  "control_sources": 4,
+  "F5_validated": false,
+  "independent_human_review": false,
+  "full573_callwise_overlap_verified": false,
+  "full_remote_raw_locally_read": false,
+  "full_npz_locally_read": false,
+  "new_model_forward": 0,
+  "new_statistical_test": false,
+  "algorithm_development_authorized": false,
+  "strict_paper_reproduction": false,
+  "R0_R4_overall_acceptance": false,
+  "nonblocking_presentation_note": "Existing Wilson intervals are referenced by R4 rather than printed. Numeric intervals are retained here for convenient checking; clean table columns denote goal hits, not task accuracy."
+}
