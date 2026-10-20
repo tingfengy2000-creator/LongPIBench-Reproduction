@@ -1,0 +1,13 @@
+{
+  "channel": "cursor",
+  "annotation_type": "AI_NOT_HUMAN",
+  "reviewer_entrypoint": "Cursor Agent",
+  "model_name": "Grok 4.7",
+  "model_version": "Grok 4.7",
+  "model_version_evidence": "Cursor session system instruction states the assistant is Grok 4.7, a language model trained by SpaceXAI. No separate build number was shown, so the visible name is recorded for both model and version.",
+  "execution_mode": "Cursor agent visible document review; no local detector inference",
+  "detector_scores_seen": false,
+  "proposed_labels_seen": false,
+  "other_reviewer_labels_seen": false,
+  "human_review_performed": false
+}
