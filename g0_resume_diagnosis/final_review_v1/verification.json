@@ -1,0 +1,16 @@
+{
+  "status": "PASS_G0_COMPLETE_WITH_DECLARED_LIMITS_STOP",
+  "source_commit": "a857540235093e302b0644c4aebf38184a6045a9",
+  "source_return_files_preserved": 31,
+  "control_rows_independently_recounted": 26,
+  "frozen_cross_domain_pairs_equal_length": 8,
+  "historical_resume_visibility_rows": 100,
+  "historical_resume_category": "B100",
+  "raw_logit_preview_values_finite": 1300,
+  "full_raw_npz_locally_verified": false,
+  "natural_replay_equal_tokens_and_binary": 4,
+  "new_model_forward_during_review": 0,
+  "algorithm_development_go": false,
+  "stop_after_G0": true,
+  "not_a_population_performance_test": true
+}

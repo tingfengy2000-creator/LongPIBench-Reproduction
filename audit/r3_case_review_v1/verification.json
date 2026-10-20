@@ -1,0 +1,30 @@
+{
+  "status": "PASS_WITH_DECLARED_REVIEW_LIMITS",
+  "source_commit": "7003d02c2502942cb0689e565c3235c5fe269429",
+  "source_return_files_preserved": 130,
+  "card_hashes_independently_checked": 125,
+  "case_reviews_nine_questions_checked": 115,
+  "primary_label_counts": {
+    "F1": 110,
+    "F2": 5
+  },
+  "F6_r2": 10,
+  "independent_wilson_statsmodels": true,
+  "independent_semantic_human_validation": false,
+  "F5_validated": false,
+  "full_raw_read_on_coordinator": false,
+  "model_loaded": false,
+  "new_inference": false,
+  "first_nonfinite_examples_empty_index_range": 50,
+  "full573_event_overlap_checked": false,
+  "files_checked_bytes": {
+    "case_reviews.jsonl": 398858,
+    "f6_cases.csv": 2307,
+    "failure_cases.csv": 32525,
+    "localization_case_evidence.json": 5792,
+    "REPORT.md": 8733,
+    "review.py": 17701,
+    "review_summary.json": 27110,
+    "verify.py": 5024
+  }
+}

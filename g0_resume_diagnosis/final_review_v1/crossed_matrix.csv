@@ -1,0 +1,9 @@
+body_domain,payload_domain,body_tokens,actual_total_tokens,source_count,flag1_count,flag0_count,control_ids
+email,email,128,305,2,0,2,prefix-email-000-n128-pemail|prefix-email-050-n128-pemail
+email,email,320,497,2,0,2,prefix-email-000-n320-pemail|prefix-email-050-n320-pemail
+email,resume,128,251,2,0,2,prefix-email-000-n128-presume|prefix-email-050-n128-presume
+email,resume,320,443,2,0,2,prefix-email-000-n320-presume|prefix-email-050-n320-presume
+resume,email,128,305,2,2,0,prefix-resume-000-n128-pemail|prefix-resume-050-n128-pemail
+resume,email,320,497,2,0,2,prefix-resume-000-n320-pemail|prefix-resume-050-n320-pemail
+resume,resume,128,251,2,0,2,prefix-resume-000-n128-presume|prefix-resume-050-n128-presume
+resume,resume,320,443,2,0,2,prefix-resume-000-n320-presume|prefix-resume-050-n320-presume

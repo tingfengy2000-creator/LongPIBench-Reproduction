@@ -1,0 +1,12 @@
+{
+  "status": "PREPARATION_CHECKS_PASSED_REMOTE_EVIDENCE_PENDING",
+  "unit_tests_passed": 5,
+  "tests_use_real_hash_verified_pure_methods": true,
+  "weights_loaded": false,
+  "model_forward_count": 0,
+  "historical_visibility_cases_verified_locally": 0,
+  "frozen_tracked_files_changed": false,
+  "script_sha256": "b7a6d7af4b3ea52710425cc9b5ebe673c03bb9aca3791083a022ca1f1ad2c6d8",
+  "static_run_id": "20261019T032917Z-g0-visibility-6ea45073",
+  "scope": "Static preparation only, not G0 root-cause completion."
+}

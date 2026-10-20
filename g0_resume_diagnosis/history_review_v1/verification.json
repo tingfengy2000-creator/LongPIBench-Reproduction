@@ -1,0 +1,22 @@
+{
+  "status": "PASS_WITH_MECHANISM_CONTROLS_PENDING",
+  "source_commit": "718c33d8f27e6c11b6552c41a6fccc0cca495541",
+  "source_receipt_files_preserved": 9,
+  "historical_rows_checked": 400,
+  "historical_attack_payload_spans_complete": 200,
+  "resume_root_B": 100,
+  "all200_resume_generated_sequences_identical": true,
+  "all_reported_residual_text_whitespace_only": true,
+  "frozen_control_count": 26,
+  "shared_body_lengths": [
+    128,
+    320
+  ],
+  "cross_domain_pairs_equal_total_tokens": 8,
+  "plan_sha256": "39639607866a6cbc5c2a44be6516c68e9022cf0e4bf3733ade4cc7dc64a442f8",
+  "local_integrity_tests_passed": 5,
+  "real_detector_model_load_count": 0,
+  "new_detector_forward_count": 0,
+  "full_historical_raw_read_on_coordinator": false,
+  "note": "Unit hook test uses a tiny CPU tensor, not a model. No G0 control outcomes exist yet."
+}
