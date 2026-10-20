@@ -1,0 +1,29 @@
+{
+  "status": "TOKENIZATION_ONLY_FULL_COVERAGE_VERIFIED_NOT_SCORED",
+  "n_records": 800,
+  "candidate_model_forwards": 0,
+  "human_labels_still_pending": true,
+  "dataset_sha256": "02c8352e3c5a33dc2af164f321f97e9ba9e7ded48b67ae16663d270dfc18c954",
+  "summary": {
+    "prompt_guard_1": {
+      "n": 400,
+      "token_min": 254,
+      "token_max": 1457,
+      "chunks_distribution": {
+        "1": 100,
+        "2": 186,
+        "3": 114
+      }
+    },
+    "piguard": {
+      "n": 400,
+      "token_min": 204,
+      "token_max": 1138,
+      "chunks_distribution": {
+        "1": 155,
+        "2": 190,
+        "3": 55
+      }
+    }
+  }
+}

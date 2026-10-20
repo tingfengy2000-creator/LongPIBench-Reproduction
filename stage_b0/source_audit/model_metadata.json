@@ -1,0 +1,266 @@
+{
+  "observed_utc": "2026-10-20T01:41:54.150194+00:00",
+  "hostname": "DESKTOP-0JKLMO4",
+  "python": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:09:58) [MSC v.1929 64 bit (AMD64)]",
+  "models": [
+    {
+      "role": "prompt_guard_1",
+      "repo_id": "meta-llama/Prompt-Guard-86M",
+      "requested_revision": "1209add6ca7d9c1d815171b8e5571587fe3e7b03",
+      "files": [
+        {
+          "name": ".gitattributes",
+          "size": 1630,
+          "lfs_sha256": null
+        },
+        {
+          "name": "LICENSE",
+          "size": 7627,
+          "lfs_sha256": null
+        },
+        {
+          "name": "Prompt-Guard-20240715180000.md5",
+          "size": 256,
+          "lfs_sha256": null
+        },
+        {
+          "name": "README.md",
+          "size": 31020,
+          "lfs_sha256": null,
+          "local_file": "stage_b0/source_audit/prompt_guard_1/README.md",
+          "observed_sha256": "d106d152ed01139ded5c88cf3721c944047f6ecbcae1febab976da39c34623c8"
+        },
+        {
+          "name": "USE_POLICY.md",
+          "size": 4691,
+          "lfs_sha256": null
+        },
+        {
+          "name": "config.json",
+          "size": 1031,
+          "lfs_sha256": null,
+          "local_file": "stage_b0/source_audit/prompt_guard_1/config.json",
+          "observed_sha256": "4729879ff68c7766830270d5a4da768a0f8c56406a7aa148ddee8e5ff8cabe91"
+        },
+        {
+          "name": "model.safetensors",
+          "size": 1115271284,
+          "lfs_sha256": "1771712866662626517f2d85057de2d7078389a4c1f0bc93e461bdc4fdae4bd5"
+        },
+        {
+          "name": "prompt_guard_visual.png",
+          "size": 1025309,
+          "lfs_sha256": "f61e7794999818aff5ec5c477b010ce27b8dc34e2649ff20c9c9fe396f78e94b"
+        },
+        {
+          "name": "special_tokens_map.json",
+          "size": 286,
+          "lfs_sha256": null,
+          "local_file": "stage_b0/source_audit/prompt_guard_1/special_tokens_map.json",
+          "observed_sha256": "9463f61e1b109a8eb4688b829260d7c6b1e6dff04c98ff7269bb89e2b92369b9"
+        },
+        {
+          "name": "tokenizer.json",
+          "size": 16331639,
+          "lfs_sha256": "7dbb7b63c76007984d0e58a90ee901ceb5b16c8e78252d36ddcde748b3474a1a"
+        },
+        {
+          "name": "tokenizer_config.json",
+          "size": 1284,
+          "lfs_sha256": null,
+          "local_file": "stage_b0/source_audit/prompt_guard_1/tokenizer_config.json",
+          "observed_sha256": "fbab5e63e411db37631bc9eeaf5c628e9718be610838636ed76ebcc6d7c1f77a"
+        }
+      ],
+      "revision": "1209add6ca7d9c1d815171b8e5571587fe3e7b03",
+      "status": "METADATA_AND_SMALL_SOURCES_FETCHED_NOT_MODEL_LOADED",
+      "seconds": 3.0869583000001057
+    },
+    {
+      "role": "prompt_guard_2",
+      "repo_id": "meta-llama/Llama-Prompt-Guard-2-86M",
+      "requested_revision": null,
+      "files": [
+        {
+          "name": ".gitattributes",
+          "size": 1570,
+          "lfs_sha256": null
+        },
+        {
+          "name": "LICENSE",
+          "size": 7554,
+          "lfs_sha256": null
+        },
+        {
+          "name": "README.md",
+          "size": 19046,
+          "lfs_sha256": null,
+          "local_file": "stage_b0/source_audit/prompt_guard_2/README.md",
+          "observed_sha256": "5d2a3e0c46397609a784a5034dc823da408aa8b5a414828609f32dc18ee16933"
+        },
+        {
+          "name": "USE_POLICY.md",
+          "size": 5796,
+          "lfs_sha256": null
+        },
+        {
+          "name": "checklist.chk",
+          "size": 261,
+          "lfs_sha256": null
+        }
+      ],
+      "revision": "a8ded8e697ce7c355e395a0df51f94adb4a2fd27",
+      "status": "BLOCKED_METADATA_OR_SMALL_FILES",
+      "error_type": "GatedRepoError",
+      "http_status": 403,
+      "seconds": 1.2680432999998175
+    },
+    {
+      "role": "piguard",
+      "repo_id": "leolee99/PIGuard",
+      "requested_revision": null,
+      "files": [
+        {
+          "name": ".gitattributes",
+          "size": 1828,
+          "lfs_sha256": null
+        },
+        {
+          "name": "README.md",
+          "size": 3123,
+          "lfs_sha256": null,
+          "local_file": "stage_b0/source_audit/piguard/README.md",
+          "observed_sha256": "edd81d29d8e2b8f1225afc3602e8be5201903e5c184c65d365534471c82811d0"
+        },
+        {
+          "name": "__init__.py",
+          "size": 35,
+          "lfs_sha256": null,
+          "local_file": "stage_b0/source_audit/piguard/__init__.py",
+          "observed_sha256": "aa4ed85a01d76e54db092e4e9b472c952130af70f93877dcde2abf2b86cfe774"
+        },
+        {
+          "name": "__pycache__/modeling_injecguard.cpython-310.pyc",
+          "size": 1378,
+          "lfs_sha256": null
+        },
+        {
+          "name": "__pycache__/modeling_piguard.cpython-312.pyc",
+          "size": 1794,
+          "lfs_sha256": null
+        },
+        {
+          "name": "added_tokens.json",
+          "size": 23,
+          "lfs_sha256": null
+        },
+        {
+          "name": "assets/NotInject_distribution.png",
+          "size": 79310,
+          "lfs_sha256": null
+        },
+        {
+          "name": "assets/Results.png",
+          "size": 341028,
+          "lfs_sha256": "439a07a1d9a540947bce17885f87dd63f21185df39425298bfe2ccbf323afa10"
+        },
+        {
+          "name": "assets/Visualization.png",
+          "size": 120781,
+          "lfs_sha256": "e2475408b31f72c764ccd1c052dbef17a9d5799150e72973e368f4a771c1979f"
+        },
+        {
+          "name": "assets/figure_performance.png",
+          "size": 485992,
+          "lfs_sha256": "be6d1d1ea76281d85bb04876137aeb4ad79a2f2197fc896af99b6443cdccf4d3"
+        },
+        {
+          "name": "assets/freq.png",
+          "size": 58222,
+          "lfs_sha256": null
+        },
+        {
+          "name": "assets/performance.png",
+          "size": 135100,
+          "lfs_sha256": "789f81cabb14ca3920e024205ab1749cb1c51e9205af25175190dd059468cf6a"
+        },
+        {
+          "name": "assets/visualization_concat.png",
+          "size": 397581,
+          "lfs_sha256": "69004a7eb42e4be2c4760b55bbbd4ae737a6b10c577c157871774593b9b84a02"
+        },
+        {
+          "name": "config.json",
+          "size": 1062,
+          "lfs_sha256": null,
+          "local_file": "stage_b0/source_audit/piguard/config.json",
+          "observed_sha256": "f7ab538357be6b11364e4ad225595fe2a96b64f69506387a04e3cae699bac1d0"
+        },
+        {
+          "name": "inference_examples.py",
+          "size": 606,
+          "lfs_sha256": null,
+          "local_file": "stage_b0/source_audit/piguard/inference_examples.py",
+          "observed_sha256": "9b7d3decab3bbc425892590c24ea08b01da1dad003f64eceb1b13340381d390c"
+        },
+        {
+          "name": "load_model.py",
+          "size": 606,
+          "lfs_sha256": null,
+          "local_file": "stage_b0/source_audit/piguard/load_model.py",
+          "observed_sha256": "9b7d3decab3bbc425892590c24ea08b01da1dad003f64eceb1b13340381d390c"
+        },
+        {
+          "name": "model.safetensors",
+          "size": 737719272,
+          "lfs_sha256": "f90b9806de93b6286cda517300d4b55e5ce2e5ccbf8339dc59be21ca0dd9a25e"
+        },
+        {
+          "name": "modeling_piguard.py",
+          "size": 973,
+          "lfs_sha256": null,
+          "local_file": "stage_b0/source_audit/piguard/modeling_piguard.py",
+          "observed_sha256": "5be806a223cf20c418171a409726110c02a7377d75f22ee6f80d7c72ac0fa529"
+        },
+        {
+          "name": "save_model.py",
+          "size": 415,
+          "lfs_sha256": null,
+          "local_file": "stage_b0/source_audit/piguard/save_model.py",
+          "observed_sha256": "abcfabbd0f795ab4bc55744d45c121c24a447a2d548396f4fa7e4cea434525fe"
+        },
+        {
+          "name": "special_tokens_map.json",
+          "size": 286,
+          "lfs_sha256": null,
+          "local_file": "stage_b0/source_audit/piguard/special_tokens_map.json",
+          "observed_sha256": "9463f61e1b109a8eb4688b829260d7c6b1e6dff04c98ff7269bb89e2b92369b9"
+        },
+        {
+          "name": "spm.model",
+          "size": 132,
+          "lfs_sha256": "f2d17af198445dafd6bd0a85951e2415b1666baa9604abae9b199306fad7486e"
+        },
+        {
+          "name": "tokenizer.json",
+          "size": 8656624,
+          "lfs_sha256": null
+        },
+        {
+          "name": "tokenizer_config.json",
+          "size": 1284,
+          "lfs_sha256": null,
+          "local_file": "stage_b0/source_audit/piguard/tokenizer_config.json",
+          "observed_sha256": "557b3d33d3f41b81ad769244e506549e98a1857d41dd58160aacd4d98d710b5a"
+        }
+      ],
+      "revision": "dd78b24e330193a22d2293ac66922dd4f982f563",
+      "status": "METADATA_AND_SMALL_SOURCES_FETCHED_NOT_MODEL_LOADED",
+      "seconds": 8.518184399999882
+    }
+  ],
+  "custom_code_executed": false,
+  "source_commit": "0e1a8f62c7f4a1fef2f4b82cf0cda046f7725965",
+  "cache_root": "E:\\Caches\\longpibench-b0",
+  "credentials_exposed": false
+}
