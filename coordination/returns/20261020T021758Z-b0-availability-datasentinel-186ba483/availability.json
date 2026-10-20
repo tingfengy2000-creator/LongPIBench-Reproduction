@@ -1,0 +1,14 @@
+{
+  "task_id": "B0-5090-001",
+  "run_id": "20261020T021758Z-b0-availability-datasentinel-186ba483",
+  "role": "datasentinel",
+  "hostname": "DESKTOP-B5PNBNC",
+  "input_commit": "fdb1d72b400da3872a9637624cc06e87fa156e18",
+  "status": "BLOCKED_OR_FAILED",
+  "candidate_scores_computed": 0,
+  "model_controls_only": true,
+  "credentials_exposed": false,
+  "error_type": "AssertionError",
+  "http_status": null,
+  "reason": "Resolved model root must be D/E; preserve existing links"
+}
