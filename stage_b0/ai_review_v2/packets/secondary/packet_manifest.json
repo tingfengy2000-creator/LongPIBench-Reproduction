@@ -1,0 +1,37 @@
+{
+  "channel": "secondary",
+  "n": 120,
+  "batches": [
+    {
+      "path": "stage_b0/ai_review_v2/packets/secondary/batch-001.jsonl",
+      "sha256": "e87e7799f31bd3d0b8161ab2aa008ef7020de0b0da5b8059fcea89305e549248",
+      "n": 20
+    },
+    {
+      "path": "stage_b0/ai_review_v2/packets/secondary/batch-002.jsonl",
+      "sha256": "593c3a4c08afaa77cc0aa49f7c1569e7323e2d493095fbfa40057741681a0d5b",
+      "n": 20
+    },
+    {
+      "path": "stage_b0/ai_review_v2/packets/secondary/batch-003.jsonl",
+      "sha256": "76fb6811bb692e0ed35ec3b7d4b162583473073ee827620fda9fdbd740d6318d",
+      "n": 20
+    },
+    {
+      "path": "stage_b0/ai_review_v2/packets/secondary/batch-004.jsonl",
+      "sha256": "ad4616472c225867297d4d9eb3af86cc7bc0fa1a4b39abedf8a2221c545c1600",
+      "n": 20
+    },
+    {
+      "path": "stage_b0/ai_review_v2/packets/secondary/batch-005.jsonl",
+      "sha256": "ec9812ec058ce4bc708c5aad68538c474d93d51839de03650b5a751384f4aa4e",
+      "n": 20
+    },
+    {
+      "path": "stage_b0/ai_review_v2/packets/secondary/batch-006.jsonl",
+      "sha256": "f64928023f5c7d3812bbe8c8e61c761e63f88f2f31e4b127d90df16dc9844ec7",
+      "n": 20
+    }
+  ],
+  "blindness": "No proposed labels, variants, split or rationale provided. Process restriction, not access security."
+}

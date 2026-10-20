@@ -1,0 +1,107 @@
+{
+  "channel": "cursor",
+  "n": 400,
+  "batches": [
+    {
+      "path": "stage_b0/ai_review_v2/packets/cursor/batch-001.jsonl",
+      "sha256": "20bdc81f9861867b7548929a0ec79c9a0f961bb5644f450170e6437e29b98343",
+      "n": 20
+    },
+    {
+      "path": "stage_b0/ai_review_v2/packets/cursor/batch-002.jsonl",
+      "sha256": "60d352637f33d94bcea2de23f28c3bb441488ac104b2c18214f7b5140981fad6",
+      "n": 20
+    },
+    {
+      "path": "stage_b0/ai_review_v2/packets/cursor/batch-003.jsonl",
+      "sha256": "165871dc4a1e2883d29bb432ca5f433a4ef5b337ff8da054107c6527bc6ef44b",
+      "n": 20
+    },
+    {
+      "path": "stage_b0/ai_review_v2/packets/cursor/batch-004.jsonl",
+      "sha256": "b0076a921fcc8e38f94e922deaf2459c51c53634366bc8472100d5a1d4d9b139",
+      "n": 20
+    },
+    {
+      "path": "stage_b0/ai_review_v2/packets/cursor/batch-005.jsonl",
+      "sha256": "9a31747bbf1fba8082f2d6bf9f113cedbc0d599448d8c00236164e57918924ba",
+      "n": 20
+    },
+    {
+      "path": "stage_b0/ai_review_v2/packets/cursor/batch-006.jsonl",
+      "sha256": "79e1d5efe8abf7a24fc25bac546c7ed32bccf2dcb9d25fc2c20537ce366ce204",
+      "n": 20
+    },
+    {
+      "path": "stage_b0/ai_review_v2/packets/cursor/batch-007.jsonl",
+      "sha256": "163a430581effe7864b886a63158fd6788411ecd9f8d8d9eb31300094b796b84",
+      "n": 20
+    },
+    {
+      "path": "stage_b0/ai_review_v2/packets/cursor/batch-008.jsonl",
+      "sha256": "f88f846900ef7b8fca3063da8ec63e6a8e0354ee6b61c2100e98fa8594fa847a",
+      "n": 20
+    },
+    {
+      "path": "stage_b0/ai_review_v2/packets/cursor/batch-009.jsonl",
+      "sha256": "92a195a08efae9c1199a68c35fdd62ecfaae7aa4619e6cdac331357e43d62136",
+      "n": 20
+    },
+    {
+      "path": "stage_b0/ai_review_v2/packets/cursor/batch-010.jsonl",
+      "sha256": "a575b18c9727005ab9db31079de1f9ac201c4282e7cdca105b56521bec981f5f",
+      "n": 20
+    },
+    {
+      "path": "stage_b0/ai_review_v2/packets/cursor/batch-011.jsonl",
+      "sha256": "956e60c9f6066e20f436ffc56297bfd0df70f06e2e167a8516300c1c56823912",
+      "n": 20
+    },
+    {
+      "path": "stage_b0/ai_review_v2/packets/cursor/batch-012.jsonl",
+      "sha256": "11aca0ac21111df08687be789e08959ee2ec714eda95add471bb61d9f7dfa607",
+      "n": 20
+    },
+    {
+      "path": "stage_b0/ai_review_v2/packets/cursor/batch-013.jsonl",
+      "sha256": "750b383a86ecbbce2ade8eb926233dae92bbc0c8c12f7960a03654e555eb05de",
+      "n": 20
+    },
+    {
+      "path": "stage_b0/ai_review_v2/packets/cursor/batch-014.jsonl",
+      "sha256": "1b7c08cab80dee2cd8de853a7acbdf6e558c2a9f4d08fb2486225c58bf026b20",
+      "n": 20
+    },
+    {
+      "path": "stage_b0/ai_review_v2/packets/cursor/batch-015.jsonl",
+      "sha256": "6daac726b7a5bc408f9f18b0b39e097bdbfb54fd80e9cf2d8a9e1077e3b546c5",
+      "n": 20
+    },
+    {
+      "path": "stage_b0/ai_review_v2/packets/cursor/batch-016.jsonl",
+      "sha256": "a28d6148c7a36628b76717133d0e5b7e25e9af8bffb4daab84c7df2d86247cf4",
+      "n": 20
+    },
+    {
+      "path": "stage_b0/ai_review_v2/packets/cursor/batch-017.jsonl",
+      "sha256": "a2adc9b84305d8b451af237586aeda82e10964f2b08e87b99de38ab71ea0fb99",
+      "n": 20
+    },
+    {
+      "path": "stage_b0/ai_review_v2/packets/cursor/batch-018.jsonl",
+      "sha256": "dce9c88b39881b39466df3a5bbb62b68103eec2e83b2273e0d56701d64abbac9",
+      "n": 20
+    },
+    {
+      "path": "stage_b0/ai_review_v2/packets/cursor/batch-019.jsonl",
+      "sha256": "828c4c80b04006e12ccd75daf72380980357406e563ca14221db1f9f4ecca0d7",
+      "n": 20
+    },
+    {
+      "path": "stage_b0/ai_review_v2/packets/cursor/batch-020.jsonl",
+      "sha256": "a853ecd8cdf218687516add80e5234a677992e800c309a7f43f64a9f16cf6b18",
+      "n": 20
+    }
+  ],
+  "blindness": "No proposed labels, variants, split or rationale provided. Process restriction, not access security."
+}

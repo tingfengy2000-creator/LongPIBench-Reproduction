@@ -1,0 +1,22 @@
+{
+  "status": "BLIND_PACKET_AND_APPEND_ONLY_POLICY_VALIDATED_NO_REVIEWS_YET",
+  "cursor_cases": 400,
+  "fixed_secondary_cases": 120,
+  "public_packet_fields": [
+    "review_id",
+    "trusted_task",
+    "untrusted_document",
+    "text_sha256"
+  ],
+  "packet_batches": 26,
+  "old_preparation_files_preserved": 47,
+  "historical_files_preserved": 729,
+  "ai_reviews_completed": 0,
+  "human_reviews_completed": 0,
+  "candidate_scores_computed": 0,
+  "unit_tests_passed": 6,
+  "human_signoff_fabricated": false,
+  "v1_scoring_gate_unchanged": true,
+  "exploratory_policy_v2_added": true,
+  "gpu_path_fix_executed": false
+}
