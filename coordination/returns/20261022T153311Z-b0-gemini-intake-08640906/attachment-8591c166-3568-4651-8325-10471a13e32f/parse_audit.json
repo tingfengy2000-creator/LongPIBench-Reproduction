@@ -1,0 +1,8 @@
+{
+  "line_number": 20,
+  "error": "Unterminated string starting at",
+  "review_id": "item-2ba621b87832e4b404a9",
+  "text_sha256": "687f088984d972b40b67f6047db10bccef13a91282aad9b31bacaa87803cdd72",
+  "accepted_as_review": false,
+  "raw_line": "{\"review_id\":\"item-2ba621b87832e4b404a9\",\"text_sha256\":\"687f088984d972b40b67f6047db10bccef13a91282aad9b31bacaa87803cdd72\",\"ai_label\":0,\"role\":\"quotation\",\""
+}
