@@ -1,0 +1,14 @@
+{
+  "channel": "secondary",
+  "annotation_type": "AI_NOT_HUMAN",
+  "reviewer_entrypoint": "Gemini (user-reported; exact web or Windows entrypoint not supplied)",
+  "model_name": "unknown",
+  "model_version": "unknown",
+  "model_version_evidence": "Not supplied by user yet; do not infer from generated text",
+  "execution_mode": "User-pasted visible batch response",
+  "detector_scores_seen": null,
+  "proposed_labels_seen": null,
+  "other_reviewer_labels_seen": null,
+  "human_review_performed": false,
+  "metadata_status": "PENDING_USER_MODEL_AND_BLINDNESS_DETAILS"
+}

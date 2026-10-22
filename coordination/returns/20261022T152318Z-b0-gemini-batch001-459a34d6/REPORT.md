@@ -1,0 +1,15 @@
+# Gemini第1批原始回传接收
+
+状态：GEMINI_BATCH_RECORDS_ACCEPTED_AFTER_MECHANICAL_NORMALIZATION_METADATA_PENDING。
+
+20条唯一ID和text_sha256全部对应原固定batch-001，schema/角色/标签通过。原始附件按字节完整保存在raw_response.txt，SHA见verification.json。
+
+其中5处evidence包含额外的字面反斜杠引号，不能通过原文子串检查。仅对这些evidence移除一层反斜杠，并要求修正后整段引文在原输入恰好出现一次。前后值、字符区间及规则保存normalization_audit.json；其余字段包括label、role、reason、confidence和ID/摘要均未改变。规范化结果另存，不覆盖原回答，也没有改变旧验证器。
+
+本批20条引文与结构接收不证明标签语义全部正确，也不等于全部120条已收齐。未生成最终AI标签冻结或human_signoff，未运行检测模型/业务任务。
+
+Gemini具体型号/版本、实际入口，以及是否仅看过盲审附件尚未由用户提供，均标pending/unknown，不代填为false或假造版本。因此本批不是完整的metadata验收；待后续统一补齐，不要求用户重审已完成标签。
+
+可继续第2–6批新对话；不得把Cursor结果、建议标签或本接收报告交给Gemini。为避免后续格式转义问题，提示evidence应写文档实际字符，双引号仅做标准JSON转义，勿保留输入JSON的额外编码层。
+
+只读复核：python stage_b0/ai_review_v2/import_gemini_batch.py --verify-return coordination/returns/20261022T152318Z-b0-gemini-batch001-459a34d6

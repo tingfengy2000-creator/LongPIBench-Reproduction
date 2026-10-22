@@ -1,0 +1,2 @@
+# User-supplied raw evidence must retain its original bytes and whitespace.
+raw_response.txt -text -whitespace

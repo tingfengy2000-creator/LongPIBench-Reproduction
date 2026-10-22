@@ -1,0 +1,25 @@
+{
+  "status": "GEMINI_BATCH_RECORDS_ACCEPTED_AFTER_MECHANICAL_NORMALIZATION_METADATA_PENDING",
+  "task_id": "B0-GEMINI-001",
+  "run_id": "20261022T152318Z-b0-gemini-batch001-459a34d6",
+  "batch_number": 1,
+  "input_commit": "8c830b836acdd0ec7494797bf8640e9a010d0447",
+  "source_attachment": "C:\\Users\\Admin\\.codex\\attachments\\3c993f6c-1096-40ae-827e-65839bfe1ee0\\已粘贴的文本.txt",
+  "raw_response_sha256": "f1df488b64f30acbf2bd638f59ad49445b9b7aff8022f2ea415929040b15ccff",
+  "normalized_reviews_sha256": "9e806042bca46873a56484a386f86b669842a9b7514dc96141570ad246dfe589",
+  "original_batch_path": "stage_b0/ai_review_v2/packets/secondary/batch-001.jsonl",
+  "original_batch_sha256": "e87e7799f31bd3d0b8161ab2aa008ef7020de0b0da5b8059fcea89305e549248",
+  "batch_validation": {
+    "n": 20,
+    "n_uncertain": 0,
+    "n_ambiguous": 0,
+    "complete": true
+  },
+  "literal_evidence_repairs": 5,
+  "labels_and_reasons_changed": false,
+  "all120_secondary_complete": false,
+  "model_identity_confirmed": false,
+  "blindness_confirmed": false,
+  "human_gold": false,
+  "detector_scores_computed": 0
+}
