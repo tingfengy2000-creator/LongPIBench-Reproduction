@@ -1,0 +1,20 @@
+{
+  "channel": "secondary",
+  "annotation_type": "AI_NOT_HUMAN",
+  "reviewer_entrypoint": "Gemini user-operated interface; web or Windows entrypoint unspecified",
+  "model_name": "Gemini 3.1 Pro",
+  "model_version": "3.1 Pro (displayed name; service build unknown)",
+  "model_version_evidence": "User reports UI displays 3.1pro; no independent build verification",
+  "execution_mode": "User-pasted visible batch responses",
+  "proposed_labels_seen": false,
+  "other_reviewer_labels_seen": false,
+  "detector_scores_seen": false,
+  "human_review_performed": false,
+  "user_statement": "gemini显示3.1pro 确认没有给它看过 Cursor 回答或预设标签。",
+  "blindness_provenance": "User declaration; not independently observed or technically enforced",
+  "detector_score_provenance": "Workflow: no B0 candidate detector scoring has been executed; no scores in blind packets",
+  "statement_received_local_date": "2026-10-23",
+  "independent_model_build_verified": false,
+  "applies_to": "All six fixed secondary batches plus user-supplied completion of batch 005",
+  "completion_provenance": "User response to missing-record request; same 20-row batch, first 19 records unchanged"
+}

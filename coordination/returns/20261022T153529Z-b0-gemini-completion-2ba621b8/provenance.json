@@ -1,0 +1,11 @@
+{
+  "source_type": "USER_PASTED_QUESTION_REPLY_TEXT",
+  "question_item_id": "[\"request_user_input_async\",\"call_f978330c0f384378971fb46654ec4f3c\",0]",
+  "raw_response_representation": "Verbatim decoded user answer saved as UTF-8 text with line breaks; not original transport bytes",
+  "raw_response_sha256": "bce2ff1d5ebf119dfd78c85c908c00fb57333bb5fdfacdcbd0b1d3efa819ad7b",
+  "repeated_complete_records_unchanged": 19,
+  "previously_truncated_record_completed": "item-2ba621b87832e4b404a9",
+  "new_model_review_requested": false,
+  "previous_intake": "coordination/returns/20261022T153311Z-b0-gemini-intake-08640906",
+  "input_commit": "b0aefb7ec8b4a2665a7576fd5f4d2bb531b6f54b"
+}

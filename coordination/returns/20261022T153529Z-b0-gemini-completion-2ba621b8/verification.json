@@ -1,0 +1,291 @@
+{
+  "status": "EXPLORATORY_AI_LABELS_FROZEN",
+  "primary_reviews": 400,
+  "secondary_reviews": 120,
+  "mandatory_second_reviews": 120,
+  "secondary_complete": true,
+  "resubmitted_batch5_previously_complete_records_unchanged": 19,
+  "newly_completed_record": "item-2ba621b87832e4b404a9",
+  "secondary_label_agreement_n": 120,
+  "secondary_role_agreement_n": 120,
+  "secondary_agreement_denominator": 120,
+  "agreement_is_accuracy": false,
+  "label_counts": {
+    "0": 160,
+    "1": 240
+  },
+  "label_status_counts": {
+    "AI_SINGLE_REVIEW_PROVISIONAL": 280,
+    "AI_AGREEMENT_PROVISIONAL": 120
+  },
+  "effective_vs_proposed_disagreements": 0,
+  "per_group": [
+    {
+      "domain": "email",
+      "split": "development",
+      "variant": "ordinary",
+      "n": 24,
+      "label_counts": {
+        "0": 24
+      },
+      "review_status_counts": {
+        "AI_SINGLE_REVIEW_PROVISIONAL": 22,
+        "AI_AGREEMENT_PROVISIONAL": 2
+      }
+    },
+    {
+      "domain": "email",
+      "split": "development",
+      "variant": "hard_benign",
+      "n": 24,
+      "label_counts": {
+        "0": 24
+      },
+      "review_status_counts": {
+        "AI_AGREEMENT_PROVISIONAL": 24
+      }
+    },
+    {
+      "domain": "email",
+      "split": "development",
+      "variant": "authority_spoof",
+      "n": 24,
+      "label_counts": {
+        "1": 24
+      },
+      "review_status_counts": {
+        "AI_SINGLE_REVIEW_PROVISIONAL": 22,
+        "AI_AGREEMENT_PROVISIONAL": 2
+      }
+    },
+    {
+      "domain": "email",
+      "split": "development",
+      "variant": "output_manipulation",
+      "n": 24,
+      "label_counts": {
+        "1": 24
+      },
+      "review_status_counts": {
+        "AI_SINGLE_REVIEW_PROVISIONAL": 22,
+        "AI_AGREEMENT_PROVISIONAL": 2
+      }
+    },
+    {
+      "domain": "email",
+      "split": "development",
+      "variant": "private_context_exfiltration",
+      "n": 24,
+      "label_counts": {
+        "1": 24
+      },
+      "review_status_counts": {
+        "AI_SINGLE_REVIEW_PROVISIONAL": 22,
+        "AI_AGREEMENT_PROVISIONAL": 2
+      }
+    },
+    {
+      "domain": "email",
+      "split": "exploratory_holdout",
+      "variant": "ordinary",
+      "n": 16,
+      "label_counts": {
+        "0": 16
+      },
+      "review_status_counts": {
+        "AI_AGREEMENT_PROVISIONAL": 3,
+        "AI_SINGLE_REVIEW_PROVISIONAL": 13
+      }
+    },
+    {
+      "domain": "email",
+      "split": "exploratory_holdout",
+      "variant": "hard_benign",
+      "n": 16,
+      "label_counts": {
+        "0": 16
+      },
+      "review_status_counts": {
+        "AI_AGREEMENT_PROVISIONAL": 16
+      }
+    },
+    {
+      "domain": "email",
+      "split": "exploratory_holdout",
+      "variant": "authority_spoof",
+      "n": 16,
+      "label_counts": {
+        "1": 16
+      },
+      "review_status_counts": {
+        "AI_AGREEMENT_PROVISIONAL": 3,
+        "AI_SINGLE_REVIEW_PROVISIONAL": 13
+      }
+    },
+    {
+      "domain": "email",
+      "split": "exploratory_holdout",
+      "variant": "output_manipulation",
+      "n": 16,
+      "label_counts": {
+        "1": 16
+      },
+      "review_status_counts": {
+        "AI_AGREEMENT_PROVISIONAL": 3,
+        "AI_SINGLE_REVIEW_PROVISIONAL": 13
+      }
+    },
+    {
+      "domain": "email",
+      "split": "exploratory_holdout",
+      "variant": "private_context_exfiltration",
+      "n": 16,
+      "label_counts": {
+        "1": 16
+      },
+      "review_status_counts": {
+        "AI_AGREEMENT_PROVISIONAL": 3,
+        "AI_SINGLE_REVIEW_PROVISIONAL": 13
+      }
+    },
+    {
+      "domain": "resume",
+      "split": "development",
+      "variant": "ordinary",
+      "n": 24,
+      "label_counts": {
+        "0": 24
+      },
+      "review_status_counts": {
+        "AI_SINGLE_REVIEW_PROVISIONAL": 22,
+        "AI_AGREEMENT_PROVISIONAL": 2
+      }
+    },
+    {
+      "domain": "resume",
+      "split": "development",
+      "variant": "hard_benign",
+      "n": 24,
+      "label_counts": {
+        "0": 24
+      },
+      "review_status_counts": {
+        "AI_AGREEMENT_PROVISIONAL": 24
+      }
+    },
+    {
+      "domain": "resume",
+      "split": "development",
+      "variant": "authority_spoof",
+      "n": 24,
+      "label_counts": {
+        "1": 24
+      },
+      "review_status_counts": {
+        "AI_SINGLE_REVIEW_PROVISIONAL": 22,
+        "AI_AGREEMENT_PROVISIONAL": 2
+      }
+    },
+    {
+      "domain": "resume",
+      "split": "development",
+      "variant": "output_manipulation",
+      "n": 24,
+      "label_counts": {
+        "1": 24
+      },
+      "review_status_counts": {
+        "AI_SINGLE_REVIEW_PROVISIONAL": 22,
+        "AI_AGREEMENT_PROVISIONAL": 2
+      }
+    },
+    {
+      "domain": "resume",
+      "split": "development",
+      "variant": "private_context_exfiltration",
+      "n": 24,
+      "label_counts": {
+        "1": 24
+      },
+      "review_status_counts": {
+        "AI_SINGLE_REVIEW_PROVISIONAL": 22,
+        "AI_AGREEMENT_PROVISIONAL": 2
+      }
+    },
+    {
+      "domain": "resume",
+      "split": "exploratory_holdout",
+      "variant": "ordinary",
+      "n": 16,
+      "label_counts": {
+        "0": 16
+      },
+      "review_status_counts": {
+        "AI_AGREEMENT_PROVISIONAL": 3,
+        "AI_SINGLE_REVIEW_PROVISIONAL": 13
+      }
+    },
+    {
+      "domain": "resume",
+      "split": "exploratory_holdout",
+      "variant": "hard_benign",
+      "n": 16,
+      "label_counts": {
+        "0": 16
+      },
+      "review_status_counts": {
+        "AI_AGREEMENT_PROVISIONAL": 16
+      }
+    },
+    {
+      "domain": "resume",
+      "split": "exploratory_holdout",
+      "variant": "authority_spoof",
+      "n": 16,
+      "label_counts": {
+        "1": 16
+      },
+      "review_status_counts": {
+        "AI_AGREEMENT_PROVISIONAL": 3,
+        "AI_SINGLE_REVIEW_PROVISIONAL": 13
+      }
+    },
+    {
+      "domain": "resume",
+      "split": "exploratory_holdout",
+      "variant": "output_manipulation",
+      "n": 16,
+      "label_counts": {
+        "1": 16
+      },
+      "review_status_counts": {
+        "AI_SINGLE_REVIEW_PROVISIONAL": 13,
+        "AI_AGREEMENT_PROVISIONAL": 3
+      }
+    },
+    {
+      "domain": "resume",
+      "split": "exploratory_holdout",
+      "variant": "private_context_exfiltration",
+      "n": 16,
+      "label_counts": {
+        "1": 16
+      },
+      "review_status_counts": {
+        "AI_SINGLE_REVIEW_PROVISIONAL": 13,
+        "AI_AGREEMENT_PROVISIONAL": 3
+      }
+    }
+  ],
+  "original_intake_total_evidence_normalizations": 13,
+  "resubmission_evidence_normalizations": 0,
+  "old_partial_receipts_preserved": true,
+  "historical_hash_checks_passed": true,
+  "existing_label_gate_passed": true,
+  "human_gold": false,
+  "human_review_complete": false,
+  "independent_model_builds_verified": false,
+  "is_formal_paper_experiment": false,
+  "detector_scores_computed": 0,
+  "main_modified": false
+}
