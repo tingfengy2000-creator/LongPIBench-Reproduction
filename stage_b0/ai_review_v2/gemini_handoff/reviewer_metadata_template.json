@@ -1,0 +1,13 @@
+{
+  "channel": "secondary",
+  "annotation_type": "AI_NOT_HUMAN",
+  "reviewer_entrypoint": "Gemini (fill actual web or Windows entrypoint)",
+  "model_name": "unknown",
+  "model_version": "unknown",
+  "model_version_evidence": "FILL actual UI evidence or explain version is not shown",
+  "execution_mode": "User-operated Gemini visible blind review; no detector inference",
+  "detector_scores_seen": false,
+  "proposed_labels_seen": false,
+  "other_reviewer_labels_seen": false,
+  "human_review_performed": false
+}

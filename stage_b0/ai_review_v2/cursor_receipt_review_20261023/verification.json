@@ -1,0 +1,45 @@
+{
+  "status": "CURSOR_FIRST_REVIEW_RECEIPT_ACCEPTED_STRUCTURE_ONLY_SECOND_REVIEW_PENDING",
+  "source_commit": "2ed81a2cc5fb2caebf1659ab89e78811ee7940e1",
+  "source_run_id": "20261020T153853Z-b0-cursor-label-review-83657036",
+  "source_blob_sha256": {
+    "coordination/returns/20261020T153853Z-b0-cursor-label-review-83657036/REPORT.md": "8bd90096e04f679b3c41cf7ab29978547da7e60e7f54d9471279cce3789a6376",
+    "coordination/returns/20261020T153853Z-b0-cursor-label-review-83657036/reviewer_metadata.json": "1b4edb92a080a22c97bcef9d48125561089504fe508677d658379712dfd8dfe4",
+    "coordination/returns/20261020T153853Z-b0-cursor-label-review-83657036/reviews.jsonl": "3e4583bf8808081398eb937f6c28c4807ede1250e67561d8ff5910be370b61c7"
+  },
+  "source_only_three_additions": true,
+  "coverage": {
+    "n": 400,
+    "n_uncertain": 0,
+    "n_ambiguous": 0,
+    "complete": true
+  },
+  "label_counts": {
+    "0": 160,
+    "1": 240
+  },
+  "role_counts": {
+    "quotation": 80,
+    "attack": 240,
+    "data": 80
+  },
+  "confidence_counts": {
+    "high": 400
+  },
+  "nonempty_literal_evidence_checked": 320,
+  "proposed_label_agreement": 400,
+  "agreement_denominator": 400,
+  "agreement_is_accuracy": false,
+  "second_review_required": 120,
+  "second_review_received": 0,
+  "reviewer_declared_model": "Grok 4.7",
+  "reviewer_declared_version": "Grok 4.7",
+  "model_identity_evidence": "Cursor session system instruction states the assistant is Grok 4.7, a language model trained by SpaceXAI. No separate build number was shown, so the visible name is recorded for both model and version.",
+  "independent_model_build_verified": false,
+  "blindness_declared_not_independently_proven": true,
+  "independent_human_review": false,
+  "coordinator_independent_semantic_review_of_all400": false,
+  "B0_detector_scores_computed_in_this_review": 0,
+  "labels_frozen_for_scoring": false,
+  "next_fixed_secondary_entrypoint": "Gemini per user selection 2026-10-23"
+}
