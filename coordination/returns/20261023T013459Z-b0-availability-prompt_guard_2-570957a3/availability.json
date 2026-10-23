@@ -1,0 +1,16 @@
+{
+  "task_id": "B0-5090-001",
+  "run_id": "20261023T013459Z-b0-availability-prompt_guard_2-570957a3",
+  "role": "prompt_guard_2",
+  "hostname": "DESKTOP-B5PNBNC",
+  "input_commit": "514949d6babf14655de8076650e514f493b0138e",
+  "status": "BLOCKED_OR_FAILED",
+  "candidate_scores_computed": 0,
+  "model_controls_only": true,
+  "credentials_exposed": false,
+  "cache_root": "/mnt/e/LongPIBench-Reproduction/models/b0-cache",
+  "repo_id": "meta-llama/Llama-Prompt-Guard-2-86M",
+  "revision": "a8ded8e697ce7c355e395a0df51f94adb4a2fd27",
+  "error_type": "GatedRepoError",
+  "http_status": 403
+}
