@@ -1,0 +1,37 @@
+{
+  "task_id": "B0-5090-005",
+  "status": "FROZEN_RECOVERY_NOT_EXECUTED",
+  "source_004_commit": "204867e8af93f285657905c80f0c5a01e4acef36",
+  "base_execution_plan_sha256": "2871bfef7c03b37c372d9c9e07f9b72c7f0a6abdeeb24e874d095fbfc140ef4d",
+  "serial_roles": [
+    "datasentinel",
+    "llama"
+  ],
+  "source_cached_records": 800,
+  "new_planned_records": 1200,
+  "engineering_patch": "Typed NF4 guard, pre-assertion structure dump and named traceback locations only",
+  "historical_failure_cause_confirmed": false,
+  "models_or_inference_parameters_changed": false,
+  "old_collector_and_plan_modified": false,
+  "holdout_metrics_computed": false,
+  "file_sha256": {
+    "coordination/returns/20261023T034320Z-b0-scores-23f075cc/collection_run.json": "77b5c0980bedf49fc63e459171dbeb07ebc3dee8bb3d39d9e9b012e79521118e",
+    "coordination/returns/20261023T034320Z-b0-scores-23f075cc/datasentinel_collection.json": "ffe77d8a5c04bd290524edc892233d4b42c9c100f15e9196c1df4cb15d6fb635",
+    "coordination/returns/20261023T034320Z-b0-scores-23f075cc/piguard_collection.json": "f505ee44e8e98ed5f4969ae0c9ba348357bd98896f292b30e8abc3f17fec36e6",
+    "coordination/returns/20261023T034320Z-b0-scores-23f075cc/prompt_guard_1_collection.json": "e10ad1bd01ef02d219837085682eac4f0a83565c628ef1461602363997d64b88",
+    "coordination/returns/20261023T034320Z-b0-scores-23f075cc/REPORT.md": "3197aa28875cdc279e687da3136f2e84e5218cb635a88a2475ca881f619192aa",
+    "stage_b0/recovery_005/build_collector_variant.py": "35641ee58a86ef5555c458dac15ed3c641590063c03e2747004c893c1ceb2ac7",
+    "stage_b0/recovery_005/cached_scores.py": "56791ebe9862865d50033382576abae56cd395f1545b991a0d8dd664ebcf7531",
+    "stage_b0/recovery_005/collect_005.py": "fd42723bbb67635ce297f93b50a68b9f65c9734b81a7588fd18db6eddcd3aa77",
+    "stage_b0/recovery_005/collector_004_to_005.diff": "7ca7bfd6a4fe710349ca3b88d83ecd442de6f208c653124c708c947b03f91a1a",
+    "stage_b0/recovery_005/contract.py": "da78e31d9e52daf7a289380b2d2618708286028ce7c7ac21bd7af78b6c857880",
+    "stage_b0/recovery_005/derivation.json": "0c1d90c3ca9ad4292a631dd0e68c2bd2f1be58f929082ad84bb1dc63e64e8fd4",
+    "stage_b0/recovery_005/freeze_recovery.py": "77dae27cf7607185d380ed657c423753945ba1a4852518ff14a42f0c8b39a3bc",
+    "stage_b0/recovery_005/quant_audit.py": "c3b574dc312d650ce153612ee8fd24fcc7ba028c2ffa94004e6e417d561fb0f6",
+    "stage_b0/recovery_005/receipt_review.json": "4f60f576c9b9d5c47683bb9f61fd57dc0e75c316c0828119c380673a18ba9200",
+    "stage_b0/recovery_005/REPORT.md": "4e459b91be3b7c3778aed0299e071a9df509d15dc6d0731af6fb8179136c71f9",
+    "stage_b0/recovery_005/review_004.py": "deddb6dda0dfd7a5e161657cda69f5d9f1be0ae8c170b3b06e6b9c029058eec6",
+    "stage_b0/recovery_005/run_remaining.py": "0cd9b8329361ab88a05d0fcd6239f146412b00ea3baf2300bc6aae63d6cca0bd",
+    "stage_b0/recovery_005/test_recovery.py": "3354d43c796fbc69d6dc0fa460397663265423b76349dc0853f61db6af243604"
+  }
+}

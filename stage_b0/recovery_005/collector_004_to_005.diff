@@ -1,0 +1,66 @@
+--- frozen004/collect.py
++++ recovery005/collect_005.py
+@@ -1,4 +1,7 @@
+ """One fresh-process B0 scoring role. Never computes metrics or chooses thresholds."""
++import sys
++from pathlib import Path
++sys.path.insert(0, str(Path(__file__).resolve().parents[1]/"scoring_v2"))
+ import argparse
+ from collections import Counter
+ from datetime import datetime, timezone
+@@ -132,11 +135,13 @@
+     core = load_opi_core(); start = time.perf_counter()
+     whole = core.DataSentinelDetector(frozen['model_config'])
+     torch.cuda.synchronize()
+-    assert whole.model.ft_model.active_adapters == ['default']
+-    assert whole.model.ft_model.generation_config.to_dict() == frozen['saved_generation_defaults']
+-    nf4 = [m for m in whole.model.base_model.modules() if type(m).__name__ == 'Linear4bit']
+-    assert len(nf4) == 224
+-    assert all(m.weight.quant_state is not None and m.compute_dtype == torch.bfloat16 for m in nf4)
++    import bitsandbytes as bnb
++    from quant_audit import inspect_structure
++    structure = inspect_structure(whole, frozen['saved_generation_defaults'], bnb, torch)
++    report['loaded_structure_audit'] = structure
++    save(raw/'loaded_structure_audit.json', structure)
++    if structure['failed_checks']:
++        raise AssertionError('DATASENTINEL_STRUCTURE_CHECK_FAILED:'+','.join(structure['failed_checks']))
+     report.update(load_seconds=time.perf_counter()-start, model_configuration=frozen['model_config'],
+                   generation_defaults=frozen['saved_generation_defaults'], model_files=accepted['model_audit']['actual_fixed_files_sha256_verified'],
+                   score_semantics='Original binary detect only; no risk probability', device=torch.cuda.get_device_name(0))
+@@ -276,10 +281,12 @@
+ 
+ def main():
+     ap = argparse.ArgumentParser(description=__doc__)
+-    ap.add_argument('--role', choices=['piguard', 'prompt_guard_1', 'datasentinel', 'llama'], required=True)
++    ap.add_argument('--role', choices=['datasentinel', 'llama'], required=True)
+     ap.add_argument('--job', type=Path, required=True)
+     args = ap.parse_args()
+-    plan, rows = load_inputs()  # Must precede network/torch/output creation.
++    plan, rows = load_inputs()  # Original004 condition remains frozen.
++    from contract import verify_contract
++    verify_contract()
+     job = args.job.resolve(strict=True)
+     job_spec = json.loads((job/'job.json').read_text(encoding='utf8'))
+     assert job_spec['execution_plan_sha256'] == sha(PLAN)
+@@ -291,7 +298,8 @@
+         target = cache/part; target.mkdir(parents=True, exist_ok=True); os.environ[key] = str(target)
+     os.environ['CUDA_VISIBLE_DEVICES'] = '0'
+     raw = job/args.role; raw.mkdir(exist_ok=False)
+-    report = {'status': 'STARTED', 'role': args.role, 'raw_directory': str(raw), 'start_utc': datetime.now(timezone.utc).isoformat(),
++    report = {'task_id': 'B0-5090-005', 'recovery_contract_sha256': sha(Path(__file__).with_name('recovery_contract.json')),
++              'status': 'STARTED', 'role': args.role, 'raw_directory': str(raw), 'start_utc': datetime.now(timezone.utc).isoformat(),
+               'is_formal_paper_experiment': False, 'human_gold': False, 'execution_plan_sha256': sha(PLAN),
+               'models_scores_not_used_for_labels': True, 'planned_records': 800 if args.role == 'llama' else 400}
+     save(raw/'start.json', report)
+@@ -315,7 +323,10 @@
+         code = 2 if status in [401, 403] else 3
+         report.update(status='BLOCKED_MODEL_ACCESS' if code == 2 else 'FAILED_STOP_REVIEW',
+                       error_type=type(exc).__name__, http_status=status)
+-        # No HTTP objects, credential-bearing URLs, exception dumps or automatic retries.
++        import traceback
++        report['error_frames'] = [{'file': Path(f.filename).name, 'line': f.lineno, 'function': f.name}
++                                  for f in traceback.extract_tb(exc.__traceback__)]
++        # No HTTP objects, credential-bearing URLs or automatic retries.
+         if isinstance(exc, AssertionError):
+             report['assertion_reason'] = str(exc)[:300]
+     report['record_counts'] = dict(Counter(report.pop('record_validities', [])))

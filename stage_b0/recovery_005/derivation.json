@@ -1,0 +1,14 @@
+{
+  "base_source": "stage_b0/scoring_v2/collect.py",
+  "base_sha256": "e8bdc13a1c6f6bca72a98a20e19ad309b60e9a9f59839eace1df756c65a2ba34",
+  "base_execution_plan_sha256": "2871bfef7c03b37c372d9c9e07f9b72c7f0a6abdeeb24e874d095fbfc140ef4d",
+  "derived_sha256": "fd42723bbb67635ce297f93b50a68b9f65c9734b81a7588fd18db6eddcd3aa77",
+  "diff_sha256": "7ca7bfd6a4fe710349ca3b88d83ecd442de6f208c653124c708c947b03f91a1a",
+  "changed_functions": [
+    "collect_datasentinel",
+    "main"
+  ],
+  "llama_function_ast_identical": true,
+  "datasentinel_inference_change": "Only pre-forward structure verification replaced; query/generation/window/threshold unchanged",
+  "normalization": "Source derivation uses LF; original source bytes preserved"
+}

@@ -1,0 +1,13 @@
+{
+  "status": "RECOVERY005_PREPARATION_VALIDATED_NOT_GPU_EXECUTED",
+  "unit_tests_passed": 36,
+  "static_recovery_gate_passed": true,
+  "original004_frozen_sources_unchanged": true,
+  "historical_hash_checks_passed": true,
+  "recovery_contract_sha256": "4a45fb55456fb0dbd200c47c542ea5dfbea2206990c8b85c415c7ea3fb972f35",
+  "base_execution_plan_sha256": "2871bfef7c03b37c372d9c9e07f9b72c7f0a6abdeeb24e874d095fbfc140ef4d",
+  "models_loaded_or_forwarded_in_preparation": 0,
+  "cached800_raw_verified_locally": false,
+  "new_datasentinel_structure_measured_on5090": false,
+  "historical_failure_guard_exact_line_known": false
+}

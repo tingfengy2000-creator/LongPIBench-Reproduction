@@ -1,0 +1,36 @@
+{
+  "status": "B0_004_PARTIAL_RECEIPT_ACCEPTED_RAW_VERIFICATION_REQUIRED",
+  "source_commit": "204867e8af93f285657905c80f0c5a01e4acef36",
+  "source_sha256": {
+    "coordination/returns/20261023T034320Z-b0-scores-23f075cc/REPORT.md": "3197aa28875cdc279e687da3136f2e84e5218cb635a88a2475ca881f619192aa",
+    "coordination/returns/20261023T034320Z-b0-scores-23f075cc/collection_run.json": "77b5c0980bedf49fc63e459171dbeb07ebc3dee8bb3d39d9e9b012e79521118e",
+    "coordination/returns/20261023T034320Z-b0-scores-23f075cc/datasentinel_collection.json": "ffe77d8a5c04bd290524edc892233d4b42c9c100f15e9196c1df4cb15d6fb635",
+    "coordination/returns/20261023T034320Z-b0-scores-23f075cc/piguard_collection.json": "f505ee44e8e98ed5f4969ae0c9ba348357bd98896f292b30e8abc3f17fec36e6",
+    "coordination/returns/20261023T034320Z-b0-scores-23f075cc/prompt_guard_1_collection.json": "e10ad1bd01ef02d219837085682eac4f0a83565c628ef1461602363997d64b88"
+  },
+  "roles": {
+    "piguard": {
+      "candidate_records_saved": 400,
+      "record_counts": {
+        "VALID": 400
+      }
+    },
+    "prompt_guard_1": {
+      "candidate_records_saved": 400,
+      "record_counts": {
+        "VALID": 400
+      }
+    },
+    "datasentinel": {
+      "candidate_records_saved": 0,
+      "record_counts": {}
+    }
+  },
+  "llama_started": false,
+  "supervisor_exit_code": 3,
+  "cached_classifier_records": 800,
+  "cached_raw_independently_read_on_coordinator": false,
+  "new_performance_metrics_computed": false,
+  "nf4_class_name_collision": "Static defect identified; historical failing guard not recorded",
+  "historical_model_or_data_modified": false
+}
