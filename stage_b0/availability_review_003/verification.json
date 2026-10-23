@@ -1,0 +1,53 @@
+{
+  "status": "B0_003_PARTIAL_AVAILABILITY_ACCEPTED_PG2_BLOCKED",
+  "source_commit": "04cc5a879ed9e54800886ae4fc978e7020d71cbc",
+  "input_commit": "514949d6babf14655de8076650e514f493b0138e",
+  "source_sha256": {
+    "coordination/returns/20261023T013459Z-b0-availability-prompt_guard_2-570957a3/availability.json": "3749882330d39660a83c54e0cf088cee4167935ebeb8e0afa91f7fa57b9170ee",
+    "coordination/returns/20261023T013525Z-b0-availability-datasentinel-ef8859a0/availability.json": "95dd7ff7d43c2a8c5ca793e3320bcb531989ec87cdd827cf3587ecc989308189",
+    "coordination/returns/20261023T013847Z-b0-availability-llama-5c3f5d39/availability.json": "1e1795b7ab487456e16f3a20cb157ac5ba8e55e1c3b5747edf67f7f574d12d3a",
+    "coordination/returns/20261023T014134Z-b0-5090-003-24f347df/REPORT.md": "fe4e9c8c33b546cd65c1489d6fb8000efacc05b159fad6bf6d3fb35193ac64e5"
+  },
+  "source_changes_only_four_additions": true,
+  "prompt_guard_2": {
+    "accepted": false,
+    "status": "BLOCKED_HTTP_403",
+    "model_loaded": false
+  },
+  "datasentinel": {
+    "accepted": true,
+    "scope": "Frozen constructor and binary interface load/short controls only",
+    "load_seconds": 62.388289781,
+    "control_flags": [
+      0,
+      0,
+      0
+    ],
+    "explicit_override_control_detected": false,
+    "injection_probability": null
+  },
+  "llama": {
+    "accepted": true,
+    "scope": "BF16 load, finite forward and short generation only",
+    "load_seconds": 71.86017274000005,
+    "b4_b5_prompt_validation_complete": false,
+    "model_file_check_scope": "Existing accepted hashes plus current file sizes, as disclosed by local_spec"
+  },
+  "llama_initial_shell_failure": {
+    "exit_code": 127,
+    "model_loaded": false,
+    "evidence_scope": "Executor summary declaration only; no independent shell log",
+    "independently_verified": false,
+    "preserved": true
+  },
+  "dependencies_saved_in_llama_receipt": {
+    "torch": "2.7.1+cu128",
+    "transformers": "4.51.3",
+    "bitsandbytes": "0.46.1",
+    "accelerate": "1.6.0"
+  },
+  "not_independent_gpu_rerun": true,
+  "candidate_scores_computed": 0,
+  "datasentinel_control_result_is_b0_performance": false,
+  "allowed_next": "Prepare frozen non-PG2 exploratory score collection; PG2 remains missing, no substitute"
+}

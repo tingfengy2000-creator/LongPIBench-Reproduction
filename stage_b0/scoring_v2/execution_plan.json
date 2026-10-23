@@ -1,0 +1,179 @@
+{
+  "status": "FROZEN_EXPLORATORY_COLLECTION_NOT_STARTED",
+  "task_id": "B0-5090-004",
+  "is_formal_paper_experiment": false,
+  "label_freeze": "coordination/returns/20261022T153529Z-b0-gemini-completion-2ba621b8/exploratory_label_freeze.json",
+  "availability_receipt_commit": "04cc5a879ed9e54800886ae4fc978e7020d71cbc",
+  "classifiers": {
+    "prompt_guard_1": {
+      "repo_id": "meta-llama/Prompt-Guard-86M",
+      "revision": "1209add6ca7d9c1d815171b8e5571587fe3e7b03",
+      "files": [
+        {
+          "name": "config.json",
+          "sha256": "4729879ff68c7766830270d5a4da768a0f8c56406a7aa148ddee8e5ff8cabe91",
+          "bytes": 1031
+        },
+        {
+          "name": "model.safetensors",
+          "sha256": "1771712866662626517f2d85057de2d7078389a4c1f0bc93e461bdc4fdae4bd5",
+          "bytes": 1115271284
+        },
+        {
+          "name": "special_tokens_map.json",
+          "sha256": "9463f61e1b109a8eb4688b829260d7c6b1e6dff04c98ff7269bb89e2b92369b9",
+          "bytes": 286
+        },
+        {
+          "name": "tokenizer.json",
+          "sha256": "7dbb7b63c76007984d0e58a90ee901ceb5b16c8e78252d36ddcde748b3474a1a",
+          "bytes": 16331639
+        },
+        {
+          "name": "tokenizer_config.json",
+          "sha256": "fbab5e63e411db37631bc9eeaf5c628e9718be610838636ed76ebcc6d7c1f77a",
+          "bytes": 1284
+        }
+      ]
+    },
+    "piguard": {
+      "repo_id": "leolee99/PIGuard",
+      "revision": "dd78b24e330193a22d2293ac66922dd4f982f563",
+      "files": [
+        {
+          "name": "README.md",
+          "sha256": "edd81d29d8e2b8f1225afc3602e8be5201903e5c184c65d365534471c82811d0",
+          "bytes": 3123
+        },
+        {
+          "name": "__init__.py",
+          "sha256": "aa4ed85a01d76e54db092e4e9b472c952130af70f93877dcde2abf2b86cfe774",
+          "bytes": 35
+        },
+        {
+          "name": "added_tokens.json",
+          "sha256": "dc046d04c9b0ada7ae6f1dc89c465801799acdf0c9a6aab8c15a1b2d5ca4e91f",
+          "bytes": 23
+        },
+        {
+          "name": "config.json",
+          "sha256": "f7ab538357be6b11364e4ad225595fe2a96b64f69506387a04e3cae699bac1d0",
+          "bytes": 1062
+        },
+        {
+          "name": "inference_examples.py",
+          "sha256": "9b7d3decab3bbc425892590c24ea08b01da1dad003f64eceb1b13340381d390c",
+          "bytes": 606
+        },
+        {
+          "name": "load_model.py",
+          "sha256": "9b7d3decab3bbc425892590c24ea08b01da1dad003f64eceb1b13340381d390c",
+          "bytes": 606
+        },
+        {
+          "name": "model.safetensors",
+          "sha256": "f90b9806de93b6286cda517300d4b55e5ce2e5ccbf8339dc59be21ca0dd9a25e",
+          "bytes": 737719272
+        },
+        {
+          "name": "modeling_piguard.py",
+          "sha256": "5be806a223cf20c418171a409726110c02a7377d75f22ee6f80d7c72ac0fa529",
+          "bytes": 973
+        },
+        {
+          "name": "save_model.py",
+          "sha256": "abcfabbd0f795ab4bc55744d45c121c24a447a2d548396f4fa7e4cea434525fe",
+          "bytes": 415
+        },
+        {
+          "name": "special_tokens_map.json",
+          "sha256": "9463f61e1b109a8eb4688b829260d7c6b1e6dff04c98ff7269bb89e2b92369b9",
+          "bytes": 286
+        },
+        {
+          "name": "tokenizer.json",
+          "sha256": "5124ef2ead1a10a717703bc436de7f353da76d6340e4587719b42b1693707964",
+          "bytes": 8656624
+        },
+        {
+          "name": "tokenizer_config.json",
+          "sha256": "557b3d33d3f41b81ad769244e506549e98a1857d41dd58160aacd4d98d710b5a",
+          "bytes": 1284
+        }
+      ]
+    }
+  },
+  "serial_roles": [
+    "piguard",
+    "prompt_guard_1",
+    "datasentinel",
+    "llama"
+  ],
+  "planned_records": {
+    "piguard": 400,
+    "prompt_guard_1": 400,
+    "datasentinel": 400,
+    "B4": 400,
+    "B5": 400
+  },
+  "excluded_unavailable": {
+    "prompt_guard_2": "Fixed revision HTTP403 in003; no substitute or repeated access attempt"
+  },
+  "llama_chat_template_sha256": "e10ca381b1ccc5cf9db52e371f3b6651576caee0a630b452e2816b2d404d4b65",
+  "target_files_receipt": "coordination/returns/20261017T160020Z-offline-hf-0a7c5a5d/hf_files.json",
+  "runtime_versions": {
+    "torch": "2.7.1+cu128",
+    "transformers": "4.51.3",
+    "bitsandbytes": "0.46.1",
+    "accelerate": "1.6.0",
+    "peft": "0.15.2"
+  },
+  "window_policy": "Native tokenizer specials per <=512 total tokens, nonoverlap full coverage, Max",
+  "precision": {
+    "classifiers": "float32",
+    "datasentinel": "original NF4 double_quant BF16 compute",
+    "llama": "BF16 unquantized"
+  },
+  "thresholds_fitted_in_collection": false,
+  "holdout_metrics_computed_in_collection": false,
+  "invalid_outputs": "Preserve INVALID records, no retry or output repair",
+  "fatal_runtime_failure": "Preserve partial evidence and stop remaining roles; no dependency/code fixes on executor",
+  "model_access_401_403": "Record blocker and continue independent remaining roles",
+  "latency_scope": "Instrumented same5090 serial wall time including input processing and observation; load/warmup separate",
+  "file_sha256": {
+    "configs/offline_transfer_manifest.json": "e0e72b87208c07f511070eb64a614620aaa413db22af70b4a9de3b959a07d5e2",
+    "configs/opi_core_sources.json": "3853888cfbb880b5a3579e7a435706095e8a9fe0eafa654a557a541f7770a482",
+    "configs/upstream_lock.json": "5119577db163b7cfdeb33e1443c28828403bb951661604d4f6b004352978f06d",
+    "coordination/returns/20261017T160020Z-offline-hf-0a7c5a5d/hf_files.json": "c905fd9396c6fb1dac00396893482874e56b4dca4dba1460413e63d45a423587",
+    "coordination/returns/20261019T054409Z-g0-visibility-fd1beae5/g0_audit.json": "ee047254dec67e91d014e468f643a17856703c2b6e87169590161a6f56bb62ff",
+    "coordination/returns/20261022T153529Z-b0-gemini-completion-2ba621b8/exploratory_label_freeze.json": "3f79b8a225fa3175ab191a3d27740834c024eff834e46029838405e06b919c02",
+    "coordination/returns/20261023T013459Z-b0-availability-prompt_guard_2-570957a3/availability.json": "3749882330d39660a83c54e0cf088cee4167935ebeb8e0afa91f7fa57b9170ee",
+    "coordination/returns/20261023T013525Z-b0-availability-datasentinel-ef8859a0/availability.json": "95dd7ff7d43c2a8c5ca793e3320bcb531989ec87cdd827cf3587ecc989308189",
+    "coordination/returns/20261023T013847Z-b0-availability-llama-5c3f5d39/availability.json": "1e1795b7ab487456e16f3a20cb157ac5ba8e55e1c3b5747edf67f7f574d12d3a",
+    "g0_resume_diagnosis/audit_existing.py": "b7a6d7af4b3ea52710425cc9b5ebe673c03bb9aca3791083a022ca1f1ad2c6d8",
+    "g0_resume_diagnosis/frozen_controls_v1/plan.json": "39639607866a6cbc5c2a44be6516c68e9022cf0e4bf3733ade4cc7dc64a442f8",
+    "g0_resume_diagnosis/run_controls.py": "3bfa4642ab157a7a6d3531b7b5e7417d62d40b2c662233d7a5df012021b038f4",
+    "repro/locator_trace.py": "71620971df47d66b5f027547384e431003638a3e150fd7d6241b70a9d74359c7",
+    "repro/opi_loader.py": "2a32a0eeea78da5562d21debc1b08ffba8ba0a5968cc78c50ecc0d5c1dc89ed2",
+    "scripts/local_model_probe.py": "053ecdf78ecb5e6d6e4892516effcc45c3ea53aae8e5baf6f64df38f9fb39d72",
+    "stage_b0/ai_review_v2/POLICY.md": "27a75c39602a2f05914013166114aa0381cbc4d9bbb3f82a273b2a53bfb0f382",
+    "stage_b0/ai_review_v2/SECOND_REVIEW_GEMINI_20261023.md": "731b2da602ffb055a0dad0947f7d39258e19cc405a40afebaedf86366861b651",
+    "stage_b0/ai_review_v2/label_gate.py": "5ceb8265cf6e2e7be14ac388ddf04591384a9aca92913ae5e8d9cfc751757c51",
+    "stage_b0/ai_review_v2/review_io.py": "337b13ad76b01423179efad2573cb54ce67d208e580ad01c4be0f4c98b6f2a43",
+    "stage_b0/availability_review_003/verification.json": "6e9fd950a18f343df72e314869f7c930a536404becfb12c1bd79478b61e0a18d",
+    "stage_b0/availability_review_003/verify.py": "4d42e2e79c16de1d5207136564dd11ca8b21329832c050f2f93a039bbc8776a0",
+    "stage_b0/dataset_manifest.jsonl": "02c8352e3c5a33dc2af164f321f97e9ba9e7ded48b67ae16663d270dfc18c954",
+    "stage_b0/evaluation.py": "84dfdb442834615e452831e5b27f6ceb7c547c7ec82116e97fda274628e76c17",
+    "stage_b0/llm_prompts.json": "1233f134f840d5fe1ffbe39bf3bf3e2856c8596622afdbb684e333d4a6bef60e",
+    "stage_b0/protocol_v1.md": "418b80a1e3a4d161c21013bc9ca6e91a2e5bdcc78d1c393596b38da71eb63d86",
+    "stage_b0/scoring_v2/collect.py": "e8bdc13a1c6f6bca72a98a20e19ad309b60e9a9f59839eace1df756c65a2ba34",
+    "stage_b0/scoring_v2/common.py": "8ed55e58cee6484e0e78b718db5cb3e5bd57892e916b87ee625a8fe84da1b3d3",
+    "stage_b0/scoring_v2/freeze_plan.py": "927a273ffb08e5494a216474804f72c7c5b8074449dfb840979656cb7bde5bab",
+    "stage_b0/scoring_v2/run_all.py": "48761ab0cd4adb9eb4648ad3459d6f841cd21894372972c3d308e0df8f763e86",
+    "stage_b0/scoring_v2/test_collection.py": "fe25a4a92fe2556c479fc3acc499e95fe7c625da0d0cee9b827876d7ef7a765d",
+    "stage_b0/source_audit/custom_code_review.md": "99cfa73148916d0c73c529835fe01c8e41bce844b5e04f80054e23ff86b40dbe",
+    "stage_b0/source_audit/model_metadata.json": "e52f97353de6c5c48e61bbb834d063c7efa1257fdfa0079d68f6458d05e42786",
+    "stage_b0/source_audit/piguard_load_probe.json": "e64fd5448f0fe1ac144822ce5d067b5ca704b85ff933a3879c8e81d60dd047e1",
+    "stage_b0/source_audit/prompt_guard_1_load_probe.json": "0afdea758e86c9d587e4a8273546ed4544a19eb5e56dc79386e15eb65e1cf44d"
+  }
+}
